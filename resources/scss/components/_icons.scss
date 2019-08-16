@@ -15,13 +15,13 @@
 	}
 
 	&-boldoakdesign {
-		background-color: var(--boldoakdesign-background);
-		color: var(--boldoakdesign-foreground);
+		background-color: var(--color-boldoakdesign-background);
+		color: var(--color-boldoakdesign-foreground);
 		border-radius: 50%;
 		padding: 0.1em;
 
 		.icon-text & {
-			color: var(--boldoakdesign-foreground);
+			color: var(--color-boldoakdesign-foreground);
 		}
 	}
 }
