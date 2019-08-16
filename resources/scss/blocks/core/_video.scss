@@ -1,0 +1,15 @@
+.wp-block-video {
+	margin-bottom: var(--component-padding);
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	video {
+		width: 100%;
+
+		&[poster] {
+			object-fit: cover;
+		}
+	}
+}

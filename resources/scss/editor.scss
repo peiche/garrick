@@ -1,0 +1,30 @@
+////
+/// Editor stylesheet.
+///
+/// This is the primary editor stylesheet. It is used for the WordPress 5.0+
+/// block editor (Gutenberg) and is not intended for older versions of the
+/// WordPress edit screen.
+///
+/// @group  Styles
+/// @author Paul Eiche <paul@boldoak.design>
+/// @link   https://boldoak.design/themes/trunc
+////
+
+@import 'vendor/_index';
+
+// Import settings and tools.
+@import 'settings/_index';
+@import 'tools/_index';
+
+// Prefixes all of the styles with `.editor-styles-wrapper` for use within the
+// block editor.
+.editor-styles-wrapper {
+
+	@import 'elements/_index';
+	@import 'blocks/_index';
+	@import 'utilities/_index';
+
+	// Additional editor overrides, for styles where wrapping with
+	// `.editor-styles-wrapper` isn't enough.
+	@import 'blocks/editor/_index';
+}

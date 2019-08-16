@@ -1,0 +1,23 @@
+////
+/// Media components.
+///
+/// Contains styles for older images and captions.
+///
+/// @group  Components
+/// @author Paul Eiche <paul@boldoak.design>
+/// @link   https://boldoak.design/themes/trunc
+////
+
+.wp-caption {
+	margin-top: var(--component-padding);
+	margin-bottom: var(--component-padding);
+
+	&.alignleft,
+	&.alignright {
+		margin-top: 0;
+	}
+}
+
+.wp-caption-text {
+	@include caption;
+}

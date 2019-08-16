@@ -1,0 +1,53 @@
+////
+/// Button block.
+///
+/// @group  Blocks
+/// @author Paul Eiche <paul@boldoak.design>
+/// @link   https://boldoak.design/themes/trunc
+////
+
+.wp-block-button {
+	margin-bottom: var(--component-padding);
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	&__link {
+		border: 0;
+		box-shadow: none;
+		cursor: pointer;
+		display: inline-block;
+		margin: 0;
+		padding: var(--space-xs) var(--space-sm);
+		text-align: center;
+		white-space: normal;
+		color: var(--color-contrast-lower);
+		background-color: var(--color-contrast-high);
+		border-radius: 25em;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	&.is-style-squared {
+		.wp-block-button__link {
+			border-radius: var(--radius);
+		}
+	}
+
+	&.is-style-outline {
+		.wp-block-button__link {
+			box-shadow: 0 0 0 2px currentColor inset;
+
+			&:not(.has-background) {
+				background-color: transparent;
+			}
+
+			&:not(.has-text-color) {
+				color: var(--color-contrast-high);
+			}
+		}
+	}
+}

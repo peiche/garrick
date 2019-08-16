@@ -1,0 +1,128 @@
+/* --------------------------------
+
+Title: Avatar
+Descr: A user profile image component.
+
+-------------------------------- */
+
+:root {
+	--avatar-sm: 1.5em;
+	--avatar-md: 2em;
+	--avatar-lg: 3em;
+}
+
+.avatar {
+	font-size: 2em;
+	position: relative;
+	display: inline-block;
+	line-height: 0;
+	vertical-align: middle;
+}
+
+.avatar__figure {
+	width: 1em;
+	height: 0;
+	padding-bottom: 1em;
+	border-radius: 50%; // avatar border-radius
+	overflow: hidden;
+	display: inline-block;
+}
+
+.avatar__img,
+.avatar__placeholder {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	width: 1em;
+	height: 1em;
+	border-radius: inherit;
+}
+
+.avatar__placeholder {
+	background-color: var(--color-contrast-low); // icon background color
+	color: var(--color-bg); // icon stroke color
+	fill: transparent; // icon fill color
+}
+
+.avatar--btn {
+	@include reset;
+	cursor: pointer;
+}
+
+// sizes
+.avatar--sm {
+	font-size: var(--avatar-sm);
+}
+
+.avatar--md {
+	font-size: var(--avatar-md);
+}
+
+.avatar--lg {
+	font-size: var(--avatar-lg);
+}
+
+// status
+.avatar__status {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: inline-block;
+	width: 0.5em;
+	height: 0.5em;
+	border-radius: 50%;
+	box-shadow: 0 0 0 2px var(--color-bg);
+	background-color: var(--color-contrast-medium);
+}
+
+.avatar__status--active {
+	background-color: var(--color-success);
+}
+
+.avatar__status--busy {
+	background-color: var(--color-error);
+}
+
+.avatar__initials,
+.avatar__users-counter {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1em;
+	height: 1em;
+	border-radius: inherit;
+	background-color: var(--color-contrast-lower);
+	color: var(--color-contrast-higher);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.avatar__initials {
+	// initials - show letters if you don't have img
+	text-align: center;
+
+	span {
+		font-size: 0.5em;
+	}
+}
+
+.avatar__users-counter {
+	// tot number of users in a group of avatars
+	span {
+		font-size: 0.42em;
+	}
+}
+
+// group
+.avatar-group {
+	display: flex;
+	.avatar {
+		margin-left: -0.1em;
+	}
+
+	.avatar__figure {
+		box-shadow: 0 0 0 3px var(--color-bg);
+	}
+}

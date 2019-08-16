@@ -1,0 +1,18 @@
+/* --------------------------------
+
+Title: Alert
+Descr: Feedback message
+
+-------------------------------- */
+
+.alert {
+	padding: var(--space-xs) var(--space-sm);
+	background-color: alpha(var(--color-primary), 0.2);
+	border-radius: var(--radius);
+	color: var(--color-contrast-higher);
+	position: static;
+}
+
+.alert--info {
+	background-color: alpha(var(--color-info), 0.2);
+}

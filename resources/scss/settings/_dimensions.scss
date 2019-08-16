@@ -1,0 +1,25 @@
+////
+/// Width and height settings.
+///
+/// @group  Settings
+/// @author Paul Eiche <paul@boldoak.design>
+/// @link   https://boldoak.design/themes/trunc
+////
+
+/// Defines the content width. This should match the theme's `$content_width`
+/// setting in `app/functions-setup.php`.
+///
+/// @since  1.0.0
+/// @access public
+/// @return {number}  The content width in pixels.
+
+@function content-width() {
+	@return 48rem; // width of --max-width-sm
+}
+
+:root,
+body {
+	--radius: 0.25em;
+	--radius-pill: 25em;
+	--radius-circle: 50%;
+}

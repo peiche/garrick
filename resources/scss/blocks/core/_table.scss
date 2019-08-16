@@ -1,0 +1,82 @@
+////
+/// Table block.
+///
+/// @group  Blocks
+/// @author Paul Eiche <paul@boldoak.design>
+/// @link   https://boldoak.design/themes/trunc
+////
+
+.wp-block-table {
+
+	&.has-fixed-layout {
+		display: table;
+		table-layout: fixed;
+		width: 100%;
+	}
+
+	table {}
+
+	tr {}
+
+	th,
+	td {
+		padding: var(--space-xxxs);
+	}
+
+	th {
+		border: 1px solid var(--color-contrast-medium);
+	}
+
+	td {
+		border: 1px solid var(--color-contrast-low);
+	}
+
+	&.has-subtle-light-gray-background-color {
+		background-color: hsla(var(--color-contrast-medium-h), var(--color-contrast-medium-s), var(--color-contrast-medium-l), 0.1);
+	}
+
+	&.has-subtle-pale-green-background-color {
+		background-color: hsla(var(--color-success-h), var(--color-success-s), var(--color-success-l), 0.1);
+	}
+
+	&.has-subtle-pale-blue-background-color {
+		background-color: hsla(var(--color-info-h), var(--color-info-s), var(--color-info-l), 0.1);
+	}
+
+	&.has-subtle-pale-pink-background-color {
+		background-color: hsla(var(--color-error-h), var(--color-error-s), var(--color-error-l), 0.1);
+	}
+
+	&.is-style-stripes {
+		background-color: transparent;
+
+		th,
+		td {
+			border-color: transparent;
+		}
+
+		th {
+			background-color: var(--color-contrast-low);
+		}
+
+		tr:nth-child(odd) {
+			background-color: var(--color-contrast-lower);
+		}
+
+		&.has-subtle-light-gray-background-color tr:nth-child(odd) {
+			background-color: hsla(var(--color-contrast-medium-h), var(--color-contrast-medium-s), var(--color-contrast-medium-l), 0.1);
+		}
+
+		&.has-subtle-pale-green-background-color tr:nth-child(odd) {
+			background-color: hsla(var(--color-success-h), var(--color-success-s), var(--color-success-l), 0.1);
+		}
+
+		&.has-subtle-pale-blue-background-color tr:nth-child(odd) {
+			background-color: hsla(var(--color-info-h), var(--color-info-s), var(--color-info-l), 0.1);
+		}
+
+		&.has-subtle-pale-pink-background-color tr:nth-child(odd) {
+			background-color: hsla(var(--color-error-h), var(--color-error-s), var(--color-error-l), 0.1);
+		}
+	}
+}

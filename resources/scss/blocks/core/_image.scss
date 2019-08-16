@@ -1,0 +1,58 @@
+////
+/// Image block.
+///
+/// @group  Blocks
+/// @author Paul Eiche <paul@boldoak.design>
+/// @link   https://boldoak.design/themes/trunc
+////
+
+.wp-block-image {
+	margin-top: var(--component-padding);
+	margin-bottom: var(--component-padding);
+
+	img {
+		max-width: 100%;
+		display: block;
+		margin: auto;
+	}
+
+	.aligncenter img {
+		margin: auto;
+	}
+
+	.alignleft {
+
+		@include breakpoint(md) {
+			margin-left: -20%;
+		}
+
+		@include breakpoint(lg) {
+			margin-left: -50%;
+		}
+	}
+
+	.alignright {
+
+		@include breakpoint(md) {
+			margin-right: -20%;
+		}
+
+		@include breakpoint(lg) {
+			margin-right: -50%;
+		}
+	}
+
+	&.rounded img {
+		border-radius: var(--radius);
+	}
+
+	&.rounded--circle img {
+		border-radius: 50%;
+	}
+
+	figcaption {
+		@include caption;
+	}
+
+	.is-resized {}
+}

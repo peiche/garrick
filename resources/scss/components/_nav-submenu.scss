@@ -1,0 +1,143 @@
+/* --------------------------------
+
+File#: _2_dropdown
+Title: Dropdown
+Descr: A hoverable link that toggles the visibility of a dropdown list
+
+-------------------------------- */
+
+:root {
+	--dropdown-item-padding: var(--space-xxs) var(--space-sm);
+}
+
+.menu__sub-menu {
+	display: none;
+
+	&--is-visible {
+		display: block;
+	}
+}
+
+@include breakpoint(md) {
+
+	.menu__sub-menu {
+		width: 200px;
+		border-radius: var(--radius-md);
+		padding: var(--space-xxs) 0;
+		background-color: var(--color-bg);
+		box-shadow: var(--shadow-sm);
+		z-index: var(--zindex-popover);
+		position: absolute;
+		left: 0;
+		top: 100%;
+
+		// reset spacing and text sizes
+		@include spaceUnit(1rem);
+		font-size: 1rem;
+
+		// hide
+		clip: rect(1px, 1px, 1px, 1px);
+		clip-path: inset(50%);
+	}
+
+	.menu__item:hover > .menu__sub-menu {
+		// show dropdown menu
+		clip: auto;
+		clip-path: none;
+	}
+
+	.menu__item .menu__item:hover > .menu__sub-menu {
+		left: 100%;
+	}
+
+	.menu__sub-menu .menu__item {
+		display: block;
+		text-decoration: none;
+		padding: var(--dropdown-item-padding);
+		margin: 0;
+
+		&:not(.btn):hover,
+		&:not(.btn).menu__item--hover {
+			background-color: var(--color-contrast-lower);
+		}
+	}
+
+	.menu__item.has-children {
+		position: relative;
+
+		> .menu__link { // item w/ right arrow
+			position: relative;
+			padding-right: 24px;
+			width: 100%;
+
+			.icon { // right arrow
+				position: absolute;
+				display: block;
+				width: 18px;
+				height: 18px;
+				right: 0;
+				top: calc(50% - 9px);
+
+				.menu__item & {
+					transform: rotate(270deg);
+				}
+			}
+		}
+
+		.menu__item > .menu__sub-menu { // sub menu
+			top: calc(var(--space-xxs) * -1);
+			box-shadow: var(--shadow-md);
+		}
+	}
+
+	.js { // add animations if JS = enabled
+
+		.menu__sub-menu--is-visible {
+			clip: auto;
+			clip-path: none;
+			animation: dropdown-show 0.2s forwards;
+		}
+
+		.menu__sub-menu--is-hidden {
+			animation: dropdown-hide 0.2s;
+		}
+	}
+
+	.menu__item .menu__item > .menu__sub-menu--is-visible,
+	.menu__item .menu__item > .menu__sub-menu--is-hidden {
+		left: 100%;
+
+		&.menu__sub-menu--left {
+			left: -100%;
+		}
+	}
+
+}
+
+@keyframes dropdown-show {
+	0% {
+		opacity: 0;
+		transform: translateY(-4px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes dropdown-hide {
+	0% {
+		clip: auto;
+		clip-path: none;
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	100% {
+		clip: auto;
+		clip-path: none;
+		opacity: 0;
+		transform: translateY(-4px);
+	}
+}

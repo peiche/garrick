@@ -1,0 +1,28 @@
+////
+/// App footer component.
+///
+/// @group  Components
+/// @author Paul Eiche <paul@boldoak.design>
+/// @link   https://boldoak.design/themes/trunc
+////
+
+.app-footer {
+	background-color: var(--color-bg);
+
+	a {
+		color: var(--color-contrast-higher);
+	}
+
+	&__content {
+		border-top: 2px solid var(--color-contrast-low);
+		font-size: 0.9em;
+	}
+
+	&__nav {}
+
+	&__social {}
+
+	&__colophon {}
+
+	&__credit {}
+}

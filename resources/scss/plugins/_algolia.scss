@@ -1,0 +1,20 @@
+.algolia-autocomplete {
+
+	.aa-dropdown-menu {
+		color: var(--color-contrast-high);
+		font-size: var(--text-base-size);
+		font-family: var(--font-primary);
+		background-color: var(--color-bg);
+		border-top: none;
+		border-radius: var(--radius);
+		box-shadow:
+			0 1px 2px hsla(var(--color-contrast-high-h), var(--color-contrast-high-s), var(--color-contrast-high-l), 0.25),
+			0 0 1px hsla(var(--color-contrast-high-h), var(--color-contrast-high-s), var(--color-contrast-high-l), 0.25);
+	}
+
+	.aa-empty {}
+
+	[class^="aa-dataset-"] {}
+
+	.autocomplete-footer {}
+}

@@ -1,0 +1,26 @@
+////
+/// Quote block.
+///
+/// @group  Blocks
+/// @author Paul Eiche <paul@boldoak.design>
+/// @link   https://boldoak.design/themes/trunc
+////
+
+.wp-block-quote {
+
+	p {
+		margin-bottom: var(--space-sm);
+	}
+
+	cite {}
+
+	&.is-style-large {
+		border: 0;
+		padding-left: 0;
+		font-size: 1.25em;
+
+		p {
+			font-style: italic;
+		}
+	}
+}

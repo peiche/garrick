@@ -1,0 +1,147 @@
+////
+/// Entry component.
+///
+/// @group  Components
+/// @author Paul Eiche <paul@boldoak.design>
+/// @link   https://boldoak.design/themes/trunc
+////
+
+.entry {
+	position: relative;
+
+	.grid & {
+
+		&::after {
+			display: none;
+		}
+	}
+
+	p,
+	blockquote,
+	ul li,
+	ol li {
+
+	}
+
+	// Type of entry/post.
+	&--type-post {}
+
+	&--type-page {}
+
+	// Sticky posts.
+	&.sticky {}
+
+	&__wrapper {}
+
+	&__excerpt {}
+
+	// Featured image.
+	&__featured {
+
+		.post-template-cover-header &,
+		.page-template-cover-header & {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			z-index: 0;
+			opacity: 0.5;
+		}
+	}
+
+	&__image {
+		display: block;
+		margin: auto;
+
+		.post-template-hero-header &,
+		.page-template-hero-header &,
+		.post-template-cover-header &,
+		.page-template-cover-header & {
+			object-fit: cover;
+			width: 100%;
+		}
+
+		.post-template-hero-header &,
+		.page-template-hero-header & {
+			max-height: 70vh;
+		}
+
+		.post-template-cover-header &,
+		.page-template-cover-header & {
+			height: 100%;
+		}
+	}
+
+	&__header {
+
+		.post-template-cover-header &,
+		.page-template-cover-header & {
+			position: relative;
+			min-height: 100vh;
+
+			> div {
+				position: relative;
+				z-index: 1;
+			}
+		}
+	}
+
+	// Entry title.
+	&__title {
+
+		a {
+			color: var(--color-contrast-high);
+		}
+	}
+
+	// Entry title. Duplicated due to weird descending specificity rule.
+	&__title a:hover {
+		color: var(--color-primary);
+	}
+
+	// Full entry and summary/excerpt shared styles.
+	&__content,
+	&__summary {}
+
+	// Full entry content.
+	&__content {}
+
+	// Summary/Excerpt.
+	&__summary {}
+
+	&__byline,
+	&__footer {}
+
+	&__footer {}
+
+	&__published {}
+
+	// Individual metadata items.
+	&__author {}
+
+	&__author,
+	&__author-link,
+	&__permalink {
+		color: var(--color-contrast-medium);
+
+		.single & {
+			color: inherit;
+		}
+	}
+
+	// Meta wrappers.
+	&__byline {
+
+		.sep {
+			display: inline;
+		}
+
+		.entry__permalink,
+		.entry__published {
+			display: inline;
+		}
+	}
+
+	&__comments {}
+}

@@ -1,0 +1,32 @@
+////
+/// Separator block.
+///
+/// @group  Blocks
+/// @author Paul Eiche <paul@boldoak.design>
+/// @link   https://boldoak.design/themes/trunc
+////
+
+.wp-block-separator {
+	@include separator;
+
+	&.is-style-wide {
+		width: 100%;
+	}
+
+	&.is-style-dots {
+		width: 100%;
+		background: none;
+		line-height: 1;
+		height: auto;
+		text-align: center;
+
+		&::before {
+			content: "\00b7 \00b7 \00b7";
+			color: var(--color-contrast-medium);
+			font-size: 1.25em;
+			letter-spacing: var(--space-lg);
+			padding-left: var(--space-lg);
+		}
+	}
+}
+

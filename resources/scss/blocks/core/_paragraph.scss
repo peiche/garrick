@@ -1,0 +1,33 @@
+.has-drop-cap:not(:focus) {
+
+	&::first-letter {
+		float: left;
+		font-size: 8.4em;
+		line-height: 0.68;
+		font-weight: 100;
+		margin: 0.05em 0.1em 0 0;
+		text-transform: uppercase;
+		font-style: normal;
+	}
+
+	&::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+p {
+
+	&.has-background {
+		padding: var(--component-padding);
+	}
+
+	&.has-text-color {
+
+		a {
+			color: inherit;
+			text-decoration: underline;
+		}
+	}
+}

@@ -1,0 +1,63 @@
+////
+/// Custom mixins.
+///
+/// @group  Tools
+/// @author Paul Eiche <paul@boldoak.design>
+/// @link   https://boldoak.design/themes/trunc
+////
+
+// Single, shared caption style.
+@mixin caption {
+	text-align: center;
+	font-size: var(--text-sm);
+	color: var(--color-contrast-medium);
+	margin-top: var(--space-xs);
+}
+
+@mixin cite {
+	color: var(--color-contrast-medium);
+	font-size: 0.9em;
+	display: block;
+	margin-top: var(--space-sm);
+}
+
+// Single line, end with ellipses
+@mixin truncate {
+	// truncate text if it exceeds its parent
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+// Shared separator style.
+@mixin separator {
+	width: 100px;
+	height: 2px;
+	background-color: var(--color-contrast-medium);
+	margin: var(--space-md) auto;
+}
+
+// Shared style to hide visually, but still visible to screen readers
+@mixin screen-reader-text {
+	clip:      rect( 1px, 1px, 1px, 1px );
+	clip-path: inset( 50% );
+	position:  absolute;
+	width:     1px;
+	height:    1px;
+	margin:    -1px;
+	overflow:  hidden;
+	padding:   0;
+	word-wrap: normal;
+	border:    none;
+
+	&:active,
+	&:focus {
+		clip:            auto;
+		clip-path:       none;
+		display:         block;
+		height:          auto;
+		width:           auto;
+		z-index:         100000;
+		text-decoration: none;
+	}
+}

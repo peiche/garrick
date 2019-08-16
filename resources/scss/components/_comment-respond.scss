@@ -1,0 +1,113 @@
+////
+/// Comment respond form component.
+///
+/// @group  Components
+/// @author Paul Eiche <paul@boldoak.design>
+/// @link   https://boldoak.design/themes/trunc
+////
+
+.comment-respond {
+
+	.required {
+		color: var(--color-error);
+	}
+
+	// Header/title for the respond section.
+	&__reply-title {}
+
+	// The comment form.
+	&__form {}
+
+	// Note section at the top of form.
+	&__notes {}
+
+	// Logged-in message at the top of the form.
+	&__logged-in-as {}
+
+	// The wrapping element around individual form fields.
+	&__field {
+
+		input[type="text"],
+		input[type="email"],
+		input[type="url"],
+		textarea {}
+
+		&--comment {}
+
+		&--author {
+			// person icon?
+		}
+
+		&--email {
+			// email icon
+		}
+
+		&--url {
+			// website icon
+		}
+
+		&--cookies {
+
+			// hide input
+			input[type="checkbox"] {
+				margin: 0;
+				padding: 0;
+				opacity: 0;
+				height: 32px;
+				width: 32px;
+				display: block;
+				z-index: 1;
+				position: absolute;
+			}
+
+			label {
+				padding-left: 42px;
+				position: relative;
+				margin-bottom: 0;
+				display: flex;
+				align-items: center;
+				min-height: 32px;
+
+				// custom checkbox
+				&::after {
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 32px;
+					height: 32px;
+
+					// custom checkbox style
+					background-color: var(--color-bg);
+					border-radius: 0.2em;
+					box-shadow: inset 0 0 0 2px var(--color-contrast-low);
+				}
+			}
+
+			input[type="checkbox"]:checked + label {
+
+				&::after {
+					background-color: var(--color-primary);
+					background-image: url(../svg/check-light.svg);
+					background-repeat: no-repeat;
+					background-position: center;
+					background-size: 1.25em;
+					box-shadow: none;
+				}
+			}
+
+			input[type="checkbox"]:active + label::after {
+				transform: scale(0.9);
+			}
+
+			input[type="checkbox"]:checked:active + label::after {
+				transform: scale(1);
+			}
+		}
+
+		&--submit {}
+	}
+
+	// Comments closed message.
+	&__closed {}
+}

@@ -1,0 +1,56 @@
+////
+/// Columns block.
+///
+/// @group  Blocks
+/// @author Paul Eiche <paul@boldoak.design>
+/// @link   https://boldoak.design/themes/trunc
+////
+
+.wp-block-columns {
+	display: flex;
+	flex-wrap: wrap;
+
+	&.are-vertically-aligned-top {
+		align-items: flex-start;
+	}
+
+	&.are-vertically-aligned-center {
+		align-items: center;
+	}
+
+	&.are-vertically-aligned-bottom {
+		align-items: flex-end;
+	}
+}
+
+// Individual columns.
+.wp-block-column {
+	background-clip: content-box;
+	flex-basis: 100%;
+
+	@include breakpoint(sm) {
+		@for $i from 2 through 6 {
+			.has-#{ $i }-columns & {
+				flex-basis: calc(100 / #{ $i } * 1%);
+				max-width: calc(100 / #{ $i } * 1%);
+			}
+		}
+	}
+
+	&.is-vertically-aligned-top {
+		align-self: flex-start;
+	}
+
+	&.is-vertically-aligned-center {
+		align-self: center;
+	}
+
+	&.is-vertically-aligned-bottom {
+		align-self: flex-end;
+	}
+}
+
+// Editor specific styling. Make sure columns span correctly.
+.editor-inner-blocks {
+	flex: 1;
+}

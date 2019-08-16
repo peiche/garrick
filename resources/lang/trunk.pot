@@ -1,0 +1,573 @@
+# <!=Copyright (C) 2019 Paul Eiche
+# This file is distributed under the GNU General Public License v2.0 or later.=!>
+msgid ""
+msgstr ""
+"Project-Id-Version: Trunc 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/themes\n"
+"POT-Creation-Date: 2019-08-08 22:39:12+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2019-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: node-wp-i18n 1.2.2\n"
+
+#: app/Customize/Customize.php:77
+msgid "Header Settings"
+msgstr ""
+
+#: app/Customize/Customize.php:82
+msgid "Content Settings"
+msgstr ""
+
+#: app/Customize/Customize.php:231
+msgid "Show Search"
+msgstr ""
+
+#: app/Customize/Customize.php:232
+msgid ""
+"Display the search overlay button in the header. The overlay also contains "
+"a widget area."
+msgstr ""
+
+#: app/Customize/Customize.php:238
+msgid "Show Featured Images"
+msgstr ""
+
+#: app/Customize/Customize.php:239
+msgid "Display featured images in post and page lists."
+msgstr ""
+
+#: app/Customize/Customize.php:245
+msgid "Layout"
+msgstr ""
+
+#: app/Customize/Customize.php:247
+msgid "Stack"
+msgstr ""
+
+#: app/Customize/Customize.php:248
+msgid "Grid"
+msgstr ""
+
+#: app/Customize/Customize.php:255
+msgid "Default Color Theme"
+msgstr ""
+
+#: app/Customize/Customize.php:256 app/Customize/Customize.php:267
+#: app/Customize/Customize.php:279
+msgid "Please note that color themes will only work in modern browsers."
+msgstr ""
+
+#: app/Customize/Customize.php:258 app/Customize/Customize.php:270
+#: app/Customize/Customize.php:282
+msgid "Light"
+msgstr ""
+
+#: app/Customize/Customize.php:259 app/Customize/Customize.php:271
+#: app/Customize/Customize.php:283
+msgid "Dark"
+msgstr ""
+
+#: app/Customize/Customize.php:266
+msgid "Header Color Theme"
+msgstr ""
+
+#: app/Customize/Customize.php:269 app/Customize/Customize.php:281
+msgid "Inherit from Default Color Theme"
+msgstr ""
+
+#: app/Customize/Customize.php:278
+msgid "Footer Color Theme"
+msgstr ""
+
+#: app/Customize/Customize.php:290
+msgid "Show Theme Toggle"
+msgstr ""
+
+#: app/Customize/Customize.php:291
+msgid "Allow users to switch between light and dark themes."
+msgstr ""
+
+#: app/Customize/Customize.php:299
+msgid "Primary Color (Light)"
+msgstr ""
+
+#: app/Customize/Customize.php:300 app/Customize/Customize.php:312
+msgid "Used in links and buttons."
+msgstr ""
+
+#: app/Customize/Customize.php:311
+msgid "Primary Color (Dark)"
+msgstr ""
+
+#: app/Customize/Customize.php:323
+msgid "Header Background Color"
+msgstr ""
+
+#: app/Customize/Customize.php:324 app/Customize/Customize.php:336
+msgid "Overrides the theme color."
+msgstr ""
+
+#: app/Customize/Customize.php:335
+msgid "Footer Background Color"
+msgstr ""
+
+#: app/bootstrap-compat.php:37
+#. Translators: 1 is the required WordPress version and 2 is the user's current
+#. version.
+msgid ""
+"Trunc requires at least WordPress version %1$s. You are running version "
+"%2$s. Please upgrade and try again."
+msgstr ""
+
+#: app/bootstrap-compat.php:46
+#. Translators: 1 is the required PHP version and 2 is the user's current
+#. version.
+msgid ""
+"Trunc requires at least PHP version %1$s. You are running version %2$s. "
+"Please upgrade and try again."
+msgstr ""
+
+#: app/functions-setup.php:85
+msgid "Primary"
+msgstr ""
+
+#: app/functions-setup.php:86
+msgid "test"
+msgstr ""
+
+#: app/functions-setup.php:91
+msgid "Accent"
+msgstr ""
+
+#: app/functions-setup.php:96
+msgid "Success"
+msgstr ""
+
+#: app/functions-setup.php:101
+msgid "Error"
+msgstr ""
+
+#: app/functions-setup.php:106
+msgid "Warning"
+msgstr ""
+
+#: app/functions-setup.php:112
+msgid "Higher Contrast"
+msgstr ""
+
+#: app/functions-setup.php:117
+msgid "High Contrast"
+msgstr ""
+
+#: app/functions-setup.php:122
+msgid "Medium Contrast"
+msgstr ""
+
+#: app/functions-setup.php:127
+msgid "Low Contrast"
+msgstr ""
+
+#: app/functions-setup.php:132
+msgid "Lower Contrast"
+msgstr ""
+
+#: app/functions-setup.php:143
+msgid "Small"
+msgstr ""
+
+#: app/functions-setup.php:144
+msgid "S"
+msgstr ""
+
+#: app/functions-setup.php:149
+msgid "Regular"
+msgstr ""
+
+#: app/functions-setup.php:150
+msgid "M"
+msgstr ""
+
+#: app/functions-setup.php:155
+msgid "Large"
+msgstr ""
+
+#: app/functions-setup.php:156
+msgid "L"
+msgstr ""
+
+#: app/functions-setup.php:161
+msgid "Larger"
+msgstr ""
+
+#: app/functions-setup.php:162
+msgid "XL"
+msgstr ""
+
+#: app/functions-setup.php:473
+msgid "Hero Header"
+msgstr ""
+
+#: app/functions-setup.php:481
+msgid "No Header"
+msgstr ""
+
+#: app/functions-setup.php:489
+msgid "No Featured Image"
+msgstr ""
+
+#: app/functions-setup.php:497
+msgid "Full Width"
+msgstr ""
+
+#: app/functions-template.php:51
+msgid "Please define default parameters in the form of an array."
+msgstr ""
+
+#: app/functions-template.php:55
+msgid "Please define an SVG icon filename."
+msgstr ""
+
+#: resources/views/comment/default.php:15 resources/views/comment/ping.php:8
+#. Translators: 1 is the comment date and 2 is the time.
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: resources/views/comment/default.php:29
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: resources/views/comments/default.php:32
+msgid "Comments are closed."
+msgstr ""
+
+#: resources/views/content/404.php:11
+msgid "Not Found"
+msgstr ""
+
+#: resources/views/content/404.php:14
+msgid "It looks like you took a wrong turn somewhere. Maybe a search would help."
+msgstr ""
+
+#: resources/views/entry/single/attachment-audio.php:16
+msgid "Audio Info"
+msgstr ""
+
+#: resources/views/entry/single/attachment-audio.php:19
+#: resources/views/entry/single/attachment-video.php:19
+msgid "Run Time"
+msgstr ""
+
+#: resources/views/entry/single/attachment-audio.php:20
+msgid "Artist"
+msgstr ""
+
+#: resources/views/entry/single/attachment-audio.php:21
+msgid "Album"
+msgstr ""
+
+#: resources/views/entry/single/attachment-audio.php:22
+msgid "Track Number"
+msgstr ""
+
+#: resources/views/entry/single/attachment-audio.php:23
+msgid "Year"
+msgstr ""
+
+#: resources/views/entry/single/attachment-audio.php:24
+msgid "Genre"
+msgstr ""
+
+#: resources/views/entry/single/attachment-audio.php:25
+#: resources/views/entry/single/attachment-image.php:50
+#: resources/views/entry/single/attachment-video.php:21
+msgid "Name"
+msgstr ""
+
+#: resources/views/entry/single/attachment-audio.php:26
+#: resources/views/entry/single/attachment-image.php:51
+#: resources/views/entry/single/attachment-video.php:22
+msgid "Mime Type"
+msgstr ""
+
+#: resources/views/entry/single/attachment-audio.php:27
+#: resources/views/entry/single/attachment-image.php:52
+#: resources/views/entry/single/attachment-video.php:23
+msgid "Type"
+msgstr ""
+
+#: resources/views/entry/single/attachment-audio.php:28
+#: resources/views/entry/single/attachment-image.php:53
+#: resources/views/entry/single/attachment-video.php:24
+msgid "Size"
+msgstr ""
+
+#: resources/views/entry/single/attachment-image.php:9
+#. Translators: %s is a list of image size links.
+msgid "Sizes: %s"
+msgstr ""
+
+#: resources/views/entry/single/attachment-image.php:32
+msgid "Gallery"
+msgstr ""
+
+#: resources/views/entry/single/attachment-image.php:40
+msgid "Image Info"
+msgstr ""
+
+#: resources/views/entry/single/attachment-image.php:43
+#: resources/views/entry/single/attachment-video.php:20
+msgid "Dimensions"
+msgstr ""
+
+#: resources/views/entry/single/attachment-image.php:44
+msgid "Date"
+msgstr ""
+
+#: resources/views/entry/single/attachment-image.php:45
+msgid "Camera"
+msgstr ""
+
+#: resources/views/entry/single/attachment-image.php:46
+msgid "Aperture"
+msgstr ""
+
+#: resources/views/entry/single/attachment-image.php:47
+msgid "Focal Length"
+msgstr ""
+
+#: resources/views/entry/single/attachment-image.php:48
+msgid "ISO"
+msgstr ""
+
+#: resources/views/entry/single/attachment-image.php:49
+msgid "Shutter Speed"
+msgstr ""
+
+#: resources/views/entry/single/attachment-video.php:16
+msgid "Video Info"
+msgstr ""
+
+#: resources/views/footer/default.php:36
+#. Translators: %2$s = theme author website
+msgid "Built with %1$s by %2$s"
+msgstr ""
+
+#: resources/views/footer/default.php:36
+msgid "love"
+msgstr ""
+
+#: resources/views/header/default.php:14
+msgid "Skip to content"
+msgstr ""
+
+#: resources/views/header/default.php:54
+msgid "Search"
+msgstr ""
+
+#: resources/views/header/default.php:62
+msgid "Menu"
+msgstr ""
+
+#: resources/views/header/default.php:75
+msgid "Close Search"
+msgstr ""
+
+#: resources/views/nav/pagination/comments.php:2
+msgid "&larr; Previous"
+msgstr ""
+
+#: resources/views/nav/pagination/comments.php:3
+msgid "Next &rarr;"
+msgstr ""
+
+#: resources/views/nav/pagination/comments.php:4
+msgid "Comments Navigation"
+msgstr ""
+
+#: resources/views/nav/pagination/post.php:4
+msgid "Pages:"
+msgstr ""
+
+#: resources/views/nav/pagination/posts.php:2
+msgid "Previous"
+msgstr ""
+
+#: resources/views/nav/pagination/posts.php:3
+msgid "Next"
+msgstr ""
+
+#: resources/views/nav/pagination/posts.php:4
+msgid "Posts Navigation"
+msgstr ""
+
+#: resources/views/partials/password-form.php:6
+msgid ""
+"This content is password protected. To view it please enter your password "
+"below."
+msgstr ""
+
+#: resources/views/partials/password-form.php:8
+msgid "Password:"
+msgstr ""
+
+#: resources/views/partials/password-form.php:12
+msgid "Enter"
+msgstr ""
+
+#: resources/views/partials/post-footer.php:6
+msgid "Categories"
+msgstr ""
+
+#: resources/views/partials/post-footer.php:21
+msgid "Tags"
+msgstr ""
+
+#: resources/views/partials/post-footer.php:34
+#: vendor/justintadlock/hybrid-core/src/Comment/functions-comment.php:229
+msgid "Edit"
+msgstr ""
+
+#: resources/views/partials/search-form.php:6
+msgid "Submit"
+msgstr ""
+
+#: vendor/justintadlock/hybrid-core/src/Media/Meta.php:179
+#: vendor/justintadlock/hybrid-core/src/Media/functions-media.php:203
+#. Translators: Media dimensions - 1 is width and 2 is height.
+msgid "%1$s &#215; %2$s"
+msgstr ""
+
+#: vendor/justintadlock/hybrid-core/src/Media/Meta.php:272
+#. Translators: %s is the focal length of a camera.
+msgid "%s mm"
+msgstr ""
+
+#: vendor/justintadlock/hybrid-core/src/Media/Meta.php:364
+#. Translators: %s is the shutter speed of a camera.
+msgid "%s sec"
+msgstr ""
+
+#: vendor/justintadlock/hybrid-core/src/Pagination/Pagination.php:526
+msgid "&hellip;"
+msgstr ""
+
+#: vendor/justintadlock/hybrid-core/src/Site/functions-site.php:186
+msgid "https://wordpress.org"
+msgstr ""
+
+#: vendor/justintadlock/hybrid-core/src/Site/functions-site.php:187
+msgid "WordPress"
+msgstr ""
+
+#: vendor/justintadlock/hybrid-core/src/Util/Title.php:97
+msgid "Archives"
+msgstr ""
+
+#: vendor/justintadlock/hybrid-core/src/Util/Title.php:150
+#. Translators: %s is the search query.
+msgid "Search results for: %s"
+msgstr ""
+
+#: vendor/justintadlock/hybrid-core/src/Util/Title.php:164
+msgid "404 Not Found"
+msgstr ""
+
+#: vendor/justintadlock/hybrid-core/src/Util/Title.php:238
+#. Translators: 1 is the week number and 2 is the year.
+msgid "Week %1$s of %2$s"
+msgstr ""
+
+#: vendor/justintadlock/hybrid-core/src/Util/Title.php:279
+#. Translators: Minute archive title. %s is the minute time format.
+msgid "Minute %s"
+msgstr ""
+
+#: vendor/justintadlock/hybrid-core/src/functions-filters.php:209
+#. Translators: Used as a placeholder for untitled posts on non-singular views.
+msgid "(Untitled)"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Trunc"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://boldoak.design/themes/trunc"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Starter WordPress theme."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Paul Eiche"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://boldoak.design"
+msgstr ""
+
+#: app/functions-setup.php:257
+msgctxt "primary nav menu location"
+msgid "Primary"
+msgstr ""
+
+#: app/functions-setup.php:261
+msgctxt "footer nav menu location"
+msgid "Footer"
+msgstr ""
+
+#: app/functions-setup.php:308
+msgctxt "sidebar"
+msgid "Footer"
+msgstr ""
+
+#: app/functions-template.php:31
+msgctxt "meta separator"
+msgid "&middot;"
+msgstr ""
+
+#: resources/views/partials/search-form.php:3
+msgctxt "search input placeholder text"
+msgid "Search..."
+msgstr ""
+
+#: vendor/justintadlock/hybrid-core/src/Post/functions-post.php:334
+#. Translators: Separates tags, categories, etc. when displaying a post.
+msgctxt "taxonomy terms separator"
+msgid ", "
+msgstr ""
+
+#: vendor/justintadlock/hybrid-core/src/Util/Title.php:224
+#: vendor/justintadlock/hybrid-core/src/Util/Title.php:240
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: vendor/justintadlock/hybrid-core/src/Util/Title.php:239
+msgctxt "weekly archives date format"
+msgid "W"
+msgstr ""
+
+#: vendor/justintadlock/hybrid-core/src/Util/Title.php:253
+msgctxt "daily archives date format"
+msgid "F j, Y"
+msgstr ""
+
+#: vendor/justintadlock/hybrid-core/src/Util/Title.php:265
+msgctxt "hour archives time format"
+msgid "g a"
+msgstr ""
+
+#: vendor/justintadlock/hybrid-core/src/Util/Title.php:280
+msgctxt "minute archives time format"
+msgid "i"
+msgstr ""
+
+#: vendor/justintadlock/hybrid-core/src/Util/Title.php:293
+msgctxt "minute and hour archives time format"
+msgid "g:i a"
+msgstr ""

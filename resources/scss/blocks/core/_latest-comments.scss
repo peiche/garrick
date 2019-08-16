@@ -1,0 +1,30 @@
+.wp-block-latest-comments {
+
+	&__comment {
+		margin-bottom: var(--space-sm);
+
+		&:last-child {
+			margin: 0;
+		}
+
+		.has-avatars & {
+			display: flex;
+			align-items: flex-start;
+		}
+	}
+
+	&__comment-avatar {
+		margin-right: var(--space-xs);
+	}
+
+	&__comment-meta {}
+
+	&__comment-author {}
+
+	&__comment-link {}
+
+	&__comment-date {
+		display: block;
+		color: var(--color-contrast-medium);
+	}
+}

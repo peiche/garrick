@@ -1,0 +1,48 @@
+////
+/// Pullquote block.
+///
+/// @group  Blocks
+/// @author Paul Eiche <paul@boldoak.design>
+/// @link   https://boldoak.design/themes/trunc
+////
+
+.wp-block-pullquote {
+	margin-top: var(--component-padding);
+	margin-bottom: var(--component-padding);
+	padding: var(--component-padding) 0;
+	text-align: center;
+	border-top: 5px solid var(--color-contrast-medium);
+	border-bottom: 5px solid var(--color-contrast-medium);
+	font-size: 2em;
+
+	cite,
+	footer {
+		position: relative;
+		@include cite;
+		font-size: 0.5em;
+	}
+
+	&.is-style-solid-color {
+		border: 0;
+
+		&:not([class*="-background-color"]) {
+			background-color: var(--color-contrast-medium);
+			color: var(--color-contrast-lower);
+		}
+
+		cite,
+		footer {
+			color: var(--color-contrast-low);
+		}
+	}
+
+	blockquote {
+		border: 0;
+		padding: 0;
+		margin: 0;
+	}
+
+	p {
+		margin-bottom: var(--space-xxs);
+	}
+}

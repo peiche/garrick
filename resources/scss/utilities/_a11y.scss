@@ -1,0 +1,40 @@
+////
+/// Accessibility styles.
+///
+/// @group  Utilities
+/// @author Paul Eiche <paul@boldoak.design>
+/// @link   https://boldoak.design/themes/trunc
+////
+
+// Text only shown to screen readers.
+
+.screen-reader-text {
+	@include screen-reader-text;
+}
+
+// Targets the "skip to content" link at the top of the page if it needs extra
+// style rules beyond the screen reader text rules.
+
+.skip-link {
+	position: absolute;
+	z-index: var(--zindex-fixed-element);
+	top: 0;
+	left: 0;
+	display: inline-block;
+	padding: var(--space-sm) var(--space-md);
+	background-color: var(--color-bg);
+	// box-shadow: var(--shadow-lg);
+	@include fontSmooth;
+
+	// hide
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+
+	&:focus {
+		// show
+		clip: auto;
+		clip-path: none;
+		--color-outline: hsla(var(--color-primary-h), var(--color-primary-s), var(--color-primary-l), 0.2);
+		outline: 3px solid var(--color-outline);
+	}
+}

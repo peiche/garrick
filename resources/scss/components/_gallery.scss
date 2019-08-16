@@ -1,0 +1,47 @@
+////
+/// Gallery (shortcode) component.
+///
+/// @group  Components
+/// @author Paul Eiche <paul@boldoak.design>
+/// @link   https://boldoak.design/themes/trunc
+////
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	margin: var(--component-padding) -8px;
+
+	@include breakpoint(sm) {
+		flex-direction: row;
+
+		@for $i from 1 through 10 {
+
+			&-columns-#{ $i } &-item {
+				width: calc( 100% / #{ $i } - 16px);
+				max-width: calc( 100% / #{ $i } - 16px);
+			}
+		}
+	}
+
+	&-item {
+		margin: 8px;
+		display: flex;
+		flex-grow: 1;
+		flex-direction: column;
+		justify-content: center;
+		position: relative; // Image figure.
+		width: calc(100% / 2 - 16px); // Fallback to 2 columns.
+	}
+
+	&-icon {
+		img {}
+	}
+
+	&-caption {}
+
+	img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

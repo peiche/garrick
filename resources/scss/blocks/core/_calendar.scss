@@ -1,0 +1,27 @@
+.wp-block-calendar {
+	text-align: center;
+
+	tbody td,
+	th {
+		padding: var(--space-xxxs);
+		border: 1px solid var(--color-contrast-low);
+	}
+
+	tfoot td {
+		border: 0;
+	}
+
+	table {
+		width: 100%;
+		border-collapse: collapse;
+
+		th {
+			font-weight: var(--font-weight-bold);
+			background-color: var(--color-contrast-lower);
+		}
+	}
+
+	tbody a {
+		text-decoration: underline;
+	}
+}

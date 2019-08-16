@@ -1,0 +1,15 @@
+////
+/// Archive header component.
+///
+/// @group  Components
+/// @author Paul Eiche <paul@boldoak.design>
+/// @link   https://boldoak.design/themes/trunc
+////
+
+.archive-header {
+	background-color: var(--color-contrast-lower);
+
+	&__title {}
+
+	&__description {}
+}

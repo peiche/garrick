@@ -1,0 +1,19 @@
+.nav-links {
+	display: flex;
+	justify-content: space-between;
+
+	a {
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+.nav-previous {
+	margin-right: auto;
+}
+
+.nav-next {
+	margin-left: auto;
+}

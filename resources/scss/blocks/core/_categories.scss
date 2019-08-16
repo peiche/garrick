@@ -1,0 +1,25 @@
+////
+/// Categories block.
+///
+/// @group  Blocks
+/// @author Paul Eiche <paul@boldoak.design>
+/// @link   https://boldoak.design/themes/trunc
+////
+
+.wp-block-categories {
+
+	&-list {}
+
+	&-dropdown {
+
+		select {
+			padding: var(--space-xxxs) var(--space-xxs);
+			border: 2px solid var(--color-contrast-low);
+			border-radius: var(--radius);
+		}
+	}
+
+	.children {
+		margin-left: 2em;
+	}
+}

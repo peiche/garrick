@@ -1,0 +1,70 @@
+////
+/// Custom header component.
+///
+/// This handles the output of `the_custom_header_markup()` from core WP's
+/// `custom-header` feature.
+///
+/// @group  Components
+/// @author Paul Eiche <paul@boldoak.design>
+/// @link   https://boldoak.design/themes/trunc
+////
+
+.wp-custom-header {
+	position: relative;
+
+	// Header image.
+	img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	// Header video.
+	video {
+		display: block;
+	}
+
+	// Video play/pause button.
+	&-video-button {
+		border: 0;
+		background: none;
+		text-indent: -9999px;
+		overflow: hidden;
+		width: var(--space-xxl);
+		height: var(--space-xxl);
+		background-size: 50%;
+		background-repeat: no-repeat;
+		padding: 0;
+		border-radius: 50%;
+		background-position: center;
+		background-color: var(--color-contrast-lower);
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+		display: none;
+
+		&:hover {
+			display: inline-block;
+		}
+	}
+
+	video:hover + .wp-custom-header-video-button {
+		display: inline-block;
+	}
+
+	// Specific play/pause classes. Note that the button in core WP will have
+	// the state of what's happening with the video rather than what action
+	// the button performs.  The `*-play` class is applied to the "Pause"
+	// button and the `*-pause` class is applied to the "Play" button.
+	&-video-play {
+		background-image: url(../svg/button-pause.svg);
+	}
+
+	&-video-pause {
+		background-image: url(../svg/button-play.svg);
+		display: inline-block;
+	}
+}

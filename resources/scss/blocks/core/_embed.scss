@@ -1,0 +1,71 @@
+////
+/// Embed block.
+///
+/// @group  Blocks
+/// @author Paul Eiche <paul@boldoak.design>
+/// @link   https://boldoak.design/themes/trunc
+////
+$aspect-ratios: (
+	'21-9': 42.85%,
+	'18-9': 50%,
+	'16-9': 56.25%,
+	'4-3': 75%,
+	'1-1': 100%,
+	'9-6': 66.66%,
+	'1-2': 200%,
+);
+
+.wp-block-embed {
+	margin-top: var(--component-padding);
+	margin-bottom: var(--component-padding);
+
+	// Directly target iframes.
+	iframe {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	&__wrapper {
+		position: relative;
+
+		.wp-has-aspect-ratio & iframe {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		.wp-has-aspect-ratio &::before {
+			content: '';
+			display: block;
+			padding-top: 50%;
+		}
+
+		@each $aspect-ratio, $padding in $aspect-ratios {
+			.wp-embed-aspect-#{ $aspect-ratio } &::before {
+				padding-top: $padding;
+			}
+		}
+	}
+
+	// Image embeds.
+	&.is-type-image {}
+
+	// Audio embeds.
+	&.is-type-audio {}
+
+	// Rich text embeds (text, Twitter, etc.)
+	&.is-type-rich {}
+
+	// Video embeds.
+	&.is-type-video {}
+
+	// Caption below embedded content.
+	figcaption {
+		@include caption;
+	}
+}

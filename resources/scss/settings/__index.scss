@@ -1,0 +1,16 @@
+////
+/// Setting imports.
+///
+/// Settings handle the configuration and don't output CSS. This is a good place
+/// to define things like variables.
+///
+/// @group  Settings
+/// @author Paul Eiche <paul@boldoak.design>
+/// @link   https://boldoak.design/themes/trunc
+////
+
+@import 'colors';
+@import 'dimensions';
+@import 'fonts';
+@import 'spacing';
+@import 'typography';

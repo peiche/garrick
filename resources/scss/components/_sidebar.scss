@@ -1,0 +1,20 @@
+////
+/// Sidebar component.
+///
+/// @group  Components
+/// @author Paul Eiche <paul@boldoak.design>
+/// @link   https://boldoak.design/themes/trunc
+////
+
+.sidebar {
+
+	&--primary {}
+
+	&--footer {
+		display: flex;
+		align-items: flex-start;
+		flex-wrap: wrap;
+	}
+
+	&__title {}
+}

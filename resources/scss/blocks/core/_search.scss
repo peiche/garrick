@@ -1,0 +1,27 @@
+.wp-block-search {
+	display: flex;
+
+	&__label {
+		@include screen-reader-text;
+	}
+
+	&__input {
+		flex-grow: 1;
+		display: inline-block;
+		padding: var(--space-xxxs) var(--space-sm);
+		border: 2px solid var(--color-contrast-medium);
+		border-radius: 25em;
+		width: 100%;
+	}
+
+	&__button {
+		display: inline-block;
+		padding: var(--space-xxxs) var(--space-sm);
+		color: var(--color-contrast-lower);
+		background-color: var(--color-contrast-high);
+		border: 2px solid var(--color-contrast-high);
+		border-radius: 25em;
+		margin-left: var(--space-xs);
+		white-space: nowrap;
+	}
+}

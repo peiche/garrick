@@ -1,0 +1,87 @@
+////
+/// Search form component.
+///
+/// Searh input field with custom button.
+///
+/// @group  Components
+/// @author Paul Eiche <paul@boldoak.design>
+/// @link   https://boldoak.design/themes/trunc
+////
+
+:root {
+	--search-input-btn-width: 2.8em;
+	--search-input-icon-size: 1.25em;
+}
+
+.form-control {
+
+	.modal & {
+		border-top: 0;
+		border-left: 0;
+		border-right: 0;
+		border-radius: 0;
+	}
+}
+
+.search-input--icon-right .form-control {
+	padding-right: var(--search-input-btn-width);
+}
+
+.search-input--icon-left .form-control {
+	padding-left: var(--search-input-btn-width);
+}
+
+.search-input {
+	position: relative;
+
+	.form-control {
+
+		&::-webkit-search-decoration {
+			-webkit-appearance: none;
+		}
+
+		.app-header & {
+			padding-top: var(--space-xxxs);
+			padding-bottom: var(--space-xxxs);
+		}
+	}
+}
+
+.search-input__btn {
+	@include reset;
+
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: var(--search-input-btn-width);
+
+	.icon {
+		display: block;
+		width: var(--search-input-icon-size);
+		height: var(--search-input-icon-size);
+		margin-left: auto;
+		margin-right: auto;
+		color: var(--color-contrast-low); // icon color
+		transition: transform 0.2s;
+	}
+
+	&:active .icon {
+		transform: scale(0.9);
+	}
+}
+
+.search-input--icon-left .search-input__btn {
+	left: 0;
+	right: auto;
+	pointer-events: none;
+}
+
+.search-input__btn:focus .icon,
+.search-input .form-control:focus + .search-input__btn .icon,
+.search-input .form-control:focus ~ .search-input__btn .icon {
+	color: var(--color-primary); // active icon color
+}

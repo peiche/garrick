@@ -1,0 +1,139 @@
+////
+/// Pagination component.
+///
+/// @group  Components
+/// @author Paul Eiche <paul@boldoak.design>
+/// @link   https://boldoak.design/themes/trunc
+////
+
+:root {
+	--pagination-item-padding: var(--space-xs);
+	--pagination-item-gap: var(--space-xxxs);
+}
+
+.pagination {
+
+	// Posts navigation.
+	&--posts {
+		display: flex;
+		justify-content: center;
+		padding-top: var(--space-md);
+	}
+
+	// Header/Title element.
+	&__title {}
+
+	// Post pagination.
+	&--post {
+
+		.pagination__title {
+			font-size: 1.25em;
+			margin-bottom: var(--space-xxxs);
+		}
+	}
+
+	// The list of items.
+	&__items {
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: calc(-1 * var(--pagination-item-gap));
+		justify-content: space-between;
+		width: 100%;
+
+		@include breakpoint(md) {
+			justify-content: normal;
+			width: auto;
+		}
+	}
+
+	// Individual items.
+	&__item {
+		margin-right: var(--pagination-item-gap);
+		margin-bottom: var(--pagination-item-gap);
+		align-items: center;
+		display: inline-block; // flex fallback
+		display: inline-flex;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		&--current,
+		&--number,
+		&--dots {
+			display: none;
+
+			@include breakpoint(md) {
+				display: inline-flex;
+			}
+		}
+
+		&--prev {}
+
+		&--next {
+			margin-left: auto;
+		}
+
+		&--current {}
+
+		&--number {}
+
+		&--dots {}
+	}
+
+	// The link or span element.
+	&__anchor {
+		display: inline-block; // flex fallback
+		display: inline-flex;
+		align-items: center;
+		white-space: nowrap;
+		line-height: 1;
+		padding-top: var(--pagination-item-padding);
+		padding-bottom: var(--pagination-item-padding);
+		padding-left: calc(1.355 * var(--pagination-item-padding));
+		padding-right: calc(1.355 * var(--pagination-item-padding));
+		border-radius: 0.25em;
+		text-decoration: none;
+		height: 100%;
+		transition: background 200ms, color 200ms;
+
+		&:active {
+			background-color: var(--color-contrast-low);
+		}
+
+		&:not(span):hover {
+			background-color: var(--color-contrast-lower);
+			text-decoration: none;
+		}
+
+		.icon {
+			display: inline-block;
+			color: currentColor;
+		}
+
+		&--link {}
+
+		&--current {
+			background-color: var(--color-primary);
+			color: var(--color-white);
+			@include fontSmooth;
+
+			&:active {
+				background-color: var(--color-primary-dark);
+			}
+
+			&:not(span):hover {
+				background-color: var(--color-primary-light);
+			}
+		}
+
+		&--dots {
+			color: var(--color-contrast-high);
+
+			&:hover,
+			&:active {
+				background-color: transparent;
+			}
+		}
+	}
+}

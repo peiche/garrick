@@ -1,0 +1,46 @@
+.wp-block-jetpack-subscriptions {
+	margin-bottom: var(--space-md);
+
+	form {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	p {
+		color: var(--color-contrast-medium);
+	}
+
+	#subscribe-email,
+	#subscribe-submit {
+		color: var(--color-contrast-high);
+		margin: 0;
+	}
+
+	#subscribe-email {
+		flex-grow: 1;
+		display: flex;
+		margin-bottom: var(--space-xxs);
+
+		@include breakpoint(md) {
+			margin-bottom: 0;
+		}
+	}
+
+	#subscribe-submit {}
+
+	input[type="email"],
+	button[type="submit"] {
+		padding: var(--space-xs) var(--space-sm);
+		border: 2px solid var(--color-contrast-low);
+		border-radius: 25em;
+	}
+
+	input[type="email"] {
+		background-color: var(--color-bg);
+	}
+
+	button[type="submit"] {
+		background-color: var(--color-contrast-low);
+		color: var(--color-contrast-high);
+	}
+}

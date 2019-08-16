@@ -1,0 +1,27 @@
+.icon {
+	// override for codyhouse-framework/main/assets/css/global/icons
+	color: currentColor;
+	stroke: var(--color-primary);
+
+	&--middle {
+		vertical-align: middle;
+	}
+
+	.jetpack-social-navigation &,
+	&-sun,
+	&-moon,
+	&-heart {
+		stroke: none; // remove for colored icons
+	}
+
+	&-boldoakdesign {
+		background-color: var(--boldoakdesign-background);
+		color: var(--boldoakdesign-foreground);
+		border-radius: 50%;
+		padding: 0.1em;
+
+		.icon-text & {
+			color: var(--boldoakdesign-foreground);
+		}
+	}
+}

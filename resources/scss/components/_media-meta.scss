@@ -1,0 +1,28 @@
+////
+/// Media meta component.
+///
+/// This component is shown on attachment pages and lists the metadata about
+/// the attachment's media file.
+///
+/// @group  Components
+/// @author Paul Eiche <paul@boldoak.design>
+/// @link   https://boldoak.design/themes/trunc
+////
+
+.media-meta {
+
+	// Section title.
+	&__title {}
+
+	// List of meta.
+	&__items {}
+
+	// Individual meta items.
+	&__item {}
+
+	// Textual label.
+	&__label {}
+
+	// Output of the data.
+	&__data {}
+}

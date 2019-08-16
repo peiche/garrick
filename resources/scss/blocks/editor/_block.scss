@@ -1,0 +1,25 @@
+.wp-block {
+	font-family: var(--font-primary);
+	font-size: var(--text-base-size);
+	color: var(--color-contrast-high);
+}
+
+.block-editor-rich-text__editable {
+
+	a {
+		color: var(--color-primary);
+	}
+}
+
+.block-editor-rich-text__editable:focus [data-rich-text-format-boundary] {
+	border-radius: var(--radius);
+}
+
+.block-editor-rich-text__editable:focus *[data-rich-text-format-boundary] {
+	background-color: var(--color-warning-lighter);
+}
+
+.block-editor-default-block-appender textarea.block-editor-default-block-appender__content {
+	font-family: var(--font-primary);
+	font-size: var(--text-base-size);
+}

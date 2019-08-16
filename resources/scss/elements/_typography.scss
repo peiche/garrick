@@ -1,0 +1,142 @@
+////
+/// Typography elements.
+///
+/// @group  Elements
+/// @author Paul Eiche <paul@boldoak.design>
+/// @link   https://boldoak.design/themes/trunc
+////
+
+// Body styles. Note that we're hiding horizontal overflow so that wide images
+// don't overflow.
+body {
+	overflow-x: hidden;
+	word-wrap: break-word; // Force text to wrap.
+	word-break: break-word;
+	overflow-wrap: break-word; // Hide SVG sprite.
+
+	> svg {
+		display: none;
+	}
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: var(--font-heading);
+	font-weight: var(--font-weight-bold);
+	color: inherit;
+	line-height: var(--component-heading-line-height, 1.2);
+	margin-bottom: calc(var(--space-xxxs) * var(--text-vspace-multiplier, 1));
+}
+
+h2,
+h3,
+h4 {
+	margin-top: calc(var(--space-sm) * var(--text-vspace-multiplier, 1));
+}
+
+p,
+blockquote,
+ul li,
+ol li {
+	line-height: var(--component-body-line-height);
+}
+
+ul,
+ol {
+	padding-left: 1em;
+}
+
+ul {
+	list-style-type: disc;
+}
+
+ol {
+	list-style-type: decimal;
+}
+
+blockquote {
+	margin-top: calc(var(--space-sm) * var(--text-vspace-multiplier, 1));
+	padding-left: var(--space-md);
+	border-left: 4px solid var(--color-contrast-low);
+
+	cite {
+		@include cite;
+	}
+}
+
+ul,
+ol,
+p,
+blockquote {
+	margin-bottom: calc(var(--space-sm) * var(--text-vspace-multiplier, 1));
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+pre,
+code,
+kbd {
+	font-family: var(--font-mono);
+	border-radius: var(--radius);
+	font-size: 0.9em;
+}
+
+pre {
+	background-color: var(--color-contrast-high);
+	color: var(--color-contrast-lower);
+	padding: var(--space-xxs) var(--space-sm);
+	margin-top: var(--space-md);
+	margin-bottom: var(--space-md);
+	overflow: auto;
+}
+
+code {
+	color: var(--color-black);
+	background-color: var(--color-warning-lighter);
+	padding: var(--space-xxxxs) var(--space-xxxs);
+
+	pre & {
+		background-color: transparent;
+		color: inherit;
+		font-size: 1em;
+		padding: 0;
+	}
+}
+
+kbd {
+	color: var(--color-contrast-high);
+	background-color: var(--color-contrast-low);
+	padding: var(--space-xxxxs) var(--space-xxxs);
+	box-shadow: 0 1px 0 1px var(--color-contrast-medium);
+}
+
+a {
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+hr {
+	@include separator;
+}
+
+b,
+strong {
+	font-weight: var(--font-weight-bold);
+}
+
+i,
+em {
+	font-style: italic;
+}
+
+mark {
+	background-color: alpha(var(--color-accent), 0.2);
+	color: inherit;
+}

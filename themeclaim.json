@@ -1,0 +1,11 @@
+{
+	"from": {
+		"Name": "Mythic",
+		"Description": "Mythic is a next-generation starter theme designed to help theme authors write elegant, intelligent, and modern code.",
+		"Namespace": "Mythic",
+		"Uri": "https://themehybrid.com/themes/mythic",
+		"Author": "Justin Tadlock",
+		"AuthorEmail": "justintadlock@gmail.com",
+		"AuthorUri": "https://themehybrid.com"
+	}
+}

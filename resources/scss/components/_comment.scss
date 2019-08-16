@@ -1,0 +1,69 @@
+////
+/// Comment component.
+///
+/// This is the component for handling individual comments in a comments list.
+///
+/// @group  Components
+/// @author Paul Eiche <paul@boldoak.design>
+/// @link   https://boldoak.design/themes/trunc
+////
+
+.comment {
+	--line-height-multiplier: 1.13; // increase article line-height
+	--text-vspace-multiplier: 1.2; // increase vertical spacing
+
+	margin-top: var(--space-md);
+	border-bottom: 2px solid var(--color-contrast-low);
+	padding-bottom: var(--space-md);
+
+	&:last-child {
+		border: 0;
+		padding-bottom: 0;
+	}
+
+	.comment {
+		margin-left: var(--space-md);
+	}
+
+	// Type of comment.
+	&--type-comment {}
+
+	&--type-ping {}
+
+	// Comment status.
+	&--status-unapproved {}
+
+	// Full comment text/content.
+	&__content {}
+
+	// Comment under moderation message.
+	&__moderation {}
+
+	// Metadata wrapper.
+	&__meta {
+
+		a {
+			color: var(--color-contrast-medium);
+		}
+	}
+
+	// Individual metadata items.
+	&__avatar {}
+
+	&__author {
+
+		a {
+			color: var(--color-contrast-high);
+		}
+	}
+
+	&__permalink {}
+
+	&__date {}
+
+	&__time {}
+
+	&__edit {}
+
+	&__reply {}
+}

@@ -1,0 +1,18 @@
+////
+/// Generic imports.
+///
+/// This is the first point that real CSS is output. Resets, normalization,
+/// fonts, etc. are best handled here. These are the base styles that other
+/// styles will build upon.
+///
+/// @group  Generic
+/// @author Paul Eiche <paul@boldoak.design>
+/// @link   https://boldoak.design/themes/trunc
+////
+
+// Smooth scrolling for users who have not changed the preference
+@media screen and (prefers-reduced-motion: no-preference) {
+	html {
+		scroll-behavior: smooth;
+	}
+}

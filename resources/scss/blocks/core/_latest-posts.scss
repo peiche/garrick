@@ -1,0 +1,47 @@
+////
+/// Latest posts block.
+///
+/// @group  Blocks
+/// @author Paul Eiche <paul@boldoak.design>
+/// @link   https://boldoak.design/themes/trunc
+////
+
+.wp-block-latest-posts {
+
+	li {
+		margin-bottom: var(--component-padding);
+
+		&:last-child {
+			margin: 0;
+		}
+	}
+
+	&.is-grid {
+		display: flex;
+		flex-wrap: wrap;
+
+		&:not(.alignwide):not(.alignfull) {
+			margin: calc(var(--component-padding) * -1) 0 0 calc(var(--component-padding) * -1);
+		}
+
+		li {
+			flex-basis: 100%;
+			padding: var(--component-padding) 0 0 var(--component-padding);
+			margin: 0;
+		}
+
+		@include breakpoint(sm) {
+			@for $i from 2 through 6 {
+				&.columns-#{ $i } li {
+					flex-basis: calc(100 / #{ $i } * 1%);
+					max-width: calc(100 / #{ $i } * 1%);
+				}
+			}
+		}
+	}
+
+	&__post-date {
+		display: block;
+		color: var(--color-contrast-medium);
+	}
+}

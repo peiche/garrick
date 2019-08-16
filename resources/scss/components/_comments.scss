@@ -1,0 +1,32 @@
+////
+/// Comments component.
+///
+/// This component wraps the entire comments section.
+///
+/// @group  Components
+/// @author Paul Eiche <paul@boldoak.design>
+/// @link   https://boldoak.design/themes/trunc
+////
+
+.comments {
+
+	// Header/title for the comments section.
+	&__title {}
+
+	// Comments list wrapper.
+	&__list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		// Children lists (note that WP doesn't have a filter -- the
+		// only way to change this class is with a custom Walker).
+		// @link https://core.trac.wordpress.org/ticket/44923
+		.children {
+			list-style: none;
+		}
+	}
+
+	// Comments closed message.
+	&__closed {}
+}

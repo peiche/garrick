@@ -1,0 +1,65 @@
+////
+/// Widget component.
+///
+/// @group  Components
+/// @author Paul Eiche <paul@boldoak.design>
+/// @link   https://boldoak.design/themes/trunc
+////
+
+.widget {
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	// Core widgets.
+	&--archives {}
+	&--calendar {}
+	&--categories {}
+	&--custom-html {}
+	&--media-audio {}
+	&--media-gallery {}
+	&--media-image {}
+	&--media-video {}
+	&--meta {}
+	&--nav-menu {}
+	&--pages {}
+	&--recent-comments {}
+	&--recent-posts {}
+	&--rss {}
+	&--text {}
+	&--search {}
+	&--tag-cloud {}
+
+	// Widget titles.
+	&__title {
+		font-size: 1.1em;
+	}
+
+	.sidebar--footer & {
+		display: grid;
+		grid-gap: var(--space-xxs);
+		margin-bottom: var(--space-md);
+		width: 100%;
+		padding-right: var(--space-sm);
+
+		@include breakpoint(xs) {
+			width: calc(100% / 2);
+		}
+
+		@include breakpoint(md) {
+			grid-gap: var(--space-xs);
+			width: calc(100% / 4);
+		}
+	}
+
+	li {
+		margin-bottom: var(--space-xs);
+	}
+
+	.menu__sub-menu {
+		display: none;
+	}
+}

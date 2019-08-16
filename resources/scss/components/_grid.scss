@@ -1,0 +1,12 @@
+/* --------------------------------
+
+Title: Auto Sized Grid
+Descr: A grid layout based on CSS Grid where the columns are automatically
+	   created according to a min-width value
+
+-------------------------------- */
+
+[class*="max-width-"] {
+	margin-left: auto;
+	margin-right: auto;
+}

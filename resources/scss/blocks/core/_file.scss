@@ -1,0 +1,42 @@
+////
+/// File block.
+///
+/// @group  Blocks
+/// @author Paul Eiche <paul@boldoak.design>
+/// @link   https://boldoak.design/themes/trunc
+////
+
+.wp-block-file {
+	margin-bottom: var(--component-padding);
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	&.aligncenter {
+		text-align: center;
+	}
+
+	&.alignright {
+		text-align: right;
+	}
+
+	&__button {
+		text-decoration: none;
+		display: inline-block;
+		padding: var(--space-xs) var(--space-sm);
+		color: var(--color-contrast-lower);
+		background-color: var(--color-contrast-high);
+		border-radius: 25em;
+
+		// Give the file block button some spacing to the left if there's
+		// another element preceding it.
+		* + & {
+			margin-left: var(--space-sm);
+		}
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}

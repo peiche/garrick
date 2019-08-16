@@ -1,0 +1,17 @@
+.wp-block-jetpack-tiled-gallery {
+	margin-top: var(--component-padding);
+	margin-bottom: var(--component-padding);
+
+	&.alignwide,
+	&.alignfull {
+		margin-left: calc(-50vw + 50%);
+		margin-right: calc(-50vw + 50%);
+	}
+
+	&.alignwide {
+
+		@include breakpoint(md) {
+			margin-left: 50%;
+		}
+	}
+}
