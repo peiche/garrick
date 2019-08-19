@@ -1,0 +1,18 @@
+// The id and class increase specificity, allowing us
+// to override Jetpack's ridiculous high-specificity styles.
+#jp-relatedposts.jp-relatedposts {
+
+	h3.jp-relatedposts-headline {
+
+		em {
+
+			&::before {
+				border-color: hsla(var(--color-contrast-medium-h), var(--color-contrast-medium-s), var(--color-contrast-medium-l), 0.5);
+			}
+		}
+	}
+}
+
+.jp-relatedposts-post-a {
+	color: var(--color-contrast-high);
+}
