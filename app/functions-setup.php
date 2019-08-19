@@ -350,6 +350,8 @@ add_filter( 'nav_menu_item_title', function( $title, $item, $args, $depth ) {
 
 /**
  * Override default search form.
+ * Echoes custom form and returns empty string to avoid outputting
+ * duplicate forms.
  *
  * @link   https://developer.wordpress.org/reference/hooks/get_search_form/
  * @since  1.0.0
@@ -367,16 +369,32 @@ add_filter( 'get_search_form', function( $html ) {
  * @link   https://developer.wordpress.org/reference/hooks/the_password_form/
  * @since  1.0.0
  * @access public
- * @return void
+ * @return $html
  */
 add_filter( 'the_password_form', function( $html ) {
 	return \Hybrid\View\display( 'partials', 'password-form' );
 } );
 
+/**
+ *
+ * @link https://developer.wordpress.org/reference/hooks/excerpt_more/
+ * @since 1.0.0
+ * @access public
+ * @return String
+ */
 add_filter( 'excerpt_more', function() {
 	return '...';
 } );
 
+/**
+ * Add a class to the body indicating when
+ * the post or page has a featured image.
+ *
+ * @link https://developer.wordpress.org/reference/hooks/body_class/
+ * @since 1.0.0
+ * @access public
+ * @return $classes
+ */
 add_filter( 'body_class', function( $classes ) {
 	if ( is_singular() && has_post_thumbnail() ) :
 		$classes[] = 'single-has-post-thumbnail';
@@ -385,10 +403,39 @@ add_filter( 'body_class', function( $classes ) {
 	return $classes;
 } );
 
+/**
+ * Add BEM classes to avatar images.
+ *
+ * @link
+ * @since 1.0.0
+ * @access public
+ * @return $class
+ */
 add_filter( 'get_avatar', function( $class ) {
 	return str_replace( "class='avatar avatar-", "class='avatar__img avatar__img--", $class );
 } );
 
+/**
+ * Add lazy loading attribute to every image in the_content.
+ *
+ * @link https://web.dev/native-lazy-loading
+ * @link https://developer.wordpress.org/reference/hooks/the_content/
+ * @since 1.0.0
+ * @access public
+ * @return $content
+ */
+add_filter( 'the_content', function( $content ) {
+	return preg_replace( '/src="/', 'loading="lazy" src="', $content );
+} );
+
+/**
+ * Add in custom properties (CSS variables) from Customizer.
+ *
+ * @link https://developer.wordpress.org/reference/hooks/wp_head/
+ * @since 1.0.0
+ * @access public
+ * @return void
+ */
 add_action( 'wp_head', function() {
 	$primary_light = Color::hex( get_theme_mod( 'primary_color_light', '#2a6df4' ) );
 	$primary_light_h = $primary_light->h;
@@ -404,48 +451,48 @@ add_action( 'wp_head', function() {
 	:root,
 	[data-theme=default] {
 		--color-primary-darker: hsl(<?php echo esc_attr( $primary_light_h ) ?>, <?php echo esc_attr( $primary_light_s ) ?>%, <?php echo esc_attr( $primary_light_l - 20 ) ?>%);
-	    --color-primary-darker-h: <?php echo esc_attr( $primary_light_h ) ?>;
-	    --color-primary-darker-s: <?php echo esc_attr( $primary_light_s ) ?>%;
-	    --color-primary-darker-l: <?php echo esc_attr( $primary_light_l - 20 ) ?>%;
-	    --color-primary-dark: hsl(<?php echo esc_attr( $primary_light_h ) ?>, <?php echo esc_attr( $primary_light_s ) ?>%, <?php echo esc_attr( $primary_light_l - 10 ) ?>%);
-	    --color-primary-dark-h: <?php echo esc_attr( $primary_light_h ) ?>;
-	    --color-primary-dark-s: <?php echo esc_attr( $primary_light_s ) ?>%;
-	    --color-primary-dark-l: <?php echo esc_attr( $primary_light_l - 10 ) ?>%;
+		--color-primary-darker-h: <?php echo esc_attr( $primary_light_h ) ?>;
+		--color-primary-darker-s: <?php echo esc_attr( $primary_light_s ) ?>%;
+		--color-primary-darker-l: <?php echo esc_attr( $primary_light_l - 20 ) ?>%;
+		--color-primary-dark: hsl(<?php echo esc_attr( $primary_light_h ) ?>, <?php echo esc_attr( $primary_light_s ) ?>%, <?php echo esc_attr( $primary_light_l - 10 ) ?>%);
+		--color-primary-dark-h: <?php echo esc_attr( $primary_light_h ) ?>;
+		--color-primary-dark-s: <?php echo esc_attr( $primary_light_s ) ?>%;
+		--color-primary-dark-l: <?php echo esc_attr( $primary_light_l - 10 ) ?>%;
 		--color-primary: hsl(<?php echo esc_attr( $primary_light_h ) ?>, <?php echo esc_attr( $primary_light_s ) ?>%, <?php echo esc_attr( $primary_light_l ) ?>%);
-	    --color-primary-h: <?php echo esc_attr( $primary_light_h ) ?>;
-	    --color-primary-s: <?php echo esc_attr( $primary_light_s ) ?>%;
-	    --color-primary-l: <?php echo esc_attr( $primary_light_l ) ?>%;
+		--color-primary-h: <?php echo esc_attr( $primary_light_h ) ?>;
+		--color-primary-s: <?php echo esc_attr( $primary_light_s ) ?>%;
+		--color-primary-l: <?php echo esc_attr( $primary_light_l ) ?>%;
 		--color-primary-light: hsl(<?php echo esc_attr( $primary_light_h ) ?>, <?php echo esc_attr( $primary_light_s ) ?>%, <?php echo esc_attr( $primary_light_l + 10 ) ?>%);
-	    --color-primary-light-h: <?php echo esc_attr( $primary_light_h ) ?>;
-	    --color-primary-light-s: <?php echo esc_attr( $primary_light_s ) ?>%;
-	    --color-primary-light-l: <?php echo esc_attr( $primary_light_l + 10 ) ?>%;
-	    --color-primary-lighter: hsl(<?php echo esc_attr( $primary_light_h ) ?>, <?php echo esc_attr( $primary_light_s ) ?>%, <?php echo esc_attr( $primary_light_l + 20 ) ?>%);
-	    --color-primary-lighter-h: <?php echo esc_attr( $primary_light_h ) ?>;
-	    --color-primary-lighter-s: <?php echo esc_attr( $primary_light_s ) ?>%;
-	    --color-primary-lighter-l: <?php echo esc_attr( $primary_light_l + 20 ) ?>%;
+		--color-primary-light-h: <?php echo esc_attr( $primary_light_h ) ?>;
+		--color-primary-light-s: <?php echo esc_attr( $primary_light_s ) ?>%;
+		--color-primary-light-l: <?php echo esc_attr( $primary_light_l + 10 ) ?>%;
+		--color-primary-lighter: hsl(<?php echo esc_attr( $primary_light_h ) ?>, <?php echo esc_attr( $primary_light_s ) ?>%, <?php echo esc_attr( $primary_light_l + 20 ) ?>%);
+		--color-primary-lighter-h: <?php echo esc_attr( $primary_light_h ) ?>;
+		--color-primary-lighter-s: <?php echo esc_attr( $primary_light_s ) ?>%;
+		--color-primary-lighter-l: <?php echo esc_attr( $primary_light_l + 20 ) ?>%;
 	}
 	[data-theme="dark"],
 	.theme-dark {
 		--color-primary-darker: hsl(<?php echo esc_attr( $primary_dark_h ) ?>, <?php echo esc_attr( $primary_dark_s ) ?>%, <?php echo esc_attr( $primary_dark_l - 20 ) ?>%);
-	    --color-primary-darker-h: <?php echo esc_attr( $primary_dark_h ) ?>;
-	    --color-primary-darker-s: <?php echo esc_attr( $primary_dark_s ) ?>%;
-	    --color-primary-darker-l: <?php echo esc_attr( $primary_dark_l - 20 ) ?>%;
-	    --color-primary-dark: hsl(<?php echo esc_attr( $primary_dark_h ) ?>, <?php echo esc_attr( $primary_dark_s ) ?>%, <?php echo esc_attr( $primary_dark_l - 10 ) ?>%);
-	    --color-primary-dark-h: <?php echo esc_attr( $primary_dark_h ) ?>;
-	    --color-primary-dark-s: <?php echo esc_attr( $primary_dark_s ) ?>%;
-	    --color-primary-dark-l: <?php echo esc_attr( $primary_dark_l - 10 ) ?>%;
+		--color-primary-darker-h: <?php echo esc_attr( $primary_dark_h ) ?>;
+		--color-primary-darker-s: <?php echo esc_attr( $primary_dark_s ) ?>%;
+		--color-primary-darker-l: <?php echo esc_attr( $primary_dark_l - 20 ) ?>%;
+		--color-primary-dark: hsl(<?php echo esc_attr( $primary_dark_h ) ?>, <?php echo esc_attr( $primary_dark_s ) ?>%, <?php echo esc_attr( $primary_dark_l - 10 ) ?>%);
+		--color-primary-dark-h: <?php echo esc_attr( $primary_dark_h ) ?>;
+		--color-primary-dark-s: <?php echo esc_attr( $primary_dark_s ) ?>%;
+		--color-primary-dark-l: <?php echo esc_attr( $primary_dark_l - 10 ) ?>%;
 		--color-primary: hsl(<?php echo esc_attr( $primary_dark_h ) ?>, <?php echo esc_attr( $primary_dark_s ) ?>%, <?php echo esc_attr( $primary_dark_l ) ?>%);
-	    --color-primary-h: <?php echo esc_attr( $primary_dark_h ) ?>;
-	    --color-primary-s: <?php echo esc_attr( $primary_dark_s ) ?>%;
-	    --color-primary-l: <?php echo esc_attr( $primary_dark_l ) ?>%;
+		--color-primary-h: <?php echo esc_attr( $primary_dark_h ) ?>;
+		--color-primary-s: <?php echo esc_attr( $primary_dark_s ) ?>%;
+		--color-primary-l: <?php echo esc_attr( $primary_dark_l ) ?>%;
 		--color-primary-light: hsl(<?php echo esc_attr( $primary_dark_h ) ?>, <?php echo esc_attr( $primary_dark_s ) ?>%, <?php echo esc_attr( $primary_dark_l + 10 ) ?>%);
-	    --color-primary-light-h: <?php echo esc_attr( $primary_dark_h ) ?>;
-	    --color-primary-light-s: <?php echo esc_attr( $primary_dark_s ) ?>%;
-	    --color-primary-light-l: <?php echo esc_attr( $primary_dark_l + 10 ) ?>%;
-	    --color-primary-lighter: hsl(<?php echo esc_attr( $primary_dark_h ) ?>, <?php echo esc_attr( $primary_dark_s ) ?>%, <?php echo esc_attr( $primary_dark_l + 20 ) ?>%);
-	    --color-primary-lighter-h: <?php echo esc_attr( $primary_dark_h ) ?>;
-	    --color-primary-lighter-s: <?php echo esc_attr( $primary_dark_s ) ?>%;
-	    --color-primary-lighter-l: <?php echo esc_attr( $primary_dark_l + 20 ) ?>%;
+		--color-primary-light-h: <?php echo esc_attr( $primary_dark_h ) ?>;
+		--color-primary-light-s: <?php echo esc_attr( $primary_dark_s ) ?>%;
+		--color-primary-light-l: <?php echo esc_attr( $primary_dark_l + 10 ) ?>%;
+		--color-primary-lighter: hsl(<?php echo esc_attr( $primary_dark_h ) ?>, <?php echo esc_attr( $primary_dark_s ) ?>%, <?php echo esc_attr( $primary_dark_l + 20 ) ?>%);
+		--color-primary-lighter-h: <?php echo esc_attr( $primary_dark_h ) ?>;
+		--color-primary-lighter-s: <?php echo esc_attr( $primary_dark_s ) ?>%;
+		--color-primary-lighter-l: <?php echo esc_attr( $primary_dark_l + 20 ) ?>%;
 	}
 	<?php if ( '' != get_theme_mod( 'header_color', '' ) ) : ?>
 	.app-header {
@@ -465,6 +512,9 @@ add_action( 'wp_head', function() {
 	<?php
 } );
 
+/**
+ * Add post/page templates.
+ */
 add_action( 'hybrid/templates/register', function( $templates ) {
 
 	$templates->add(
