@@ -29,12 +29,6 @@
 	);
 }
 
-// --------------------------------
-
-// (START) Global Editor code https://codyhouse.co/ds/globals/colors
-
-// --------------------------------
-
 :root,
 [data-theme="default"] {
 	// main
@@ -110,14 +104,4 @@
 
 	@include defineColorHSL(--color-boldoakdesign-foreground, 354, 22%, 18%);
 	@include defineColorHSL(--color-boldoakdesign-background, 19, 84%, 55%);
-
-	--shadow-sm: 0 1px 2px rgba(255, 255, 255, 0.085), 0 1px 8px rgba(255, 255, 255, 0.1);
-	--shadow-md: 0 1px 8px rgba(255, 255, 255, 0.1), 0 8px 24px rgba(255, 255, 255, 0.15);
-	--shadow-lg: 0 1px 8px rgba(255, 255, 255, 0.1), 0 16px 48px rgba(255, 255, 255, 0.1), 0 24px 60px rgba(255, 255, 255, 0.1);
 }
-
-// --------------------------------
-
-// (END) Global Editor Code
-
-// --------------------------------
