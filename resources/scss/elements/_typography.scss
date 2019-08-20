@@ -85,6 +85,11 @@ kbd {
 	font-size: 0.9em;
 }
 
+code,
+kbd {
+	border-radius: var(--radius);
+}
+
 pre {
 	background-color: var(--color-contrast-high);
 	color: var(--color-contrast-lower);
@@ -92,6 +97,8 @@ pre {
 	margin-top: var(--space-md);
 	margin-bottom: var(--space-md);
 	overflow: auto;
+
+	@include scrollbar(var(--color-contrast-high), var(--color-contrast-lower));
 }
 
 code {
