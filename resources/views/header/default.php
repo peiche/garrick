@@ -69,14 +69,12 @@
 		</div>
 
 		<?php if ( get_theme_mod( 'show_header_search', 0 ) ) : ?>
-			<div id="app-header__search" class="app-header__search is-hidden">
-				<div class="container max-width-sm app-header__search__container">
-					<?php get_search_form() ?>
-					<button type="button" id="search-hide" class="btn btn--icon search-hide">
-						<?php echo \Trunc\get_svg( [ 'icon' => 'close' ] ) ?>
-						<span class="screen-reader-text"><?php echo esc_html_e( 'Search', 'trunc' ) ?></span>
-					</button>
-				</div>
+			<div id="app-header__search" class="app-header__search container max-width-xl is-hidden">
+				<?php get_search_form() ?>
+				<button type="button" id="search-hide" class="btn btn--icon search-hide">
+					<?php echo \Trunc\get_svg( [ 'icon' => 'close' ] ) ?>
+					<span class="screen-reader-text"><?php echo esc_html_e( 'Search', 'trunc' ) ?></span>
+				</button>
 			</div>
 		<?php endif; ?>
 
