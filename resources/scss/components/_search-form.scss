@@ -41,8 +41,14 @@
 		}
 
 		.app-header & {
-			padding-top: var(--space-xxxs);
-			padding-bottom: var(--space-xxxs);
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: var(--space-xxxxs);
+			bottom: var(--space-xxxxs);
+			width: 100%;
+			height: 100%;
+			box-shadow: var(--shadow-sm);
 		}
 	}
 }

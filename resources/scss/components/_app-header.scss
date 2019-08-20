@@ -189,13 +189,10 @@
 		top: 0;
 		left: 0;
 		right: 0;
-		background-color: var(--color-bg);
 		height: 100%;
-		display: flex;
-		align-items: center;
 
-		&__container {
-			position: relative;
+		.search-input {
+			position: static;
 		}
 
 		.search-hide {

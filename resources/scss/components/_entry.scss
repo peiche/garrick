@@ -95,11 +95,6 @@
 		}
 	}
 
-	// Entry title. Duplicated due to weird descending specificity rule.
-	&__title a:hover {
-		color: var(--color-primary);
-	}
-
 	// Full entry and summary/excerpt shared styles.
 	&__content,
 	&__summary {}

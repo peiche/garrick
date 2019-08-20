@@ -24,7 +24,7 @@ Descr: A hoverable link that toggles the visibility of a dropdown list
 		width: 200px;
 		border-radius: var(--radius-md);
 		padding: var(--space-xxs) 0;
-		background-color: var(--color-bg);
+		background-color: var(--color-contrast-lower);
 		box-shadow: var(--shadow-sm);
 		z-index: var(--zindex-popover);
 		position: absolute;
@@ -58,19 +58,21 @@ Descr: A hoverable link that toggles the visibility of a dropdown list
 
 		&:not(.btn):hover,
 		&:not(.btn).menu__item--hover {
-			background-color: var(--color-contrast-lower);
+			background-color: var(--color-contrast-low);
 		}
 	}
 
 	.menu__item.has-children {
 		position: relative;
 
-		> .menu__link { // item w/ right arrow
+		// item w/ right arrow
+		> .menu__link {
 			position: relative;
 			padding-right: 24px;
 			width: 100%;
 
-			.icon { // right arrow
+			// right arrow
+			.icon {
 				position: absolute;
 				display: block;
 				width: 18px;
@@ -84,13 +86,15 @@ Descr: A hoverable link that toggles the visibility of a dropdown list
 			}
 		}
 
-		.menu__item > .menu__sub-menu { // sub menu
+		// sub menu
+		.menu__item > .menu__sub-menu {
 			top: calc(var(--space-xxs) * -1);
 			box-shadow: var(--shadow-md);
 		}
 	}
 
-	.js { // add animations if JS = enabled
+	// add animations if JS = enabled
+	.js {
 
 		.menu__sub-menu--is-visible {
 			clip: auto;

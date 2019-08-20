@@ -89,9 +89,9 @@
 		left: 0;
 		right: 0;
 		top: 100%;
-		background-color: var(--color-bg);
+		background-color: var(--color-contrast-lower);
 		padding-bottom: var(--space-xs);
-		box-shadow: 0 3px 5px hsla(var(--color-contrast-high-h), var(--color-contrast-high-s), var(--color-contrast-high-l), 0.25);
+		box-shadow: var(--shadow-sm);
 
 		&.is-visible {
 			display: block;
