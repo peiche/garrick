@@ -1,5 +1,7 @@
 /dist
 /node_modules
+/resources/lang
+/trunc
 /vendor
 /composer.lock
 /phpcs.xml
