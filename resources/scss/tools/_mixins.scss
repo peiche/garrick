@@ -61,3 +61,28 @@
 		text-decoration: none;
 	}
 }
+
+// Shared scrollbar style
+@mixin scrollbar($background: var(--color-bg), $foreground: var(--color-contrast-medium)) {
+
+	// general scrollbar style
+	&::-webkit-scrollbar {
+		width: 5px;
+		height: 5px;
+	}
+
+	// progress bar
+	&::-webkit-scrollbar-track {
+		background-color: $background;
+	}
+
+	// handle
+	&::-webkit-scrollbar-thumb {
+		background-color: alpha($foreground, 0.9);
+		border-radius: 0;
+
+		&:hover {
+			background-color: $foreground;
+		}
+	}
+}
