@@ -1,4 +1,6 @@
 ( function() {
+	const KEYCODE_ESCAPE = 27;
+	const KEY = 'Escape';
 
 	// Search toggle
 	let headerSearch = document.getElementById( 'app-header__search' );
@@ -22,11 +24,10 @@
 				} );
 			}
 
-			formControl[0].addEventListener( 'keydown', ( event ) => {
-				if ( event.keyCode && 27 == event.keyCode || event.key && 'Escape' == event.key ) {
+			formControl[ 0 ].addEventListener( 'keydown', ( event ) => {
+				if ( event.keyCode && KEYCODE_ESCAPE == event.keyCode || event.key && KEY == event.key ) {
 					headerSearch.classList.add( 'is-hidden' );
-					formControl[0].value = '';
-					formControl[0].blur();
+					formControl[ 0 ].blur();
 				}
 			} );
 
