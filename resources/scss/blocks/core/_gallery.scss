@@ -50,14 +50,13 @@
 	}
 
 	figcaption {
+		@include caption;
+
 		position: absolute;
+		padding: var(--space-xxxs) var(--space-xs);
+		background-color: hsla(var(--color-bg-h), var(--color-bg-s), var(--color-bg-l), 0.75);
 		bottom: 0;
 		width: 100%;
-		max-height: 100%;
-		padding: 40px 10px 5px;
-		text-align: center;
-		color: var(--color-white);
-		background: linear-gradient(0deg, rgba(var(--color-black), 0.7) 0, rgba(var(--color-black), 0.3) 60%, transparent);
 
 		img {
 			display: inline;
