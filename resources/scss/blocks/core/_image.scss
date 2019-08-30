@@ -23,22 +23,22 @@
 	.alignleft {
 
 		@include breakpoint(md) {
-			margin-left: -20%;
+			margin-left: -15%;
 		}
 
 		@include breakpoint(lg) {
-			margin-left: -50%;
+			margin-left: -30%;
 		}
 	}
 
 	.alignright {
 
 		@include breakpoint(md) {
-			margin-right: -20%;
+			margin-right: -15%;
 		}
 
 		@include breakpoint(lg) {
-			margin-right: -50%;
+			margin-right: -30%;
 		}
 	}
 
