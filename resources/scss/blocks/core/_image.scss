@@ -50,6 +50,24 @@
 		border-radius: 50%;
 	}
 
+	&.is-style-circle-mask,
+	&.rounded--circle {
+
+		img {
+			border-radius: var(--radius-circle);
+
+			// If a browser supports it, we will switch to using a circular SVG mask.
+			@supports (mask-image: none) or (-webkit-mask-image: none) {
+				mask-image: url(../svg/circle-mask.svg);
+				mask-mode: alpha;
+				mask-repeat: no-repeat;
+				mask-size: contain;
+				mask-position: center;
+				border-radius: 0;
+			}
+		}
+	}
+
 	figcaption {
 		@include caption;
 	}
