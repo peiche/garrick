@@ -34,6 +34,19 @@
 	cursor: not-allowed;
 }
 
+// ghost buttons
+.btn--primary-outline {
+	box-shadow: inset 0 0 0 2px var(--color-primary);
+}
+
+.btn--subtle-outline {
+	box-shadow: inset 0 0 0 2px var(--color-contrast-low);
+}
+
+.btn--accent-outline {
+	box-shadow: inset 0 0 0 2 var(--color-accent);
+}
+
 // sizes
 .btn--sm {}
 
