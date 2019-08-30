@@ -54,7 +54,9 @@
 	&.rounded--circle {
 
 		img {
-			border-radius: var(--radius-circle);
+			// A pill-shape prevents the oval shape that
+			// a circular border radius would give.
+			border-radius: var(--radius-pill);
 
 			// If a browser supports it, we will switch to using a circular SVG mask.
 			@supports (mask-image: none) or (-webkit-mask-image: none) {
