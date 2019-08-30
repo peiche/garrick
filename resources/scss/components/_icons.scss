@@ -3,6 +3,10 @@
 	color: currentColor;
 	stroke: var(--color-primary);
 
+	&.color-inherit {
+		stroke: currentColor;
+	}
+
 	&--middle {
 		vertical-align: middle;
 	}
