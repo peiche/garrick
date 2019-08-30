@@ -424,9 +424,9 @@ add_filter( 'get_avatar', function( $class ) {
  * @access public
  * @return $content
  */
-add_filter( 'the_content', function( $content ) {
-	return preg_replace( '/src="/', 'loading="lazy" src="', $content );
-} );
+// add_filter( 'the_content', function( $content ) {
+// 	return preg_replace( '/src="/', 'loading="lazy" src="', $content );
+// } );
 
 /**
  * Add in custom properties (CSS variables) from Customizer.
