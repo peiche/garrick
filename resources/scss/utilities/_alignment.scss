@@ -60,11 +60,11 @@
 
 @include breakpoint(md) {
 
-	.alignwide {
-		max-width: calc(var(--max-width-sm) + 50%);
-		width: 100vw;
-		margin-left: 50%;
-		transform: translateX(-50%);
+	// We have to check for `.alignfull` because
+	// some blocks still include both classes.
+	.alignwide:not(.alignfull) {
+		max-width: calc(100% + 2 * var(--space-xxl));
+		margin-left: calc(-1 * var(--space-xxl));
 	}
 }
 
