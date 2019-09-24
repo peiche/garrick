@@ -23,7 +23,6 @@
 	display: inline-block;
 	padding: var(--space-sm) var(--space-md);
 	background-color: var(--color-bg);
-	// box-shadow: var(--shadow-lg);
 	@include fontSmooth;
 
 	// hide
@@ -34,7 +33,6 @@
 		// show
 		clip: auto;
 		clip-path: none;
-		--color-outline: hsla(var(--color-primary-h), var(--color-primary-s), var(--color-primary-l), 0.2);
-		outline: 3px solid var(--color-outline);
+		outline: 3px solid hsla(var(--color-primary-h), var(--color-primary-s), var(--color-primary-l), 0.2);
 	}
 }
