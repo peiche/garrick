@@ -15,8 +15,7 @@
 	&:focus {
 		outline: none;
 		border-color: var(--color-primary);
-		--color-shadow: hsla(var(--color-primary-h), var(--color-primary-s), var(--color-primary-l), 0.2);
-		box-shadow: 0 0 0 3px var(--color-shadow);
+		box-shadow: 0 0 0 3px hsla(var(--color-primary-h), var(--color-primary-s), var(--color-primary-l), 0.2);
 	}
 }
 
@@ -24,8 +23,7 @@
 	border-color: var(--color-error);
 
 	&:focus {
-		--color-shadow: hsla(var(--color-error-h), var(--color-error-s), var(--color-error-l), 0.2);
-		box-shadow: 0 0 0 3px var(--color-shadow);
+		box-shadow: 0 0 0 3px hsla(var(--color-error-h), var(--color-error-s), var(--color-error-l), 0.2);
 	}
 }
 
