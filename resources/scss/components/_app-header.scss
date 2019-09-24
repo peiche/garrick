@@ -6,21 +6,11 @@
 /// @link   https://boldoak.design/themes/trunc
 ////
 
-:root {
-	--app-header-height: 50px;
-	--app-header-height-md: 70px;
-}
+:root {}
 
 .app-header {
 	position: relative;
-	background-color: var(--color-bg);
-	height: var(--app-header-height);
 	z-index: var(--zindex-header);
-	transition: transform 200ms;
-
-	@include breakpoint(md) {
-		height: var(--app-header-height-md);
-	}
 
 	// Wrapper around the title and description.
 	&__branding {
@@ -36,31 +26,16 @@
 
 	// The site description.
 	&__description {
-		color: var(--color-contrast-medium);
+		opacity: 0.8;
 	}
 
 	// Navigation wrapper.
 	&__nav {}
 
-	&__layout {
-		height: var(--app-header-height);
-
-		@include breakpoint(md) {
-			height: var(--app-header-height-md);
-		}
-	}
+	&__layout {}
 
 	.post-template-hero-header &,
-	.page-template-hero-header &,
-	.post-template-cover-header &,
-	.page-template-cover-header & {
-		margin-bottom: calc(var(--app-header-height) * -1);
-		background-color: transparent;
-		background-image: linear-gradient(hsla(var(--color-contrast-higher-h), var(--color-contrast-higher-s), var(--color-contrast-higher-l), 0.5), transparent);
-
-		@include breakpoint(md) {
-			margin-bottom: calc(var(--app-header-height-md) * -1);
-		}
+	.page-template-hero-header {
 
 		.app-header__branding,
 		.app-header__nav {
@@ -69,7 +44,7 @@
 			--color-contrast-medium: hsl(240, 1%, 57%);
 			--color-contrast-high: hsl(0, 0%, 89%);
 			--color-contrast-higher: hsl(0, 0%, 100%);
-			color: var(--color-contrast-high);
+			color: var(--color-contrast-high); // Fixes icon color
 		}
 
 		.menu__sub-menu {
@@ -79,30 +54,14 @@
 			--color-contrast-high: hsl(240, 4%, 20%);
 			--color-contrast-higher: hsl(240, 8%, 12%);
 		}
-
-		.app-header__title-link {
-			color: var(--color-contrast-higher);
-		}
-
-		.app-header__description {
-			color: var(--color-contrast-high);
-		}
 	}
 
-	.post-template-hero-header[data-theme="dark"] &,
-	.page-template-hero-header[data-theme="dark"] &,
-	.post-template-cover-header[data-theme="dark"] &,
-	.page-template-cover-header[data-theme="dark"] & {
-		background-image: linear-gradient(hsla(var(--color-contrast-lower-h), var(--color-contrast-lower-s), var(--color-contrast-lower-l), 0.5), transparent);
-	}
-
-	// Reset override
-	[data-theme="dark"] & .menu__sub-menu {
-		--color-contrast-lower: hsl(240, 6%, 19%);
-		--color-contrast-low: hsl(240, 3%, 27%);
-		--color-contrast-medium: hsl(240, 1%, 57%);
-		--color-contrast-high: hsl(0, 0%, 89%);
-		--color-contrast-higher: hsl(0, 0%, 100%);
+	.post-template-hero-header &,
+	.page-template-hero-header &,
+	.post-template-cover-header &,
+	.page-template-cover-header & {
+		position: absolute;
+		width: 100%;
 	}
 
 	// Logo link. Output from the `custom-logo` feature.
@@ -118,6 +77,7 @@
 		display: block;
 		max-height: 100%;
 		width: auto;
+		height: 2.5em;
 	}
 
 	// The site title.
@@ -168,18 +128,6 @@
 
 			&::after {
 				transform: translateY(5px);
-			}
-		}
-
-		&[aria-expanded="true"] .app-header__nav-trigger-icon {
-			background-color: transparent;
-
-			&::before {
-				transform: rotate(45deg);
-			}
-
-			&::after {
-				transform: rotate(-45deg);
 			}
 		}
 	}
