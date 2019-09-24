@@ -21,8 +21,6 @@
  */
 
 import './app/init';
-import './app/nav';
-import './app/menuAim';
-import './app/dropdown';
+import './app/menu';
 import './app/search';
-import './app/themeSwitch';
+import './app/theme-switch';
