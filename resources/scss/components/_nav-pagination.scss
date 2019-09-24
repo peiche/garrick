@@ -39,6 +39,8 @@
 		margin-bottom: calc(-1 * var(--pagination-item-gap));
 		justify-content: space-between;
 		width: 100%;
+		list-style: none;
+		padding: 0;
 
 		@include breakpoint(md) {
 			justify-content: normal;
@@ -96,6 +98,7 @@
 		text-decoration: none;
 		height: 100%;
 		transition: background 200ms, color 200ms;
+		color: var(--color-contrast-high);
 
 		&:active {
 			background-color: var(--color-contrast-low);
