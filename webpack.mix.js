@@ -20,7 +20,6 @@ const ImageminPlugin     = require( 'imagemin-webpack-plugin' ).default;
 const CopyWebpackPlugin  = require( 'copy-webpack-plugin' );
 const imageminMozjpeg    = require( 'imagemin-mozjpeg' );
 const SVGSpritemapPlugin = require( 'svg-spritemap-webpack-plugin' );
-require( 'laravel-mix-purgecss' );
 
 /*
  * -----------------------------------------------------------------------------
@@ -66,7 +65,12 @@ mix.setPublicPath( 'dist' );
  * @link https://laravel.com/docs/5.6/mix#url-processing
  */
 mix.options( {
-	postCss        : [ require( 'postcss-preset-env' )() ],
+	postCss        : [
+		require( 'postcss-css-variables' )({
+			preserve: true,
+		}),
+		require( 'postcss-calc')(),
+	],
 	processCssUrls : false
 } );
 
@@ -114,18 +118,7 @@ var sassConfig = {
 // Compile SASS/CSS.
 mix.sass( `${devPath}/scss/screen.scss`,             'css', sassConfig )
    .sass( `${devPath}/scss/editor.scss`,             'css', sassConfig )
-	 .sass( `${devPath}/scss/customize-controls.scss`, 'css', sassConfig )
-	//  .purgeCss({
-	// 	 extractors: [{
-	// 		 extractor: class {
-	// 			 static extract(content) {
-	// 				 return content.match()
-	// 			 }
-	// 		 },
-	// 		 extensions: [ 'php' ]
-	// 	 }]
-	//  })
-	 ;
+	 .sass( `${devPath}/scss/customize-controls.scss`, 'css', sassConfig );
 
 /*
  * Add custom Webpack configuration.
