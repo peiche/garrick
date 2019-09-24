@@ -9,12 +9,7 @@
 .app-footer {
 	background-color: var(--color-bg);
 
-	a {
-		color: var(--color-contrast-higher);
-	}
-
 	&__content {
-		border-top: 2px solid var(--color-contrast-low);
 		font-size: 0.9em;
 	}
 
