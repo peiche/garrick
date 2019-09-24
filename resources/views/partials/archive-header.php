@@ -2,15 +2,10 @@
 
 <header class="archive-header padding-top-xl padding-bottom-lg">
   <div class="container max-width-sm">
-    <h1 class="archive-header__title text-xxxl margin-bottom-auto flex items-center">
+    <h1 class="archive-header__title text-xxxl margin-bottom-auto">
 
       <?php if ( is_author() ) : ?>
-        <div class="avatar margin-right-xxxs">
-          <figure class="avatar__figure" role="img" aria-hidden="true">
-            <?php echo \Trunc\get_svg( [ 'icon' => 'avatar', 'class' => 'avatar__placeholder' ] ) ?>
-            <?php echo get_avatar( get_the_author_meta( 'ID' ), 150, '', '', [ 'class' => 'avatar__img' ] ) ?>
-          </figure>
-        </div>
+				<?php Hybrid\View\display( 'partials', 'avatar', [ 'author' => get_the_author_meta( 'ID' ), 'size' => 150 ] ) ?>
       <?php endif ?>
 
       <span><?php the_archive_title() ?></span>

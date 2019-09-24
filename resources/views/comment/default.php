@@ -1,12 +1,7 @@
 <li <?php Hybrid\Attr\display( 'comment' ) ?>>
 
 	<header class="comment__meta">
-		<div class="avatar avatar--sm">
-			<figure class="avatar__figure" role="img" aria-hidden="true">
-				<?php echo \Trunc\get_svg( [ 'icon' => 'avatar', 'class' => 'avatar__placeholder' ] ) ?>
-				<?php echo get_avatar( $comment, 96, '', '', [ 'class' => 'avatar__img' ] ) ?>
-			</figure>
-		</div>
+		<?php Hybrid\View\display( 'partials', 'avatar', [ 'author' => $comment, 'size' => 30 ] ) ?>
 
 		<?php Hybrid\Comment\display_author( [ 'after' => '<br />' ] ) ?>
 		<?php Hybrid\Comment\display_permalink( [
@@ -25,7 +20,7 @@
 
 		<?php if ( ! Hybrid\Comment\is_approved() ) : ?>
 
-			<p class="comment__moderation alert alert--info">
+			<p class="comments__closed padding-y-sm color-contrast-medium">
 				<?php esc_html_e( 'Your comment is awaiting moderation.', 'trunc' ) ?>
 			</p>
 

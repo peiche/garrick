@@ -18,12 +18,8 @@
 
 		<?php if ( is_single() ) : ?>
 			<div class="entry__byline">
-				<div class="avatar avatar--md">
-					<figure class="avatar__figure" role="img" aria-hidden="true">
-						<?php echo \Trunc\get_svg( [ 'icon' => 'avatar', 'class' => 'avatar__placeholder' ] ) ?>
-						<?php echo get_avatar( get_post()->post_author, 96, '', '', [ 'class' => 'avatar__img' ] ) ?>
-					</figure>
-				</div>
+				<?php Hybrid\View\display( 'partials', 'avatar', [ 'author' => get_post()->post_author, 'size' => 40 ] ) ?>
+
 				<?php Hybrid\Post\display_author() ?>
 				<?php Hybrid\Post\display_date( [ 'before' => \Trunc\sep() ] ) ?>
 			</div>

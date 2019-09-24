@@ -26,11 +26,8 @@
 
 	<?php if ( ! comments_open() ) : ?>
 
-		<p class="comments__closed alert alert--info">
-			<span class="flex flex-gap-xs items-center">
-				<?php echo \Trunc\get_svg( [ 'icon' => 'info' ] ) ?>
-				<span><?php esc_html_e( 'Comments are closed.', 'trunc' ) ?></span>
-			</span>
+		<p class="comments__closed padding-y-sm color-contrast-medium">
+			<?php esc_html_e( 'Comments are closed.', 'trunc' ) ?>
 		</p>
 
 	<?php endif ?>

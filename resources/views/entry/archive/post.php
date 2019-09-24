@@ -21,12 +21,7 @@
 		<div class="entry__byline">
 
 			<?php if ( ! is_author() ) : ?>
-				<div class="avatar avatar--sm">
-					<figure class="avatar__figure" role="img" aria-hidden="true">
-						<?php echo \Trunc\get_svg( [ 'icon' => 'avatar', 'class' => 'avatar__placeholder' ] ) ?>
-						<?php echo get_avatar( get_post()->post_author, 96, '', '', [ 'class' => 'avatar__img' ] ) ?>
-					</figure>
-				</div>
+				<?php Hybrid\View\display( 'partials', 'avatar', [ 'author' => get_post()->post_author, 'size' => 30 ] ) ?>
 				<?php Hybrid\Post\display_author( [ 'after' => \Trunc\sep() ] ) ?>
 			<?php endif ?>
 
