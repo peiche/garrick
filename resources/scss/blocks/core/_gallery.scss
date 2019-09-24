@@ -15,6 +15,16 @@
 	margin: var(--component-padding) -8px;
 }
 
+// The wrapper for gallery images.
+.blocks-gallery-grid {
+	display: flex;
+	flex-wrap: wrap;
+	flex-basis: 100%;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
 // The wrapper for individual gallery images/figures.
 .blocks-gallery-item {
 	margin: 8px;
@@ -62,6 +72,12 @@
 			display: inline;
 		}
 	}
+}
+
+.blocks-gallery-caption {
+	@include caption;
+
+	flex-basis: 100%;
 }
 
 // Cropped images.
