@@ -6,219 +6,216 @@
 /// @link   https://boldoak.design/themes/trunc
 ////
 
-:root {
-	--dropdown-item-padding: var(--space-xxs) var(--space-sm);
-}
-
 .menu {
 
-	// Menu title.
-	&__title {
-		color: var(--color-contrast-medium);
-		margin-bottom: var(--space-xs);
-
-		@include breakpoint(md) {
-			position: absolute;
-			clip: rect(1px, 1px, 1px, 1px);
-			clip-path: inset(50%);
-		}
-	}
-
-	// Item link.
-	&__link {
+	&__items {
+		list-style: none;
 		display: flex;
-		justify-content: space-between;
+		padding: 0;
+	}
+
+	&__item {
+		position: relative;
+		flex-shrink: 0;
+
+		@include breakpoint(md) {
+			align-self: center;
+		}
+
+		.jetpack-social-navigation &:not(:first-child) {
+			margin-left: var(--space-xxs);
+		}
+	}
+
+	&__link {
+		display: inline-flex;
+		align-items: center;
 		color: var(--color-contrast-higher);
-		text-decoration: none;
-		word-break: normal;
-		word-wrap: normal;
-		white-space: normal;
-		vertical-align: middle;
 
-		@include breakpoint(md) {
-			display: inline-flex;
+		.btn > & {
+			color: inherit;
 		}
 
-		&:hover {
-			color: var(--color-contrast-higher);
-			text-decoration: underline;
+		.jetpack-social-navigation & {
+			justify-content: center;
+			width: auto;
+			height: auto;
 		}
 	}
 
-	// Increased specificity on item link.
-	.menu__link {
-		vertical-align: baseline;
-		padding: var(--space-xs) 0;
-
-		@include breakpoint(md) {
-			padding: 0;
-		}
-	}
-
-	// Individual items.
-	.menu__item {
-		display: block;
-
-		@include breakpoint(md) {
-			padding: var(--space-xs) 0;
-		}
-
-		&.has-children {
-			position: relative;
-		}
-
-		&.btn {
-			padding: var(--space-xs) var(--space-sm);
-
-			> .menu__link {
-				color: inherit;
-
-				&:hover {
-					text-decoration: none;
-				}
-			}
-		}
-	}
-
-	// Specific nav menus. This prevents menus inside widgets from acting funky.
 	&--primary {
-		font-size: 1em;
-		width: 100%;
-		display: none;
 		position: absolute;
+		top: 100%;
 		left: 0;
 		right: 0;
-		top: 100%;
-		background-color: var(--color-contrast-lower);
-		padding-bottom: var(--space-xs);
 		box-shadow: var(--shadow-sm);
+		background-color: var(--color-contrast-lower);
+		padding: var(--space-xxxs) 0;
+		border-radius: var(--radius);
+		display: none;
 
 		&.is-visible {
 			display: block;
 		}
 
-		// Menu items list.
+		@include breakpoint(md) {
+			position: static;
+			background-color: transparent;
+			padding: 0;
+			box-shadow: none;
+			display: block;
+		}
+
 		.menu__items {
-			align-items: center;
-			width: 100%;
-			margin: auto;
-			padding-left: var(--component-padding);
-			padding-right: var(--component-padding);
+			flex-direction: column;
 
 			@include breakpoint(md) {
-				display: flex;
-				padding: 0;
+				flex-direction: row;
 			}
 		}
 
 		.menu__item {
 
+			&.btn {
+				justify-content: flex-start;
+				margin-left: var(--btn-padding-x);
+				margin-right: var(--btn-padding-x);
+
+				@include breakpoint(md) {
+					margin: 0;
+				}
+
+				> .menu__link {
+					padding-left: 0;
+					padding-right: 0;
+				}
+			}
+
 			@include breakpoint(md) {
-				margin-left: var(--space-sm);
+
+				&:not(:first-child) {
+					margin-left: var(--space-sm);
+				}
 			}
 		}
 
-		@include breakpoint(md) {
-			padding: 0;
-			width: auto;
-			display: block;
-			position: static;
-			box-shadow: none;
-			background-color: transparent;
+		.menu__link {
+			display: flex;
+			align-items: center;
+			// justify-content: space-between;
+			padding: var(--space-xxxs) var(--space-sm);
 
-			.menu__items {}
+			@include breakpoint(md) {
+				padding: 0;
+			}
+		}
+
+		.menu__sub-menu {
+			display: none;
+			list-style: none;
+			padding: var(--space-xxxxs) 0;
+
+			@include breakpoint(md) {
+				position: absolute;
+				right: 0;
+				width: 200px;
+				z-index: var(--zindex-popover);
+				box-shadow: var(--shadow-sm);
+				background-color: var(--color-contrast-lower);
+				border-radius: var(--radius);
+			}
+
+			.menu__item {
+				margin: 0;
+			}
+
+			.menu__link {
+
+				@include breakpoint(md) {
+					padding: var(--space-xxxs) var(--space-xs);
+
+					&:hover {
+						background-color: var(--color-contrast-low);
+					}
+				}
+			}
+		}
+
+		.menu__item:hover > .menu__sub-menu {
+			display: block;
 		}
 	}
 
 	&--footer {
 
-		.menu__items {
-			padding: 0;
-			display: flex;
-			flex-wrap: wrap;
-		}
-
-		.menu__item {
-			position: relative;
-			margin-right: calc(var(--space-sm) * 2);
-			display: inline-flex;
-
-			&::after {
-				content: "\B7";
-				margin-left: var(--space-sm);
-				position: absolute;
-				left: 100%;
-				color: var(--color-contrast-high);
-			}
-
-			> .menu__link,
-			&.has-children > .menu__link {
-				padding: 0;
-			}
-
-			&:last-child {
-				margin-right: 0;
-
-				&::after {
-					display: none;
-				}
-			}
-		}
-
-		.menu__sub-menu--is-visible {
+		.menu__sub-menu {
 			display: none;
 		}
+
+		.menu__item:not(:first-child) {
+			margin-left: var(--space-md);
+
+			&::before {
+				content: '\B7';
+				position: absolute;
+				left: calc(-1 * var(--space-sm));
+			}
+		}
 	}
-}
 
-// Slightly higher specificity to override Jetpack
-.jetpack-social-navigation {
+	&--widget {
 
-	ul.menu {
-		display: flex;
-		margin-bottom: 0;
+		.menu__items {
+			flex-direction: column;
+		}
 
 		.menu__item {
-			margin-left: var(--space-xxs);
-			padding: 0;
-
-			&:first-child {
-				margin-left: 0;
-			}
+			margin: 0;
+			align-self: flex-start;
 		}
 
 		.menu__link {
-			height: auto;
-			width: auto;
-			padding: 0;
+			margin-bottom: var(--space-xs);
 		}
 
-		.icon,
-		.menu__item.has-children > .menu__link .icon {
-			position: static;
-			width: 1.5em;
-			height: 1.5em;
+		.menu__item.btn .menu__link {
+			margin: 0;
 		}
+
+		.menu__sub-menu {
+			position: static;
+			display: block;
+			margin-left: var(--space-sm);
+
+			// Stop indenting after four levels
+			.menu__sub-menu .menu__sub-menu .menu__sub-menu .menu__sub-menu {
+				margin: 0;
+			}
+		}
+	}
+
+	.jetpack-social-navigation & {
+		margin: 0;
 	}
 }
 
-// Nav button icons
-.nav-toggle {
+.menu-toggle {
 
-	.nav-toggle--menu {
-		display: block;
+	.menu-toggle__icon {
+		transition: transform 200ms;
 	}
 
-	.nav-toggle--close {
+	.menu-toggle__icon--on {
 		display: none;
 	}
 
 	&[aria-expanded="true"] {
-		.nav-toggle--menu {
+
+		.menu-toggle__icon--off {
 			display: none;
 		}
 
-		.nav-toggle--close {
+		.menu-toggle__icon--on {
 			display: block;
 		}
 	}
