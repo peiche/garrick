@@ -404,18 +404,6 @@ add_filter( 'body_class', function( $classes ) {
 } );
 
 /**
- * Add BEM classes to avatar images.
- *
- * @link
- * @since 1.0.0
- * @access public
- * @return $class
- */
-add_filter( 'get_avatar', function( $class ) {
-	return str_replace( "class='avatar avatar-", "class='avatar__img avatar__img--", $class );
-} );
-
-/**
  * Add lazy loading attribute to every image in the_content.
  *
  * @link https://web.dev/native-lazy-loading
