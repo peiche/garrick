@@ -86,7 +86,8 @@
 	@include defineColorHSL(--color-contrast-higher, 240, 8%, 12%);
 }
 
-[data-theme="dark"] {
+[data-theme="dark"],
+.theme-dark {
 	// main
 	@include defineColorHSL(--color-primary-darker, 197, 73%, 37%);
 	@include defineColorHSL(--color-primary-dark, 197, 73%, 47%);
