@@ -2,7 +2,7 @@
 
 ( function() {
 
-	let darkThemeSelected = ( 'dark' === localStorage.getItem( 'themeSwitch' ) );
+	const darkThemeSelected = ( 'dark' === localStorage.getItem( 'themeSwitch' ) );
 	let themeSwitch = document.getElementById( 'theme-switch' );
 
 	function initTheme() {
