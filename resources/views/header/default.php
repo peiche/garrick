@@ -37,7 +37,7 @@
 
 				<?php if ( get_theme_mod( 'show_theme_switch', 0 ) ) : ?>
 
-					<div class="theme-switch margin-right-xxs margin-left-sm inline-flex flex-shrink-0">
+					<div class="theme-switch margin-right-xxs margin-left-sm inline-flex">
 						<input type="checkbox" id="theme-switch" class="theme-switch__input"<?php if ( 'dark' == esc_attr( get_theme_mod( 'color_theme', 'default' ) ) ) { echo ' checked'; } ?>>
 						<label for="theme-switch" class="theme-switch__label screen-reader-text"><?php esc_html_e( 'Toggle theme', 'trunc' ) ?></label>
 						<?php echo \Trunc\get_svg( [ 'icon' => 'moon', 'class' => 'icon--md theme-switch__icon theme-switch__icon--off' ] ) ?>
@@ -47,13 +47,13 @@
 				<?php endif; ?>
 
 				<?php if ( get_theme_mod( 'show_header_search', 0 ) ) : ?>
-					<button type="button" id="search-show" class="btn btn--icon search-show flex-shrink-0">
+					<button type="button" id="search-show" class="btn btn--icon search-show">
 						<?php echo \Trunc\get_svg( [ 'icon' => 'search' ] ) ?>
 						<span class="screen-reader-text"><?php esc_html_e( 'Search', 'trunc' ) ?></span>
 					</button>
 				<?php endif; ?>
 
-				<button type="button" id="menu-toggle" class="btn btn--icon menu-toggle flex-shrink-0 hide@md" aria-haspopup="true" aria-expanded="false">
+				<button type="button" id="menu-toggle" class="btn btn--icon menu-toggle hide@md" aria-haspopup="true" aria-expanded="false">
 					<?php echo \Trunc\get_svg( [ 'icon' => 'menu', 'class' => 'menu-toggle__icon menu-toggle__icon--off' ] ) ?>
 					<?php echo \Trunc\get_svg( [ 'icon' => 'close', 'class' => 'menu-toggle__icon menu-toggle__icon--on' ] ) ?>
 					<span class="screen-reader-text"><?php esc_html_e( 'Toggle menu', 'trunc' ) ?></span>
