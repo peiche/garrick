@@ -46,8 +46,8 @@
 	&--primary {
 		position: absolute;
 		top: 100%;
-		left: 0;
-		right: 0;
+		left: var(--space-md);
+		right: var(--space-md);
 		box-shadow: var(--shadow-sm);
 		background-color: var(--color-contrast-lower);
 		padding: var(--space-xxxs) 0;
