@@ -6,13 +6,13 @@
 /// @link   https://boldoak.design/themes/trunc
 ////
 .wp-block-media-text {
-	display: block;
+	display: grid;
 	grid-template-rows: auto;
-	grid-template-areas: "media-text-media media-text-content";
-	grid-template-columns: 50% auto;
+	grid-gap: var(--space-md);
 
 	@include breakpoint(sm) {
-		display: grid;
+		grid-template-areas: "media-text-media media-text-content";
+		grid-template-columns: 50% auto;
 	}
 
 	&.is-vertically-aligned-top {
@@ -28,19 +28,27 @@
 	}
 
 	&.has-media-on-the-right {
-		grid-template-areas: "media-text-content media-text-media";
-		grid-template-columns: auto 50%;
+
+		@include breakpoint(sm) {
+			grid-template-areas: "media-text-content media-text-media";
+			grid-template-columns: auto 50%;
+		}
 	}
 
 	> .wp-block-media-text__media {
-		grid-area: media-text-media;
 		margin: 0;
+
+		@include breakpoint(sm) {
+			grid-area: media-text-media;
+		}
 	}
 
 	> .wp-block-media-text__content {
 		word-break: break-word;
-		grid-area: media-text-content;
-		padding: var(--space-sm) 8%;
+
+		@include breakpoint(sm) {
+			grid-area: media-text-content;
+		}
 
 		> *:last-child {
 			margin-bottom: 0;
@@ -53,16 +61,26 @@
 		width: 100%;
 		vertical-align: middle;
 	}
+
+	&__content {
+
+		> * {
+
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+	}
 }
 
 @include breakpoint(sm) {
 
 	.wp-block-media-text.is-stacked-on-mobile {
-		grid-template-columns: 100% !important; // Overwrite core's inline style.
-		grid-template-areas: "media-text-media" "media-text-content";
+		// grid-template-columns: 100% !important; // Overwrite core's inline style.
+		// grid-template-areas: "media-text-media" "media-text-content";
 	}
 
 	.wp-block-media-text.is-stacked-on-mobile.has-media-on-the-right {
-		grid-template-areas: "media-text-content" "media-text-media";
+		// grid-template-areas: "media-text-content" "media-text-media";
 	}
 }
