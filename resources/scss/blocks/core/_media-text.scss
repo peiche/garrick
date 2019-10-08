@@ -5,6 +5,7 @@
 /// @author Paul Eiche <paul@boldoak.design>
 /// @link   https://boldoak.design/themes/trunc
 ////
+
 .wp-block-media-text {
 	display: grid;
 	grid-template-rows: auto;
@@ -27,12 +28,8 @@
 		align-items: flex-end;
 	}
 
-	&.has-media-on-the-right {
-
-		@include breakpoint(sm) {
-			grid-template-areas: "media-text-content media-text-media";
-			grid-template-columns: auto 50%;
-		}
+	&.is-image-fill {
+		// TODO
 	}
 
 	> .wp-block-media-text__media {
@@ -52,6 +49,38 @@
 
 		> *:last-child {
 			margin-bottom: 0;
+		}
+	}
+
+	&.has-media-on-the-right {
+
+		@include breakpoint(sm) {
+			grid-template-areas: "media-text-content media-text-media";
+			grid-template-columns: auto 50%;
+		}
+	}
+
+	&.alignwide,
+	&.alignfull {
+
+		> .wp-block-media-text__content {
+			padding-left: var(--component-padding);
+			padding-right: var(--component-padding);
+
+			@include breakpoint(sm) {
+				padding-left: 0;
+			}
+		}
+
+		&.has-media-on-the-right {
+
+			> .wp-block-media-text__content {
+
+				@include breakpoint(sm) {
+					padding-left: var(--component-padding);
+					padding-right: 0;
+				}
+			}
 		}
 	}
 
