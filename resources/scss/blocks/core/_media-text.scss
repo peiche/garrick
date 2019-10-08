@@ -29,7 +29,23 @@
 	}
 
 	&.is-image-fill {
-		// TODO
+
+		figure {
+			min-height: var(--space-xxxl);
+    	height: 100%;
+			background-size: cover;
+
+			> img {
+				position: absolute;
+				width: 1px;
+				height: 1px;
+				padding: 0;
+				margin: -1px;
+				overflow: hidden;
+				clip: rect(0,0,0,0);
+				border: 0;
+			}
+		}
 	}
 
 	> .wp-block-media-text__media {
