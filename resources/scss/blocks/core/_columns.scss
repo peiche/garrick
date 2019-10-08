@@ -24,18 +24,32 @@
 }
 
 // Individual columns.
+
+// Please note that only equal split columns
+// collapse into a single column on small screens.
+// This is due to Gutenberg setting custom column
+// widths as inline styles, instead of assigning
+// classes.
+
 .wp-block-column {
 	background-clip: content-box;
 	flex-basis: 100%;
 
 	@include breakpoint(sm) {
-		@for $i from 2 through 6 {
-			.has-#{ $i }-columns & {
-				flex-basis: calc(100 / #{ $i } * 1%);
-				max-width: calc(100 / #{ $i } * 1%);
-			}
-		}
+		flex-basis: 0;
+		flex-grow: 1;
+		max-width: 100%;
 	}
+
+	// These classes are unused.
+	// @include breakpoint(sm) {
+	// 	@for $i from 2 through 6 {
+	// 		.has-#{ $i }-columns & {
+	// 			flex-basis: calc(100 / #{ $i } * 1%);
+	// 			max-width: calc(100 / #{ $i } * 1%);
+	// 		}
+	// 	}
+	// }
 
 	&.is-vertically-aligned-top {
 		align-self: flex-start;
