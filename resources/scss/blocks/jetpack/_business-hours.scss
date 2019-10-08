@@ -1,0 +1,19 @@
+.jetpack-business-hours {
+	display: flex;
+	flex-wrap: wrap;
+
+	dt,
+	dd {
+		float: none;
+	}
+
+	dt {
+    margin: 0;
+    font-weight: var(--font-weight-bold);
+    flex-basis: 25%;
+	}
+
+	dd {
+		flex-basis: 75%;
+	}
+}
