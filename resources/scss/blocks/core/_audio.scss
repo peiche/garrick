@@ -12,4 +12,8 @@
 	audio {
 		width: 100%;
 	}
+
+	figcaption {
+		@include caption;
+	}
 }
