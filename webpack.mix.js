@@ -65,13 +65,7 @@ mix.setPublicPath( 'dist' );
  * @link https://laravel.com/docs/5.6/mix#url-processing
  */
 mix.options( {
-	postCss        : [
-		require( 'postcss-css-variables' )({
-			preserve: true,
-		}),
-		require( 'postcss-calc')(),
-	],
-	processCssUrls : false
+	processCssUrls : false,
 } );
 
 /*
@@ -119,6 +113,16 @@ var sassConfig = {
 mix.sass( `${devPath}/scss/screen.scss`,             'css', sassConfig )
    .sass( `${devPath}/scss/editor.scss`,             'css', sassConfig )
 	 .sass( `${devPath}/scss/customize-controls.scss`, 'css', sassConfig );
+
+// Compile fallback CSS.
+// Run this last so the options don't get used to build the default styles.
+// @link https://github.com/JeffreyWay/laravel-mix/issues/2143#issuecomment-524368071
+mix.sass( `${devPath}/scss/screen-fallback.scss`, 'css', sassConfig, [
+	require( 'postcss-css-variables' )({
+		preserve: false,
+	}),
+	require( 'postcss-calc' )(),
+] );
 
 /*
  * Add custom Webpack configuration.

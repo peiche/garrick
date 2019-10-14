@@ -21,6 +21,7 @@
  */
 
 import './app/init';
+import './app/fallback-style';
 import './app/menu';
 import './app/search';
 import './app/theme-switch';
