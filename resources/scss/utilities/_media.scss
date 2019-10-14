@@ -10,7 +10,7 @@
 /// stay the same size as the surrounding text.
 img.wp-smiley,
 img.emoji {
-	display: inline;
+	display: inline-block;
 	width: 1em;
 	height: 1em;
 	margin: 0 0.07em;
