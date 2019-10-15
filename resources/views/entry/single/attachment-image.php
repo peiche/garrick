@@ -1,7 +1,7 @@
 <article <?php Hybrid\Attr\display( 'entry' ) ?>>
 
-	<header class="entry__header">
-		<?php Hybrid\Post\display_title() ?>
+	<header class="entry__header margin-y-lg">
+		<?php Hybrid\Post\display_title( [ 'class' => 'entry__title text-xxxl' ] ) ?>
 
 		<div class="entry__byline">
 			<?php Hybrid\Media\display_image_sizes( [
