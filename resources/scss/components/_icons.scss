@@ -7,6 +7,56 @@
 		stroke: currentColor;
 	}
 
+	&.color-contrast-lower {
+		stroke: var(--color-contrast-lower);
+	}
+
+	&.color-contrast-low {
+		stroke: var(--color-contrast-low);
+	}
+
+	&.color-contrast-medium {
+		stroke: var(--color-contrast-medium);
+	}
+
+	&.color-contrast-high {
+		stroke: var(--color-contrast-high);
+	}
+
+	&.color-contrast-higher {
+		stroke: var(--color-contrast-higher);
+	}
+
+	&.color-primary {
+		stroke: var(--color-primary);
+	}
+
+	&.color-accent {
+		stroke: var(--color-accent);
+	}
+
+	&.color-success {
+		stroke: var(--color-success);
+	}
+
+	&.color-warning {
+		stroke: var(--color-warning);
+	}
+
+	&.color-error {
+		stroke: var(--color-error);
+	}
+
+	&.color-info {
+		stroke: var(--color-info);
+	}
+
+	&.color-white {
+		stroke: var(--color-white);
+	}
+
+	&.color-black {
+		stroke: var(--color-black);
 	}
 
 	.jetpack-social-navigation &,
