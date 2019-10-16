@@ -33,7 +33,7 @@
 					<?php echo \Trunc\sep() ?>
 					<?php
 					/* Translators: %2$s = theme author website */
-					printf( esc_html__( 'Built with %1$s by %2$s', 'trunc' ), \Trunc\get_svg( [ 'icon' => 'heart', 'class' => 'icon--sm icon--middle', 'title' => __( 'love', 'trunc' ) ] ), '<a href="https://boldoak.design/">' . \Trunc\get_svg( [ 'icon' => 'boldoakdesign', 'class' => 'icon--sm icon--middle margin-right-xxxxs' ] ) . ' <span>Bold Oak Design</span></a>' );
+					printf( esc_html__( 'Built with %1$s by %2$s', 'trunc' ), \Trunc\get_svg( [ 'icon' => 'heart', 'class' => 'icon--sm align-middle', 'title' => __( 'love', 'trunc' ) ] ), '<a href="https://boldoak.design/">' . \Trunc\get_svg( [ 'icon' => 'boldoakdesign', 'class' => 'icon--sm align-middle margin-right-xxxxs' ] ) . ' <span>Bold Oak Design</span></a>' );
 					?>
 				</div>
 			</div>
