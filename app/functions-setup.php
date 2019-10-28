@@ -299,7 +299,7 @@ add_action( 'widgets_init', function() {
 	$args = [
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
-		'before_title'  => '<h3 class="widget__title margin-top-auto">',
+		'before_title'  => '<h3 class="widget__title margin-top-auto margin-bottom-sm">',
 		'after_title'   => '</h3>'
 	];
 
@@ -425,6 +425,8 @@ add_filter( 'body_class', function( $classes ) {
  * @return void
  */
 add_action( 'wp_head', function() {
+	$font_primary = explode( '|', get_theme_mod( 'font_primary', 'sans-serif' ) )[0];
+	$font_heading = explode( '|', get_theme_mod( 'font_heading', 'var(--font-primary)' ) )[0];
 	$primary_light = Color::hex( get_theme_mod( 'primary_color_light', '#2a6df4' ) );
 	$primary_light_h = $primary_light->h;
 	$primary_light_s = $primary_light->s * 100;
@@ -436,6 +438,12 @@ add_action( 'wp_head', function() {
 	?>
 
 <style type="text/css">
+	:root,
+	body {
+		--font-primary: <?php echo $font_primary // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped ?>;
+		--font-heading: <?php echo $font_heading // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped ?>;
+	}
+
 	:root,
 	[data-theme=default] {
 		--color-primary-darker: hsl(<?php echo esc_attr( $primary_light_h ) ?>, <?php echo esc_attr( $primary_light_s ) ?>%, <?php echo esc_attr( $primary_light_l - 20 ) ?>%);
@@ -482,19 +490,6 @@ add_action( 'wp_head', function() {
 		--color-primary-lighter-s: <?php echo esc_attr( $primary_dark_s ) ?>%;
 		--color-primary-lighter-l: <?php echo esc_attr( $primary_dark_l + 20 ) ?>%;
 	}
-	<?php if ( '' != get_theme_mod( 'header_color', '' ) ) : ?>
-	.app-header {
-		--color-bg: <?php echo esc_attr( get_theme_mod( 'header_color', '' ) ) ?>;
-	}
-	<?php endif ?>
-	<?php if ( '' != get_theme_mod( 'footer_color', '' ) ) : ?>
-	.app-footer {
-		--color-bg: <?php echo esc_attr( get_theme_mod( 'footer_color', '' ) ) ?>;
-	}
-	.app-footer__content {
-		border-top: 0;
-	}
-	<?php endif ?>
 </style>
 
 	<?php
