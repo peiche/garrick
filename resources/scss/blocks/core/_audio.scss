@@ -1,3 +1,5 @@
+@use "../../tools/mixins";
+
 ////
 /// Audio block.
 ///
@@ -14,6 +16,6 @@
 	}
 
 	figcaption {
-		@include caption;
+		@include mixins.caption;
 	}
 }

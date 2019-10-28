@@ -1,3 +1,5 @@
+@use "~codyhouse-framework/main/assets/css/base";
+
 ////
 /// Custom mixins.
 ///
@@ -78,7 +80,7 @@
 
 	// handle
 	&::-webkit-scrollbar-thumb {
-		background-color: alpha($foreground, 0.9);
+		background-color: base.alpha($foreground, 0.9);
 		border-radius: 0;
 
 		&:hover {

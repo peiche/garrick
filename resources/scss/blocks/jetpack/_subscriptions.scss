@@ -1,3 +1,5 @@
+@use "~codyhouse-framework/main/assets/css/base";
+
 .wp-block-jetpack-subscriptions {
 	margin-bottom: var(--space-md);
 
@@ -21,7 +23,7 @@
 		display: flex;
 		margin-bottom: var(--space-xxs);
 
-		@include breakpoint(md) {
+		@include base.breakpoint(md) {
 			margin-bottom: 0;
 		}
 	}

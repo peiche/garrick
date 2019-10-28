@@ -1,3 +1,5 @@
+@use "~codyhouse-framework/main/assets/css/base";
+
 ////
 /// Latest posts block.
 ///
@@ -30,7 +32,7 @@
 			margin: 0;
 		}
 
-		@include breakpoint(sm) {
+		@include base.breakpoint(sm) {
 			@for $i from 2 through 6 {
 				&.columns-#{ $i } li {
 					flex-basis: calc(100 / #{ $i } * 1%);

@@ -1,3 +1,5 @@
+@use "~codyhouse-framework/main/assets/css/base";
+
 ////
 /// Alignment classes.
 ///
@@ -13,11 +15,11 @@
 .alignleft,
 .alignright {
 
-	@include breakpoint(sm) {
+	@include base.breakpoint(sm) {
 		max-width: 35%;
 	}
 
-	@include breakpoint(md) {
+	@include base.breakpoint(md) {
 		max-width: 50%;
 	}
 }
@@ -25,7 +27,7 @@
 // Left alignment.
 .alignleft {
 
-	@include breakpoint(sm) {
+	@include base.breakpoint(sm) {
 		float: left;
 		margin: 0 var(--component-padding) var(--component-padding) 0;
 	}
@@ -34,7 +36,7 @@
 // Right alignment.
 .alignright {
 
-	@include breakpoint(sm) {
+	@include base.breakpoint(sm) {
 		float: right;
 		margin: 0 0 var(--component-padding) var(--component-padding);
 	}
@@ -58,7 +60,7 @@
 	max-width: 100vw;
 }
 
-@include breakpoint(md) {
+@include base.breakpoint(md) {
 
 	// We have to check for `.alignfull` because
 	// some blocks still include both classes.

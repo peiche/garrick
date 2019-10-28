@@ -1,8 +1,10 @@
+@use "../../tools/mixins";
+
 .wp-block-search {
 	display: flex;
 
 	&__label {
-		@include screen-reader-text;
+		@include mixins.screen-reader-text;
 	}
 
 	&__input {

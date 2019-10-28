@@ -19,11 +19,10 @@
 // Imports all of the files needed for front-end output. Note that the order is
 // very specific and should typically not be changed.
 
-@import 'vendor/_index';
-@import 'settings/_index';
-@import 'tools/_index';
-@import 'generic/_index';
-@import 'elements/_index';
-@import 'components/_index';
-@import 'blocks/_index';
-@import 'utilities/_index';
+@use 'vendor/codyhouse-framework';
+@use 'settings';
+@use 'generic';
+@use 'elements';
+@use 'components';
+@use 'blocks';
+@use 'utilities';

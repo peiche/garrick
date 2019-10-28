@@ -1,3 +1,6 @@
+@use "~codyhouse-framework/main/assets/css/base";
+@use "../../tools/mixins";
+
 ////
 /// Image block.
 ///
@@ -22,22 +25,22 @@
 
 	.alignleft {
 
-		@include breakpoint(md) {
+		@include base.breakpoint(md) {
 			margin-left: -15%;
 		}
 
-		@include breakpoint(lg) {
+		@include base.breakpoint(lg) {
 			margin-left: -30%;
 		}
 	}
 
 	.alignright {
 
-		@include breakpoint(md) {
+		@include base.breakpoint(md) {
 			margin-right: -15%;
 		}
 
-		@include breakpoint(lg) {
+		@include base.breakpoint(lg) {
 			margin-right: -30%;
 		}
 	}
@@ -71,7 +74,7 @@
 	}
 
 	figcaption {
-		@include caption;
+		@include mixins.caption;
 	}
 
 	.is-resized {}

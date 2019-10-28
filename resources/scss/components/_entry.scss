@@ -6,6 +6,8 @@
 /// @link   https://boldoak.design/themes/trunc
 ////
 
+@use '~codyhouse-framework/main/assets/css/base/breakpoints';
+
 .entry {
 	position: relative;
 
@@ -19,9 +21,7 @@
 	p,
 	blockquote,
 	ul li,
-	ol li {
-
-	}
+	ol li {}
 
 	// Type of entry/post.
 	&--type-post {}

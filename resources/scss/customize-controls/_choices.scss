@@ -1,0 +1,27 @@
+// Overrides for choices.js
+
+.choices__inner {
+	padding: 0;
+	min-height: 0;
+}
+
+.choices[data-type*="select-one"] .choices__inner {
+	padding: 0;
+}
+
+.choices__list--single {
+	padding: 0;
+}
+
+.choices__list--single .choices__item {
+	width: auto;
+	padding: 5px 10px;
+}
+
+.choices__list--dropdown {
+	top: 0;
+}
+
+.choices[data-type*="select-one"] .choices__input {
+	padding: 5px 10px;
+}

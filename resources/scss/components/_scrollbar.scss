@@ -1,3 +1,5 @@
+@use '../tools/mixins';
+
 .scrollbar {
-	@include scrollbar;
+	@include mixins.scrollbar;
 }

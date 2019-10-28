@@ -1,0 +1,39 @@
+////
+/// Component imports.
+///
+/// Components make up the bulk of the actual theme design. Nearly every piece
+/// of the design is some type of component, whether it's a one-off or reusable
+/// block of code.
+///
+/// @group  Components
+/// @author Paul Eiche <paul@boldoak.design>
+/// @link   https://boldoak.design/themes/trunc
+////
+
+@use 'admin-bar';
+@use 'app';
+@use 'app-header';
+@use 'app-content';
+@use 'app-main';
+@use 'app-footer';
+@use 'archive-header';
+@use 'buttons';
+@use 'comments';
+@use 'comment';
+@use 'comment-respond';
+@use 'custom-header';
+@use 'entry';
+@use 'forms';
+@use 'gallery';
+@use 'icons';
+@use 'media';
+@use 'media-meta';
+@use 'media-wrapper';
+@use 'nav-menu';
+@use 'nav-pagination';
+@use 'scrollbar';
+@use 'search-form';
+@use 'sidebar';
+@use 'tables';
+@use 'theme-switch';
+@use 'widget';

@@ -11,7 +11,7 @@
 ////
 
 // Import core blocks.
-@import 'core/_index';
+@use 'core';
 
 // Import Jetpack blocks.
-@import 'jetpack/_index';
+@use 'jetpack';

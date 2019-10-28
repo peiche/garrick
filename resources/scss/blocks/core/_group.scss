@@ -1,9 +1,11 @@
+@use "~codyhouse-framework/main/assets/css/base";
+
 .wp-block-group {
 	margin-bottom: var(--component-padding);
 	padding-left: var(--component-padding);
 	padding-right: var(--component-padding);
 
-	@include breakpoint(md) {
+	@include base.breakpoint(md) {
 		padding-left: 0;
 		padding-right: 0;
 	}

@@ -1,3 +1,6 @@
+@use "~codyhouse-framework/main/assets/css/base";
+@use "../tools/mixins";
+
 ////
 /// Typography elements.
 ///
@@ -62,7 +65,7 @@ blockquote {
 	border-left: 4px solid var(--color-contrast-low);
 
 	cite {
-		@include cite;
+		@include mixins.cite;
 	}
 }
 
@@ -98,7 +101,7 @@ pre {
 	margin-bottom: var(--space-md);
 	overflow: auto;
 
-	@include scrollbar(var(--color-contrast-high), var(--color-contrast-lower));
+	@include mixins.scrollbar(var(--color-contrast-high), var(--color-contrast-lower));
 }
 
 code {
@@ -130,7 +133,7 @@ a {
 }
 
 hr {
-	@include separator;
+	@include mixins.separator;
 }
 
 b,
@@ -144,6 +147,6 @@ em {
 }
 
 mark {
-	background-color: alpha(var(--color-accent), 0.2);
+	background-color: base.alpha(var(--color-accent), 0.2);
 	color: inherit;
 }

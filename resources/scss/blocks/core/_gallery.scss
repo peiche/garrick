@@ -1,3 +1,6 @@
+@use "~codyhouse-framework/main/assets/css/base";
+@use "../../tools/mixins";
+
 ////
 /// Gallery block.
 ///
@@ -60,7 +63,7 @@
 	}
 
 	figcaption {
-		@include caption;
+		@include mixins.caption;
 
 		position: absolute;
 		padding: var(--space-xxxs) var(--space-xs);
@@ -75,7 +78,7 @@
 }
 
 .blocks-gallery-caption {
-	@include caption;
+	@include mixins.caption;
 
 	flex-basis: 100%;
 }
@@ -103,7 +106,7 @@
 }
 
 // 3-8 columns on larger screens.
-@include breakpoint(sm) {
+@include base.breakpoint(sm) {
 
 	@for $i from 3 through 8 {
 

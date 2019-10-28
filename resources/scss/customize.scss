@@ -9,12 +9,11 @@
 /// @link   https://boldoak.design/themes/trunc
 ////
 
-// Uncomment any of the below to import styles for specific controls if using
-// the `hybrid-customize` add-on.
+// Import third-party CSS.
 
-// @import '~hybrid-customize/scss/controls/palette';
-// @import '~hybrid-customize/scss/controls/radio-image';
+@use 'vendor/hybrid-customize';
+@use 'vendor/choices';
 
 // Import `customize-controls` partials.
 
-@import 'customize-controls/_index';
+@use 'customize-controls';

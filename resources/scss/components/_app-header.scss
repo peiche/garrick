@@ -6,6 +6,8 @@
 /// @link   https://boldoak.design/themes/trunc
 ////
 
+@use '~codyhouse-framework/main/assets/css/base/breakpoints';
+
 :root {}
 
 .app-header {
@@ -96,7 +98,7 @@
 		padding-right: 0;
 		z-index: var(--zindex-fixed-element);
 
-		@include breakpoint(md) {
+		@include breakpoints.breakpoint(md) {
 			display: none;
 		}
 

@@ -8,6 +8,8 @@
 /// @link   https://boldoak.design/themes/trunc
 ////
 
+@use '~codyhouse-framework/main/assets/css/base/mixins';
+
 :root {
 	--search-input-btn-width: 2.8em;
 	--search-input-icon-size: 1.25em;
@@ -53,7 +55,7 @@
 }
 
 .search-input__btn {
-	@include reset;
+	@include mixins.reset;
 
 	position: absolute;
 	top: 0;

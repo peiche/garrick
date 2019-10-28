@@ -1,3 +1,5 @@
+@use "~codyhouse-framework/main/assets/css/base";
+
 ////
 /// Media text block.
 ///
@@ -11,7 +13,7 @@
 	grid-template-rows: auto;
 	grid-gap: var(--space-md);
 
-	@include breakpoint(sm) {
+	@include base.breakpoint(sm) {
 		grid-template-areas: "media-text-media media-text-content";
 		grid-template-columns: 50% auto;
 	}
@@ -51,7 +53,7 @@
 	> .wp-block-media-text__media {
 		margin: 0;
 
-		@include breakpoint(sm) {
+		@include base.breakpoint(sm) {
 			grid-area: media-text-media;
 		}
 	}
@@ -59,7 +61,7 @@
 	> .wp-block-media-text__content {
 		word-break: break-word;
 
-		@include breakpoint(sm) {
+		@include base.breakpoint(sm) {
 			grid-area: media-text-content;
 		}
 
@@ -70,7 +72,7 @@
 
 	&.has-media-on-the-right {
 
-		@include breakpoint(sm) {
+		@include base.breakpoint(sm) {
 			grid-template-areas: "media-text-content media-text-media";
 			grid-template-columns: auto 50%;
 		}
@@ -83,7 +85,7 @@
 			padding-left: var(--component-padding);
 			padding-right: var(--component-padding);
 
-			@include breakpoint(sm) {
+			@include base.breakpoint(sm) {
 				padding-left: 0;
 			}
 		}
@@ -92,7 +94,7 @@
 
 			> .wp-block-media-text__content {
 
-				@include breakpoint(sm) {
+				@include base.breakpoint(sm) {
 					padding-left: var(--component-padding);
 					padding-right: 0;
 				}
@@ -118,7 +120,7 @@
 	}
 }
 
-@include breakpoint(sm) {
+@include base.breakpoint(sm) {
 
 	.wp-block-media-text.is-stacked-on-mobile {
 		// grid-template-columns: 100% !important; // Overwrite core's inline style.

@@ -6,6 +6,9 @@
 /// @link   https://boldoak.design/themes/trunc
 ////
 
+@use '~codyhouse-framework/main/assets/css/base/breakpoints';
+@use '~codyhouse-framework/main/assets/css/base/mixins';
+
 :root {
 	--pagination-item-padding: var(--space-xs);
 	--pagination-item-gap: var(--space-xxxs);
@@ -42,7 +45,7 @@
 		list-style: none;
 		padding: 0;
 
-		@include breakpoint(md) {
+		@include breakpoints.breakpoint(md) {
 			justify-content: normal;
 			width: auto;
 		}
@@ -65,7 +68,7 @@
 		&--dots {
 			display: none;
 
-			@include breakpoint(md) {
+			@include breakpoints.breakpoint(md) {
 				display: inline-flex;
 			}
 		}
@@ -119,7 +122,8 @@
 		&--current {
 			background-color: var(--color-primary);
 			color: var(--color-white);
-			@include fontSmooth;
+
+			@include mixins.fontSmooth;
 
 			&:active {
 				background-color: var(--color-primary-dark);

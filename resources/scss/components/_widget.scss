@@ -6,6 +6,8 @@
 /// @link   https://boldoak.design/themes/trunc
 ////
 
+@use '~codyhouse-framework/main/assets/css/base/breakpoints';
+
 .widget {
 
 	ul {
@@ -39,18 +41,15 @@
 	}
 
 	.sidebar--footer & {
-		display: grid;
-		grid-gap: var(--space-xxs);
 		margin-bottom: var(--space-md);
 		width: 100%;
 		padding-right: var(--space-sm);
 
-		@include breakpoint(xs) {
+		@include breakpoints.breakpoint(xs) {
 			width: calc(100% / 2);
 		}
 
-		@include breakpoint(md) {
-			grid-gap: var(--space-xs);
+		@include breakpoints.breakpoint(md) {
 			width: calc(100% / 4);
 		}
 	}

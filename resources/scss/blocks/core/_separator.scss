@@ -1,3 +1,5 @@
+@use "../../tools/mixins";
+
 ////
 /// Separator block.
 ///
@@ -7,7 +9,7 @@
 ////
 
 .wp-block-separator {
-	@include separator;
+	@include mixins.separator;
 
 	&.is-style-wide {
 		width: 100%;
