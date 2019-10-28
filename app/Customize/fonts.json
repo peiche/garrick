@@ -1,0 +1,22 @@
+{
+	"Cormorant Garamond": {
+		"google" : "Cormorant+Garamond",
+		"stack"  : "'Cormorant Garamond', serif"
+	},
+	"Lato":	{
+		"google" : "Lato:700",
+		"stack"  : "'Lato', sans-serif"
+	},
+	"Montserrat":	{
+		"google" : "Montserrat:700",
+		"stack"  : "'Montserrat', sans-serif"
+	},
+	"Noto Sans":	{
+		"google" : "Noto+Sans",
+		"stack"  : "'Noto Sans', sans-serif"
+	},
+	"Roboto":	{
+		"google" : "Roboto",
+		"stack"  : "'Roboto', sans-serif"
+	}
+}
