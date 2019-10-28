@@ -112,7 +112,7 @@ var sassConfig = {
 // Compile SASS/CSS.
 mix.sass( `${devPath}/scss/screen.scss`,             'css', sassConfig )
    .sass( `${devPath}/scss/editor.scss`,             'css', sassConfig )
-	 .sass( `${devPath}/scss/customize-controls.scss`, 'css', sassConfig );
+	 .sass( `${devPath}/scss/customize.scss`, 'css', sassConfig );
 
 // Compile fallback CSS.
 // Run this last so the options don't get used to build the default styles.
