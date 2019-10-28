@@ -21,11 +21,7 @@
 				<?php echo \Trunc\get_svg( [ 'icon' => 'tag', 'title' => __( 'Tags', 'trunc' ) ] ) ?>
 			</div>
 			<div>
-				<?php Hybrid\Post\display_terms( [
-					'taxonomy' => 'post_tag',
-					'class' => 'entry__terms entry__terms--post_tag flex flex-wrap flex-gap-xxs',
-					'sep' => ', ',
-				] ) ?>
+				<?php Hybrid\View\display( 'partials', 'post-tags' ) ?>
 			</div>
 		</div>
 	<?php endif ?>

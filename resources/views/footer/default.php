@@ -1,5 +1,5 @@
-	<footer id="app-footer" class="app-footer margin-top-lg" data-theme="<?php echo esc_attr( get_theme_mod( 'footer_color_theme', '' ) ) ?>">
-		<div class="app-footer__content container max-width-xl padding-y-lg text-sm">
+	<footer id="app-footer" class="app-footer margin-top-lg">
+		<div class="app-footer__content container max-width-lg padding-y-lg text-sm">
 
 			<?php if ( is_active_sidebar( 'footer' ) ) : ?>
 

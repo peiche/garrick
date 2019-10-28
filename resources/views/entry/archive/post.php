@@ -1,21 +1,12 @@
-<article <?php Hybrid\Attr\display( 'entry padding-y-md' ) ?>>
+<article <?php Hybrid\Attr\display( 'entry ' . $data->grid_class ) ?>>
+
+	<?php Hybrid\View\display( 'partials', 'archive-image' ) ?>
 
 	<header class="entry__header">
 		<?php Hybrid\Post\display_title( [ 'class' => 'entry__title margin-top-auto' ] ) ?>
 	</header>
 
-	<?php Hybrid\Carbon\Image::display( 'featured', [
-		'size' => 'full',
-		'class' => 'entry__image',
-		'before' => '<figure class="media-wrapper margin-y-sm">',
-		'after' => '</figure>',
-		'link' => true,
-		'link_class' => 'entry__featured-image__link',
-	] ) ?>
-
-	<div class="entry__summary margin-y-sm">
-		<?php the_excerpt() ?>
-	</div>
+	<?php Hybrid\View\display( 'partials', 'archive-excerpt' ) ?>
 
 	<div class="entry__footer">
 		<div class="entry__byline">
@@ -26,6 +17,13 @@
 			<?php endif ?>
 
 			<a href="<?php echo esc_url( get_permalink() ) ?>" class="entry__permalink"><?php Hybrid\Post\display_date() ?></a>
+
+			<?php if ( get_theme_mod( 'archive_show_tags', false ) && has_tag() ) : ?>
+				<div class="margin-top-xs">
+					<?php Hybrid\View\display( 'partials', 'post-tags' ) ?>
+				</div>
+			<?php endif ?>
+
 		</div>
 	</div>
 </article>

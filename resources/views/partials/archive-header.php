@@ -1,7 +1,7 @@
 <?php if ( ! is_front_page() ) : ?>
 
-<header class="archive-header padding-top-xl padding-bottom-lg">
-  <div class="container max-width-sm">
+<header class="archive-header margin-y-lg">
+  <div class="container max-width-lg">
     <h1 class="archive-header__title text-xxxl margin-bottom-auto">
 
       <?php if ( is_author() ) : ?>

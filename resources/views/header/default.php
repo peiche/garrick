@@ -13,7 +13,7 @@
 
 		<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'trunc' ) ?></a>
 
-		<div class="app-header__layout container max-width-xl flex items-center">
+		<div class="app-header__layout container max-width-lg flex items-center">
 			<div class="app-header__branding flex items-center flex-shrink-0">
 
 				<?php the_custom_logo() ?>
@@ -63,7 +63,7 @@
 		</div>
 
 		<?php if ( get_theme_mod( 'show_header_search', 0 ) ) : ?>
-			<div id="app-header__search" class="app-header__search container max-width-xl is-hidden">
+			<div id="app-header__search" class="app-header__search container max-width-lg is-hidden">
 				<?php get_search_form() ?>
 				<button type="button" id="search-hide" class="btn btn--icon search-hide">
 					<?php echo \Trunc\get_svg( [ 'icon' => 'close' ] ) ?>
