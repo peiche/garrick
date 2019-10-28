@@ -43,6 +43,38 @@ add_action( 'wp_enqueue_scripts', function() {
 	// Enqueue theme styles.
 	wp_enqueue_style( 'trunc-screen', asset( 'css/screen.css' ), null, null );
 
+	// Enqueue fonts set in Customizer.
+	$font_primary = get_theme_mod( 'font_primary', '' );
+	$font_heading = get_theme_mod( 'font_heading', '' );
+	$font_mono    = get_theme_mod( 'font_mono', '' );
+
+	$fonts = array();
+	if ( '' != $font_primary ) :
+		$fonts[] = $font_primary;
+	endif;
+	if ( '' != $font_heading ) :
+		$fonts[] = $font_heading;
+	endif;
+	if ( '' != $font_mono ) :
+		$fonts[] = $font_mono;
+	endif;
+
+	if ( ! empty ( $fonts ) ) :
+
+		// Register Google Fonts.
+		// @link https://github.com/justintadlock/hybrid-font
+		// @link https://fonts.google.com
+		Font\enqueue( 'trunc', [
+			'family' => $fonts,
+			'subset' => [
+				'latin',
+				'latin-ext'
+			],
+			'display' => 'fallback',
+		] );
+
+	endif;
+
 } );
 
 /**
@@ -91,5 +123,5 @@ function asset( $path ) {
 		$path = $manifest[ $path ];
 	}
 
-	return get_theme_file_uri( 'dist' . $path );
+	return get_parent_theme_file_uri( 'dist' . $path );
 }
