@@ -74,12 +74,17 @@ class Customize implements Bootable {
 	public function registerSections( WP_Customize_Manager $manager ) {
 
 		$manager->add_section( 'header', array(
-			'title' => __( 'Header Settings', 'trunc' ),
+			'title'    => __( 'Header Settings', 'trunc' ),
 			'priority' => 60,
 		) );
 
 		$manager->add_section( 'content', array(
-			'title' => __( 'Content Settings', 'trunc' ),
+			'title'    => __( 'Content Settings', 'trunc' ),
+			'priority' => 60,
+		) );
+
+		$manager->add_section( 'fonts', array(
+			'title'    => __( 'Fonts', 'trunc' ),
 			'priority' => 60,
 		) );
 
@@ -145,24 +150,49 @@ class Customize implements Bootable {
 			},
 		) );
 
-		$manager->add_setting( 'primary_color_light' , array(
-		    'default'   => '#2a6df4', // same as default primary color
-		    'transport' => 'refresh',
+		$manager->add_setting( 'primary_color_light', array(
+			'default'   => '#2a6df4', // same as default primary color
+			'transport' => 'refresh',
 		) );
 
-		$manager->add_setting( 'primary_color_dark' , array(
-		    'default'   => '#41b4e1', // same as default primary color
-		    'transport' => 'refresh',
+		$manager->add_setting( 'primary_color_dark', array(
+			'default'   => '#41b4e1', // same as default primary color
+			'transport' => 'refresh',
 		) );
 
-		$manager->add_setting( 'header_color' , array(
-		    'default'   => '',
-		    'transport' => 'refresh',
+		$manager->add_setting( 'archive_show_tags', array(
+			'default'   => false,
+			'transport' => 'refresh',
 		) );
 
-		$manager->add_setting( 'footer_color' , array(
-		    'default'   => '',
-		    'transport' => 'refresh',
+		$manager->add_setting( 'archive_columns', array(
+			'default'   => 1,
+			'transport' => 'refresh',
+		) );
+
+		$manager->add_setting( 'archive_image_aspect_ratio', array(
+			'default'   => '',
+			'transport' => 'refresh',
+		) );
+
+		$manager->add_setting( 'archive_image_placeholder', array(
+			'default'   => false,
+			'transport' => 'refresh',
+		) );
+
+		$manager->add_setting( 'archive_hide_excerpt', array(
+			'default'   => false,
+			'transport' => 'refresh',
+		) );
+
+		$manager->add_setting( 'font_primary', array(
+			'default'   => '',
+			'transport' => 'refresh',
+		) );
+
+		$manager->add_setting( 'font_heading', array(
+			'default'   => '',
+			'transport' => 'refresh',
 		) );
 
 	}
@@ -227,29 +257,76 @@ class Customize implements Bootable {
 			) )
 		);
 
-		$manager->add_control(
-			new \WP_Customize_Color_Control(
-			$manager,
-			'header_color',
-			array(
-				'label'       => __( 'Header Background Color', 'trunc' ),
-				'description' => __( 'Overrides the theme color.', 'trunc' ),
-				'section'     => 'colors',
-				'settings'    => 'header_color',
-			) )
-		);
+		$manager->add_control( 'archive_columns', array(
+			'type'        => 'select',
+			'section'     => 'content',
+			'label'       => __( 'Post Columns', 'trunc' ),
+			'description' => __( 'Show posts and pages in a single column or grid.', 'trunc' ),
+			'choices'     => array(
+				'1' => 1,
+				'2' => 2,
+				'3' => 3,
+				'4' => 4,
+			),
+		) );
 
-		$manager->add_control(
-			new \WP_Customize_Color_Control(
-			$manager,
-			'footer_color',
-			array(
-				'label'       => __( 'Footer Background Color', 'trunc' ),
-				'description' => __( 'Overrides the theme color.', 'trunc' ),
-				'section'     => 'colors',
-				'settings'    => 'footer_color',
-			) )
-		);
+		$manager->add_control( 'archive_image_aspect_ratio', array(
+			'type'        => 'select',
+			'section'     => 'content',
+			'label'       => __( 'Featured Image Options', 'trunc' ),
+			'description' => __( 'Customize how images are displayed on blog and archive pages.', 'trunc' ),
+			'choices'     => array(
+				''                                  => 'Natural Size',
+				'media-wrapper media-wrapper--21:9' => 'Landscape (21:9)',
+				'media-wrapper media-wrapper--16:9' => 'Landscape (16:9)',
+				'media-wrapper media-wrapper--4:3'  => 'Landscape (4:3)',
+				'media-wrapper media-wrapper--1:1'  => 'Square (1:1)',
+			),
+		) );
+
+		$manager->add_control( 'archive_image_placeholder', array(
+			'type'        => 'checkbox',
+			'section'     => 'content',
+			'label'       => __( 'Image placeholder', 'trunc' ),
+			'description' => __( 'Show default fallback image if no featured image is available.', 'trunc' ),
+		) );
+
+		$manager->add_control( 'archive_hide_excerpt', array(
+			'type'        => 'checkbox',
+			'section'     => 'content',
+			'label'       => __( 'Hide excerpt', 'trunc' ),
+			'description' => __( 'Do not display the post excerpt.', 'trunc' ),
+		) );
+
+		$manager->add_control( 'archive_show_tags', array(
+			'type'        => 'checkbox',
+			'section'     => 'content',
+			'label'       => __( 'Show tags', 'trunc' ),
+			'description' => __( 'Display tags on blog and archive pages.', 'trunc' ),
+		) );
+
+		$fonts = json_decode( file_get_contents( get_theme_file_path( 'app/Customize/fonts.json' ) ), true );
+		$font_choices = array();
+
+		foreach( $fonts as $key => $value ) {
+			$font_choices[$value['stack'] . '|' . $value['google']] = $key;
+		}
+
+		$manager->add_control( 'font_primary', array(
+			'type'        => 'select',
+			'section'     => 'fonts',
+			'label'       => __( 'Body Font', 'trunc' ),
+			'description' => __( 'Font used for the main text on the site.', 'trunc' ),
+			'choices'     => $font_choices,
+		) );
+
+		$manager->add_control( 'font_heading', array(
+			'type'        => 'select',
+			'section'     => 'fonts',
+			'label'       => __( 'Heading Font', 'trunc' ),
+			'description' => __( 'Font used for titles.', 'trunc' ),
+			'choices'     => $font_choices,
+		) );
 	}
 
 	/**
@@ -310,8 +387,8 @@ class Customize implements Bootable {
 		);
 
 		wp_enqueue_style(
-			'trunc-customize-controls',
-			asset( 'css/customize-controls.css' ),
+			'trunc-customize',
+			asset( 'css/customize.css' ),
 			[],
 			null
 		);
