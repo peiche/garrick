@@ -22,3 +22,10 @@ import palette          from 'hybrid-customize/js/controls/palette.js';
 import radioImage       from 'hybrid-customize/js/controls/radio-image.js';
 import selectGroup      from 'hybrid-customize/js/controls/select-group.js';
 import selectMultiple   from 'hybrid-customize/js/controls/select-multiple.js';
+import Choices          from 'choices.js/src/scripts/choices.js';
+
+wp.customize.bind( 'ready', () => {
+
+	new Choices( '#_customize-input-font_primary, #_customize-input-font_heading' );
+
+} );
