@@ -16,9 +16,13 @@
 // Import settings.
 @use 'settings';
 
+// Fix control display.
+@use 'editor/controls';
+
 // Prefixes all of the styles with `.editor-styles-wrapper` for use within the
 // block editor.
 .editor-styles-wrapper {
+	overflow-x: hidden;
 
 	@include meta.load-css('elements');
 	@include meta.load-css('blocks');
