@@ -6,13 +6,19 @@
 /// @link   https://boldoak.design/themes/trunc
 ////
 
+@use "../../tools/mixins";
+
 .wp-block-quote {
+	@include mixins.blockquote;
 
 	p {
 		margin-bottom: var(--space-sm);
 	}
 
-	cite {}
+	cite,
+	.wp-block-quote__citation {
+		@include mixins.cite;
+	}
 
 	&.is-style-large {
 		border: 0;

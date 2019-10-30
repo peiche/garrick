@@ -6,4 +6,8 @@
 /// @link   https://boldoak.design/themes/trunc
 ////
 
-.wp-block-verse {}
+@use "../../tools/mixins";
+
+.wp-block-verse {
+	@include mixins.preformatted;
+}
