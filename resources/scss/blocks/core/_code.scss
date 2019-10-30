@@ -6,4 +6,16 @@
 /// @link   https://boldoak.design/themes/trunc
 ////
 
-.wp-block-code {}
+@use "~codyhouse-framework/main/assets/css/base/breakpoints";
+
+.wp-block-code {
+	background-color: var(--color-code);
+	color: var(--color-white);
+	padding: var(--space-md);
+	line-height: 1.3;
+
+	@include breakpoints.breakpoint(md) {
+		width: 120%;
+		transform: translateX(-8.33%);
+	}
+}
