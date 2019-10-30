@@ -86,6 +86,9 @@
 	@include base.defineColorHSL(--color-contrast-medium, 240, 1%, 48%);
 	@include base.defineColorHSL(--color-contrast-high, 240, 4%, 20%);
 	@include base.defineColorHSL(--color-contrast-higher, 240, 8%, 12%);
+
+	// code
+	@include base.defineColorHSL(--color-code, 202, 32%, 15%);
 }
 
 [data-theme="dark"],
