@@ -1,6 +1,24 @@
+.edit-post-header,
+.edit-post-sidebar {
+	font-size: initial;
+}
+
+.block-editor-media-placeholder * {
+	font-size: initial;
+}
+
 .components-icon-button {
 
 	svg {
 		max-width: unset;
 	}
+}
+
+.block-editor-block-list__insertion-point-inserter {
+	--display: flex;
+}
+
+.components-dropdown-menu .components-dropdown-menu__toggle {
+	padding-top: 7px;
+	padding-bottom: 7px;
 }
