@@ -29,6 +29,13 @@
 	}
 }
 
+@each $gradient-name, $gradient-value in colors.block-gradients() {
+
+	.has-#{ $gradient-name }-gradient-background {
+		background: #{ $gradient-value };
+	}
+}
+
 /// Loops through the editor font sizes and adds utility classes for them. This
 /// handles the `.has-{$size}-font-size` classes added via Gutenberg, which may
 /// be useful elsewhere.
