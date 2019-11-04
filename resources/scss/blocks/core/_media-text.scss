@@ -1,5 +1,3 @@
-@use "~codyhouse-framework/main/assets/css/base";
-
 ////
 /// Media text block.
 ///
@@ -7,6 +5,8 @@
 /// @author Paul Eiche <paul@boldoak.design>
 /// @link   https://boldoak.design/themes/trunc
 ////
+
+@use "~codyhouse-framework/main/assets/css/base";
 
 .wp-block-media-text {
 	display: grid;

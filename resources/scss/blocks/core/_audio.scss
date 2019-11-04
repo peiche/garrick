@@ -1,5 +1,3 @@
-@use "../../tools/mixins";
-
 ////
 /// Audio block.
 ///
@@ -7,6 +5,8 @@
 /// @author Paul Eiche <paul@boldoak.design>
 /// @link   https://boldoak.design/themes/trunc
 ////
+
+@use "../../tools/mixins";
 
 .wp-block-audio {
 	margin: 0;

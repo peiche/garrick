@@ -1,5 +1,3 @@
-@use "~codyhouse-framework/main/assets/css/base";
-
 ////
 /// Columns block.
 ///
@@ -7,6 +5,8 @@
 /// @author Paul Eiche <paul@boldoak.design>
 /// @link   https://boldoak.design/themes/trunc
 ////
+
+@use "~codyhouse-framework/main/assets/css/base";
 
 .wp-block-columns {
 	display: flex;
@@ -42,16 +42,6 @@
 		flex-grow: 1;
 		max-width: 100%;
 	}
-
-	// These classes are unused.
-	// @include breakpoint(sm) {
-	// 	@for $i from 2 through 6 {
-	// 		.has-#{ $i }-columns & {
-	// 			flex-basis: calc(100 / #{ $i } * 1%);
-	// 			max-width: calc(100 / #{ $i } * 1%);
-	// 		}
-	// 	}
-	// }
 
 	&.is-vertically-aligned-top {
 		align-self: flex-start;

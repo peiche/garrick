@@ -1,6 +1,3 @@
-@use "~codyhouse-framework/main/assets/css/base";
-@use "../../tools/mixins";
-
 ////
 /// Gallery block.
 ///
@@ -8,6 +5,9 @@
 /// @author Paul Eiche <paul@boldoak.design>
 /// @link   https://boldoak.design/themes/trunc
 ////
+
+@use "~codyhouse-framework/main/assets/css/base";
+@use "../../tools/mixins";
 
 // The wrapper element for the entire gallery.
 .wp-block-gallery {
