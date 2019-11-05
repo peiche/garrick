@@ -1,4 +1,4 @@
-@use "~codyhouse-framework/main/assets/css/base";
+@use "~codyhouse-framework/main/assets/css/base/breakpoints";
 
 .wp-block-jetpack-tiled-gallery {
 	margin-top: var(--component-padding);
@@ -12,7 +12,7 @@
 
 	&.alignwide {
 
-		@include base.breakpoint(md) {
+		@include breakpoints.breakpoint(md) {
 			margin-left: 50%;
 		}
 	}

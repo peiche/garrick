@@ -1,5 +1,3 @@
-@use "~codyhouse-framework/main/assets/css/base";
-
 ////
 /// Alignment classes.
 ///
@@ -11,15 +9,17 @@
 /// @link   https://boldoak.design/themes/trunc
 ////
 
+@use "~codyhouse-framework/main/assets/css/base/breakpoints";
+
 // Shared left and right alignment styles.
 .alignleft,
 .alignright {
 
-	@include base.breakpoint(sm) {
+	@include breakpoints.breakpoint(sm) {
 		max-width: 35%;
 	}
 
-	@include base.breakpoint(md) {
+	@include breakpoints.breakpoint(md) {
 		max-width: 50%;
 	}
 }
@@ -27,7 +27,7 @@
 // Left alignment.
 .alignleft {
 
-	@include base.breakpoint(sm) {
+	@include breakpoints.breakpoint(sm) {
 		float: left;
 		margin: 0 var(--component-padding) var(--component-padding) 0;
 	}
@@ -36,7 +36,7 @@
 // Right alignment.
 .alignright {
 
-	@include base.breakpoint(sm) {
+	@include breakpoints.breakpoint(sm) {
 		float: right;
 		margin: 0 0 var(--component-padding) var(--component-padding);
 	}
@@ -60,7 +60,7 @@
 	max-width: 100vw;
 }
 
-@include base.breakpoint(md) {
+@include breakpoints.breakpoint(md) {
 
 	// We have to check for `.alignfull` because
 	// some blocks still include both classes.
@@ -71,15 +71,14 @@
 }
 
 // Duplicate utility classes.
-// This is pretty much the only proper use for `@extend`.
 .has-text-align-left {
-	@extend .text-left;
+	text-align: left;
 }
 
 .has-text-align-center {
-	@extend .text-center;
+	text-align: center;
 }
 
 .has-text-align-right {
-	@extend .text-right;
+	text-align: right;
 }

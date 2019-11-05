@@ -6,7 +6,7 @@
 /// @link   https://boldoak.design/themes/trunc
 ////
 
-@use "~codyhouse-framework/main/assets/css/base";
+@use "~codyhouse-framework/main/assets/css/base/breakpoints";
 @use "../../tools/mixins";
 
 .wp-block-image {
@@ -25,22 +25,22 @@
 
 	.alignleft {
 
-		@include base.breakpoint(md) {
+		@include breakpoints.breakpoint(md) {
 			margin-left: -15%;
 		}
 
-		@include base.breakpoint(lg) {
+		@include breakpoints.breakpoint(lg) {
 			margin-left: -30%;
 		}
 	}
 
 	.alignright {
 
-		@include base.breakpoint(md) {
+		@include breakpoints.breakpoint(md) {
 			margin-right: -15%;
 		}
 
-		@include base.breakpoint(lg) {
+		@include breakpoints.breakpoint(lg) {
 			margin-right: -30%;
 		}
 	}

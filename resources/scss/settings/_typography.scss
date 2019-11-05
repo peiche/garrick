@@ -1,8 +1,9 @@
-@use "~codyhouse-framework/main/assets/css/base";
+@use "~codyhouse-framework/main/assets/css/base/breakpoints";
 
 // --------------------------------
 // (START) Global Editor code https://codyhouse.co/ds/globals/typography
 // --------------------------------
+
 :root {
 	// body font size
 	--text-base-size: 1em;
@@ -34,13 +35,9 @@
 
 	:root {
 
-		@include base.breakpoint(md) {
+		@include breakpoints.breakpoint(md) {
 			--text-base-size: 1.25em;
 			--text-scale-ratio: 1.25;
 		}
 	}
 }
-
-// --------------------------------
-// (END) Global Editor Code
-// --------------------------------

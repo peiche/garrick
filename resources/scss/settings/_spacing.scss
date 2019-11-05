@@ -1,4 +1,4 @@
-@use "~codyhouse-framework/main/assets/css/base";
+@use "~codyhouse-framework/main/assets/css/base/breakpoints";
 
 // --------------------------------
 
@@ -10,14 +10,8 @@
 
 	:root {
 
-		@include base.breakpoint(md) {
+		@include breakpoints.breakpoint(md) {
 			--space-unit:  1.25em;
 		}
 	}
 }
-
-// --------------------------------
-
-// (END) Global Editor Code
-
-// --------------------------------

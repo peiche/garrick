@@ -6,7 +6,7 @@
 /// @link   https://boldoak.design/themes/trunc
 ////
 
-@use "~codyhouse-framework/main/assets/css/base";
+@use "~codyhouse-framework/main/assets/css/base/mixins" as cf-mixins;
 @use "../tools/mixins";
 
 // Body styles. Note that we're hiding horizontal overflow so that wide images
@@ -138,6 +138,6 @@ em {
 }
 
 mark {
-	background-color: base.alpha(var(--color-accent), 0.2);
+	background-color: cf-mixins.alpha(var(--color-accent), 0.2);
 	color: inherit;
 }

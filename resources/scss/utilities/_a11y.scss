@@ -1,6 +1,3 @@
-@use "~codyhouse-framework/main/assets/css/base";
-@use "../tools/mixins";
-
 ////
 /// Accessibility styles.
 ///
@@ -8,6 +5,9 @@
 /// @author Paul Eiche <paul@boldoak.design>
 /// @link   https://boldoak.design/themes/trunc
 ////
+
+@use "~codyhouse-framework/main/assets/css/base/mixins" as cf-mixins;
+@use "../tools/mixins";
 
 // Text only shown to screen readers.
 
@@ -26,7 +26,7 @@
 	display: inline-block;
 	padding: var(--space-sm) var(--space-md);
 	background-color: var(--color-bg);
-	@include base.fontSmooth;
+	@include cf-mixins.fontSmooth;
 
 	// hide
 	clip: rect(1px, 1px, 1px, 1px);

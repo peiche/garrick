@@ -6,14 +6,14 @@
 /// @link   https://boldoak.design/themes/trunc
 ////
 
-@use "~codyhouse-framework/main/assets/css/base";
+@use "~codyhouse-framework/main/assets/css/base/breakpoints";
 
 .wp-block-media-text {
 	display: grid;
 	grid-template-rows: auto;
 	grid-gap: var(--space-md);
 
-	@include base.breakpoint(sm) {
+	@include breakpoints.breakpoint(sm) {
 		grid-template-areas: "media-text-media media-text-content";
 		grid-template-columns: 50% auto;
 	}
@@ -53,7 +53,7 @@
 	> .wp-block-media-text__media {
 		margin: 0;
 
-		@include base.breakpoint(sm) {
+		@include breakpoints.breakpoint(sm) {
 			grid-area: media-text-media;
 		}
 	}
@@ -61,7 +61,7 @@
 	> .wp-block-media-text__content {
 		word-break: break-word;
 
-		@include base.breakpoint(sm) {
+		@include breakpoints.breakpoint(sm) {
 			grid-area: media-text-content;
 		}
 
@@ -72,7 +72,7 @@
 
 	&.has-media-on-the-right {
 
-		@include base.breakpoint(sm) {
+		@include breakpoints.breakpoint(sm) {
 			grid-template-areas: "media-text-content media-text-media";
 			grid-template-columns: auto 50%;
 		}
@@ -85,7 +85,7 @@
 			padding-left: var(--component-padding);
 			padding-right: var(--component-padding);
 
-			@include base.breakpoint(sm) {
+			@include breakpoints.breakpoint(sm) {
 				padding-left: 0;
 			}
 		}
@@ -94,7 +94,7 @@
 
 			> .wp-block-media-text__content {
 
-				@include base.breakpoint(sm) {
+				@include breakpoints.breakpoint(sm) {
 					padding-left: var(--component-padding);
 					padding-right: 0;
 				}
@@ -120,14 +120,9 @@
 	}
 }
 
-@include base.breakpoint(sm) {
+@include breakpoints.breakpoint(sm) {
 
-	.wp-block-media-text.is-stacked-on-mobile {
-		// grid-template-columns: 100% !important; // Overwrite core's inline style.
-		// grid-template-areas: "media-text-media" "media-text-content";
-	}
+	.wp-block-media-text.is-stacked-on-mobile {}
 
-	.wp-block-media-text.is-stacked-on-mobile.has-media-on-the-right {
-		// grid-template-areas: "media-text-content" "media-text-media";
-	}
+	.wp-block-media-text.is-stacked-on-mobile.has-media-on-the-right {}
 }

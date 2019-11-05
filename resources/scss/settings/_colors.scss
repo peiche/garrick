@@ -1,5 +1,3 @@
-@use "~codyhouse-framework/main/assets/css/base";
-
 ////
 /// Set up and define colors.
 ///
@@ -7,6 +5,8 @@
 /// @author Paul Eiche <paul@boldoak.design>
 /// @link   https://boldoak.design/themes/trunc
 ////
+
+@use "~codyhouse-framework/main/assets/css/base/mixins";
 
 /// Returns a map of block colors in name-value format. These are the colors
 /// defined via the `editor-color-palette` setting in `app/functions-setup.php`
@@ -58,80 +58,79 @@
 :root,
 [data-theme="default"] {
 	// main
-	@include base.defineColorHSL(--color-primary-darker, 220, 90%, 36%);
-	@include base.defineColorHSL(--color-primary-dark, 220, 90%, 46%);
-	@include base.defineColorHSL(--color-primary, 220, 90%, 56%);
-	@include base.defineColorHSL(--color-primary-light, 220, 90%, 66%);
-	@include base.defineColorHSL(--color-primary-lighter, 220, 90%, 76%);
+	@include mixins.defineColorHSL(--color-primary-darker, 220, 90%, 36%);
+	@include mixins.defineColorHSL(--color-primary-dark, 220, 90%, 46%);
+	@include mixins.defineColorHSL(--color-primary, 220, 90%, 56%);
+	@include mixins.defineColorHSL(--color-primary-light, 220, 90%, 66%);
+	@include mixins.defineColorHSL(--color-primary-lighter, 220, 90%, 76%);
 
-	@include base.defineColorHSL(--color-accent-darker, 355, 90%, 41%);
-	@include base.defineColorHSL(--color-accent-dark, 355, 90%, 51%);
-	@include base.defineColorHSL(--color-accent, 355, 90%, 61%);
-	@include base.defineColorHSL(--color-accent-light, 355, 90%, 71%);
-	@include base.defineColorHSL(--color-accent-lighter, 355, 90%, 81%);
+	@include mixins.defineColorHSL(--color-accent-darker, 355, 90%, 41%);
+	@include mixins.defineColorHSL(--color-accent-dark, 355, 90%, 51%);
+	@include mixins.defineColorHSL(--color-accent, 355, 90%, 61%);
+	@include mixins.defineColorHSL(--color-accent-light, 355, 90%, 71%);
+	@include mixins.defineColorHSL(--color-accent-lighter, 355, 90%, 81%);
 
 	// black + white
-	// @include defineColorHSL(--color-black, 240, 8%, 12%);
-	@include base.defineColorHSL(--color-black, 0, 0%, 0%);
-	@include base.defineColorHSL(--color-white, 0, 0%, 100%);
+	@include mixins.defineColorHSL(--color-black, 0, 0%, 0%);
+	@include mixins.defineColorHSL(--color-white, 0, 0%, 100%);
 
 	// feedback
-	@include base.defineColorHSL(--color-success-darker, 94, 48%, 36%);
-	@include base.defineColorHSL(--color-success-dark, 94, 48%, 46%);
-	@include base.defineColorHSL(--color-success, 94, 48%, 56%);
-	@include base.defineColorHSL(--color-success-light, 94, 48%, 66%);
-	@include base.defineColorHSL(--color-success-lighter, 94, 48%, 76%);
+	@include mixins.defineColorHSL(--color-success-darker, 94, 48%, 36%);
+	@include mixins.defineColorHSL(--color-success-dark, 94, 48%, 46%);
+	@include mixins.defineColorHSL(--color-success, 94, 48%, 56%);
+	@include mixins.defineColorHSL(--color-success-light, 94, 48%, 66%);
+	@include mixins.defineColorHSL(--color-success-lighter, 94, 48%, 76%);
 
-	@include base.defineColorHSL(--color-error-darker, 355, 90%, 41%);
-	@include base.defineColorHSL(--color-error-dark, 355, 90%, 51%);
-	@include base.defineColorHSL(--color-error, 355, 90%, 61%);
-	@include base.defineColorHSL(--color-error-light, 355, 90%, 71%);
-	@include base.defineColorHSL(--color-error-lighter, 355, 90%, 81%);
+	@include mixins.defineColorHSL(--color-error-darker, 355, 90%, 41%);
+	@include mixins.defineColorHSL(--color-error-dark, 355, 90%, 51%);
+	@include mixins.defineColorHSL(--color-error, 355, 90%, 61%);
+	@include mixins.defineColorHSL(--color-error-light, 355, 90%, 71%);
+	@include mixins.defineColorHSL(--color-error-lighter, 355, 90%, 81%);
 
-	@include base.defineColorHSL(--color-warning-darker, 46, 100%, 41%);
-	@include base.defineColorHSL(--color-warning-dark, 46, 100%, 51%);
-	@include base.defineColorHSL(--color-warning, 46, 100%, 61%);
-	@include base.defineColorHSL(--color-warning-light, 46, 100%, 71%);
-	@include base.defineColorHSL(--color-warning-lighter, 46, 100%, 81%);
+	@include mixins.defineColorHSL(--color-warning-darker, 46, 100%, 41%);
+	@include mixins.defineColorHSL(--color-warning-dark, 46, 100%, 51%);
+	@include mixins.defineColorHSL(--color-warning, 46, 100%, 61%);
+	@include mixins.defineColorHSL(--color-warning-light, 46, 100%, 71%);
+	@include mixins.defineColorHSL(--color-warning-lighter, 46, 100%, 81%);
 
-	@include base.defineColorHSL(--color-info-darker, 188, 78%, 61%);
-	@include base.defineColorHSL(--color-info-dark, 188, 78%, 51%);
-	@include base.defineColorHSL(--color-info, 188, 78%, 41%);
-	@include base.defineColorHSL(--color-info-light, 188, 78%, 31%);
-	@include base.defineColorHSL(--color-info-lighter, 188, 78%, 21%);
+	@include mixins.defineColorHSL(--color-info-darker, 188, 78%, 61%);
+	@include mixins.defineColorHSL(--color-info-dark, 188, 78%, 51%);
+	@include mixins.defineColorHSL(--color-info, 188, 78%, 41%);
+	@include mixins.defineColorHSL(--color-info-light, 188, 78%, 31%);
+	@include mixins.defineColorHSL(--color-info-lighter, 188, 78%, 21%);
 
-	@include base.defineColorHSL(--color-boldoakdesign-foreground, 19, 84%, 55%);
-	@include base.defineColorHSL(--color-boldoakdesign-background, 354, 22%, 18%);
+	@include mixins.defineColorHSL(--color-boldoakdesign-foreground, 19, 84%, 55%);
+	@include mixins.defineColorHSL(--color-boldoakdesign-background, 354, 22%, 18%);
 
 	// color contrasts
-	@include base.defineColorHSL(--color-bg, 0, 0%, 100%);
-	@include base.defineColorHSL(--color-contrast-lower, 0, 0%, 95%);
-	@include base.defineColorHSL(--color-contrast-low, 240, 1%, 83%);
-	@include base.defineColorHSL(--color-contrast-medium, 240, 1%, 48%);
-	@include base.defineColorHSL(--color-contrast-high, 240, 4%, 20%);
-	@include base.defineColorHSL(--color-contrast-higher, 240, 8%, 12%);
+	@include mixins.defineColorHSL(--color-bg, 0, 0%, 100%);
+	@include mixins.defineColorHSL(--color-contrast-lower, 0, 0%, 95%);
+	@include mixins.defineColorHSL(--color-contrast-low, 240, 1%, 83%);
+	@include mixins.defineColorHSL(--color-contrast-medium, 240, 1%, 48%);
+	@include mixins.defineColorHSL(--color-contrast-high, 240, 4%, 20%);
+	@include mixins.defineColorHSL(--color-contrast-higher, 240, 8%, 12%);
 
 	// code
-	@include base.defineColorHSL(--color-code, 202, 32%, 15%);
+	@include mixins.defineColorHSL(--color-code, 202, 32%, 15%);
 }
 
 [data-theme="dark"],
 .theme-dark {
 	// main
-	@include base.defineColorHSL(--color-primary-darker, 197, 73%, 37%);
-	@include base.defineColorHSL(--color-primary-dark, 197, 73%, 47%);
-	@include base.defineColorHSL(--color-primary, 197, 73%, 57%);
-	@include base.defineColorHSL(--color-primary-light, 197, 73%, 67%);
-	@include base.defineColorHSL(--color-primary-lighter, 197, 73%, 95%);
+	@include mixins.defineColorHSL(--color-primary-darker, 197, 73%, 37%);
+	@include mixins.defineColorHSL(--color-primary-dark, 197, 73%, 47%);
+	@include mixins.defineColorHSL(--color-primary, 197, 73%, 57%);
+	@include mixins.defineColorHSL(--color-primary-light, 197, 73%, 67%);
+	@include mixins.defineColorHSL(--color-primary-lighter, 197, 73%, 95%);
 
 	// color contrasts
-	@include base.defineColorHSL(--color-bg, 240, 8%, 12%);
-	@include base.defineColorHSL(--color-contrast-lower, 240, 6%, 19%);
-	@include base.defineColorHSL(--color-contrast-low, 240, 3%, 27%);
-	@include base.defineColorHSL(--color-contrast-medium, 240, 1%, 57%);
-	@include base.defineColorHSL(--color-contrast-high, 0, 0%, 89%);
-	@include base.defineColorHSL(--color-contrast-higher, 0, 0%, 100%);
+	@include mixins.defineColorHSL(--color-bg, 240, 8%, 12%);
+	@include mixins.defineColorHSL(--color-contrast-lower, 240, 6%, 19%);
+	@include mixins.defineColorHSL(--color-contrast-low, 240, 3%, 27%);
+	@include mixins.defineColorHSL(--color-contrast-medium, 240, 1%, 57%);
+	@include mixins.defineColorHSL(--color-contrast-high, 0, 0%, 89%);
+	@include mixins.defineColorHSL(--color-contrast-higher, 0, 0%, 100%);
 
-	@include base.defineColorHSL(--color-boldoakdesign-foreground, 354, 22%, 18%);
-	@include base.defineColorHSL(--color-boldoakdesign-background, 19, 84%, 55%);
+	@include mixins.defineColorHSL(--color-boldoakdesign-foreground, 354, 22%, 18%);
+	@include mixins.defineColorHSL(--color-boldoakdesign-background, 19, 84%, 55%);
 }
