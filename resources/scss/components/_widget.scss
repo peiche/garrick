@@ -55,6 +55,15 @@
 	}
 
 	li {
-		margin-bottom: var(--space-xs);
+		margin-bottom: var(--space-xxs);
+	}
+
+	a {
+		color: var(--color-contrast-high);
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 }

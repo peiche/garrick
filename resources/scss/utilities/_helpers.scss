@@ -6,8 +6,8 @@
 /// @link   https://boldoak.design/themes/trunc
 ////
 
-@use "../settings/colors";
-@use "../settings/fonts";
+@use '../settings/colors';
+@use '../settings/fonts';
 
 /// Loops through the theme colors and adds utility classes for them. Primarily,
 /// these are the `.has-{$color}-color` and `.has-{$color}-background-color`

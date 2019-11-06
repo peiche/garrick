@@ -30,9 +30,14 @@
 	}
 
 	&__link {
+		text-decoration: none;
 		display: inline-flex;
 		align-items: center;
 		color: var(--color-contrast-higher);
+
+		&:hover {
+			text-decoration: underline;
+		}
 
 		.btn > & {
 			color: inherit;

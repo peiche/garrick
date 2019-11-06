@@ -1,6 +1,12 @@
-// --------------------------------
-// (START) Global Editor code https://codyhouse.co/ds/globals/forms
-// --------------------------------
+////
+/// Form control components.
+///
+/// @group  Components
+/// @author Paul Eiche <paul@boldoak.design>
+/// @link   https://codyhouse.co/ds/globals/forms
+/// @link   https://boldoak.design/themes/trunc
+////
+
 :root {
 	--form-control-padding-x: var(--space-sm);
 	--form-control-padding-y: var(--space-xs);
@@ -37,7 +43,3 @@
 .form-label {
 	font-size: var(--text-sm);
 }
-
-// --------------------------------
-// (END) Global Editor Code
-// --------------------------------

@@ -1,12 +1,12 @@
 ////
 /// Verse block.
 ///
-/// @group  Blocks
+/// @group  Core
 /// @author Paul Eiche <paul@boldoak.design>
 /// @link   https://boldoak.design/themes/trunc
 ////
 
-@use "../../tools/mixins";
+@use '../../tools/mixins';
 
 .wp-block-verse {
 	@include mixins.preformatted;

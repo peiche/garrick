@@ -1,10 +1,13 @@
-/* --------------------------------
-
-Title: Auto Sized Grid
-Descr: A grid layout based on CSS Grid where the columns are automatically
-	   created according to a min-width value
-
--------------------------------- */
+////
+/// Auto sized grid.
+///
+/// A grid layout based on CSS Grid where the columns are automatically
+/// created according to a min-width value
+///
+/// @group  Components
+/// @author Paul Eiche <paul@boldoak.design>
+/// @link   https://boldoak.design/themes/trunc
+////
 
 [class*="max-width-"] {
 	margin-left: auto;

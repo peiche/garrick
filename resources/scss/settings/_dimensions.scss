@@ -12,7 +12,6 @@
 /// @since  1.0.0
 /// @access public
 /// @return {number}  The content width in pixels.
-
 @function content-width() {
 	@return 48rem; // width of --max-width-sm
 }

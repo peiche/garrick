@@ -10,13 +10,13 @@
 /// @link   https://boldoak.design/themes/trunc
 ////
 
-@use "sass:meta";
+@use 'sass:meta';
 @use 'vendor/codyhouse-framework';
 
 // Import settings.
 @use 'settings';
 
-// Reset controls.
+// Editor overrides.
 @use 'editor/controls';
 
 // Prefixes all of the styles with `.editor-styles-wrapper` for use within the

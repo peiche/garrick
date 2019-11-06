@@ -21,9 +21,14 @@
 
 	// Site title link.
 	&__title-link {
+		text-decoration: none;
 		color: var(--color-contrast-high);
 		font-family: var(--font-heading);
 		font-weight: var(--font-weight-bold);
+
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 
 	// The site description.

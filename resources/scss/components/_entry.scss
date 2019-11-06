@@ -119,6 +119,11 @@
 	&__author-link,
 	&__permalink {
 		color: var(--color-contrast-medium);
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
 
 		.single & {
 			color: inherit;

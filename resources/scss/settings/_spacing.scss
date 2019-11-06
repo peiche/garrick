@@ -1,10 +1,13 @@
-@use "~codyhouse-framework/main/assets/css/base/breakpoints";
+////
+/// Spacing settings.
+///
+/// @group  Settings
+/// @author Paul Eiche <paul@boldoak.design>
+/// @link   https://codyhouse.co/ds/globals/spacing
+/// @link   https://boldoak.design/themes/trunc
+////
 
-// --------------------------------
-
-// (START) Global Editor code https://codyhouse.co/ds/globals/spacing
-
-// --------------------------------
+@use '~codyhouse-framework/main/assets/css/base/breakpoints';
 
 @supports (--css: variables) {
 

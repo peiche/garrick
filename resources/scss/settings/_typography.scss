@@ -1,8 +1,13 @@
-@use "~codyhouse-framework/main/assets/css/base/breakpoints";
+////
+/// Typography settings.
+///
+/// @group  Settings
+/// @author Paul Eiche <paul@boldoak.design>
+/// @link   https://codyhouse.co/ds/globals/typography
+/// @link   https://boldoak.design/themes/trunc
+////
 
-// --------------------------------
-// (START) Global Editor code https://codyhouse.co/ds/globals/typography
-// --------------------------------
+@use '~codyhouse-framework/main/assets/css/base/breakpoints';
 
 :root {
 	// body font size

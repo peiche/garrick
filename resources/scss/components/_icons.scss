@@ -1,5 +1,13 @@
+////
+/// Icon component.
+///
+/// @group  Components
+/// @author Paul Eiche <paul@boldoak.design>
+/// @link   https://codyhouse.co/ds/globals/colors
+/// @link   https://boldoak.design/themes/trunc
+////
+
 .icon {
-	// override for codyhouse-framework/main/assets/css/global/icons
 	color: currentColor;
 	stroke: var(--color-primary);
 
