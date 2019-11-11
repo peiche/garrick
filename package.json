@@ -1,10 +1,10 @@
 {
-	"name": "trunc",
+	"name": "garrick",
 	"version": "1.0.0",
-	"description": "Mythic is a next-generation starter theme designed to help theme authors write elegant, intelligent, and modern code.",
+	"description": "Garrick is a modern, responsive theme.",
 	"author": "Paul Eiche",
 	"license": "GPL-2.0+",
-	"homepage": "https://boldoak.design/themes/trunc",
+	"homepage": "https://boldoak.design/themes/garrick",
 	"main": "resources/js/app.js",
 	"scripts": {
 		"build": "npm run prod && npm run i18n && npm run export",
@@ -34,7 +34,7 @@
 		"browser-sync": "^2.26.7",
 		"browser-sync-webpack-plugin": "2.2.2",
 		"choices.js": "^7.1.5",
-		"codyhouse-framework": "^2.1.11",
+		"codyhouse-framework": "^2.1.12",
 		"copy-webpack-plugin": "^4.6.0",
 		"cross-env": "^5.2.1",
 		"eslint": "^5.16.0",
@@ -51,7 +51,7 @@
 		"stylelint": "^9.10.1",
 		"stylelint-config-wordpress": "^13.1.0",
 		"stylelint-scss": "^3.12.1",
-		"svg-spritemap-webpack-plugin": "^3.5.0",
+		"svg-spritemap-webpack-plugin": "^3.5.1",
 		"theme-claim": "^0.1.2",
 		"vue-template-compiler": "^2.6.10"
 	},

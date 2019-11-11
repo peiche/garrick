@@ -6,17 +6,17 @@
  * They allow you to add bindings to the container on registration and boot them
  * once everything has been registered.
  *
- * @package   Trunc
+ * @package   Garrick
  * @author    Paul Eiche <paul@boldoak.design>
  * @copyright 2018 Paul Eiche
  * @license   https://www.gnu.org/licenses/gpl-2.0.html GPL-2.0-or-later
- * @link      https://boldoak.design/themes/trunc
+ * @link      https://boldoak.design/themes/garrick
  */
 
-namespace Trunc\Providers;
+namespace Garrick\Providers;
 
 use Hybrid\Tools\ServiceProvider;
-use Trunc\Customize\Customize;
+use Garrick\Customize\Customize;
 
 /**
  * App service provider.
@@ -40,7 +40,7 @@ class AppServiceProvider extends ServiceProvider {
 		$this->app->singleton( Customize::class );
 
 		// Bind the Laravel Mix manifest for cache-busting.
-		$this->app->singleton( 'trunc/mix', function() {
+		$this->app->singleton( 'garrick/mix', function() {
 
 			$file = get_theme_file_path( 'dist/mix-manifest.json' );
 

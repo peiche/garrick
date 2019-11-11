@@ -5,14 +5,14 @@
  * This file holds some setup actions for scripts and styles as well as a helper
  * functions for work with assets.
  *
- * @package   Trunc
+ * @package   Garrick
  * @author    Paul Eiche <paul@boldoak.design>
  * @copyright 2018 Paul Eiche
  * @license   https://www.gnu.org/licenses/gpl-2.0.html GPL-2.0-or-later
- * @link      https://boldoak.design/themes/trunc
+ * @link      https://boldoak.design/themes/garrick
  */
 
-namespace Trunc;
+namespace Garrick;
 
 use Hybrid\App;
 use Hybrid\Font;
@@ -38,10 +38,10 @@ add_action( 'wp_enqueue_scripts', function() {
 
 	// Enqueue theme scripts.
 	wp_enqueue_script( 'codyhouse-util', asset( 'js/util.js' ), null, null, true );
-	wp_enqueue_script( 'trunc-app', asset( 'js/app.js' ), null, null, true );
+	wp_enqueue_script( 'garrick-app', asset( 'js/app.js' ), null, null, true );
 
 	// Enqueue theme styles.
-	wp_enqueue_style( 'trunc-screen', asset( 'css/screen.css' ), null, null );
+	wp_enqueue_style( 'garrick-screen', asset( 'css/screen.css' ), null, null );
 
 	// Enqueue fonts set in Customizer.
 	$font_primary = get_theme_mod( 'font_primary', '' );
@@ -64,7 +64,7 @@ add_action( 'wp_enqueue_scripts', function() {
 		// Register Google Fonts.
 		// @link https://github.com/justintadlock/hybrid-font
 		// @link https://fonts.google.com
-		Font\enqueue( 'trunc', [
+		Font\enqueue( 'garrick', [
 			'family' => $fonts,
 			'subset' => [
 				'latin',
@@ -87,7 +87,7 @@ add_action( 'wp_enqueue_scripts', function() {
 add_action( 'enqueue_block_editor_assets', function() {
 
 	// Enqueue theme editor styles.
-	wp_enqueue_style( 'trunc-editor', asset( 'css/editor.css' ), null, null );
+	wp_enqueue_style( 'garrick-editor', asset( 'css/editor.css' ), null, null );
 
 	// Unregister core block and theme styles.
 	wp_deregister_style( 'wp-block-library' );
@@ -114,7 +114,7 @@ add_action( 'enqueue_block_editor_assets', function() {
 function asset( $path ) {
 
 	// Get the Laravel Mix manifest.
-	$manifest = App::resolve( 'trunc/mix' );
+	$manifest = App::resolve( 'garrick/mix' );
 
 	// Make sure to trim any slashes from the front of the path.
 	$path = '/' . ltrim( $path, '/' );

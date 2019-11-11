@@ -1,9 +1,9 @@
 {
-	"name"        : "peiche/trunc",
+	"name"        : "peiche/garrick",
 	"type"        : "wordpress-theme",
-	"description" : "Mythic is a next-generation starter theme designed to help theme authors write elegant, intelligent, and modern code.",
+	"description" : "Garrick is a modern, responsive theme.",
 	"keywords"    : ["wordpress"],
-	"homepage"    : "https://boldoak.design/themes/trunc",
+	"homepage"    : "https://boldoak.design/themes/garrick",
 	"license"     : "GPL-2.0-or-later",
 	"authors"     : [
 		{
@@ -14,7 +14,7 @@
 	],
 	"autoload"    : {
 		"psr-4" : {
-			"Trunc\\" : "app/"
+			"Garrick\\" : "app/"
 		}
 	},
 	"require": {

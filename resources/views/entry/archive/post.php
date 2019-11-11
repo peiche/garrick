@@ -13,7 +13,7 @@
 
 			<?php if ( ! is_author() ) : ?>
 				<?php Hybrid\View\display( 'partials', 'avatar', [ 'author' => get_post()->post_author, 'size' => 30 ] ) ?>
-				<?php Hybrid\Post\display_author( [ 'after' => \Trunc\sep() ] ) ?>
+				<?php Hybrid\Post\display_author( [ 'after' => \Garrick\sep() ] ) ?>
 			<?php endif ?>
 
 			<a href="<?php echo esc_url( get_permalink() ) ?>" class="entry__permalink"><?php Hybrid\Post\display_date() ?></a>

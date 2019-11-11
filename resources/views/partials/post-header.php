@@ -21,7 +21,7 @@
 				<?php Hybrid\View\display( 'partials', 'avatar', [ 'author' => get_post()->post_author, 'size' => 40 ] ) ?>
 
 				<?php Hybrid\Post\display_author() ?>
-				<?php Hybrid\Post\display_date( [ 'before' => \Trunc\sep() ] ) ?>
+				<?php Hybrid\Post\display_date( [ 'before' => \Garrick\sep() ] ) ?>
 			</div>
 		<?php endif; ?>
 

@@ -4,11 +4,11 @@
  *
  * This file is used to bootstrap the theme.
  *
- * @package   Trunc
+ * @package   Garrick
  * @author    Paul Eiche <paul@boldoak.design>
  * @copyright 2018 Paul Eiche
  * @license   https://www.gnu.org/licenses/gpl-2.0.html GPL-2.0-or-later
- * @link      https://boldoak.design/themes/trunc
+ * @link      https://boldoak.design/themes/garrick
  */
 
 # ------------------------------------------------------------------------------

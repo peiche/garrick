@@ -8,17 +8,17 @@
  * PHP requirement. Only call this file after initially checking that the site
  * doesn't meet either the WP or PHP requirement.
  *
- * @package   Trunc
+ * @package   Garrick
  * @author    Paul Eiche <paul@boldoak.design>
  * @copyright 2018 Paul Eiche
  * @license   https://www.gnu.org/licenses/gpl-2.0.html GPL-2.0-or-later
- * @link      https://boldoak.design/themes/trunc
+ * @link      https://boldoak.design/themes/garrick
  */
 
 # Add actions to fail at certain points in the load process.
-add_action( 'after_switch_theme', 'trunc_switch_theme'   );
-add_action( 'load-customize.php', 'trunc_load_customize' );
-add_action( 'template_redirect',  'trunc_preview'        );
+add_action( 'after_switch_theme', 'garrick_switch_theme'   );
+add_action( 'load-customize.php', 'garrick_load_customize' );
+add_action( 'template_redirect',  'garrick_preview'        );
 
 /**
  * Returns the compatibility messaged based on whether the WP or PHP minimum
@@ -28,13 +28,13 @@ add_action( 'template_redirect',  'trunc_preview'        );
  * @access public
  * @return string
  */
-function trunc_compat_message() {
+function garrick_compat_message() {
 
 	if ( version_compare( $GLOBALS['wp_version'], '4.9.6', '<' ) ) {
 
 		return sprintf(
 			// Translators: 1 is the required WordPress version and 2 is the user's current version.
-			__( 'Trunc requires at least WordPress version %1$s. You are running version %2$s. Please upgrade and try again.', 'trunc' ),
+			__( 'Garrick requires at least WordPress version %1$s. You are running version %2$s. Please upgrade and try again.', 'garrick' ),
 			'4.9.6',
 			$GLOBALS['wp_version']
 		);
@@ -43,7 +43,7 @@ function trunc_compat_message() {
 
 		return sprintf(
 			// Translators: 1 is the required PHP version and 2 is the user's current version.
-			__( 'Trunc requires at least PHP version %1$s. You are running version %2$s. Please upgrade and try again.', 'trunc' ),
+			__( 'Garrick requires at least PHP version %1$s. You are running version %2$s. Please upgrade and try again.', 'garrick' ),
 			'5.6',
 			PHP_VERSION
 		);
@@ -60,13 +60,13 @@ function trunc_compat_message() {
  * @param  string  $old_name  Previous theme name/slug.
  * @return void
  */
-function trunc_switch_theme( $old_name ) {
+function garrick_switch_theme( $old_name ) {
 
 	switch_theme( $old_name ? $old_name : WP_DEFAULT_THEME );
 
 	unset( $_GET['activated'] );
 
-	add_action( 'admin_notices', 'trunc_upgrade_notice' );
+	add_action( 'admin_notices', 'garrick_upgrade_notice' );
 }
 
 /**
@@ -76,9 +76,9 @@ function trunc_switch_theme( $old_name ) {
  * @access public
  * @return void
  */
-function trunc_upgrade_notice() {
+function garrick_upgrade_notice() {
 
-	printf( '<div class="error"><p>%s</p></div>', esc_html( trunc_compat_message() ) );
+	printf( '<div class="error"><p>%s</p></div>', esc_html( garrick_compat_message() ) );
 }
 
 /**
@@ -88,9 +88,9 @@ function trunc_upgrade_notice() {
  * @access public
  * @return void
  */
-function trunc_load_customize() {
+function garrick_load_customize() {
 
-	wp_die( esc_html( trunc_compat_message() ), '', array( 'back_link' => true ) );
+	wp_die( esc_html( garrick_compat_message() ), '', array( 'back_link' => true ) );
 }
 
 /**
@@ -100,9 +100,9 @@ function trunc_load_customize() {
  * @access public
  * @return void
  */
-function trunc_preview() {
+function garrick_preview() {
 
 	if ( isset( $_GET['preview'] ) ) { // WPCS: CSRF ok.
-		wp_die( esc_html( trunc_compat_message() ) );
+		wp_die( esc_html( garrick_compat_message() ) );
 	}
 }

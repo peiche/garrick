@@ -7,10 +7,10 @@
  *
  * @link https://laravel.com/docs/5.6/mix
  *
- * @package   Trunc
+ * @package   Garrick
  * @author    Paul Eiche <paul@boldoak.design>
  * @copyright 2019 Paul Eiche
- * @link      https://boldoak.design/themes/trunc
+ * @link      https://boldoak.design/themes/garrick
  * @license   https://www.gnu.org/licenses/gpl-2.0.html GPL-2.0-or-later
  */
 

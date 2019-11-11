@@ -5,10 +5,10 @@
  * uploading to a site or zipping. Edit the `files` or `folders` variables if
  * you need to change something.
  *
- * @package   Trunc
+ * @package   Garrick
  * @author    Paul Eiche <paul@boldoak.design>
  * @copyright 2019 Paul Eiche
- * @link      https://boldoak.design/themes/trunc
+ * @link      https://boldoak.design/themes/garrick
  * @license   https://www.gnu.org/licenses/gpl-2.0.html GPL-2.0-or-later
  */
 
@@ -18,7 +18,7 @@ const rimraf  = require( 'rimraf' );
 const fs      = require( 'fs' );
 
 // Folder name to export the files to.
-let exportPath = 'trunc';
+let exportPath = 'garrick';
 
 // Theme root-level files to include.
 let files = [

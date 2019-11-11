@@ -10,14 +10,14 @@
  * things in this file. Those APIs should be used instead of attempting to use
  * `remove_action()`.
  *
- * @package   Trunc
+ * @package   Garrick
  * @author    Paul Eiche <paul@boldoak.design>
  * @copyright 2018 Paul Eiche
  * @license   https://www.gnu.org/licenses/gpl-2.0.html GPL-2.0-or-later
- * @link      https://boldoak.design/themes/trunc
+ * @link      https://boldoak.design/themes/garrick
  */
 
-namespace Trunc;
+namespace Garrick;
 
 use Marando\Color\Color;
 
@@ -41,7 +41,7 @@ add_action( 'after_setup_theme', function() {
 	$GLOBALS['content_width'] = 2000; // super wide for full width images
 
 	// Load theme translations.
-	load_theme_textdomain( 'trunc', get_parent_theme_file_path( 'resources/lang' ) );
+	load_theme_textdomain( 'garrick', get_parent_theme_file_path( 'resources/lang' ) );
 
 	// Automatically add the `<title>` tag.
 	add_theme_support( 'title-tag' );
@@ -82,54 +82,54 @@ add_action( 'after_setup_theme', function() {
 	add_theme_support( 'editor-color-palette', [
 
 		[
-			'name'  => __( 'Primary', 'trunc' ),
-			'description' => __( 'test', 'trunc' ),
+			'name'  => __( 'Primary', 'garrick' ),
+			'description' => __( 'test', 'garrick' ),
 			'slug'  => 'primary',
 			'color' => get_theme_mod('primary_color_light', '#2a6df4'),
 		],
 		[
-			'name'  => __( 'Accent', 'trunc' ),
+			'name'  => __( 'Accent', 'garrick' ),
 			'slug'  => 'accent',
 			'color' => '#f54251',
 		],
 		[
-			'name'  => __( 'Success', 'trunc' ),
+			'name'  => __( 'Success', 'garrick' ),
 			'slug'  => 'success',
 			'color' => '#88c559',
 		],
 		[
-			'name'  => __( 'Error', 'trunc' ),
+			'name'  => __( 'Error', 'garrick' ),
 			'slug'  => 'error',
 			'color' => '#f54251',
 		],
 		[
-			'name'  => __( 'Warning', 'trunc' ),
+			'name'  => __( 'Warning', 'garrick' ),
 			'slug'  => 'warning',
 			'color' => '#ffd138',
 		],
 
 		[
-			'name'  => __( 'Higher Contrast', 'trunc' ),
+			'name'  => __( 'Higher Contrast', 'garrick' ),
 			'slug'  => 'higher-contrast',
 			'color' => '#1c1c21',
 		],
 		[
-			'name'  => __( 'High Contrast', 'trunc' ),
+			'name'  => __( 'High Contrast', 'garrick' ),
 			'slug'  => 'high-contrast',
 			'color' => '#313135',
 		],
 		[
-			'name'  => __( 'Medium Contrast', 'trunc' ),
+			'name'  => __( 'Medium Contrast', 'garrick' ),
 			'slug'  => 'medium-contrast',
 			'color' => '#79797c',
 		],
 		[
-			'name'  => __( 'Low Contrast', 'trunc' ),
+			'name'  => __( 'Low Contrast', 'garrick' ),
 			'slug'  => 'low-contrast',
 			'color' => '#d3d3d4',
 		],
 		[
-			'name'  => __( 'Lower Contrast', 'trunc' ),
+			'name'  => __( 'Lower Contrast', 'garrick' ),
 			'slug'  => 'lower-contrast',
 			'color' => '#f2f2f2',
 		],
@@ -140,26 +140,26 @@ add_action( 'after_setup_theme', function() {
 	// `resources/scss/settings/_fonts.scss` file.
 	add_theme_support( 'editor-font-sizes', [
 		[
-			'name'      => __( 'Small', 'trunc' ),
-			'shortName' => __( 'S', 'trunc' ),
+			'name'      => __( 'Small', 'garrick' ),
+			'shortName' => __( 'S', 'garrick' ),
 			'size'      => 16,
 			'slug'      => 'small'
 		],
 		[
-			'name'      => __( 'Regular', 'trunc' ),
-			'shortName' => __( 'M', 'trunc' ),
+			'name'      => __( 'Regular', 'garrick' ),
+			'shortName' => __( 'M', 'garrick' ),
 			'size'      => 20,
 			'slug'      => 'regular'
 		],
 		[
-			'name'      => __( 'Large', 'trunc' ),
-			'shortName' => __( 'L', 'trunc' ),
+			'name'      => __( 'Large', 'garrick' ),
+			'shortName' => __( 'L', 'garrick' ),
 			'size'      => 25,
 			'slug'      => 'large'
 		],
 		[
-			'name'      => __( 'Larger', 'trunc' ),
-			'shortName' => __( 'XL', 'trunc' ),
+			'name'      => __( 'Larger', 'garrick' ),
+			'shortName' => __( 'XL', 'garrick' ),
 			'size'      => 31,
 			'slug'      => 'larger'
 		]
@@ -254,11 +254,11 @@ add_action( 'after_setup_theme', function() {
 add_action( 'init', function() {
 
 	register_nav_menus( [
-		'primary' => esc_html_x( 'Primary', 'primary nav menu location', 'trunc' )
+		'primary' => esc_html_x( 'Primary', 'primary nav menu location', 'garrick' )
 	] );
 
 	register_nav_menus( [
-		'footer' => esc_html_x( 'Footer', 'footer nav menu location', 'trunc' )
+		'footer' => esc_html_x( 'Footer', 'footer nav menu location', 'garrick' )
 	] );
 
 }, 5 );
@@ -281,7 +281,7 @@ add_action( 'init', function() {
 	set_post_thumbnail_size( 178, 100, true );
 
 	// Register custom image sizes.
-	add_image_size( 'trunc-medium', 750, 422, true );
+	add_image_size( 'garrick-medium', 750, 422, true );
 
 }, 5 );
 
@@ -305,7 +305,7 @@ add_action( 'widgets_init', function() {
 
 	register_sidebar( [
 		'id'   => 'footer',
-		'name' => esc_html_x( 'Footer', 'sidebar', 'trunc' )
+		'name' => esc_html_x( 'Footer', 'sidebar', 'garrick' )
 	] + $args );
 
 }, 5 );
@@ -503,7 +503,7 @@ add_action( 'hybrid/templates/register', function( $templates ) {
 	$templates->add(
 		'template/hero-header.php',
 		[
-			'label'      => __( 'Hero Header', 'trunc' ),
+			'label'      => __( 'Hero Header', 'garrick' ),
 			'post_types' => [ 'post', 'page' ]
 		]
 	);
@@ -511,7 +511,7 @@ add_action( 'hybrid/templates/register', function( $templates ) {
 	$templates->add(
 		'template/no-header.php',
 		[
-			'label'      => __( 'No Header', 'trunc' ),
+			'label'      => __( 'No Header', 'garrick' ),
 			'post_types' => [ 'post', 'page' ]
 		]
 	);
@@ -519,7 +519,7 @@ add_action( 'hybrid/templates/register', function( $templates ) {
 	$templates->add(
 		'template/no-image.php',
 		[
-			'label'      => __( 'No Featured Image', 'trunc' ),
+			'label'      => __( 'No Featured Image', 'garrick' ),
 			'post_types' => [ 'post', 'page' ]
 		]
 	);
@@ -527,7 +527,7 @@ add_action( 'hybrid/templates/register', function( $templates ) {
 	$templates->add(
 		'template/full-width.php',
 		[
-			'label'      => __( 'Full Width', 'trunc' ),
+			'label'      => __( 'Full Width', 'garrick' ),
 			'post_types' => [ 'post', 'page' ]
 		]
 	);
@@ -535,7 +535,7 @@ add_action( 'hybrid/templates/register', function( $templates ) {
 	$templates->add(
 		'template/cover-header.php',
 		[
-			'label'	     => __( 'Cover Header', 'trunc' ),
+			'label'	     => __( 'Cover Header', 'garrick' ),
 			'post_types' => [ 'post', 'page' ]
 		]
 	);

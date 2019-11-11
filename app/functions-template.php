@@ -5,14 +5,14 @@
  * This file holds template tags for the theme. Template tags are PHP functions
  * meant for use within theme templates.
  *
- * @package   Trunc
+ * @package   Garrick
  * @author    Paul Eiche <paul@boldoak.design>
  * @copyright 2018 Paul Eiche
  * @license   https://www.gnu.org/licenses/gpl-2.0.html GPL-2.0-or-later
- * @link      https://boldoak.design/themes/trunc
+ * @link      https://boldoak.design/themes/garrick
  */
 
-namespace Trunc;
+namespace Garrick;
 
 /**
  * Returns the metadata separator.
@@ -25,10 +25,10 @@ namespace Trunc;
 function sep( $sep = '' ) {
 
 	return apply_filters(
-		'trunc/sep',
+		'garrick/sep',
 		sprintf(
 			' <span class="sep">%s</span> ',
-			$sep ?: esc_html_x( '&middot;', 'meta separator', 'trunc' )
+			$sep ?: esc_html_x( '&middot;', 'meta separator', 'garrick' )
 		)
 	);
 }
@@ -48,11 +48,11 @@ function sep( $sep = '' ) {
 function get_svg( $args = [] ) {
 	// Make sure $args are an array.
 	if ( empty( $args ) ) {
-		return esc_html__( 'Please define default parameters in the form of an array.', 'trunc' );
+		return esc_html__( 'Please define default parameters in the form of an array.', 'garrick' );
 	}
 	// Define an icon.
 	if ( false === array_key_exists( 'icon', $args ) ) {
-		return esc_html__( 'Please define an SVG icon filename.', 'trunc' );
+		return esc_html__( 'Please define an SVG icon filename.', 'garrick' );
 	}
 	// Set defaults.
 	$defaults = [

@@ -5,12 +5,12 @@
 		<?php Hybrid\Comment\display_permalink( [
 			'text' => sprintf(
 				// Translators: 1 is the comment date and 2 is the time.
-				esc_html__( '%1$s at %2$s', 'trunc' ),
+				esc_html__( '%1$s at %2$s', 'garrick' ),
 				Hybrid\Comment\render_date(),
 				Hybrid\Comment\render_time()
 			)
 		] ) ?>
-		<?php Hybrid\Comment\display_edit_link( [ 'before' => Trunc\sep() ] ) ?>
+		<?php Hybrid\Comment\display_edit_link( [ 'before' => Garrick\sep() ] ) ?>
 	</div>
 
 <?php /* No closing </li> is needed.  WordPress will know where to add it. */ ?>

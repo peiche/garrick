@@ -3,7 +3,7 @@
 ///
 /// @group  Elements
 /// @author Paul Eiche <paul@boldoak.design>
-/// @link   https://boldoak.design/themes/trunc
+/// @link   https://boldoak.design/themes/garrick
 ////
 
 @use '~codyhouse-framework/main/assets/css/base/mixins' as cf-mixins;
@@ -96,7 +96,7 @@ pre {
 }
 
 code {
-	background-color: hsla(var(--color-contrast-higher-h),var(--color-contrast-higher-s),var(--color-contrast-higher-l),0.08);
+	background-color: hsla(var(--color-contrast-higher-h), var(--color-contrast-higher-s), var(--color-contrast-higher-l), 0.08);
 	padding: var(--space-xxxxs) var(--space-xxxs);
 
 	pre & {

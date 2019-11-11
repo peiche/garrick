@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<ruleset name="Trunc Theme Coding Standards">
+<ruleset name="Garrick Theme Coding Standards">
 
 	<!-- Use WPTRTCS: https://github.com/WPTRT/WPThemeReview. -->
 	<rule ref="WPThemeReview"/>
@@ -19,7 +19,7 @@
 	<rule ref="WordPress.WP.I18n">
 		<properties>
 			<property name="text_domain" type="array">
-				<element value="trunc"/>
+				<element value="garrick"/>
 			</property>
 		</properties>
 	</rule>
@@ -29,7 +29,7 @@
 		<properties>
 			<property name="customAutoEscapedFunctions" type="array">
 				<element value="Hybrid" />
-				<element value="Trunc" />
+				<element value="Garrick" />
 			</property>
 		</properties>
 	</rule>

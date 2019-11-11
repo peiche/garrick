@@ -13,7 +13,7 @@
 		<div class="<?php echo esc_attr( $image_aspect_ratio ) ?> margin-y-sm bg-contrast-lower rounded">
 			<div class="media-wrapper--icon flex items-center justify-center">
 				<?php $post_format = get_post_format() ?: 'standard'; ?>
-				<?php echo \Trunc\get_svg( [ 'icon' => 'format-' . $post_format, 'class' => 'icon--md color-inherit' ] ) ?>
+				<?php echo \Garrick\get_svg( [ 'icon' => 'format-' . $post_format, 'class' => 'icon--md color-inherit' ] ) ?>
 			</div>
 		</div>
 	</a>

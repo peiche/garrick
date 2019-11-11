@@ -5,11 +5,11 @@
  * This file is used to create a new application instance and bind items to the
  * container. This is the heart of the application.
  *
- * @package   Trunc
+ * @package   Garrick
  * @author    Paul Eiche <paul@boldoak.design>
  * @copyright 2018 Paul Eiche
  * @license   https://www.gnu.org/licenses/gpl-2.0.html GPL-2.0-or-later
- * @link      https://boldoak.design/themes/trunc
+ * @link      https://boldoak.design/themes/garrick
  */
 
 # ------------------------------------------------------------------------------
@@ -20,7 +20,7 @@
 # this instance via the `\Hybrid\app()` function or `\Hybrid\App` static class
 # after the application has booted.
 
-$trunc = new \Hybrid\Core\Application();
+$garrick = new \Hybrid\Core\Application();
 
 # ------------------------------------------------------------------------------
 # Register service providers with the application.
@@ -30,7 +30,7 @@ $trunc = new \Hybrid\Core\Application();
 # for running the theme. Service providers are essentially the backbone of the
 # bootstrapping process.
 
-$trunc->provider( \Trunc\Providers\AppServiceProvider::class );
+$garrick->provider( \Garrick\Providers\AppServiceProvider::class );
 
 # ------------------------------------------------------------------------------
 # Perform bootstrap actions.
@@ -40,7 +40,7 @@ $trunc->provider( \Trunc\Providers\AppServiceProvider::class );
 # bootstrapping process and add their own bindings before the app is booted by
 # passing the application instance to the action callback.
 
-do_action( 'trunc/bootstrap', $trunc );
+do_action( 'garrick/bootstrap', $garrick );
 
 # ------------------------------------------------------------------------------
 # Bootstrap the application.
@@ -49,4 +49,4 @@ do_action( 'trunc/bootstrap', $trunc );
 # Calls the application `boot()` method, which launches the application. Pat
 # yourself on the back for a job well done.
 
-$trunc->boot();
+$garrick->boot();

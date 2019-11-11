@@ -6,19 +6,19 @@
  * Customization API. This is the place to set up all of your theme options for
  * the customizer.
  *
- * @package   Trunc
+ * @package   Garrick
  * @author    Paul Eiche <paul@boldoak.design>
  * @copyright 2018 Paul Eiche
  * @license   https://www.gnu.org/licenses/gpl-2.0.html GPL-2.0-or-later
- * @link      https://boldoak.design/themes/trunc
+ * @link      https://boldoak.design/themes/garrick
  */
 
-namespace Trunc\Customize;
+namespace Garrick\Customize;
 
 use WP_Customize_Manager;
 use Hybrid\Contracts\Bootable;
 // use \Hybrid\Customize\Controls;
-use function Trunc\asset;
+use function Garrick\asset;
 
 /**
  * Handles setting up everything we need for the customizer.
@@ -74,17 +74,17 @@ class Customize implements Bootable {
 	public function registerSections( WP_Customize_Manager $manager ) {
 
 		$manager->add_section( 'header', array(
-			'title'    => __( 'Header Settings', 'trunc' ),
+			'title'    => __( 'Header Settings', 'garrick' ),
 			'priority' => 60,
 		) );
 
 		$manager->add_section( 'content', array(
-			'title'    => __( 'Content Settings', 'trunc' ),
+			'title'    => __( 'Content Settings', 'garrick' ),
 			'priority' => 60,
 		) );
 
 		$manager->add_section( 'fonts', array(
-			'title'    => __( 'Fonts', 'trunc' ),
+			'title'    => __( 'Fonts', 'garrick' ),
 			'priority' => 60,
 		) );
 
@@ -211,26 +211,26 @@ class Customize implements Bootable {
 		$manager->add_control( 'show_header_search', array(
 			'type'        => 'checkbox',
 			'section'     => 'header',
-			'label'       => __( 'Show Search', 'trunc' ),
-			'description' => __( 'Display the search overlay button in the header. The overlay also contains a widget area.', 'trunc' ),
+			'label'       => __( 'Show Search', 'garrick' ),
+			'description' => __( 'Display the search overlay button in the header. The overlay also contains a widget area.', 'garrick' ),
 		) );
 
 		$manager->add_control( 'color_theme', array(
 			'type'        => 'radio',
 			'section'     => 'colors',
-			'label'       => __( 'Default Color Theme', 'trunc' ),
-			'description' => __( 'Please note that color themes will only work in modern browsers.', 'trunc' ),
+			'label'       => __( 'Default Color Theme', 'garrick' ),
+			'description' => __( 'Please note that color themes will only work in modern browsers.', 'garrick' ),
 			'choices'     => array(
-				'default' => __( 'Light', 'trunc' ),
-				'dark'    => __( 'Dark', 'trunc' ),
+				'default' => __( 'Light', 'garrick' ),
+				'dark'    => __( 'Dark', 'garrick' ),
 			),
 		) );
 
 		$manager->add_control( 'show_theme_switch', array(
 			'type' => 'checkbox',
 			'section' => 'colors',
-			'label' => __( 'Show Theme Toggle', 'trunc' ),
-			'description' => __( 'Allow users to switch between light and dark themes.', 'trunc' ),
+			'label' => __( 'Show Theme Toggle', 'garrick' ),
+			'description' => __( 'Allow users to switch between light and dark themes.', 'garrick' ),
 		) );
 
 		$manager->add_control(
@@ -238,8 +238,8 @@ class Customize implements Bootable {
 			$manager,
 			'primary_color_light',
 			array(
-				'label'       => __( 'Primary Color (Light)', 'trunc' ),
-				'description' => __( 'Used in links and buttons.', 'trunc' ),
+				'label'       => __( 'Primary Color (Light)', 'garrick' ),
+				'description' => __( 'Used in links and buttons.', 'garrick' ),
 				'section'     => 'colors',
 				'settings'    => 'primary_color_light',
 			) )
@@ -250,8 +250,8 @@ class Customize implements Bootable {
 			$manager,
 			'primary_color_dark',
 			array(
-				'label'       => __( 'Primary Color (Dark)', 'trunc' ),
-				'description' => __( 'Used in links and buttons.', 'trunc' ),
+				'label'       => __( 'Primary Color (Dark)', 'garrick' ),
+				'description' => __( 'Used in links and buttons.', 'garrick' ),
 				'section'     => 'colors',
 				'settings'    => 'primary_color_dark',
 			) )
@@ -260,8 +260,8 @@ class Customize implements Bootable {
 		$manager->add_control( 'archive_columns', array(
 			'type'        => 'select',
 			'section'     => 'content',
-			'label'       => __( 'Post Columns', 'trunc' ),
-			'description' => __( 'Show posts and pages in a single column or grid.', 'trunc' ),
+			'label'       => __( 'Post Columns', 'garrick' ),
+			'description' => __( 'Show posts and pages in a single column or grid.', 'garrick' ),
 			'choices'     => array(
 				'1' => 1,
 				'2' => 2,
@@ -273,8 +273,8 @@ class Customize implements Bootable {
 		$manager->add_control( 'archive_image_aspect_ratio', array(
 			'type'        => 'select',
 			'section'     => 'content',
-			'label'       => __( 'Featured Image Options', 'trunc' ),
-			'description' => __( 'Customize how images are displayed on blog and archive pages.', 'trunc' ),
+			'label'       => __( 'Featured Image Options', 'garrick' ),
+			'description' => __( 'Customize how images are displayed on blog and archive pages.', 'garrick' ),
 			'choices'     => array(
 				''                                  => 'Natural Size',
 				'media-wrapper media-wrapper--21:9' => 'Landscape (21:9)',
@@ -287,22 +287,22 @@ class Customize implements Bootable {
 		$manager->add_control( 'archive_image_placeholder', array(
 			'type'        => 'checkbox',
 			'section'     => 'content',
-			'label'       => __( 'Image placeholder', 'trunc' ),
-			'description' => __( 'Show default fallback image if no featured image is available.', 'trunc' ),
+			'label'       => __( 'Image placeholder', 'garrick' ),
+			'description' => __( 'Show default fallback image if no featured image is available.', 'garrick' ),
 		) );
 
 		$manager->add_control( 'archive_hide_excerpt', array(
 			'type'        => 'checkbox',
 			'section'     => 'content',
-			'label'       => __( 'Hide excerpt', 'trunc' ),
-			'description' => __( 'Do not display the post excerpt.', 'trunc' ),
+			'label'       => __( 'Hide excerpt', 'garrick' ),
+			'description' => __( 'Do not display the post excerpt.', 'garrick' ),
 		) );
 
 		$manager->add_control( 'archive_show_tags', array(
 			'type'        => 'checkbox',
 			'section'     => 'content',
-			'label'       => __( 'Show tags', 'trunc' ),
-			'description' => __( 'Display tags on blog and archive pages.', 'trunc' ),
+			'label'       => __( 'Show tags', 'garrick' ),
+			'description' => __( 'Display tags on blog and archive pages.', 'garrick' ),
 		) );
 
 		$fonts = json_decode( file_get_contents( get_theme_file_path( 'app/Customize/fonts.json' ) ), true );
@@ -315,16 +315,16 @@ class Customize implements Bootable {
 		$manager->add_control( 'font_primary', array(
 			'type'        => 'select',
 			'section'     => 'fonts',
-			'label'       => __( 'Body Font', 'trunc' ),
-			'description' => __( 'Font used for the main text on the site.', 'trunc' ),
+			'label'       => __( 'Body Font', 'garrick' ),
+			'description' => __( 'Font used for the main text on the site.', 'garrick' ),
 			'choices'     => $font_choices,
 		) );
 
 		$manager->add_control( 'font_heading', array(
 			'type'        => 'select',
 			'section'     => 'fonts',
-			'label'       => __( 'Heading Font', 'trunc' ),
-			'description' => __( 'Font used for titles.', 'trunc' ),
+			'label'       => __( 'Heading Font', 'garrick' ),
+			'description' => __( 'Font used for titles.', 'garrick' ),
 			'choices'     => $font_choices,
 		) );
 	}
@@ -379,7 +379,7 @@ class Customize implements Bootable {
 	public function controlsEnqueue() {
 
 		wp_enqueue_script(
-			'trunc-customize-controls',
+			'garrick-customize-controls',
 			asset( 'js/customize-controls.js' ),
 			[ 'customize-controls' ],
 			null,
@@ -387,7 +387,7 @@ class Customize implements Bootable {
 		);
 
 		wp_enqueue_style(
-			'trunc-customize',
+			'garrick-customize',
 			asset( 'css/customize.css' ),
 			[],
 			null
@@ -404,7 +404,7 @@ class Customize implements Bootable {
 	public function previewEnqueue() {
 
 		wp_enqueue_script(
-			'trunc-customize-preview',
+			'garrick-customize-preview',
 			asset( 'js/customize-preview.js' ),
 			[ 'customize-preview' ],
 			null,
