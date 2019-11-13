@@ -1,4 +1,12 @@
 {
+	"Sans Serif (Default)": {
+		"google": "",
+		"stack" : "sans-serif"
+	},
+	"Serif (Default)": {
+		"google": "",
+		"stack" : "serif"
+	},
 	"Cormorant Garamond": {
 		"google" : "Cormorant+Garamond",
 		"stack"  : "'Cormorant Garamond', serif"

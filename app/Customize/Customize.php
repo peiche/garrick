@@ -186,12 +186,17 @@ class Customize implements Bootable {
 		) );
 
 		$manager->add_setting( 'font_primary', array(
-			'default'   => '',
+			'default'   => 'sans-serif',
 			'transport' => 'refresh',
 		) );
 
 		$manager->add_setting( 'font_heading', array(
-			'default'   => '',
+			'default'   => 'var(--font-primary)',
+			'transport' => 'refresh',
+		) );
+
+		$manager->add_setting( 'font_mono', array(
+			'default'   => 'monospace',
 			'transport' => 'refresh',
 		) );
 
@@ -308,8 +313,15 @@ class Customize implements Bootable {
 		$fonts = json_decode( file_get_contents( get_theme_file_path( 'app/Customize/fonts.json' ) ), true );
 		$font_choices = array();
 
+		$fonts_mono = json_decode( file_get_contents( get_theme_file_path( 'app/Customize/fonts-mono.json' ) ), true );
+		$font_mono_choices = array();
+
 		foreach( $fonts as $key => $value ) {
 			$font_choices[$value['stack'] . '|' . $value['google']] = $key;
+		}
+
+		foreach( $fonts as $key => $value ) {
+			$font_mono_choices[$value['stack'] . '|' . $value['google']] = $key;
 		}
 
 		$manager->add_control( 'font_primary', array(
@@ -326,6 +338,14 @@ class Customize implements Bootable {
 			'label'       => __( 'Heading Font', 'garrick' ),
 			'description' => __( 'Font used for titles.', 'garrick' ),
 			'choices'     => $font_choices,
+		) );
+
+		$manager->add_control( 'font_mono', array(
+			'type'        => 'select',
+			'section'     => 'fonts',
+			'label'       => __( 'Monospace Font', 'garrick' ),
+			'description' => __( 'Font used for code and preformatted text.', 'garrick' ),
+			'choices'     => $font_mono_choices,
 		) );
 	}
 
