@@ -1,22 +1,86 @@
 {
-	"Roboto Mono": {},
-	"Inconsolata": {},
-	"Source Code Pro": {},
-	"Nanum Gothic Coding": {},
-	"PT Mono": {},
-	"Ubuntu Mono": {},
-	"IBM Plex Mono": {},
-	"Cousine": {},
-	"Share Tech Mono": {},
-	"VT323": {},
-	"Space Mono": {},
-	"Fira Mono": {},
-	"Anonymous Pro": {},
-	"Overpass Mono": {},
-	"Oxygen Mono": {},
-	"Cutive Mono": {},
-	"B612 Mono": {},
-	"Fira Code": {},
-	"Nova Mono": {},
-	"Major Mono Display": {}
+	"Monospace (Default)": {
+		"google": "",
+		"stack": "monospace"
+	},
+	"Anonymous Pro": {
+		"google": "Anonymous+Pro",
+		"stack": "'Anonymous Pro', monospace"
+	},
+	"B612 Mono": {
+		"google": "B612+Mono",
+		"stack": "'B612 Mono', monospace"
+	},
+	"Cousine": {
+		"google": "Cousine",
+		"stack": "'Cousine', monospace"
+	},
+	"Cutive Mono": {
+		"google": "Cutive+Mono",
+		"stack": "'Cutive Mono', monospace"
+	},
+	"Fira Code": {
+		"google": "Fira+Code",
+		"stack": "'Fira Code', monospace"
+	},
+	"Fira Mono": {
+		"google": "Fira+Mono",
+		"stack": "'Fira Mono', monospace"
+	},
+	"IBM Plex Mono": {
+		"google": "IBM+Plex+Mono",
+		"stack": "'IBM Plex Mono', monospace"
+	},
+	"Inconsolata": {
+		"google": "Inconsolata",
+		"stack": "'Inconsolata', monospace"
+	},
+	"Major Mono Display": {
+		"google": "Major+Mono+Display",
+		"stack": "'Major Mono Display', monospace"
+	},
+	"Nanum Gothic Coding": {
+		"google": "Nanum+Gothic+Coding",
+		"stack": "'Nanum Gothic Coding', monospace"
+	},
+	"Nova Mono": {
+		"google": "Nova+Mono",
+		"stack": "'Nova Mono', monospace"
+	},
+	"Overpass Mono": {
+		"google": "Overpass+Mono",
+		"stack": "'Overpass Mono', monospace"
+	},
+	"Oxygen Mono": {
+		"google": "Oxygen+Mono",
+		"stack": "'Oxygen Mono', monospace"
+	},
+	"PT Mono": {
+		"google": "PT+Mono",
+		"stack": "'PT Mono', monospace"
+	},
+	"Roboto Mono": {
+		"google": "Roboto+Mono",
+		"stack": "'Roboto Mono', monospace"
+	},
+	"Share Tech Mono": {
+		"google": "Share+Tech+Mono",
+		"stack": "'Share Tech Mono', monospace"
+	},
+	"Source Code Pro": {
+		"google": "Source+Code+Pro",
+		"stack": "'Source Code Pro', monospace"
+	},
+	"Space Mono": {
+		"google": "Space+Mono",
+		"stack": "'Space Mono', monospace"
+	},
+	"Ubuntu Mono": {
+		"google": "Ubuntu+Mono",
+		"stack": "'Ubuntu Mono', monospace"
+	},
+	"VT323": {
+		"google": "VT323",
+		"stack": "'VT323', monospace"
+	}
 }

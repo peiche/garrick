@@ -310,17 +310,24 @@ class Customize implements Bootable {
 			'description' => __( 'Display tags on blog and archive pages.', 'garrick' ),
 		) );
 
-		$fonts = json_decode( file_get_contents( get_theme_file_path( 'app/Customize/fonts.json' ) ), true );
-		$font_choices = array();
+		$fonts_body = json_decode( file_get_contents( get_theme_file_path( 'app/Customize/fonts-body.json' ) ), true );
+		$font_body_choices = array();
+
+		foreach( $fonts_body as $key => $value ) {
+			$font_body_choices[$value['stack'] . '|' . $value['google']] = $key;
+		}
+
+		$fonts_heading = json_decode( file_get_contents( get_theme_file_path( 'app/Customize/fonts-heading.json' ) ), true );
+		$font_heading_choices = array();
+
+		foreach( $fonts_heading as $key => $value ) {
+			$font_heading_choices[$value['stack'] . '|' . $value['google']] = $key;
+		}
 
 		$fonts_mono = json_decode( file_get_contents( get_theme_file_path( 'app/Customize/fonts-mono.json' ) ), true );
 		$font_mono_choices = array();
 
-		foreach( $fonts as $key => $value ) {
-			$font_choices[$value['stack'] . '|' . $value['google']] = $key;
-		}
-
-		foreach( $fonts as $key => $value ) {
+		foreach( $fonts_mono as $key => $value ) {
 			$font_mono_choices[$value['stack'] . '|' . $value['google']] = $key;
 		}
 
@@ -328,16 +335,16 @@ class Customize implements Bootable {
 			'type'        => 'select',
 			'section'     => 'fonts',
 			'label'       => __( 'Body Font', 'garrick' ),
-			'description' => __( 'Font used for the main text on the site.', 'garrick' ),
-			'choices'     => $font_choices,
+			'description' => __( 'Font used for most of the text on the site.', 'garrick' ),
+			'choices'     => $font_body_choices,
 		) );
 
 		$manager->add_control( 'font_heading', array(
 			'type'        => 'select',
 			'section'     => 'fonts',
 			'label'       => __( 'Heading Font', 'garrick' ),
-			'description' => __( 'Font used for titles.', 'garrick' ),
-			'choices'     => $font_choices,
+			'description' => __( 'Font used for titles and headings.', 'garrick' ),
+			'choices'     => $font_heading_choices,
 		) );
 
 		$manager->add_control( 'font_mono', array(
