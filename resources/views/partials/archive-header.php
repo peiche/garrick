@@ -11,7 +11,7 @@
       <span><?php the_archive_title() ?></span>
     </h1>
 
-    <?php if ( ! is_paged() && get_the_archive_description() ) : ?>
+    <?php if ( ! is_paged() && ! is_home() && get_the_archive_description() ) : ?>
       <div class="archive-header__description margin-top-sm color-contrast-medium text-md">
         <?php the_archive_description() ?>
       </div>
