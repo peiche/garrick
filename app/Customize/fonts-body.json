@@ -1,11 +1,7 @@
 {
-	"Sans-Serif (Default)": {
+	"Default": {
 		"google": "",
-		"stack": "sans-serif"
-	},
-	"Serif (Default)": {
-		"google": "",
-		"stack": "serif"
+		"stack": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\""
 	},
 	"ABeeZee": {
 		"google": "ABeeZee",
@@ -258,6 +254,10 @@
 	"Basic": {
 		"google": "Basic",
 		"stack": "'Basic', sans-serif"
+	},
+	"Baskervville": {
+		"google": "Baskervville",
+		"stack": "'Baskervville', serif"
 	},
 	"Be Vietnam": {
 		"google": "Be+Vietnam",
@@ -850,6 +850,10 @@
 	"IM Fell Great Primer SC": {
 		"google": "IM+Fell+Great+Primer+SC",
 		"stack": "'IM Fell Great Primer SC', serif"
+	},
+	"Ibarra Real Nova": {
+		"google": "Ibarra+Real+Nova",
+		"stack": "'Ibarra Real Nova', serif"
 	},
 	"Imprima": {
 		"google": "Imprima",
@@ -1751,6 +1755,10 @@
 		"google": "Snippet",
 		"stack": "'Snippet', sans-serif"
 	},
+	"Solway": {
+		"google": "Solway",
+		"stack": "'Solway', serif"
+	},
 	"Song Myung": {
 		"google": "Song+Myung",
 		"stack": "'Song Myung', serif"
@@ -1798,6 +1806,10 @@
 	"Suez One": {
 		"google": "Suez+One",
 		"stack": "'Suez One', serif"
+	},
+	"Sulphur Point": {
+		"google": "Sulphur+Point",
+		"stack": "'Sulphur Point', sans-serif"
 	},
 	"Sumana": {
 		"google": "Sumana",

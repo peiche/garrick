@@ -25,9 +25,10 @@
 
 :root,
 body {
-	--font-primary: sans-serif;
+	--font-primary: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 	--font-heading: var(--font-primary);
-	--font-mono: monospace;
+	--font-mono: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
 	--font-weight-bold: 700;
+	--font-weight-heading: var(--font-weight-bold);
 	--text-base-size: 1.25em;
 }

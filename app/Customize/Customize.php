@@ -200,6 +200,11 @@ class Customize implements Bootable {
 			'transport' => 'refresh',
 		) );
 
+		$manager->add_setting( 'font_weight_heading', array(
+			'default'   => '700',
+			'transport' => 'refresh',
+		) );
+
 	}
 
 	/**
@@ -345,6 +350,17 @@ class Customize implements Bootable {
 			'label'       => __( 'Heading Font', 'garrick' ),
 			'description' => __( 'Font used for titles and headings.', 'garrick' ),
 			'choices'     => $font_heading_choices,
+		) );
+
+		$manager->add_control( 'font_weight_heading', array(
+			'type'        => 'select',
+			'section'     => 'fonts',
+			'label'       => __( 'Heading Font Weight', 'garrick' ),
+			'description' => __( 'Custom font weight for headings.', 'garrick' ),
+			'choices' => array(
+				'700' => 'Bold',
+				'400' => 'Normal',
+			),
 		) );
 
 		$manager->add_control( 'font_mono', array(

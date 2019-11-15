@@ -425,8 +425,10 @@ add_filter( 'body_class', function( $classes ) {
  * @return void
  */
 add_action( 'wp_head', function() {
-	$font_primary = explode( '|', get_theme_mod( 'font_primary', 'sans-serif' ) )[0];
-	$font_heading = explode( '|', get_theme_mod( 'font_heading', 'var(--font-primary)' ) )[0];
+	$font_primary = explode( '|', get_theme_mod( 'font_primary', 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"' ) )[ 0 ];
+	$font_heading = explode( '|', get_theme_mod( 'font_heading', 'var(--font-primary)' ) )[ 0 ];
+	$font_mono = explode( '|', get_theme_mod( 'font_mono', 'SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace' ) )[ 0 ];
+	$font_weight_heading = get_theme_mod( 'font_weight_heading', 'var(--font-weight-bold)' );
 	$primary_light = Color::hex( get_theme_mod( 'primary_color_light', '#2a6df4' ) );
 	$primary_light_h = $primary_light->h;
 	$primary_light_s = $primary_light->s * 100;
@@ -442,6 +444,8 @@ add_action( 'wp_head', function() {
 	body {
 		--font-primary: <?php echo $font_primary // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped ?>;
 		--font-heading: <?php echo $font_heading // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped ?>;
+		--font-mono: <?php echo $font_mono // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped ?>;
+		--font-weight-heading: <?php echo $font_weight_heading // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped ?>;
 	}
 
 	:root,
