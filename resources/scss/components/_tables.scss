@@ -14,3 +14,8 @@ table {
 		background-color: var(--color-contrast-lower);
 	}
 }
+
+th,
+td {
+	padding: var(--space-xxxs);
+}
