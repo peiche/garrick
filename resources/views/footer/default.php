@@ -28,12 +28,12 @@
 			<?php endif ?>
 
 			<div class="app-footer__colophon">
-				<div class="app-footer__credit margin-y-xxs">
+				<div class="app-footer__credit margin-y-xxs flex items-center">
 					<span>&copy; <?php echo esc_html( date( 'Y' ) ) ?> <?php echo esc_html( get_bloginfo( 'name', 'display' ) ) ?></span>
-					<?php echo \Garrick\sep() ?>
+					<span class="margin-x-xxs"><?php echo \Garrick\sep() ?></span>
 					<?php
 					/* Translators: %2$s = theme author website */
-					printf( esc_html__( 'Built with %1$s by %2$s', 'garrick' ), \Garrick\get_svg( [ 'icon' => 'heart', 'class' => 'icon--sm align-middle', 'title' => __( 'love', 'garrick' ) ] ), '<a href="https://boldoak.design/">' . \Garrick\get_svg( [ 'icon' => 'boldoakdesign', 'class' => 'icon--sm align-middle margin-right-xxxxs' ] ) . ' <span>Bold Oak Design</span></a>' );
+					printf( esc_html__( 'Built with %1$s by %2$s', 'garrick' ), \Garrick\get_svg( [ 'icon' => 'heart', 'class' => 'icon--sm align-middle margin-x-xxxs', 'title' => __( 'love', 'garrick' ) ] ), '<a href="https://boldoak.design/" class="btn bold padding-xxxxs margin-left-xxs inside-underline">' . \Garrick\get_svg( [ 'icon' => 'boldoakdesign', 'class' => 'icon--sm align-middle margin-right-xxxs' ] ) . ' <span>Bold Oak Design</span></a>' );
 					?>
 				</div>
 			</div>
