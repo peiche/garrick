@@ -45,3 +45,18 @@
 		font-size: #{ $font-size-value };
 	}
 }
+
+// Extraneous utility classes
+.bold {
+	font-weight: var(--font-weight-bold);
+}
+
+.inside-underline {
+
+	&:hover {
+
+		span {
+			text-decoration: underline;
+		}
+	}
+}
