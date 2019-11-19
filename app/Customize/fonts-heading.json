@@ -1,3814 +1,3814 @@
 {
 	"Default": {
 		"google": "",
-		"stack": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\""
+		"stack": "system-ui, -apple-system, blinkmacsystemfont, \"Segoe UI\", roboto, \"Helvetica Neue\", arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\""
 	},
 	"ABeeZee": {
-		"google": "ABeeZee",
+		"google": "ABeeZee:400",
 		"stack": "'ABeeZee', sans-serif"
 	},
 	"Abel": {
-		"google": "Abel",
+		"google": "Abel:400",
 		"stack": "'Abel', sans-serif"
 	},
 	"Abhaya Libre": {
-		"google": "Abhaya+Libre",
+		"google": "Abhaya+Libre:400,700",
 		"stack": "'Abhaya Libre', serif"
 	},
 	"Abril Fatface": {
-		"google": "Abril+Fatface",
-		"stack": "'Abril Fatface', sans-serif"
+		"google": "Abril+Fatface:400",
+		"stack": "'Abril Fatface', cursive"
 	},
 	"Aclonica": {
-		"google": "Aclonica",
+		"google": "Aclonica:400",
 		"stack": "'Aclonica', sans-serif"
 	},
 	"Acme": {
-		"google": "Acme",
+		"google": "Acme:400",
 		"stack": "'Acme', sans-serif"
 	},
 	"Actor": {
-		"google": "Actor",
+		"google": "Actor:400",
 		"stack": "'Actor', sans-serif"
 	},
 	"Adamina": {
-		"google": "Adamina",
+		"google": "Adamina:400",
 		"stack": "'Adamina', serif"
 	},
 	"Advent Pro": {
-		"google": "Advent+Pro",
+		"google": "Advent+Pro:400,700",
 		"stack": "'Advent Pro', sans-serif"
 	},
 	"Aguafina Script": {
-		"google": "Aguafina+Script",
+		"google": "Aguafina+Script:400",
 		"stack": "'Aguafina Script', cursive"
 	},
 	"Akronim": {
-		"google": "Akronim",
-		"stack": "'Akronim', sans-serif"
+		"google": "Akronim:400",
+		"stack": "'Akronim', cursive"
 	},
 	"Aladin": {
-		"google": "Aladin",
+		"google": "Aladin:400",
 		"stack": "'Aladin', cursive"
 	},
 	"Alata": {
-		"google": "Alata",
+		"google": "Alata:400",
 		"stack": "'Alata', sans-serif"
 	},
 	"Alatsi": {
-		"google": "Alatsi",
+		"google": "Alatsi:400",
 		"stack": "'Alatsi', sans-serif"
 	},
 	"Aldrich": {
-		"google": "Aldrich",
+		"google": "Aldrich:400",
 		"stack": "'Aldrich', sans-serif"
 	},
 	"Alef": {
-		"google": "Alef",
+		"google": "Alef:400,700",
 		"stack": "'Alef', sans-serif"
 	},
 	"Alegreya": {
-		"google": "Alegreya",
+		"google": "Alegreya:400,700",
 		"stack": "'Alegreya', serif"
 	},
 	"Alegreya SC": {
-		"google": "Alegreya+SC",
+		"google": "Alegreya+SC:400,700",
 		"stack": "'Alegreya SC', serif"
 	},
 	"Alegreya Sans": {
-		"google": "Alegreya+Sans",
+		"google": "Alegreya+Sans:400,700",
 		"stack": "'Alegreya Sans', sans-serif"
 	},
 	"Alegreya Sans SC": {
-		"google": "Alegreya+Sans+SC",
+		"google": "Alegreya+Sans+SC:400,700",
 		"stack": "'Alegreya Sans SC', sans-serif"
 	},
 	"Aleo": {
-		"google": "Aleo",
+		"google": "Aleo:400,700",
 		"stack": "'Aleo', serif"
 	},
 	"Alex Brush": {
-		"google": "Alex+Brush",
+		"google": "Alex+Brush:400",
 		"stack": "'Alex Brush', cursive"
 	},
 	"Alfa Slab One": {
-		"google": "Alfa+Slab+One",
-		"stack": "'Alfa Slab One', sans-serif"
+		"google": "Alfa+Slab+One:400",
+		"stack": "'Alfa Slab One', cursive"
 	},
 	"Alice": {
-		"google": "Alice",
+		"google": "Alice:400",
 		"stack": "'Alice', serif"
 	},
 	"Alike": {
-		"google": "Alike",
+		"google": "Alike:400",
 		"stack": "'Alike', serif"
 	},
 	"Alike Angular": {
-		"google": "Alike+Angular",
+		"google": "Alike+Angular:400",
 		"stack": "'Alike Angular', serif"
 	},
 	"Allan": {
-		"google": "Allan",
-		"stack": "'Allan', sans-serif"
+		"google": "Allan:400,700",
+		"stack": "'Allan', cursive"
 	},
 	"Allerta": {
-		"google": "Allerta",
+		"google": "Allerta:400",
 		"stack": "'Allerta', sans-serif"
 	},
 	"Allerta Stencil": {
-		"google": "Allerta+Stencil",
+		"google": "Allerta+Stencil:400",
 		"stack": "'Allerta Stencil', sans-serif"
 	},
 	"Allura": {
-		"google": "Allura",
+		"google": "Allura:400",
 		"stack": "'Allura', cursive"
 	},
 	"Almarai": {
-		"google": "Almarai",
+		"google": "Almarai:400,700",
 		"stack": "'Almarai', sans-serif"
 	},
 	"Almendra": {
-		"google": "Almendra",
+		"google": "Almendra:400,700",
 		"stack": "'Almendra', serif"
 	},
 	"Almendra Display": {
-		"google": "Almendra+Display",
-		"stack": "'Almendra Display', sans-serif"
+		"google": "Almendra+Display:400",
+		"stack": "'Almendra Display', cursive"
 	},
 	"Almendra SC": {
-		"google": "Almendra+SC",
+		"google": "Almendra+SC:400",
 		"stack": "'Almendra SC', serif"
 	},
 	"Amarante": {
-		"google": "Amarante",
-		"stack": "'Amarante', sans-serif"
+		"google": "Amarante:400",
+		"stack": "'Amarante', cursive"
 	},
 	"Amaranth": {
-		"google": "Amaranth",
+		"google": "Amaranth:400,700",
 		"stack": "'Amaranth', sans-serif"
 	},
 	"Amatic SC": {
-		"google": "Amatic+SC",
+		"google": "Amatic+SC:400,700",
 		"stack": "'Amatic SC', cursive"
 	},
 	"Amethysta": {
-		"google": "Amethysta",
+		"google": "Amethysta:400",
 		"stack": "'Amethysta', serif"
 	},
 	"Amiko": {
-		"google": "Amiko",
+		"google": "Amiko:400,700",
 		"stack": "'Amiko', sans-serif"
 	},
 	"Amiri": {
-		"google": "Amiri",
+		"google": "Amiri:400,700",
 		"stack": "'Amiri', serif"
 	},
 	"Amita": {
-		"google": "Amita",
+		"google": "Amita:400,700",
 		"stack": "'Amita', cursive"
 	},
 	"Anaheim": {
-		"google": "Anaheim",
+		"google": "Anaheim:400",
 		"stack": "'Anaheim', sans-serif"
 	},
 	"Andada": {
-		"google": "Andada",
+		"google": "Andada:400",
 		"stack": "'Andada', serif"
 	},
 	"Andika": {
-		"google": "Andika",
+		"google": "Andika:400",
 		"stack": "'Andika', sans-serif"
 	},
 	"Angkor": {
-		"google": "Angkor",
-		"stack": "'Angkor', sans-serif"
+		"google": "Angkor:400",
+		"stack": "'Angkor', cursive"
 	},
 	"Annie Use Your Telescope": {
-		"google": "Annie+Use+Your+Telescope",
+		"google": "Annie+Use+Your+Telescope:400",
 		"stack": "'Annie Use Your Telescope', cursive"
 	},
 	"Antic": {
-		"google": "Antic",
+		"google": "Antic:400",
 		"stack": "'Antic', sans-serif"
 	},
 	"Antic Didone": {
-		"google": "Antic+Didone",
+		"google": "Antic+Didone:400",
 		"stack": "'Antic Didone', serif"
 	},
 	"Antic Slab": {
-		"google": "Antic+Slab",
+		"google": "Antic+Slab:400",
 		"stack": "'Antic Slab', serif"
 	},
 	"Anton": {
-		"google": "Anton",
+		"google": "Anton:400",
 		"stack": "'Anton', sans-serif"
 	},
 	"Arapey": {
-		"google": "Arapey",
+		"google": "Arapey:400",
 		"stack": "'Arapey', serif"
 	},
 	"Arbutus": {
-		"google": "Arbutus",
-		"stack": "'Arbutus', sans-serif"
+		"google": "Arbutus:400",
+		"stack": "'Arbutus', cursive"
 	},
 	"Arbutus Slab": {
-		"google": "Arbutus+Slab",
+		"google": "Arbutus+Slab:400",
 		"stack": "'Arbutus Slab', serif"
 	},
 	"Architects Daughter": {
-		"google": "Architects+Daughter",
+		"google": "Architects+Daughter:400",
 		"stack": "'Architects Daughter', cursive"
 	},
 	"Archivo": {
-		"google": "Archivo",
+		"google": "Archivo:400,700",
 		"stack": "'Archivo', sans-serif"
 	},
 	"Archivo Black": {
-		"google": "Archivo+Black",
+		"google": "Archivo+Black:400",
 		"stack": "'Archivo Black', sans-serif"
 	},
 	"Archivo Narrow": {
-		"google": "Archivo+Narrow",
+		"google": "Archivo+Narrow:400,700",
 		"stack": "'Archivo Narrow', sans-serif"
 	},
 	"Aref Ruqaa": {
-		"google": "Aref+Ruqaa",
+		"google": "Aref+Ruqaa:400,700",
 		"stack": "'Aref Ruqaa', serif"
 	},
 	"Arima Madurai": {
-		"google": "Arima+Madurai",
-		"stack": "'Arima Madurai', sans-serif"
+		"google": "Arima+Madurai:400,700",
+		"stack": "'Arima Madurai', cursive"
 	},
 	"Arimo": {
-		"google": "Arimo",
+		"google": "Arimo:400,700",
 		"stack": "'Arimo', sans-serif"
 	},
 	"Arizonia": {
-		"google": "Arizonia",
+		"google": "Arizonia:400",
 		"stack": "'Arizonia', cursive"
 	},
 	"Armata": {
-		"google": "Armata",
+		"google": "Armata:400",
 		"stack": "'Armata', sans-serif"
 	},
 	"Arsenal": {
-		"google": "Arsenal",
+		"google": "Arsenal:400,700",
 		"stack": "'Arsenal', sans-serif"
 	},
 	"Artifika": {
-		"google": "Artifika",
+		"google": "Artifika:400",
 		"stack": "'Artifika', serif"
 	},
 	"Arvo": {
-		"google": "Arvo",
+		"google": "Arvo:400,700",
 		"stack": "'Arvo', serif"
 	},
 	"Arya": {
-		"google": "Arya",
+		"google": "Arya:400,700",
 		"stack": "'Arya', sans-serif"
 	},
 	"Asap": {
-		"google": "Asap",
+		"google": "Asap:400,700",
 		"stack": "'Asap', sans-serif"
 	},
 	"Asap Condensed": {
-		"google": "Asap+Condensed",
+		"google": "Asap+Condensed:400,700",
 		"stack": "'Asap Condensed', sans-serif"
 	},
 	"Asar": {
-		"google": "Asar",
+		"google": "Asar:400",
 		"stack": "'Asar', serif"
 	},
 	"Asset": {
-		"google": "Asset",
-		"stack": "'Asset', sans-serif"
+		"google": "Asset:400",
+		"stack": "'Asset', cursive"
 	},
 	"Assistant": {
-		"google": "Assistant",
+		"google": "Assistant:400,700",
 		"stack": "'Assistant', sans-serif"
 	},
 	"Astloch": {
-		"google": "Astloch",
-		"stack": "'Astloch', sans-serif"
+		"google": "Astloch:400,700",
+		"stack": "'Astloch', cursive"
 	},
 	"Asul": {
-		"google": "Asul",
+		"google": "Asul:400,700",
 		"stack": "'Asul', sans-serif"
 	},
 	"Athiti": {
-		"google": "Athiti",
+		"google": "Athiti:400,700",
 		"stack": "'Athiti', sans-serif"
 	},
 	"Atma": {
-		"google": "Atma",
-		"stack": "'Atma', sans-serif"
+		"google": "Atma:400,700",
+		"stack": "'Atma', cursive"
 	},
 	"Atomic Age": {
-		"google": "Atomic+Age",
-		"stack": "'Atomic Age', sans-serif"
+		"google": "Atomic+Age:400",
+		"stack": "'Atomic Age', cursive"
 	},
 	"Aubrey": {
-		"google": "Aubrey",
-		"stack": "'Aubrey', sans-serif"
+		"google": "Aubrey:400",
+		"stack": "'Aubrey', cursive"
 	},
 	"Audiowide": {
-		"google": "Audiowide",
-		"stack": "'Audiowide', sans-serif"
+		"google": "Audiowide:400",
+		"stack": "'Audiowide', cursive"
 	},
 	"Autour One": {
-		"google": "Autour+One",
-		"stack": "'Autour One', sans-serif"
+		"google": "Autour+One:400",
+		"stack": "'Autour One', cursive"
 	},
 	"Average": {
-		"google": "Average",
+		"google": "Average:400",
 		"stack": "'Average', serif"
 	},
 	"Average Sans": {
-		"google": "Average+Sans",
+		"google": "Average+Sans:400",
 		"stack": "'Average Sans', sans-serif"
 	},
 	"Averia Gruesa Libre": {
-		"google": "Averia+Gruesa+Libre",
-		"stack": "'Averia Gruesa Libre', sans-serif"
+		"google": "Averia+Gruesa+Libre:400",
+		"stack": "'Averia Gruesa Libre', cursive"
 	},
 	"Averia Libre": {
-		"google": "Averia+Libre",
-		"stack": "'Averia Libre', sans-serif"
+		"google": "Averia+Libre:400,700",
+		"stack": "'Averia Libre', cursive"
 	},
 	"Averia Sans Libre": {
-		"google": "Averia+Sans+Libre",
-		"stack": "'Averia Sans Libre', sans-serif"
+		"google": "Averia+Sans+Libre:400,700",
+		"stack": "'Averia Sans Libre', cursive"
 	},
 	"Averia Serif Libre": {
-		"google": "Averia+Serif+Libre",
-		"stack": "'Averia Serif Libre', sans-serif"
+		"google": "Averia+Serif+Libre:400,700",
+		"stack": "'Averia Serif Libre', cursive"
 	},
 	"B612": {
-		"google": "B612",
+		"google": "B612:400,700",
 		"stack": "'B612', sans-serif"
 	},
 	"Bad Script": {
-		"google": "Bad+Script",
+		"google": "Bad+Script:400",
 		"stack": "'Bad Script', cursive"
 	},
 	"Bahiana": {
-		"google": "Bahiana",
-		"stack": "'Bahiana', sans-serif"
+		"google": "Bahiana:400",
+		"stack": "'Bahiana', cursive"
 	},
 	"Bahianita": {
-		"google": "Bahianita",
-		"stack": "'Bahianita', sans-serif"
+		"google": "Bahianita:400",
+		"stack": "'Bahianita', cursive"
 	},
 	"Bai Jamjuree": {
-		"google": "Bai+Jamjuree",
+		"google": "Bai+Jamjuree:400,700",
 		"stack": "'Bai Jamjuree', sans-serif"
 	},
 	"Baloo": {
-		"google": "Baloo",
-		"stack": "'Baloo', sans-serif"
+		"google": "Baloo:400",
+		"stack": "'Baloo', cursive"
 	},
 	"Baloo Bhai": {
-		"google": "Baloo+Bhai",
-		"stack": "'Baloo Bhai', sans-serif"
+		"google": "Baloo+Bhai:400",
+		"stack": "'Baloo Bhai', cursive"
 	},
 	"Baloo Bhaijaan": {
-		"google": "Baloo+Bhaijaan",
-		"stack": "'Baloo Bhaijaan', sans-serif"
+		"google": "Baloo+Bhaijaan:400",
+		"stack": "'Baloo Bhaijaan', cursive"
 	},
 	"Baloo Bhaina": {
-		"google": "Baloo+Bhaina",
-		"stack": "'Baloo Bhaina', sans-serif"
+		"google": "Baloo+Bhaina:400",
+		"stack": "'Baloo Bhaina', cursive"
 	},
 	"Baloo Chettan": {
-		"google": "Baloo+Chettan",
-		"stack": "'Baloo Chettan', sans-serif"
+		"google": "Baloo+Chettan:400",
+		"stack": "'Baloo Chettan', cursive"
 	},
 	"Baloo Da": {
-		"google": "Baloo+Da",
-		"stack": "'Baloo Da', sans-serif"
+		"google": "Baloo+Da:400",
+		"stack": "'Baloo Da', cursive"
 	},
 	"Baloo Paaji": {
-		"google": "Baloo+Paaji",
-		"stack": "'Baloo Paaji', sans-serif"
+		"google": "Baloo+Paaji:400",
+		"stack": "'Baloo Paaji', cursive"
 	},
 	"Baloo Tamma": {
-		"google": "Baloo+Tamma",
-		"stack": "'Baloo Tamma', sans-serif"
+		"google": "Baloo+Tamma:400",
+		"stack": "'Baloo Tamma', cursive"
 	},
 	"Baloo Tammudu": {
-		"google": "Baloo+Tammudu",
-		"stack": "'Baloo Tammudu', sans-serif"
+		"google": "Baloo+Tammudu:400",
+		"stack": "'Baloo Tammudu', cursive"
 	},
 	"Baloo Thambi": {
-		"google": "Baloo+Thambi",
-		"stack": "'Baloo Thambi', sans-serif"
+		"google": "Baloo+Thambi:400",
+		"stack": "'Baloo Thambi', cursive"
 	},
 	"Balthazar": {
-		"google": "Balthazar",
+		"google": "Balthazar:400",
 		"stack": "'Balthazar', serif"
 	},
 	"Bangers": {
-		"google": "Bangers",
-		"stack": "'Bangers', sans-serif"
+		"google": "Bangers:400",
+		"stack": "'Bangers', cursive"
 	},
 	"Barlow": {
-		"google": "Barlow",
+		"google": "Barlow:400,700",
 		"stack": "'Barlow', sans-serif"
 	},
 	"Barlow Condensed": {
-		"google": "Barlow+Condensed",
+		"google": "Barlow+Condensed:400,700",
 		"stack": "'Barlow Condensed', sans-serif"
 	},
 	"Barlow Semi Condensed": {
-		"google": "Barlow+Semi+Condensed",
+		"google": "Barlow+Semi+Condensed:400,700",
 		"stack": "'Barlow Semi Condensed', sans-serif"
 	},
 	"Barriecito": {
-		"google": "Barriecito",
-		"stack": "'Barriecito', sans-serif"
+		"google": "Barriecito:400",
+		"stack": "'Barriecito', cursive"
 	},
 	"Barrio": {
-		"google": "Barrio",
-		"stack": "'Barrio', sans-serif"
+		"google": "Barrio:400",
+		"stack": "'Barrio', cursive"
 	},
 	"Basic": {
-		"google": "Basic",
+		"google": "Basic:400",
 		"stack": "'Basic', sans-serif"
 	},
 	"Baskervville": {
-		"google": "Baskervville",
+		"google": "Baskervville:400",
 		"stack": "'Baskervville', serif"
 	},
 	"Battambang": {
-		"google": "Battambang",
-		"stack": "'Battambang', sans-serif"
+		"google": "Battambang:400,700",
+		"stack": "'Battambang', cursive"
 	},
 	"Baumans": {
-		"google": "Baumans",
-		"stack": "'Baumans', sans-serif"
+		"google": "Baumans:400",
+		"stack": "'Baumans', cursive"
 	},
 	"Bayon": {
-		"google": "Bayon",
-		"stack": "'Bayon', sans-serif"
+		"google": "Bayon:400",
+		"stack": "'Bayon', cursive"
 	},
 	"Be Vietnam": {
-		"google": "Be+Vietnam",
+		"google": "Be+Vietnam:400,700",
 		"stack": "'Be Vietnam', sans-serif"
 	},
 	"Bebas Neue": {
-		"google": "Bebas+Neue",
-		"stack": "'Bebas Neue', sans-serif"
+		"google": "Bebas+Neue:400",
+		"stack": "'Bebas Neue', cursive"
 	},
 	"Belgrano": {
-		"google": "Belgrano",
+		"google": "Belgrano:400",
 		"stack": "'Belgrano', serif"
 	},
 	"Bellefair": {
-		"google": "Bellefair",
+		"google": "Bellefair:400",
 		"stack": "'Bellefair', serif"
 	},
 	"Belleza": {
-		"google": "Belleza",
+		"google": "Belleza:400",
 		"stack": "'Belleza', sans-serif"
 	},
 	"BenchNine": {
-		"google": "BenchNine",
+		"google": "BenchNine:400,700",
 		"stack": "'BenchNine', sans-serif"
 	},
 	"Bentham": {
-		"google": "Bentham",
+		"google": "Bentham:400",
 		"stack": "'Bentham', serif"
 	},
 	"Berkshire Swash": {
-		"google": "Berkshire+Swash",
+		"google": "Berkshire+Swash:400",
 		"stack": "'Berkshire Swash', cursive"
 	},
 	"Beth Ellen": {
-		"google": "Beth+Ellen",
+		"google": "Beth+Ellen:400",
 		"stack": "'Beth Ellen', cursive"
 	},
 	"Bevan": {
-		"google": "Bevan",
-		"stack": "'Bevan', sans-serif"
+		"google": "Bevan:400",
+		"stack": "'Bevan', cursive"
 	},
 	"Big Shoulders Display": {
-		"google": "Big+Shoulders+Display",
-		"stack": "'Big Shoulders Display', sans-serif"
+		"google": "Big+Shoulders+Display:400,700",
+		"stack": "'Big Shoulders Display', cursive"
 	},
 	"Big Shoulders Text": {
-		"google": "Big+Shoulders+Text",
-		"stack": "'Big Shoulders Text', sans-serif"
+		"google": "Big+Shoulders+Text:400,700",
+		"stack": "'Big Shoulders Text', cursive"
 	},
 	"Bigelow Rules": {
-		"google": "Bigelow+Rules",
-		"stack": "'Bigelow Rules', sans-serif"
+		"google": "Bigelow+Rules:400",
+		"stack": "'Bigelow Rules', cursive"
 	},
 	"Bigshot One": {
-		"google": "Bigshot+One",
-		"stack": "'Bigshot One', sans-serif"
+		"google": "Bigshot+One:400",
+		"stack": "'Bigshot One', cursive"
 	},
 	"Bilbo": {
-		"google": "Bilbo",
+		"google": "Bilbo:400",
 		"stack": "'Bilbo', cursive"
 	},
 	"Bilbo Swash Caps": {
-		"google": "Bilbo+Swash+Caps",
+		"google": "Bilbo+Swash+Caps:400",
 		"stack": "'Bilbo Swash Caps', cursive"
 	},
 	"BioRhyme": {
-		"google": "BioRhyme",
+		"google": "BioRhyme:400,700",
 		"stack": "'BioRhyme', serif"
 	},
 	"BioRhyme Expanded": {
-		"google": "BioRhyme+Expanded",
+		"google": "BioRhyme+Expanded:400,700",
 		"stack": "'BioRhyme Expanded', serif"
 	},
 	"Biryani": {
-		"google": "Biryani",
+		"google": "Biryani:400,700",
 		"stack": "'Biryani', sans-serif"
 	},
 	"Bitter": {
-		"google": "Bitter",
+		"google": "Bitter:400,700",
 		"stack": "'Bitter', serif"
 	},
 	"Black And White Picture": {
-		"google": "Black+And+White+Picture",
+		"google": "Black+And+White+Picture:400",
 		"stack": "'Black And White Picture', sans-serif"
 	},
 	"Black Han Sans": {
-		"google": "Black+Han+Sans",
+		"google": "Black+Han+Sans:400",
 		"stack": "'Black Han Sans', sans-serif"
 	},
 	"Black Ops One": {
-		"google": "Black+Ops+One",
-		"stack": "'Black Ops One', sans-serif"
+		"google": "Black+Ops+One:400",
+		"stack": "'Black Ops One', cursive"
 	},
 	"Blinker": {
-		"google": "Blinker",
+		"google": "Blinker:400,700",
 		"stack": "'Blinker', sans-serif"
 	},
 	"Bokor": {
-		"google": "Bokor",
-		"stack": "'Bokor', sans-serif"
+		"google": "Bokor:400",
+		"stack": "'Bokor', cursive"
 	},
 	"Bonbon": {
-		"google": "Bonbon",
+		"google": "Bonbon:400",
 		"stack": "'Bonbon', cursive"
 	},
 	"Boogaloo": {
-		"google": "Boogaloo",
-		"stack": "'Boogaloo', sans-serif"
+		"google": "Boogaloo:400",
+		"stack": "'Boogaloo', cursive"
 	},
 	"Bowlby One": {
-		"google": "Bowlby+One",
-		"stack": "'Bowlby One', sans-serif"
+		"google": "Bowlby+One:400",
+		"stack": "'Bowlby One', cursive"
 	},
 	"Bowlby One SC": {
-		"google": "Bowlby+One+SC",
-		"stack": "'Bowlby One SC', sans-serif"
+		"google": "Bowlby+One+SC:400",
+		"stack": "'Bowlby One SC', cursive"
 	},
 	"Brawler": {
-		"google": "Brawler",
+		"google": "Brawler:400",
 		"stack": "'Brawler', serif"
 	},
 	"Bree Serif": {
-		"google": "Bree+Serif",
+		"google": "Bree+Serif:400",
 		"stack": "'Bree Serif', serif"
 	},
 	"Bubblegum Sans": {
-		"google": "Bubblegum+Sans",
-		"stack": "'Bubblegum Sans', sans-serif"
+		"google": "Bubblegum+Sans:400",
+		"stack": "'Bubblegum Sans', cursive"
 	},
 	"Bubbler One": {
-		"google": "Bubbler+One",
+		"google": "Bubbler+One:400",
 		"stack": "'Bubbler One', sans-serif"
 	},
 	"Buda": {
-		"google": "Buda",
-		"stack": "'Buda', sans-serif"
+		"google": "Buda:",
+		"stack": "'Buda', cursive"
 	},
 	"Buenard": {
-		"google": "Buenard",
+		"google": "Buenard:400,700",
 		"stack": "'Buenard', serif"
 	},
 	"Bungee": {
-		"google": "Bungee",
-		"stack": "'Bungee', sans-serif"
+		"google": "Bungee:400",
+		"stack": "'Bungee', cursive"
 	},
 	"Bungee Hairline": {
-		"google": "Bungee+Hairline",
-		"stack": "'Bungee Hairline', sans-serif"
+		"google": "Bungee+Hairline:400",
+		"stack": "'Bungee Hairline', cursive"
 	},
 	"Bungee Inline": {
-		"google": "Bungee+Inline",
-		"stack": "'Bungee Inline', sans-serif"
+		"google": "Bungee+Inline:400",
+		"stack": "'Bungee Inline', cursive"
 	},
 	"Bungee Outline": {
-		"google": "Bungee+Outline",
-		"stack": "'Bungee Outline', sans-serif"
+		"google": "Bungee+Outline:400",
+		"stack": "'Bungee Outline', cursive"
 	},
 	"Bungee Shade": {
-		"google": "Bungee+Shade",
-		"stack": "'Bungee Shade', sans-serif"
+		"google": "Bungee+Shade:400",
+		"stack": "'Bungee Shade', cursive"
 	},
 	"Butcherman": {
-		"google": "Butcherman",
-		"stack": "'Butcherman', sans-serif"
+		"google": "Butcherman:400",
+		"stack": "'Butcherman', cursive"
 	},
 	"Butterfly Kids": {
-		"google": "Butterfly+Kids",
+		"google": "Butterfly+Kids:400",
 		"stack": "'Butterfly Kids', cursive"
 	},
 	"Cabin": {
-		"google": "Cabin",
+		"google": "Cabin:400,700",
 		"stack": "'Cabin', sans-serif"
 	},
 	"Cabin Condensed": {
-		"google": "Cabin+Condensed",
+		"google": "Cabin+Condensed:400,700",
 		"stack": "'Cabin Condensed', sans-serif"
 	},
 	"Cabin Sketch": {
-		"google": "Cabin+Sketch",
-		"stack": "'Cabin Sketch', sans-serif"
+		"google": "Cabin+Sketch:400,700",
+		"stack": "'Cabin Sketch', cursive"
 	},
 	"Caesar Dressing": {
-		"google": "Caesar+Dressing",
-		"stack": "'Caesar Dressing', sans-serif"
+		"google": "Caesar+Dressing:400",
+		"stack": "'Caesar Dressing', cursive"
 	},
 	"Cagliostro": {
-		"google": "Cagliostro",
+		"google": "Cagliostro:400",
 		"stack": "'Cagliostro', sans-serif"
 	},
 	"Cairo": {
-		"google": "Cairo",
+		"google": "Cairo:400,700",
 		"stack": "'Cairo', sans-serif"
 	},
 	"Calistoga": {
-		"google": "Calistoga",
-		"stack": "'Calistoga', sans-serif"
+		"google": "Calistoga:400",
+		"stack": "'Calistoga', cursive"
 	},
 	"Calligraffitti": {
-		"google": "Calligraffitti",
+		"google": "Calligraffitti:400",
 		"stack": "'Calligraffitti', cursive"
 	},
 	"Cambay": {
-		"google": "Cambay",
+		"google": "Cambay:400,700",
 		"stack": "'Cambay', sans-serif"
 	},
 	"Cambo": {
-		"google": "Cambo",
+		"google": "Cambo:400",
 		"stack": "'Cambo', serif"
 	},
 	"Candal": {
-		"google": "Candal",
+		"google": "Candal:400",
 		"stack": "'Candal', sans-serif"
 	},
 	"Cantarell": {
-		"google": "Cantarell",
+		"google": "Cantarell:400,700",
 		"stack": "'Cantarell', sans-serif"
 	},
 	"Cantata One": {
-		"google": "Cantata+One",
+		"google": "Cantata+One:400",
 		"stack": "'Cantata One', serif"
 	},
 	"Cantora One": {
-		"google": "Cantora+One",
+		"google": "Cantora+One:400",
 		"stack": "'Cantora One', sans-serif"
 	},
 	"Capriola": {
-		"google": "Capriola",
+		"google": "Capriola:400",
 		"stack": "'Capriola', sans-serif"
 	},
 	"Cardo": {
-		"google": "Cardo",
+		"google": "Cardo:400,700",
 		"stack": "'Cardo', serif"
 	},
 	"Carme": {
-		"google": "Carme",
+		"google": "Carme:400",
 		"stack": "'Carme', sans-serif"
 	},
 	"Carrois Gothic": {
-		"google": "Carrois+Gothic",
+		"google": "Carrois+Gothic:400",
 		"stack": "'Carrois Gothic', sans-serif"
 	},
 	"Carrois Gothic SC": {
-		"google": "Carrois+Gothic+SC",
+		"google": "Carrois+Gothic+SC:400",
 		"stack": "'Carrois Gothic SC', sans-serif"
 	},
 	"Carter One": {
-		"google": "Carter+One",
-		"stack": "'Carter One', sans-serif"
+		"google": "Carter+One:400",
+		"stack": "'Carter One', cursive"
 	},
 	"Catamaran": {
-		"google": "Catamaran",
+		"google": "Catamaran:400,700",
 		"stack": "'Catamaran', sans-serif"
 	},
 	"Caudex": {
-		"google": "Caudex",
+		"google": "Caudex:400,700",
 		"stack": "'Caudex', serif"
 	},
 	"Caveat": {
-		"google": "Caveat",
+		"google": "Caveat:400,700",
 		"stack": "'Caveat', cursive"
 	},
 	"Caveat Brush": {
-		"google": "Caveat+Brush",
+		"google": "Caveat+Brush:400",
 		"stack": "'Caveat Brush', cursive"
 	},
 	"Cedarville Cursive": {
-		"google": "Cedarville+Cursive",
+		"google": "Cedarville+Cursive:400",
 		"stack": "'Cedarville Cursive', cursive"
 	},
 	"Ceviche One": {
-		"google": "Ceviche+One",
-		"stack": "'Ceviche One', sans-serif"
+		"google": "Ceviche+One:400",
+		"stack": "'Ceviche One', cursive"
 	},
 	"Chakra Petch": {
-		"google": "Chakra+Petch",
+		"google": "Chakra+Petch:400,700",
 		"stack": "'Chakra Petch', sans-serif"
 	},
 	"Changa": {
-		"google": "Changa",
+		"google": "Changa:400,700",
 		"stack": "'Changa', sans-serif"
 	},
 	"Changa One": {
-		"google": "Changa+One",
-		"stack": "'Changa One', sans-serif"
+		"google": "Changa+One:400",
+		"stack": "'Changa One', cursive"
 	},
 	"Chango": {
-		"google": "Chango",
-		"stack": "'Chango', sans-serif"
+		"google": "Chango:400",
+		"stack": "'Chango', cursive"
 	},
 	"Charm": {
-		"google": "Charm",
+		"google": "Charm:400,700",
 		"stack": "'Charm', cursive"
 	},
 	"Charmonman": {
-		"google": "Charmonman",
+		"google": "Charmonman:400,700",
 		"stack": "'Charmonman', cursive"
 	},
 	"Chathura": {
-		"google": "Chathura",
+		"google": "Chathura:400,700",
 		"stack": "'Chathura', sans-serif"
 	},
 	"Chau Philomene One": {
-		"google": "Chau+Philomene+One",
+		"google": "Chau+Philomene+One:400",
 		"stack": "'Chau Philomene One', sans-serif"
 	},
 	"Chela One": {
-		"google": "Chela+One",
-		"stack": "'Chela One', sans-serif"
+		"google": "Chela+One:400",
+		"stack": "'Chela One', cursive"
 	},
 	"Chelsea Market": {
-		"google": "Chelsea+Market",
-		"stack": "'Chelsea Market', sans-serif"
+		"google": "Chelsea+Market:400",
+		"stack": "'Chelsea Market', cursive"
 	},
 	"Chenla": {
-		"google": "Chenla",
-		"stack": "'Chenla', sans-serif"
+		"google": "Chenla:400",
+		"stack": "'Chenla', cursive"
 	},
 	"Cherry Cream Soda": {
-		"google": "Cherry+Cream+Soda",
-		"stack": "'Cherry Cream Soda', sans-serif"
+		"google": "Cherry+Cream+Soda:400",
+		"stack": "'Cherry Cream Soda', cursive"
 	},
 	"Cherry Swash": {
-		"google": "Cherry+Swash",
-		"stack": "'Cherry Swash', sans-serif"
+		"google": "Cherry+Swash:400,700",
+		"stack": "'Cherry Swash', cursive"
 	},
 	"Chewy": {
-		"google": "Chewy",
-		"stack": "'Chewy', sans-serif"
+		"google": "Chewy:400",
+		"stack": "'Chewy', cursive"
 	},
 	"Chicle": {
-		"google": "Chicle",
-		"stack": "'Chicle', sans-serif"
+		"google": "Chicle:400",
+		"stack": "'Chicle', cursive"
 	},
 	"Chilanka": {
-		"google": "Chilanka",
+		"google": "Chilanka:400",
 		"stack": "'Chilanka', cursive"
 	},
 	"Chivo": {
-		"google": "Chivo",
+		"google": "Chivo:400,700",
 		"stack": "'Chivo', sans-serif"
 	},
 	"Chonburi": {
-		"google": "Chonburi",
-		"stack": "'Chonburi', sans-serif"
+		"google": "Chonburi:400",
+		"stack": "'Chonburi', cursive"
 	},
 	"Cinzel": {
-		"google": "Cinzel",
+		"google": "Cinzel:400,700",
 		"stack": "'Cinzel', serif"
 	},
 	"Cinzel Decorative": {
-		"google": "Cinzel+Decorative",
-		"stack": "'Cinzel Decorative', sans-serif"
+		"google": "Cinzel+Decorative:400,700",
+		"stack": "'Cinzel Decorative', cursive"
 	},
 	"Clicker Script": {
-		"google": "Clicker+Script",
+		"google": "Clicker+Script:400",
 		"stack": "'Clicker Script', cursive"
 	},
 	"Coda": {
-		"google": "Coda",
-		"stack": "'Coda', sans-serif"
+		"google": "Coda:400",
+		"stack": "'Coda', cursive"
 	},
 	"Coda Caption": {
-		"google": "Coda+Caption",
+		"google": "Coda+Caption:",
 		"stack": "'Coda Caption', sans-serif"
 	},
 	"Codystar": {
-		"google": "Codystar",
-		"stack": "'Codystar', sans-serif"
+		"google": "Codystar:400",
+		"stack": "'Codystar', cursive"
 	},
 	"Coiny": {
-		"google": "Coiny",
-		"stack": "'Coiny', sans-serif"
+		"google": "Coiny:400",
+		"stack": "'Coiny', cursive"
 	},
 	"Combo": {
-		"google": "Combo",
-		"stack": "'Combo', sans-serif"
+		"google": "Combo:400",
+		"stack": "'Combo', cursive"
 	},
 	"Comfortaa": {
-		"google": "Comfortaa",
-		"stack": "'Comfortaa', sans-serif"
+		"google": "Comfortaa:400,700",
+		"stack": "'Comfortaa', cursive"
 	},
 	"Coming Soon": {
-		"google": "Coming+Soon",
+		"google": "Coming+Soon:400",
 		"stack": "'Coming Soon', cursive"
 	},
 	"Concert One": {
-		"google": "Concert+One",
-		"stack": "'Concert One', sans-serif"
+		"google": "Concert+One:400",
+		"stack": "'Concert One', cursive"
 	},
 	"Condiment": {
-		"google": "Condiment",
+		"google": "Condiment:400",
 		"stack": "'Condiment', cursive"
 	},
 	"Content": {
-		"google": "Content",
-		"stack": "'Content', sans-serif"
+		"google": "Content:400,700",
+		"stack": "'Content', cursive"
 	},
 	"Contrail One": {
-		"google": "Contrail+One",
-		"stack": "'Contrail One', sans-serif"
+		"google": "Contrail+One:400",
+		"stack": "'Contrail One', cursive"
 	},
 	"Convergence": {
-		"google": "Convergence",
+		"google": "Convergence:400",
 		"stack": "'Convergence', sans-serif"
 	},
 	"Cookie": {
-		"google": "Cookie",
+		"google": "Cookie:400",
 		"stack": "'Cookie', cursive"
 	},
 	"Copse": {
-		"google": "Copse",
+		"google": "Copse:400",
 		"stack": "'Copse', serif"
 	},
 	"Corben": {
-		"google": "Corben",
-		"stack": "'Corben', sans-serif"
+		"google": "Corben:400,700",
+		"stack": "'Corben', cursive"
 	},
 	"Cormorant": {
-		"google": "Cormorant",
+		"google": "Cormorant:400,700",
 		"stack": "'Cormorant', serif"
 	},
 	"Cormorant Garamond": {
-		"google": "Cormorant+Garamond",
+		"google": "Cormorant+Garamond:400,700",
 		"stack": "'Cormorant Garamond', serif"
 	},
 	"Cormorant Infant": {
-		"google": "Cormorant+Infant",
+		"google": "Cormorant+Infant:400,700",
 		"stack": "'Cormorant Infant', serif"
 	},
 	"Cormorant SC": {
-		"google": "Cormorant+SC",
+		"google": "Cormorant+SC:400,700",
 		"stack": "'Cormorant SC', serif"
 	},
 	"Cormorant Unicase": {
-		"google": "Cormorant+Unicase",
+		"google": "Cormorant+Unicase:400,700",
 		"stack": "'Cormorant Unicase', serif"
 	},
 	"Cormorant Upright": {
-		"google": "Cormorant+Upright",
+		"google": "Cormorant+Upright:400,700",
 		"stack": "'Cormorant Upright', serif"
 	},
 	"Courgette": {
-		"google": "Courgette",
+		"google": "Courgette:400",
 		"stack": "'Courgette', cursive"
 	},
 	"Coustard": {
-		"google": "Coustard",
+		"google": "Coustard:400",
 		"stack": "'Coustard', serif"
 	},
 	"Covered By Your Grace": {
-		"google": "Covered+By+Your+Grace",
+		"google": "Covered+By+Your+Grace:400",
 		"stack": "'Covered By Your Grace', cursive"
 	},
 	"Crafty Girls": {
-		"google": "Crafty+Girls",
+		"google": "Crafty+Girls:400",
 		"stack": "'Crafty Girls', cursive"
 	},
 	"Creepster": {
-		"google": "Creepster",
-		"stack": "'Creepster', sans-serif"
+		"google": "Creepster:400",
+		"stack": "'Creepster', cursive"
 	},
 	"Crete Round": {
-		"google": "Crete+Round",
+		"google": "Crete+Round:400",
 		"stack": "'Crete Round', serif"
 	},
 	"Crimson Pro": {
-		"google": "Crimson+Pro",
+		"google": "Crimson+Pro:400,700",
 		"stack": "'Crimson Pro', serif"
 	},
 	"Crimson Text": {
-		"google": "Crimson+Text",
+		"google": "Crimson+Text:400,700",
 		"stack": "'Crimson Text', serif"
 	},
 	"Croissant One": {
-		"google": "Croissant+One",
-		"stack": "'Croissant One', sans-serif"
+		"google": "Croissant+One:400",
+		"stack": "'Croissant One', cursive"
 	},
 	"Crushed": {
-		"google": "Crushed",
-		"stack": "'Crushed', sans-serif"
+		"google": "Crushed:400",
+		"stack": "'Crushed', cursive"
 	},
 	"Cuprum": {
-		"google": "Cuprum",
+		"google": "Cuprum:400,700",
 		"stack": "'Cuprum', sans-serif"
 	},
 	"Cute Font": {
-		"google": "Cute+Font",
-		"stack": "'Cute Font', sans-serif"
+		"google": "Cute+Font:400",
+		"stack": "'Cute Font', cursive"
 	},
 	"Cutive": {
-		"google": "Cutive",
+		"google": "Cutive:400",
 		"stack": "'Cutive', serif"
 	},
 	"DM Sans": {
-		"google": "DM+Sans",
+		"google": "DM+Sans:400,700",
 		"stack": "'DM Sans', sans-serif"
 	},
 	"DM Serif Display": {
-		"google": "DM+Serif+Display",
+		"google": "DM+Serif+Display:400",
 		"stack": "'DM Serif Display', serif"
 	},
 	"DM Serif Text": {
-		"google": "DM+Serif+Text",
+		"google": "DM+Serif+Text:400",
 		"stack": "'DM Serif Text', serif"
 	},
 	"Damion": {
-		"google": "Damion",
+		"google": "Damion:400",
 		"stack": "'Damion', cursive"
 	},
 	"Dancing Script": {
-		"google": "Dancing+Script",
+		"google": "Dancing+Script:400,700",
 		"stack": "'Dancing Script', cursive"
 	},
 	"Dangrek": {
-		"google": "Dangrek",
-		"stack": "'Dangrek', sans-serif"
+		"google": "Dangrek:400",
+		"stack": "'Dangrek', cursive"
 	},
 	"Darker Grotesque": {
-		"google": "Darker+Grotesque",
+		"google": "Darker+Grotesque:400,700",
 		"stack": "'Darker Grotesque', sans-serif"
 	},
 	"David Libre": {
-		"google": "David+Libre",
+		"google": "David+Libre:400,700",
 		"stack": "'David Libre', serif"
 	},
 	"Dawning of a New Day": {
-		"google": "Dawning+of+a+New+Day",
+		"google": "Dawning+of+a+New+Day:400",
 		"stack": "'Dawning of a New Day', cursive"
 	},
 	"Days One": {
-		"google": "Days+One",
+		"google": "Days+One:400",
 		"stack": "'Days One', sans-serif"
 	},
 	"Dekko": {
-		"google": "Dekko",
+		"google": "Dekko:400",
 		"stack": "'Dekko', cursive"
 	},
 	"Delius": {
-		"google": "Delius",
+		"google": "Delius:400",
 		"stack": "'Delius', cursive"
 	},
 	"Delius Swash Caps": {
-		"google": "Delius+Swash+Caps",
+		"google": "Delius+Swash+Caps:400",
 		"stack": "'Delius Swash Caps', cursive"
 	},
 	"Delius Unicase": {
-		"google": "Delius+Unicase",
+		"google": "Delius+Unicase:400,700",
 		"stack": "'Delius Unicase', cursive"
 	},
 	"Della Respira": {
-		"google": "Della+Respira",
+		"google": "Della+Respira:400",
 		"stack": "'Della Respira', serif"
 	},
 	"Denk One": {
-		"google": "Denk+One",
+		"google": "Denk+One:400",
 		"stack": "'Denk One', sans-serif"
 	},
 	"Devonshire": {
-		"google": "Devonshire",
+		"google": "Devonshire:400",
 		"stack": "'Devonshire', cursive"
 	},
 	"Dhurjati": {
-		"google": "Dhurjati",
+		"google": "Dhurjati:400",
 		"stack": "'Dhurjati', sans-serif"
 	},
 	"Didact Gothic": {
-		"google": "Didact+Gothic",
+		"google": "Didact+Gothic:400",
 		"stack": "'Didact Gothic', sans-serif"
 	},
 	"Diplomata": {
-		"google": "Diplomata",
-		"stack": "'Diplomata', sans-serif"
+		"google": "Diplomata:400",
+		"stack": "'Diplomata', cursive"
 	},
 	"Diplomata SC": {
-		"google": "Diplomata+SC",
-		"stack": "'Diplomata SC', sans-serif"
+		"google": "Diplomata+SC:400",
+		"stack": "'Diplomata SC', cursive"
 	},
 	"Do Hyeon": {
-		"google": "Do+Hyeon",
+		"google": "Do+Hyeon:400",
 		"stack": "'Do Hyeon', sans-serif"
 	},
 	"Dokdo": {
-		"google": "Dokdo",
+		"google": "Dokdo:400",
 		"stack": "'Dokdo', cursive"
 	},
 	"Domine": {
-		"google": "Domine",
+		"google": "Domine:400,700",
 		"stack": "'Domine', serif"
 	},
 	"Donegal One": {
-		"google": "Donegal+One",
+		"google": "Donegal+One:400",
 		"stack": "'Donegal One', serif"
 	},
 	"Doppio One": {
-		"google": "Doppio+One",
+		"google": "Doppio+One:400",
 		"stack": "'Doppio One', sans-serif"
 	},
 	"Dorsa": {
-		"google": "Dorsa",
+		"google": "Dorsa:400",
 		"stack": "'Dorsa', sans-serif"
 	},
 	"Dosis": {
-		"google": "Dosis",
+		"google": "Dosis:400,700",
 		"stack": "'Dosis', sans-serif"
 	},
 	"Dr Sugiyama": {
-		"google": "Dr+Sugiyama",
+		"google": "Dr+Sugiyama:400",
 		"stack": "'Dr Sugiyama', cursive"
 	},
 	"Duru Sans": {
-		"google": "Duru+Sans",
+		"google": "Duru+Sans:400",
 		"stack": "'Duru Sans', sans-serif"
 	},
 	"Dynalight": {
-		"google": "Dynalight",
-		"stack": "'Dynalight', sans-serif"
+		"google": "Dynalight:400",
+		"stack": "'Dynalight', cursive"
 	},
 	"EB Garamond": {
-		"google": "EB+Garamond",
+		"google": "EB+Garamond:400,700",
 		"stack": "'EB Garamond', serif"
 	},
 	"Eagle Lake": {
-		"google": "Eagle+Lake",
+		"google": "Eagle+Lake:400",
 		"stack": "'Eagle Lake', cursive"
 	},
 	"East Sea Dokdo": {
-		"google": "East+Sea+Dokdo",
+		"google": "East+Sea+Dokdo:400",
 		"stack": "'East Sea Dokdo', cursive"
 	},
 	"Eater": {
-		"google": "Eater",
-		"stack": "'Eater', sans-serif"
+		"google": "Eater:400",
+		"stack": "'Eater', cursive"
 	},
 	"Economica": {
-		"google": "Economica",
+		"google": "Economica:400,700",
 		"stack": "'Economica', sans-serif"
 	},
 	"Eczar": {
-		"google": "Eczar",
+		"google": "Eczar:400,700",
 		"stack": "'Eczar', serif"
 	},
 	"El Messiri": {
-		"google": "El+Messiri",
+		"google": "El+Messiri:400,700",
 		"stack": "'El Messiri', sans-serif"
 	},
 	"Electrolize": {
-		"google": "Electrolize",
+		"google": "Electrolize:400",
 		"stack": "'Electrolize', sans-serif"
 	},
 	"Elsie": {
-		"google": "Elsie",
-		"stack": "'Elsie', sans-serif"
+		"google": "Elsie:400",
+		"stack": "'Elsie', cursive"
 	},
 	"Elsie Swash Caps": {
-		"google": "Elsie+Swash+Caps",
-		"stack": "'Elsie Swash Caps', sans-serif"
+		"google": "Elsie+Swash+Caps:400",
+		"stack": "'Elsie Swash Caps', cursive"
 	},
 	"Emblema One": {
-		"google": "Emblema+One",
-		"stack": "'Emblema One', sans-serif"
+		"google": "Emblema+One:400",
+		"stack": "'Emblema One', cursive"
 	},
 	"Emilys Candy": {
-		"google": "Emilys+Candy",
-		"stack": "'Emilys Candy', sans-serif"
+		"google": "Emilys+Candy:400",
+		"stack": "'Emilys Candy', cursive"
 	},
 	"Encode Sans": {
-		"google": "Encode+Sans",
+		"google": "Encode+Sans:400,700",
 		"stack": "'Encode Sans', sans-serif"
 	},
 	"Encode Sans Condensed": {
-		"google": "Encode+Sans+Condensed",
+		"google": "Encode+Sans+Condensed:400,700",
 		"stack": "'Encode Sans Condensed', sans-serif"
 	},
 	"Encode Sans Expanded": {
-		"google": "Encode+Sans+Expanded",
+		"google": "Encode+Sans+Expanded:400,700",
 		"stack": "'Encode Sans Expanded', sans-serif"
 	},
 	"Encode Sans Semi Condensed": {
-		"google": "Encode+Sans+Semi+Condensed",
+		"google": "Encode+Sans+Semi+Condensed:400,700",
 		"stack": "'Encode Sans Semi Condensed', sans-serif"
 	},
 	"Encode Sans Semi Expanded": {
-		"google": "Encode+Sans+Semi+Expanded",
+		"google": "Encode+Sans+Semi+Expanded:400,700",
 		"stack": "'Encode Sans Semi Expanded', sans-serif"
 	},
 	"Engagement": {
-		"google": "Engagement",
+		"google": "Engagement:400",
 		"stack": "'Engagement', cursive"
 	},
 	"Englebert": {
-		"google": "Englebert",
+		"google": "Englebert:400",
 		"stack": "'Englebert', sans-serif"
 	},
 	"Enriqueta": {
-		"google": "Enriqueta",
+		"google": "Enriqueta:400,700",
 		"stack": "'Enriqueta', serif"
 	},
 	"Erica One": {
-		"google": "Erica+One",
-		"stack": "'Erica One', sans-serif"
+		"google": "Erica+One:400",
+		"stack": "'Erica One', cursive"
 	},
 	"Esteban": {
-		"google": "Esteban",
+		"google": "Esteban:400",
 		"stack": "'Esteban', serif"
 	},
 	"Euphoria Script": {
-		"google": "Euphoria+Script",
+		"google": "Euphoria+Script:400",
 		"stack": "'Euphoria Script', cursive"
 	},
 	"Ewert": {
-		"google": "Ewert",
-		"stack": "'Ewert', sans-serif"
+		"google": "Ewert:400",
+		"stack": "'Ewert', cursive"
 	},
 	"Exo": {
-		"google": "Exo",
+		"google": "Exo:400,700",
 		"stack": "'Exo', sans-serif"
 	},
 	"Exo 2": {
-		"google": "Exo+2",
+		"google": "Exo+2:400,700",
 		"stack": "'Exo 2', sans-serif"
 	},
 	"Expletus Sans": {
-		"google": "Expletus+Sans",
-		"stack": "'Expletus Sans', sans-serif"
+		"google": "Expletus+Sans:400,700",
+		"stack": "'Expletus Sans', cursive"
 	},
 	"Fahkwang": {
-		"google": "Fahkwang",
+		"google": "Fahkwang:400,700",
 		"stack": "'Fahkwang', sans-serif"
 	},
 	"Fanwood Text": {
-		"google": "Fanwood+Text",
+		"google": "Fanwood+Text:400",
 		"stack": "'Fanwood Text', serif"
 	},
 	"Farro": {
-		"google": "Farro",
+		"google": "Farro:400,700",
 		"stack": "'Farro', sans-serif"
 	},
 	"Farsan": {
-		"google": "Farsan",
-		"stack": "'Farsan', sans-serif"
+		"google": "Farsan:400",
+		"stack": "'Farsan', cursive"
 	},
 	"Fascinate": {
-		"google": "Fascinate",
-		"stack": "'Fascinate', sans-serif"
+		"google": "Fascinate:400",
+		"stack": "'Fascinate', cursive"
 	},
 	"Fascinate Inline": {
-		"google": "Fascinate+Inline",
-		"stack": "'Fascinate Inline', sans-serif"
+		"google": "Fascinate+Inline:400",
+		"stack": "'Fascinate Inline', cursive"
 	},
 	"Faster One": {
-		"google": "Faster+One",
-		"stack": "'Faster One', sans-serif"
+		"google": "Faster+One:400",
+		"stack": "'Faster One', cursive"
 	},
 	"Fasthand": {
-		"google": "Fasthand",
+		"google": "Fasthand:400",
 		"stack": "'Fasthand', serif"
 	},
 	"Fauna One": {
-		"google": "Fauna+One",
+		"google": "Fauna+One:400",
 		"stack": "'Fauna One', serif"
 	},
 	"Faustina": {
-		"google": "Faustina",
+		"google": "Faustina:400,700",
 		"stack": "'Faustina', serif"
 	},
 	"Federant": {
-		"google": "Federant",
-		"stack": "'Federant', sans-serif"
+		"google": "Federant:400",
+		"stack": "'Federant', cursive"
 	},
 	"Federo": {
-		"google": "Federo",
+		"google": "Federo:400",
 		"stack": "'Federo', sans-serif"
 	},
 	"Felipa": {
-		"google": "Felipa",
+		"google": "Felipa:400",
 		"stack": "'Felipa', cursive"
 	},
 	"Fenix": {
-		"google": "Fenix",
+		"google": "Fenix:400",
 		"stack": "'Fenix', serif"
 	},
 	"Finger Paint": {
-		"google": "Finger+Paint",
-		"stack": "'Finger Paint', sans-serif"
+		"google": "Finger+Paint:400",
+		"stack": "'Finger Paint', cursive"
 	},
 	"Fira Sans": {
-		"google": "Fira+Sans",
+		"google": "Fira+Sans:400,700",
 		"stack": "'Fira Sans', sans-serif"
 	},
 	"Fira Sans Condensed": {
-		"google": "Fira+Sans+Condensed",
+		"google": "Fira+Sans+Condensed:400,700",
 		"stack": "'Fira Sans Condensed', sans-serif"
 	},
 	"Fira Sans Extra Condensed": {
-		"google": "Fira+Sans+Extra+Condensed",
+		"google": "Fira+Sans+Extra+Condensed:400,700",
 		"stack": "'Fira Sans Extra Condensed', sans-serif"
 	},
 	"Fjalla One": {
-		"google": "Fjalla+One",
+		"google": "Fjalla+One:400",
 		"stack": "'Fjalla One', sans-serif"
 	},
 	"Fjord One": {
-		"google": "Fjord+One",
+		"google": "Fjord+One:400",
 		"stack": "'Fjord One', serif"
 	},
 	"Flamenco": {
-		"google": "Flamenco",
-		"stack": "'Flamenco', sans-serif"
+		"google": "Flamenco:400",
+		"stack": "'Flamenco', cursive"
 	},
 	"Flavors": {
-		"google": "Flavors",
-		"stack": "'Flavors', sans-serif"
+		"google": "Flavors:400",
+		"stack": "'Flavors', cursive"
 	},
 	"Fondamento": {
-		"google": "Fondamento",
+		"google": "Fondamento:400",
 		"stack": "'Fondamento', cursive"
 	},
 	"Fontdiner Swanky": {
-		"google": "Fontdiner+Swanky",
-		"stack": "'Fontdiner Swanky', sans-serif"
+		"google": "Fontdiner+Swanky:400",
+		"stack": "'Fontdiner Swanky', cursive"
 	},
 	"Forum": {
-		"google": "Forum",
-		"stack": "'Forum', sans-serif"
+		"google": "Forum:400",
+		"stack": "'Forum', cursive"
 	},
 	"Francois One": {
-		"google": "Francois+One",
+		"google": "Francois+One:400",
 		"stack": "'Francois One', sans-serif"
 	},
 	"Frank Ruhl Libre": {
-		"google": "Frank+Ruhl+Libre",
+		"google": "Frank+Ruhl+Libre:400,700",
 		"stack": "'Frank Ruhl Libre', serif"
 	},
 	"Freckle Face": {
-		"google": "Freckle+Face",
-		"stack": "'Freckle Face', sans-serif"
+		"google": "Freckle+Face:400",
+		"stack": "'Freckle Face', cursive"
 	},
 	"Fredericka the Great": {
-		"google": "Fredericka+the+Great",
-		"stack": "'Fredericka the Great', sans-serif"
+		"google": "Fredericka+the+Great:400",
+		"stack": "'Fredericka the Great', cursive"
 	},
 	"Fredoka One": {
-		"google": "Fredoka+One",
-		"stack": "'Fredoka One', sans-serif"
+		"google": "Fredoka+One:400",
+		"stack": "'Fredoka One', cursive"
 	},
 	"Freehand": {
-		"google": "Freehand",
-		"stack": "'Freehand', sans-serif"
+		"google": "Freehand:400",
+		"stack": "'Freehand', cursive"
 	},
 	"Fresca": {
-		"google": "Fresca",
+		"google": "Fresca:400",
 		"stack": "'Fresca', sans-serif"
 	},
 	"Frijole": {
-		"google": "Frijole",
-		"stack": "'Frijole', sans-serif"
+		"google": "Frijole:400",
+		"stack": "'Frijole', cursive"
 	},
 	"Fruktur": {
-		"google": "Fruktur",
-		"stack": "'Fruktur', sans-serif"
+		"google": "Fruktur:400",
+		"stack": "'Fruktur', cursive"
 	},
 	"Fugaz One": {
-		"google": "Fugaz+One",
-		"stack": "'Fugaz One', sans-serif"
+		"google": "Fugaz+One:400",
+		"stack": "'Fugaz One', cursive"
 	},
 	"GFS Didot": {
-		"google": "GFS+Didot",
+		"google": "GFS+Didot:400",
 		"stack": "'GFS Didot', serif"
 	},
 	"GFS Neohellenic": {
-		"google": "GFS+Neohellenic",
+		"google": "GFS+Neohellenic:400,700",
 		"stack": "'GFS Neohellenic', sans-serif"
 	},
 	"Gabriela": {
-		"google": "Gabriela",
+		"google": "Gabriela:400",
 		"stack": "'Gabriela', serif"
 	},
 	"Gaegu": {
-		"google": "Gaegu",
+		"google": "Gaegu:400,700",
 		"stack": "'Gaegu', cursive"
 	},
 	"Gafata": {
-		"google": "Gafata",
+		"google": "Gafata:400",
 		"stack": "'Gafata', sans-serif"
 	},
 	"Galada": {
-		"google": "Galada",
-		"stack": "'Galada', sans-serif"
+		"google": "Galada:400",
+		"stack": "'Galada', cursive"
 	},
 	"Galdeano": {
-		"google": "Galdeano",
+		"google": "Galdeano:400",
 		"stack": "'Galdeano', sans-serif"
 	},
 	"Galindo": {
-		"google": "Galindo",
-		"stack": "'Galindo', sans-serif"
+		"google": "Galindo:400",
+		"stack": "'Galindo', cursive"
 	},
 	"Gamja Flower": {
-		"google": "Gamja+Flower",
+		"google": "Gamja+Flower:400",
 		"stack": "'Gamja Flower', cursive"
 	},
 	"Gayathri": {
-		"google": "Gayathri",
+		"google": "Gayathri:400,700",
 		"stack": "'Gayathri', sans-serif"
 	},
 	"Gentium Basic": {
-		"google": "Gentium+Basic",
+		"google": "Gentium+Basic:400,700",
 		"stack": "'Gentium Basic', serif"
 	},
 	"Gentium Book Basic": {
-		"google": "Gentium+Book+Basic",
+		"google": "Gentium+Book+Basic:400,700",
 		"stack": "'Gentium Book Basic', serif"
 	},
 	"Geo": {
-		"google": "Geo",
+		"google": "Geo:400",
 		"stack": "'Geo', sans-serif"
 	},
 	"Geostar": {
-		"google": "Geostar",
-		"stack": "'Geostar', sans-serif"
+		"google": "Geostar:400",
+		"stack": "'Geostar', cursive"
 	},
 	"Geostar Fill": {
-		"google": "Geostar+Fill",
-		"stack": "'Geostar Fill', sans-serif"
+		"google": "Geostar+Fill:400",
+		"stack": "'Geostar Fill', cursive"
 	},
 	"Germania One": {
-		"google": "Germania+One",
-		"stack": "'Germania One', sans-serif"
+		"google": "Germania+One:400",
+		"stack": "'Germania One', cursive"
 	},
 	"Gidugu": {
-		"google": "Gidugu",
+		"google": "Gidugu:400",
 		"stack": "'Gidugu', sans-serif"
 	},
 	"Gilda Display": {
-		"google": "Gilda+Display",
+		"google": "Gilda+Display:400",
 		"stack": "'Gilda Display', serif"
 	},
 	"Give You Glory": {
-		"google": "Give+You+Glory",
+		"google": "Give+You+Glory:400",
 		"stack": "'Give You Glory', cursive"
 	},
 	"Glass Antiqua": {
-		"google": "Glass+Antiqua",
-		"stack": "'Glass Antiqua', sans-serif"
+		"google": "Glass+Antiqua:400",
+		"stack": "'Glass Antiqua', cursive"
 	},
 	"Glegoo": {
-		"google": "Glegoo",
+		"google": "Glegoo:400,700",
 		"stack": "'Glegoo', serif"
 	},
 	"Gloria Hallelujah": {
-		"google": "Gloria+Hallelujah",
+		"google": "Gloria+Hallelujah:400",
 		"stack": "'Gloria Hallelujah', cursive"
 	},
 	"Goblin One": {
-		"google": "Goblin+One",
-		"stack": "'Goblin One', sans-serif"
+		"google": "Goblin+One:400",
+		"stack": "'Goblin One', cursive"
 	},
 	"Gochi Hand": {
-		"google": "Gochi+Hand",
+		"google": "Gochi+Hand:400",
 		"stack": "'Gochi Hand', cursive"
 	},
 	"Gorditas": {
-		"google": "Gorditas",
-		"stack": "'Gorditas', sans-serif"
+		"google": "Gorditas:400,700",
+		"stack": "'Gorditas', cursive"
 	},
 	"Gothic A1": {
-		"google": "Gothic+A1",
+		"google": "Gothic+A1:400,700",
 		"stack": "'Gothic A1', sans-serif"
 	},
 	"Goudy Bookletter 1911": {
-		"google": "Goudy+Bookletter+1911",
+		"google": "Goudy+Bookletter+1911:400",
 		"stack": "'Goudy Bookletter 1911', serif"
 	},
 	"Graduate": {
-		"google": "Graduate",
-		"stack": "'Graduate', sans-serif"
+		"google": "Graduate:400",
+		"stack": "'Graduate', cursive"
 	},
 	"Grand Hotel": {
-		"google": "Grand+Hotel",
+		"google": "Grand+Hotel:400",
 		"stack": "'Grand Hotel', cursive"
 	},
 	"Gravitas One": {
-		"google": "Gravitas+One",
-		"stack": "'Gravitas One', sans-serif"
+		"google": "Gravitas+One:400",
+		"stack": "'Gravitas One', cursive"
 	},
 	"Great Vibes": {
-		"google": "Great+Vibes",
+		"google": "Great+Vibes:400",
 		"stack": "'Great Vibes', cursive"
 	},
 	"Grenze": {
-		"google": "Grenze",
+		"google": "Grenze:400,700",
 		"stack": "'Grenze', serif"
 	},
 	"Griffy": {
-		"google": "Griffy",
-		"stack": "'Griffy', sans-serif"
+		"google": "Griffy:400",
+		"stack": "'Griffy', cursive"
 	},
 	"Gruppo": {
-		"google": "Gruppo",
-		"stack": "'Gruppo', sans-serif"
+		"google": "Gruppo:400",
+		"stack": "'Gruppo', cursive"
 	},
 	"Gudea": {
-		"google": "Gudea",
+		"google": "Gudea:400,700",
 		"stack": "'Gudea', sans-serif"
 	},
 	"Gugi": {
-		"google": "Gugi",
-		"stack": "'Gugi', sans-serif"
+		"google": "Gugi:400",
+		"stack": "'Gugi', cursive"
 	},
 	"Gurajada": {
-		"google": "Gurajada",
+		"google": "Gurajada:400",
 		"stack": "'Gurajada', serif"
 	},
 	"Habibi": {
-		"google": "Habibi",
+		"google": "Habibi:400",
 		"stack": "'Habibi', serif"
 	},
 	"Halant": {
-		"google": "Halant",
+		"google": "Halant:400,700",
 		"stack": "'Halant', serif"
 	},
 	"Hammersmith One": {
-		"google": "Hammersmith+One",
+		"google": "Hammersmith+One:400",
 		"stack": "'Hammersmith One', sans-serif"
 	},
 	"Hanalei": {
-		"google": "Hanalei",
-		"stack": "'Hanalei', sans-serif"
+		"google": "Hanalei:400",
+		"stack": "'Hanalei', cursive"
 	},
 	"Hanalei Fill": {
-		"google": "Hanalei+Fill",
-		"stack": "'Hanalei Fill', sans-serif"
+		"google": "Hanalei+Fill:400",
+		"stack": "'Hanalei Fill', cursive"
 	},
 	"Handlee": {
-		"google": "Handlee",
+		"google": "Handlee:400",
 		"stack": "'Handlee', cursive"
 	},
 	"Hanuman": {
-		"google": "Hanuman",
+		"google": "Hanuman:400,700",
 		"stack": "'Hanuman', serif"
 	},
 	"Happy Monkey": {
-		"google": "Happy+Monkey",
-		"stack": "'Happy Monkey', sans-serif"
+		"google": "Happy+Monkey:400",
+		"stack": "'Happy Monkey', cursive"
 	},
 	"Harmattan": {
-		"google": "Harmattan",
+		"google": "Harmattan:400",
 		"stack": "'Harmattan', sans-serif"
 	},
 	"Headland One": {
-		"google": "Headland+One",
+		"google": "Headland+One:400",
 		"stack": "'Headland One', serif"
 	},
 	"Heebo": {
-		"google": "Heebo",
+		"google": "Heebo:400,700",
 		"stack": "'Heebo', sans-serif"
 	},
 	"Henny Penny": {
-		"google": "Henny+Penny",
-		"stack": "'Henny Penny', sans-serif"
+		"google": "Henny+Penny:400",
+		"stack": "'Henny Penny', cursive"
 	},
 	"Hepta Slab": {
-		"google": "Hepta+Slab",
+		"google": "Hepta+Slab:400,700",
 		"stack": "'Hepta Slab', serif"
 	},
 	"Herr Von Muellerhoff": {
-		"google": "Herr+Von+Muellerhoff",
+		"google": "Herr+Von+Muellerhoff:400",
 		"stack": "'Herr Von Muellerhoff', cursive"
 	},
 	"Hi Melody": {
-		"google": "Hi+Melody",
+		"google": "Hi+Melody:400",
 		"stack": "'Hi Melody', cursive"
 	},
 	"Hind": {
-		"google": "Hind",
+		"google": "Hind:400,700",
 		"stack": "'Hind', sans-serif"
 	},
 	"Hind Guntur": {
-		"google": "Hind+Guntur",
+		"google": "Hind+Guntur:400,700",
 		"stack": "'Hind Guntur', sans-serif"
 	},
 	"Hind Madurai": {
-		"google": "Hind+Madurai",
+		"google": "Hind+Madurai:400,700",
 		"stack": "'Hind Madurai', sans-serif"
 	},
 	"Hind Siliguri": {
-		"google": "Hind+Siliguri",
+		"google": "Hind+Siliguri:400,700",
 		"stack": "'Hind Siliguri', sans-serif"
 	},
 	"Hind Vadodara": {
-		"google": "Hind+Vadodara",
+		"google": "Hind+Vadodara:400,700",
 		"stack": "'Hind Vadodara', sans-serif"
 	},
 	"Holtwood One SC": {
-		"google": "Holtwood+One+SC",
+		"google": "Holtwood+One+SC:400",
 		"stack": "'Holtwood One SC', serif"
 	},
 	"Homemade Apple": {
-		"google": "Homemade+Apple",
+		"google": "Homemade+Apple:400",
 		"stack": "'Homemade Apple', cursive"
 	},
 	"Homenaje": {
-		"google": "Homenaje",
+		"google": "Homenaje:400",
 		"stack": "'Homenaje', sans-serif"
 	},
 	"IBM Plex Sans": {
-		"google": "IBM+Plex+Sans",
+		"google": "IBM+Plex+Sans:400,700",
 		"stack": "'IBM Plex Sans', sans-serif"
 	},
 	"IBM Plex Sans Condensed": {
-		"google": "IBM+Plex+Sans+Condensed",
+		"google": "IBM+Plex+Sans+Condensed:400,700",
 		"stack": "'IBM Plex Sans Condensed', sans-serif"
 	},
 	"IBM Plex Serif": {
-		"google": "IBM+Plex+Serif",
+		"google": "IBM+Plex+Serif:400,700",
 		"stack": "'IBM Plex Serif', serif"
 	},
 	"IM Fell DW Pica": {
-		"google": "IM+Fell+DW+Pica",
+		"google": "IM+Fell+DW+Pica:400",
 		"stack": "'IM Fell DW Pica', serif"
 	},
 	"IM Fell DW Pica SC": {
-		"google": "IM+Fell+DW+Pica+SC",
+		"google": "IM+Fell+DW+Pica+SC:400",
 		"stack": "'IM Fell DW Pica SC', serif"
 	},
 	"IM Fell Double Pica": {
-		"google": "IM+Fell+Double+Pica",
+		"google": "IM+Fell+Double+Pica:400",
 		"stack": "'IM Fell Double Pica', serif"
 	},
 	"IM Fell Double Pica SC": {
-		"google": "IM+Fell+Double+Pica+SC",
+		"google": "IM+Fell+Double+Pica+SC:400",
 		"stack": "'IM Fell Double Pica SC', serif"
 	},
 	"IM Fell English": {
-		"google": "IM+Fell+English",
+		"google": "IM+Fell+English:400",
 		"stack": "'IM Fell English', serif"
 	},
 	"IM Fell English SC": {
-		"google": "IM+Fell+English+SC",
+		"google": "IM+Fell+English+SC:400",
 		"stack": "'IM Fell English SC', serif"
 	},
 	"IM Fell French Canon": {
-		"google": "IM+Fell+French+Canon",
+		"google": "IM+Fell+French+Canon:400",
 		"stack": "'IM Fell French Canon', serif"
 	},
 	"IM Fell French Canon SC": {
-		"google": "IM+Fell+French+Canon+SC",
+		"google": "IM+Fell+French+Canon+SC:400",
 		"stack": "'IM Fell French Canon SC', serif"
 	},
 	"IM Fell Great Primer": {
-		"google": "IM+Fell+Great+Primer",
+		"google": "IM+Fell+Great+Primer:400",
 		"stack": "'IM Fell Great Primer', serif"
 	},
 	"IM Fell Great Primer SC": {
-		"google": "IM+Fell+Great+Primer+SC",
+		"google": "IM+Fell+Great+Primer+SC:400",
 		"stack": "'IM Fell Great Primer SC', serif"
 	},
 	"Ibarra Real Nova": {
-		"google": "Ibarra+Real+Nova",
+		"google": "Ibarra+Real+Nova:400,700",
 		"stack": "'Ibarra Real Nova', serif"
 	},
 	"Iceberg": {
-		"google": "Iceberg",
-		"stack": "'Iceberg', sans-serif"
+		"google": "Iceberg:400",
+		"stack": "'Iceberg', cursive"
 	},
 	"Iceland": {
-		"google": "Iceland",
-		"stack": "'Iceland', sans-serif"
+		"google": "Iceland:400",
+		"stack": "'Iceland', cursive"
 	},
 	"Imprima": {
-		"google": "Imprima",
+		"google": "Imprima:400",
 		"stack": "'Imprima', sans-serif"
 	},
 	"Inder": {
-		"google": "Inder",
+		"google": "Inder:400",
 		"stack": "'Inder', sans-serif"
 	},
 	"Indie Flower": {
-		"google": "Indie+Flower",
+		"google": "Indie+Flower:400",
 		"stack": "'Indie Flower', cursive"
 	},
 	"Inika": {
-		"google": "Inika",
+		"google": "Inika:400,700",
 		"stack": "'Inika', serif"
 	},
 	"Inknut Antiqua": {
-		"google": "Inknut+Antiqua",
+		"google": "Inknut+Antiqua:400,700",
 		"stack": "'Inknut Antiqua', serif"
 	},
 	"Irish Grover": {
-		"google": "Irish+Grover",
-		"stack": "'Irish Grover', sans-serif"
+		"google": "Irish+Grover:400",
+		"stack": "'Irish Grover', cursive"
 	},
 	"Istok Web": {
-		"google": "Istok+Web",
+		"google": "Istok+Web:400,700",
 		"stack": "'Istok Web', sans-serif"
 	},
 	"Italiana": {
-		"google": "Italiana",
+		"google": "Italiana:400",
 		"stack": "'Italiana', serif"
 	},
 	"Italianno": {
-		"google": "Italianno",
+		"google": "Italianno:400",
 		"stack": "'Italianno', cursive"
 	},
 	"Itim": {
-		"google": "Itim",
+		"google": "Itim:400",
 		"stack": "'Itim', cursive"
 	},
 	"Jacques Francois": {
-		"google": "Jacques+Francois",
+		"google": "Jacques+Francois:400",
 		"stack": "'Jacques Francois', serif"
 	},
 	"Jacques Francois Shadow": {
-		"google": "Jacques+Francois+Shadow",
-		"stack": "'Jacques Francois Shadow', sans-serif"
+		"google": "Jacques+Francois+Shadow:400",
+		"stack": "'Jacques Francois Shadow', cursive"
 	},
 	"Jaldi": {
-		"google": "Jaldi",
+		"google": "Jaldi:400,700",
 		"stack": "'Jaldi', sans-serif"
 	},
 	"Jim Nightshade": {
-		"google": "Jim+Nightshade",
+		"google": "Jim+Nightshade:400",
 		"stack": "'Jim Nightshade', cursive"
 	},
 	"Jockey One": {
-		"google": "Jockey+One",
+		"google": "Jockey+One:400",
 		"stack": "'Jockey One', sans-serif"
 	},
 	"Jolly Lodger": {
-		"google": "Jolly+Lodger",
-		"stack": "'Jolly Lodger', sans-serif"
+		"google": "Jolly+Lodger:400",
+		"stack": "'Jolly Lodger', cursive"
 	},
 	"Jomhuria": {
-		"google": "Jomhuria",
-		"stack": "'Jomhuria', sans-serif"
+		"google": "Jomhuria:400",
+		"stack": "'Jomhuria', cursive"
 	},
 	"Jomolhari": {
-		"google": "Jomolhari",
+		"google": "Jomolhari:400",
 		"stack": "'Jomolhari', serif"
 	},
 	"Josefin Sans": {
-		"google": "Josefin+Sans",
+		"google": "Josefin+Sans:400,700",
 		"stack": "'Josefin Sans', sans-serif"
 	},
 	"Josefin Slab": {
-		"google": "Josefin+Slab",
+		"google": "Josefin+Slab:400,700",
 		"stack": "'Josefin Slab', serif"
 	},
 	"Joti One": {
-		"google": "Joti+One",
-		"stack": "'Joti One', sans-serif"
+		"google": "Joti+One:400",
+		"stack": "'Joti One', cursive"
 	},
 	"Jua": {
-		"google": "Jua",
+		"google": "Jua:400",
 		"stack": "'Jua', sans-serif"
 	},
 	"Judson": {
-		"google": "Judson",
+		"google": "Judson:400,700",
 		"stack": "'Judson', serif"
 	},
 	"Julee": {
-		"google": "Julee",
+		"google": "Julee:400",
 		"stack": "'Julee', cursive"
 	},
 	"Julius Sans One": {
-		"google": "Julius+Sans+One",
+		"google": "Julius+Sans+One:400",
 		"stack": "'Julius Sans One', sans-serif"
 	},
 	"Junge": {
-		"google": "Junge",
+		"google": "Junge:400",
 		"stack": "'Junge', serif"
 	},
 	"Jura": {
-		"google": "Jura",
+		"google": "Jura:400,700",
 		"stack": "'Jura', sans-serif"
 	},
 	"Just Another Hand": {
-		"google": "Just+Another+Hand",
+		"google": "Just+Another+Hand:400",
 		"stack": "'Just Another Hand', cursive"
 	},
 	"Just Me Again Down Here": {
-		"google": "Just+Me+Again+Down+Here",
+		"google": "Just+Me+Again+Down+Here:400",
 		"stack": "'Just Me Again Down Here', cursive"
 	},
 	"K2D": {
-		"google": "K2D",
+		"google": "K2D:400,700",
 		"stack": "'K2D', sans-serif"
 	},
 	"Kadwa": {
-		"google": "Kadwa",
+		"google": "Kadwa:400,700",
 		"stack": "'Kadwa', serif"
 	},
 	"Kalam": {
-		"google": "Kalam",
+		"google": "Kalam:400,700",
 		"stack": "'Kalam', cursive"
 	},
 	"Kameron": {
-		"google": "Kameron",
+		"google": "Kameron:400,700",
 		"stack": "'Kameron', serif"
 	},
 	"Kanit": {
-		"google": "Kanit",
+		"google": "Kanit:400,700",
 		"stack": "'Kanit', sans-serif"
 	},
 	"Kantumruy": {
-		"google": "Kantumruy",
+		"google": "Kantumruy:400,700",
 		"stack": "'Kantumruy', sans-serif"
 	},
 	"Karla": {
-		"google": "Karla",
+		"google": "Karla:400,700",
 		"stack": "'Karla', sans-serif"
 	},
 	"Karma": {
-		"google": "Karma",
+		"google": "Karma:400,700",
 		"stack": "'Karma', serif"
 	},
 	"Katibeh": {
-		"google": "Katibeh",
-		"stack": "'Katibeh', sans-serif"
+		"google": "Katibeh:400",
+		"stack": "'Katibeh', cursive"
 	},
 	"Kaushan Script": {
-		"google": "Kaushan+Script",
+		"google": "Kaushan+Script:400",
 		"stack": "'Kaushan Script', cursive"
 	},
 	"Kavivanar": {
-		"google": "Kavivanar",
+		"google": "Kavivanar:400",
 		"stack": "'Kavivanar', cursive"
 	},
 	"Kavoon": {
-		"google": "Kavoon",
-		"stack": "'Kavoon', sans-serif"
+		"google": "Kavoon:400",
+		"stack": "'Kavoon', cursive"
 	},
 	"Kdam Thmor": {
-		"google": "Kdam+Thmor",
-		"stack": "'Kdam Thmor', sans-serif"
+		"google": "Kdam+Thmor:400",
+		"stack": "'Kdam Thmor', cursive"
 	},
 	"Keania One": {
-		"google": "Keania+One",
-		"stack": "'Keania One', sans-serif"
+		"google": "Keania+One:400",
+		"stack": "'Keania One', cursive"
 	},
 	"Kelly Slab": {
-		"google": "Kelly+Slab",
-		"stack": "'Kelly Slab', sans-serif"
+		"google": "Kelly+Slab:400",
+		"stack": "'Kelly Slab', cursive"
 	},
 	"Kenia": {
-		"google": "Kenia",
-		"stack": "'Kenia', sans-serif"
+		"google": "Kenia:400",
+		"stack": "'Kenia', cursive"
 	},
 	"Khand": {
-		"google": "Khand",
+		"google": "Khand:400,700",
 		"stack": "'Khand', sans-serif"
 	},
 	"Khmer": {
-		"google": "Khmer",
-		"stack": "'Khmer', sans-serif"
+		"google": "Khmer:400",
+		"stack": "'Khmer', cursive"
 	},
 	"Khula": {
-		"google": "Khula",
+		"google": "Khula:400,700",
 		"stack": "'Khula', sans-serif"
 	},
 	"Kirang Haerang": {
-		"google": "Kirang+Haerang",
-		"stack": "'Kirang Haerang', sans-serif"
+		"google": "Kirang+Haerang:400",
+		"stack": "'Kirang Haerang', cursive"
 	},
 	"Kite One": {
-		"google": "Kite+One",
+		"google": "Kite+One:400",
 		"stack": "'Kite One', sans-serif"
 	},
 	"Knewave": {
-		"google": "Knewave",
-		"stack": "'Knewave', sans-serif"
+		"google": "Knewave:400",
+		"stack": "'Knewave', cursive"
 	},
 	"KoHo": {
-		"google": "KoHo",
+		"google": "KoHo:400,700",
 		"stack": "'KoHo', sans-serif"
 	},
 	"Kodchasan": {
-		"google": "Kodchasan",
+		"google": "Kodchasan:400,700",
 		"stack": "'Kodchasan', sans-serif"
 	},
 	"Kosugi": {
-		"google": "Kosugi",
+		"google": "Kosugi:400",
 		"stack": "'Kosugi', sans-serif"
 	},
 	"Kosugi Maru": {
-		"google": "Kosugi+Maru",
+		"google": "Kosugi+Maru:400",
 		"stack": "'Kosugi Maru', sans-serif"
 	},
 	"Kotta One": {
-		"google": "Kotta+One",
+		"google": "Kotta+One:400",
 		"stack": "'Kotta One', serif"
 	},
 	"Koulen": {
-		"google": "Koulen",
-		"stack": "'Koulen', sans-serif"
+		"google": "Koulen:400",
+		"stack": "'Koulen', cursive"
 	},
 	"Kranky": {
-		"google": "Kranky",
-		"stack": "'Kranky', sans-serif"
+		"google": "Kranky:400",
+		"stack": "'Kranky', cursive"
 	},
 	"Kreon": {
-		"google": "Kreon",
+		"google": "Kreon:400,700",
 		"stack": "'Kreon', serif"
 	},
 	"Kristi": {
-		"google": "Kristi",
+		"google": "Kristi:400",
 		"stack": "'Kristi', cursive"
 	},
 	"Krona One": {
-		"google": "Krona+One",
+		"google": "Krona+One:400",
 		"stack": "'Krona One', sans-serif"
 	},
 	"Krub": {
-		"google": "Krub",
+		"google": "Krub:400,700",
 		"stack": "'Krub', sans-serif"
 	},
 	"Kulim Park": {
-		"google": "Kulim+Park",
+		"google": "Kulim+Park:400,700",
 		"stack": "'Kulim Park', sans-serif"
 	},
 	"Kumar One": {
-		"google": "Kumar+One",
-		"stack": "'Kumar One', sans-serif"
+		"google": "Kumar+One:400",
+		"stack": "'Kumar One', cursive"
 	},
 	"Kumar One Outline": {
-		"google": "Kumar+One+Outline",
-		"stack": "'Kumar One Outline', sans-serif"
+		"google": "Kumar+One+Outline:400",
+		"stack": "'Kumar One Outline', cursive"
 	},
 	"Kurale": {
-		"google": "Kurale",
+		"google": "Kurale:400",
 		"stack": "'Kurale', serif"
 	},
 	"La Belle Aurore": {
-		"google": "La+Belle+Aurore",
+		"google": "La+Belle+Aurore:400",
 		"stack": "'La Belle Aurore', cursive"
 	},
 	"Lacquer": {
-		"google": "Lacquer",
+		"google": "Lacquer:400",
 		"stack": "'Lacquer', sans-serif"
 	},
 	"Laila": {
-		"google": "Laila",
+		"google": "Laila:400,700",
 		"stack": "'Laila', serif"
 	},
 	"Lakki Reddy": {
-		"google": "Lakki+Reddy",
+		"google": "Lakki+Reddy:400",
 		"stack": "'Lakki Reddy', cursive"
 	},
 	"Lalezar": {
-		"google": "Lalezar",
-		"stack": "'Lalezar', sans-serif"
+		"google": "Lalezar:400",
+		"stack": "'Lalezar', cursive"
 	},
 	"Lancelot": {
-		"google": "Lancelot",
-		"stack": "'Lancelot', sans-serif"
+		"google": "Lancelot:400",
+		"stack": "'Lancelot', cursive"
 	},
 	"Lateef": {
-		"google": "Lateef",
+		"google": "Lateef:400",
 		"stack": "'Lateef', cursive"
 	},
 	"Lato": {
-		"google": "Lato",
+		"google": "Lato:400,700",
 		"stack": "'Lato', sans-serif"
 	},
 	"League Script": {
-		"google": "League+Script",
+		"google": "League+Script:400",
 		"stack": "'League Script', cursive"
 	},
 	"Leckerli One": {
-		"google": "Leckerli+One",
+		"google": "Leckerli+One:400",
 		"stack": "'Leckerli One', cursive"
 	},
 	"Ledger": {
-		"google": "Ledger",
+		"google": "Ledger:400",
 		"stack": "'Ledger', serif"
 	},
 	"Lekton": {
-		"google": "Lekton",
+		"google": "Lekton:400,700",
 		"stack": "'Lekton', sans-serif"
 	},
 	"Lemon": {
-		"google": "Lemon",
-		"stack": "'Lemon', sans-serif"
+		"google": "Lemon:400",
+		"stack": "'Lemon', cursive"
 	},
 	"Lemonada": {
-		"google": "Lemonada",
-		"stack": "'Lemonada', sans-serif"
+		"google": "Lemonada:400,700",
+		"stack": "'Lemonada', cursive"
 	},
 	"Lexend Deca": {
-		"google": "Lexend+Deca",
+		"google": "Lexend+Deca:400",
 		"stack": "'Lexend Deca', sans-serif"
 	},
 	"Lexend Exa": {
-		"google": "Lexend+Exa",
+		"google": "Lexend+Exa:400",
 		"stack": "'Lexend Exa', sans-serif"
 	},
 	"Lexend Giga": {
-		"google": "Lexend+Giga",
+		"google": "Lexend+Giga:400",
 		"stack": "'Lexend Giga', sans-serif"
 	},
 	"Lexend Mega": {
-		"google": "Lexend+Mega",
+		"google": "Lexend+Mega:400",
 		"stack": "'Lexend Mega', sans-serif"
 	},
 	"Lexend Peta": {
-		"google": "Lexend+Peta",
+		"google": "Lexend+Peta:400",
 		"stack": "'Lexend Peta', sans-serif"
 	},
 	"Lexend Tera": {
-		"google": "Lexend+Tera",
+		"google": "Lexend+Tera:400",
 		"stack": "'Lexend Tera', sans-serif"
 	},
 	"Lexend Zetta": {
-		"google": "Lexend+Zetta",
+		"google": "Lexend+Zetta:400",
 		"stack": "'Lexend Zetta', sans-serif"
 	},
 	"Libre Barcode 128": {
-		"google": "Libre+Barcode+128",
-		"stack": "'Libre Barcode 128', sans-serif"
+		"google": "Libre+Barcode+128:400",
+		"stack": "'Libre Barcode 128', cursive"
 	},
 	"Libre Barcode 128 Text": {
-		"google": "Libre+Barcode+128+Text",
-		"stack": "'Libre Barcode 128 Text', sans-serif"
+		"google": "Libre+Barcode+128+Text:400",
+		"stack": "'Libre Barcode 128 Text', cursive"
 	},
 	"Libre Barcode 39": {
-		"google": "Libre+Barcode+39",
-		"stack": "'Libre Barcode 39', sans-serif"
+		"google": "Libre+Barcode+39:400",
+		"stack": "'Libre Barcode 39', cursive"
 	},
 	"Libre Barcode 39 Extended": {
-		"google": "Libre+Barcode+39+Extended",
-		"stack": "'Libre Barcode 39 Extended', sans-serif"
+		"google": "Libre+Barcode+39+Extended:400",
+		"stack": "'Libre Barcode 39 Extended', cursive"
 	},
 	"Libre Barcode 39 Extended Text": {
-		"google": "Libre+Barcode+39+Extended+Text",
-		"stack": "'Libre Barcode 39 Extended Text', sans-serif"
+		"google": "Libre+Barcode+39+Extended+Text:400",
+		"stack": "'Libre Barcode 39 Extended Text', cursive"
 	},
 	"Libre Barcode 39 Text": {
-		"google": "Libre+Barcode+39+Text",
-		"stack": "'Libre Barcode 39 Text', sans-serif"
+		"google": "Libre+Barcode+39+Text:400",
+		"stack": "'Libre Barcode 39 Text', cursive"
 	},
 	"Libre Baskerville": {
-		"google": "Libre+Baskerville",
+		"google": "Libre+Baskerville:400,700",
 		"stack": "'Libre Baskerville', serif"
 	},
 	"Libre Caslon Display": {
-		"google": "Libre+Caslon+Display",
+		"google": "Libre+Caslon+Display:400",
 		"stack": "'Libre Caslon Display', serif"
 	},
 	"Libre Caslon Text": {
-		"google": "Libre+Caslon+Text",
+		"google": "Libre+Caslon+Text:400,700",
 		"stack": "'Libre Caslon Text', serif"
 	},
 	"Libre Franklin": {
-		"google": "Libre+Franklin",
+		"google": "Libre+Franklin:400,700",
 		"stack": "'Libre Franklin', sans-serif"
 	},
 	"Life Savers": {
-		"google": "Life+Savers",
-		"stack": "'Life Savers', sans-serif"
+		"google": "Life+Savers:400,700",
+		"stack": "'Life Savers', cursive"
 	},
 	"Lilita One": {
-		"google": "Lilita+One",
-		"stack": "'Lilita One', sans-serif"
+		"google": "Lilita+One:400",
+		"stack": "'Lilita One', cursive"
 	},
 	"Lily Script One": {
-		"google": "Lily+Script+One",
-		"stack": "'Lily Script One', sans-serif"
+		"google": "Lily+Script+One:400",
+		"stack": "'Lily Script One', cursive"
 	},
 	"Limelight": {
-		"google": "Limelight",
-		"stack": "'Limelight', sans-serif"
+		"google": "Limelight:400",
+		"stack": "'Limelight', cursive"
 	},
 	"Linden Hill": {
-		"google": "Linden+Hill",
+		"google": "Linden+Hill:400",
 		"stack": "'Linden Hill', serif"
 	},
 	"Literata": {
-		"google": "Literata",
+		"google": "Literata:400,700",
 		"stack": "'Literata', serif"
 	},
 	"Liu Jian Mao Cao": {
-		"google": "Liu+Jian+Mao+Cao",
+		"google": "Liu+Jian+Mao+Cao:400",
 		"stack": "'Liu Jian Mao Cao', cursive"
 	},
 	"Livvic": {
-		"google": "Livvic",
+		"google": "Livvic:400,700",
 		"stack": "'Livvic', sans-serif"
 	},
 	"Lobster": {
-		"google": "Lobster",
-		"stack": "'Lobster', sans-serif"
+		"google": "Lobster:400",
+		"stack": "'Lobster', cursive"
 	},
 	"Lobster Two": {
-		"google": "Lobster+Two",
-		"stack": "'Lobster Two', sans-serif"
+		"google": "Lobster+Two:400,700",
+		"stack": "'Lobster Two', cursive"
 	},
 	"Londrina Outline": {
-		"google": "Londrina+Outline",
-		"stack": "'Londrina Outline', sans-serif"
+		"google": "Londrina+Outline:400",
+		"stack": "'Londrina Outline', cursive"
 	},
 	"Londrina Shadow": {
-		"google": "Londrina+Shadow",
-		"stack": "'Londrina Shadow', sans-serif"
+		"google": "Londrina+Shadow:400",
+		"stack": "'Londrina Shadow', cursive"
 	},
 	"Londrina Sketch": {
-		"google": "Londrina+Sketch",
-		"stack": "'Londrina Sketch', sans-serif"
+		"google": "Londrina+Sketch:400",
+		"stack": "'Londrina Sketch', cursive"
 	},
 	"Londrina Solid": {
-		"google": "Londrina+Solid",
-		"stack": "'Londrina Solid', sans-serif"
+		"google": "Londrina+Solid:400",
+		"stack": "'Londrina Solid', cursive"
 	},
 	"Long Cang": {
-		"google": "Long+Cang",
+		"google": "Long+Cang:400",
 		"stack": "'Long Cang', cursive"
 	},
 	"Lora": {
-		"google": "Lora",
+		"google": "Lora:400,700",
 		"stack": "'Lora', serif"
 	},
 	"Love Ya Like A Sister": {
-		"google": "Love+Ya+Like+A+Sister",
-		"stack": "'Love Ya Like A Sister', sans-serif"
+		"google": "Love+Ya+Like+A+Sister:400",
+		"stack": "'Love Ya Like A Sister', cursive"
 	},
 	"Loved by the King": {
-		"google": "Loved+by+the+King",
+		"google": "Loved+by+the+King:400",
 		"stack": "'Loved by the King', cursive"
 	},
 	"Lovers Quarrel": {
-		"google": "Lovers+Quarrel",
+		"google": "Lovers+Quarrel:400",
 		"stack": "'Lovers Quarrel', cursive"
 	},
 	"Luckiest Guy": {
-		"google": "Luckiest+Guy",
-		"stack": "'Luckiest Guy', sans-serif"
+		"google": "Luckiest+Guy:400",
+		"stack": "'Luckiest Guy', cursive"
 	},
 	"Lusitana": {
-		"google": "Lusitana",
+		"google": "Lusitana:400,700",
 		"stack": "'Lusitana', serif"
 	},
 	"Lustria": {
-		"google": "Lustria",
+		"google": "Lustria:400",
 		"stack": "'Lustria', serif"
 	},
 	"M PLUS 1p": {
-		"google": "M+PLUS+1p",
+		"google": "M+PLUS+1p:400,700",
 		"stack": "'M PLUS 1p', sans-serif"
 	},
 	"M PLUS Rounded 1c": {
-		"google": "M+PLUS+Rounded+1c",
+		"google": "M+PLUS+Rounded+1c:400,700",
 		"stack": "'M PLUS Rounded 1c', sans-serif"
 	},
 	"Ma Shan Zheng": {
-		"google": "Ma+Shan+Zheng",
+		"google": "Ma+Shan+Zheng:400",
 		"stack": "'Ma Shan Zheng', cursive"
 	},
 	"Macondo": {
-		"google": "Macondo",
-		"stack": "'Macondo', sans-serif"
+		"google": "Macondo:400",
+		"stack": "'Macondo', cursive"
 	},
 	"Macondo Swash Caps": {
-		"google": "Macondo+Swash+Caps",
-		"stack": "'Macondo Swash Caps', sans-serif"
+		"google": "Macondo+Swash+Caps:400",
+		"stack": "'Macondo Swash Caps', cursive"
 	},
 	"Mada": {
-		"google": "Mada",
+		"google": "Mada:400,700",
 		"stack": "'Mada', sans-serif"
 	},
 	"Magra": {
-		"google": "Magra",
+		"google": "Magra:400,700",
 		"stack": "'Magra', sans-serif"
 	},
 	"Maiden Orange": {
-		"google": "Maiden+Orange",
-		"stack": "'Maiden Orange', sans-serif"
+		"google": "Maiden+Orange:400",
+		"stack": "'Maiden Orange', cursive"
 	},
 	"Maitree": {
-		"google": "Maitree",
+		"google": "Maitree:400,700",
 		"stack": "'Maitree', serif"
 	},
 	"Mako": {
-		"google": "Mako",
+		"google": "Mako:400",
 		"stack": "'Mako', sans-serif"
 	},
 	"Mali": {
-		"google": "Mali",
+		"google": "Mali:400,700",
 		"stack": "'Mali', cursive"
 	},
 	"Mallanna": {
-		"google": "Mallanna",
+		"google": "Mallanna:400",
 		"stack": "'Mallanna', sans-serif"
 	},
 	"Mandali": {
-		"google": "Mandali",
+		"google": "Mandali:400",
 		"stack": "'Mandali', sans-serif"
 	},
 	"Manjari": {
-		"google": "Manjari",
+		"google": "Manjari:400,700",
 		"stack": "'Manjari', sans-serif"
 	},
 	"Mansalva": {
-		"google": "Mansalva",
+		"google": "Mansalva:400",
 		"stack": "'Mansalva', cursive"
 	},
 	"Manuale": {
-		"google": "Manuale",
+		"google": "Manuale:400,700",
 		"stack": "'Manuale', serif"
 	},
 	"Marcellus": {
-		"google": "Marcellus",
+		"google": "Marcellus:400",
 		"stack": "'Marcellus', serif"
 	},
 	"Marcellus SC": {
-		"google": "Marcellus+SC",
+		"google": "Marcellus+SC:400",
 		"stack": "'Marcellus SC', serif"
 	},
 	"Marck Script": {
-		"google": "Marck+Script",
+		"google": "Marck+Script:400",
 		"stack": "'Marck Script', cursive"
 	},
 	"Margarine": {
-		"google": "Margarine",
-		"stack": "'Margarine', sans-serif"
+		"google": "Margarine:400",
+		"stack": "'Margarine', cursive"
 	},
 	"Markazi Text": {
-		"google": "Markazi+Text",
+		"google": "Markazi+Text:400,700",
 		"stack": "'Markazi Text', serif"
 	},
 	"Marko One": {
-		"google": "Marko+One",
+		"google": "Marko+One:400",
 		"stack": "'Marko One', serif"
 	},
 	"Marmelad": {
-		"google": "Marmelad",
+		"google": "Marmelad:400",
 		"stack": "'Marmelad', sans-serif"
 	},
 	"Martel": {
-		"google": "Martel",
+		"google": "Martel:400,700",
 		"stack": "'Martel', serif"
 	},
 	"Martel Sans": {
-		"google": "Martel+Sans",
+		"google": "Martel+Sans:400,700",
 		"stack": "'Martel Sans', sans-serif"
 	},
 	"Marvel": {
-		"google": "Marvel",
+		"google": "Marvel:400,700",
 		"stack": "'Marvel', sans-serif"
 	},
 	"Mate": {
-		"google": "Mate",
+		"google": "Mate:400",
 		"stack": "'Mate', serif"
 	},
 	"Mate SC": {
-		"google": "Mate+SC",
+		"google": "Mate+SC:400",
 		"stack": "'Mate SC', serif"
 	},
 	"Maven Pro": {
-		"google": "Maven+Pro",
+		"google": "Maven+Pro:400,700",
 		"stack": "'Maven Pro', sans-serif"
 	},
 	"McLaren": {
-		"google": "McLaren",
-		"stack": "'McLaren', sans-serif"
+		"google": "McLaren:400",
+		"stack": "'McLaren', cursive"
 	},
 	"Meddon": {
-		"google": "Meddon",
+		"google": "Meddon:400",
 		"stack": "'Meddon', cursive"
 	},
 	"MedievalSharp": {
-		"google": "MedievalSharp",
-		"stack": "'MedievalSharp', sans-serif"
+		"google": "MedievalSharp:400",
+		"stack": "'MedievalSharp', cursive"
 	},
 	"Medula One": {
-		"google": "Medula+One",
-		"stack": "'Medula One', sans-serif"
+		"google": "Medula+One:400",
+		"stack": "'Medula One', cursive"
 	},
 	"Meera Inimai": {
-		"google": "Meera+Inimai",
+		"google": "Meera+Inimai:400",
 		"stack": "'Meera Inimai', sans-serif"
 	},
 	"Megrim": {
-		"google": "Megrim",
-		"stack": "'Megrim', sans-serif"
+		"google": "Megrim:400",
+		"stack": "'Megrim', cursive"
 	},
 	"Meie Script": {
-		"google": "Meie+Script",
+		"google": "Meie+Script:400",
 		"stack": "'Meie Script', cursive"
 	},
 	"Merienda": {
-		"google": "Merienda",
+		"google": "Merienda:400,700",
 		"stack": "'Merienda', cursive"
 	},
 	"Merienda One": {
-		"google": "Merienda+One",
+		"google": "Merienda+One:400",
 		"stack": "'Merienda One', cursive"
 	},
 	"Merriweather": {
-		"google": "Merriweather",
+		"google": "Merriweather:400,700",
 		"stack": "'Merriweather', serif"
 	},
 	"Merriweather Sans": {
-		"google": "Merriweather+Sans",
+		"google": "Merriweather+Sans:400,700",
 		"stack": "'Merriweather Sans', sans-serif"
 	},
 	"Metal": {
-		"google": "Metal",
-		"stack": "'Metal', sans-serif"
+		"google": "Metal:400",
+		"stack": "'Metal', cursive"
 	},
 	"Metal Mania": {
-		"google": "Metal+Mania",
-		"stack": "'Metal Mania', sans-serif"
+		"google": "Metal+Mania:400",
+		"stack": "'Metal Mania', cursive"
 	},
 	"Metamorphous": {
-		"google": "Metamorphous",
-		"stack": "'Metamorphous', sans-serif"
+		"google": "Metamorphous:400",
+		"stack": "'Metamorphous', cursive"
 	},
 	"Metrophobic": {
-		"google": "Metrophobic",
+		"google": "Metrophobic:400",
 		"stack": "'Metrophobic', sans-serif"
 	},
 	"Michroma": {
-		"google": "Michroma",
+		"google": "Michroma:400",
 		"stack": "'Michroma', sans-serif"
 	},
 	"Milonga": {
-		"google": "Milonga",
-		"stack": "'Milonga', sans-serif"
+		"google": "Milonga:400",
+		"stack": "'Milonga', cursive"
 	},
 	"Miltonian": {
-		"google": "Miltonian",
-		"stack": "'Miltonian', sans-serif"
+		"google": "Miltonian:400",
+		"stack": "'Miltonian', cursive"
 	},
 	"Miltonian Tattoo": {
-		"google": "Miltonian+Tattoo",
-		"stack": "'Miltonian Tattoo', sans-serif"
+		"google": "Miltonian+Tattoo:400",
+		"stack": "'Miltonian Tattoo', cursive"
 	},
 	"Mina": {
-		"google": "Mina",
+		"google": "Mina:400,700",
 		"stack": "'Mina', sans-serif"
 	},
 	"Miniver": {
-		"google": "Miniver",
-		"stack": "'Miniver', sans-serif"
+		"google": "Miniver:400",
+		"stack": "'Miniver', cursive"
 	},
 	"Miriam Libre": {
-		"google": "Miriam+Libre",
+		"google": "Miriam+Libre:400,700",
 		"stack": "'Miriam Libre', sans-serif"
 	},
 	"Mirza": {
-		"google": "Mirza",
-		"stack": "'Mirza', sans-serif"
+		"google": "Mirza:400,700",
+		"stack": "'Mirza', cursive"
 	},
 	"Miss Fajardose": {
-		"google": "Miss+Fajardose",
+		"google": "Miss+Fajardose:400",
 		"stack": "'Miss Fajardose', cursive"
 	},
 	"Mitr": {
-		"google": "Mitr",
+		"google": "Mitr:400,700",
 		"stack": "'Mitr', sans-serif"
 	},
 	"Modak": {
-		"google": "Modak",
-		"stack": "'Modak', sans-serif"
+		"google": "Modak:400",
+		"stack": "'Modak', cursive"
 	},
 	"Modern Antiqua": {
-		"google": "Modern+Antiqua",
-		"stack": "'Modern Antiqua', sans-serif"
+		"google": "Modern+Antiqua:400",
+		"stack": "'Modern Antiqua', cursive"
 	},
 	"Mogra": {
-		"google": "Mogra",
-		"stack": "'Mogra', sans-serif"
+		"google": "Mogra:400",
+		"stack": "'Mogra', cursive"
 	},
 	"Molengo": {
-		"google": "Molengo",
+		"google": "Molengo:400",
 		"stack": "'Molengo', sans-serif"
 	},
 	"Molle": {
-		"google": "Molle",
+		"google": "Molle:",
 		"stack": "'Molle', cursive"
 	},
 	"Monda": {
-		"google": "Monda",
+		"google": "Monda:400,700",
 		"stack": "'Monda', sans-serif"
 	},
 	"Monofett": {
-		"google": "Monofett",
-		"stack": "'Monofett', sans-serif"
+		"google": "Monofett:400",
+		"stack": "'Monofett', cursive"
 	},
 	"Monoton": {
-		"google": "Monoton",
-		"stack": "'Monoton', sans-serif"
+		"google": "Monoton:400",
+		"stack": "'Monoton', cursive"
 	},
 	"Monsieur La Doulaise": {
-		"google": "Monsieur+La+Doulaise",
+		"google": "Monsieur+La+Doulaise:400",
 		"stack": "'Monsieur La Doulaise', cursive"
 	},
 	"Montaga": {
-		"google": "Montaga",
+		"google": "Montaga:400",
 		"stack": "'Montaga', serif"
 	},
 	"Montez": {
-		"google": "Montez",
+		"google": "Montez:400",
 		"stack": "'Montez', cursive"
 	},
 	"Montserrat": {
-		"google": "Montserrat",
+		"google": "Montserrat:400,700",
 		"stack": "'Montserrat', sans-serif"
 	},
 	"Montserrat Alternates": {
-		"google": "Montserrat+Alternates",
+		"google": "Montserrat+Alternates:400,700",
 		"stack": "'Montserrat Alternates', sans-serif"
 	},
 	"Montserrat Subrayada": {
-		"google": "Montserrat+Subrayada",
+		"google": "Montserrat+Subrayada:400,700",
 		"stack": "'Montserrat Subrayada', sans-serif"
 	},
 	"Moul": {
-		"google": "Moul",
-		"stack": "'Moul', sans-serif"
+		"google": "Moul:400",
+		"stack": "'Moul', cursive"
 	},
 	"Moulpali": {
-		"google": "Moulpali",
-		"stack": "'Moulpali', sans-serif"
+		"google": "Moulpali:400",
+		"stack": "'Moulpali', cursive"
 	},
 	"Mountains of Christmas": {
-		"google": "Mountains+of+Christmas",
-		"stack": "'Mountains of Christmas', sans-serif"
+		"google": "Mountains+of+Christmas:400,700",
+		"stack": "'Mountains of Christmas', cursive"
 	},
 	"Mouse Memoirs": {
-		"google": "Mouse+Memoirs",
+		"google": "Mouse+Memoirs:400",
 		"stack": "'Mouse Memoirs', sans-serif"
 	},
 	"Mr Bedfort": {
-		"google": "Mr+Bedfort",
+		"google": "Mr+Bedfort:400",
 		"stack": "'Mr Bedfort', cursive"
 	},
 	"Mr Dafoe": {
-		"google": "Mr+Dafoe",
+		"google": "Mr+Dafoe:400",
 		"stack": "'Mr Dafoe', cursive"
 	},
 	"Mr De Haviland": {
-		"google": "Mr+De+Haviland",
+		"google": "Mr+De+Haviland:400",
 		"stack": "'Mr De Haviland', cursive"
 	},
 	"Mrs Saint Delafield": {
-		"google": "Mrs+Saint+Delafield",
+		"google": "Mrs+Saint+Delafield:400",
 		"stack": "'Mrs Saint Delafield', cursive"
 	},
 	"Mrs Sheppards": {
-		"google": "Mrs+Sheppards",
+		"google": "Mrs+Sheppards:400",
 		"stack": "'Mrs Sheppards', cursive"
 	},
 	"Mukta": {
-		"google": "Mukta",
+		"google": "Mukta:400,700",
 		"stack": "'Mukta', sans-serif"
 	},
 	"Mukta Mahee": {
-		"google": "Mukta+Mahee",
+		"google": "Mukta+Mahee:400,700",
 		"stack": "'Mukta Mahee', sans-serif"
 	},
 	"Mukta Malar": {
-		"google": "Mukta+Malar",
+		"google": "Mukta+Malar:400,700",
 		"stack": "'Mukta Malar', sans-serif"
 	},
 	"Mukta Vaani": {
-		"google": "Mukta+Vaani",
+		"google": "Mukta+Vaani:400,700",
 		"stack": "'Mukta Vaani', sans-serif"
 	},
 	"Muli": {
-		"google": "Muli",
+		"google": "Muli:400,700",
 		"stack": "'Muli', sans-serif"
 	},
 	"Mystery Quest": {
-		"google": "Mystery+Quest",
-		"stack": "'Mystery Quest', sans-serif"
+		"google": "Mystery+Quest:400",
+		"stack": "'Mystery Quest', cursive"
 	},
 	"NTR": {
-		"google": "NTR",
+		"google": "NTR:400",
 		"stack": "'NTR', sans-serif"
 	},
 	"Nanum Brush Script": {
-		"google": "Nanum+Brush+Script",
+		"google": "Nanum+Brush+Script:400",
 		"stack": "'Nanum Brush Script', cursive"
 	},
 	"Nanum Gothic": {
-		"google": "Nanum+Gothic",
+		"google": "Nanum+Gothic:400,700",
 		"stack": "'Nanum Gothic', sans-serif"
 	},
 	"Nanum Myeongjo": {
-		"google": "Nanum+Myeongjo",
+		"google": "Nanum+Myeongjo:400,700",
 		"stack": "'Nanum Myeongjo', serif"
 	},
 	"Nanum Pen Script": {
-		"google": "Nanum+Pen+Script",
+		"google": "Nanum+Pen+Script:400",
 		"stack": "'Nanum Pen Script', cursive"
 	},
 	"Neucha": {
-		"google": "Neucha",
+		"google": "Neucha:400",
 		"stack": "'Neucha', cursive"
 	},
 	"Neuton": {
-		"google": "Neuton",
+		"google": "Neuton:400,700",
 		"stack": "'Neuton', serif"
 	},
 	"New Rocker": {
-		"google": "New+Rocker",
-		"stack": "'New Rocker', sans-serif"
+		"google": "New+Rocker:400",
+		"stack": "'New Rocker', cursive"
 	},
 	"News Cycle": {
-		"google": "News+Cycle",
+		"google": "News+Cycle:400,700",
 		"stack": "'News Cycle', sans-serif"
 	},
 	"Niconne": {
-		"google": "Niconne",
+		"google": "Niconne:400",
 		"stack": "'Niconne', cursive"
 	},
 	"Niramit": {
-		"google": "Niramit",
+		"google": "Niramit:400,700",
 		"stack": "'Niramit', sans-serif"
 	},
 	"Nixie One": {
-		"google": "Nixie+One",
-		"stack": "'Nixie One', sans-serif"
+		"google": "Nixie+One:400",
+		"stack": "'Nixie One', cursive"
 	},
 	"Nobile": {
-		"google": "Nobile",
+		"google": "Nobile:400,700",
 		"stack": "'Nobile', sans-serif"
 	},
 	"Nokora": {
-		"google": "Nokora",
+		"google": "Nokora:400,700",
 		"stack": "'Nokora', serif"
 	},
 	"Norican": {
-		"google": "Norican",
+		"google": "Norican:400",
 		"stack": "'Norican', cursive"
 	},
 	"Nosifer": {
-		"google": "Nosifer",
-		"stack": "'Nosifer', sans-serif"
+		"google": "Nosifer:400",
+		"stack": "'Nosifer', cursive"
 	},
 	"Notable": {
-		"google": "Notable",
+		"google": "Notable:400",
 		"stack": "'Notable', sans-serif"
 	},
 	"Nothing You Could Do": {
-		"google": "Nothing+You+Could+Do",
+		"google": "Nothing+You+Could+Do:400",
 		"stack": "'Nothing You Could Do', cursive"
 	},
 	"Noticia Text": {
-		"google": "Noticia+Text",
+		"google": "Noticia+Text:400,700",
 		"stack": "'Noticia Text', serif"
 	},
 	"Noto Sans": {
-		"google": "Noto+Sans",
+		"google": "Noto+Sans:400,700",
 		"stack": "'Noto Sans', sans-serif"
 	},
 	"Noto Sans HK": {
-		"google": "Noto+Sans+HK",
+		"google": "Noto+Sans+HK:400,700",
 		"stack": "'Noto Sans HK', sans-serif"
 	},
 	"Noto Sans JP": {
-		"google": "Noto+Sans+JP",
+		"google": "Noto+Sans+JP:400,700",
 		"stack": "'Noto Sans JP', sans-serif"
 	},
 	"Noto Sans KR": {
-		"google": "Noto+Sans+KR",
+		"google": "Noto+Sans+KR:400,700",
 		"stack": "'Noto Sans KR', sans-serif"
 	},
 	"Noto Sans SC": {
-		"google": "Noto+Sans+SC",
+		"google": "Noto+Sans+SC:400,700",
 		"stack": "'Noto Sans SC', sans-serif"
 	},
 	"Noto Sans TC": {
-		"google": "Noto+Sans+TC",
+		"google": "Noto+Sans+TC:400,700",
 		"stack": "'Noto Sans TC', sans-serif"
 	},
 	"Noto Serif": {
-		"google": "Noto+Serif",
+		"google": "Noto+Serif:400,700",
 		"stack": "'Noto Serif', serif"
 	},
 	"Noto Serif JP": {
-		"google": "Noto+Serif+JP",
+		"google": "Noto+Serif+JP:400,700",
 		"stack": "'Noto Serif JP', serif"
 	},
 	"Noto Serif KR": {
-		"google": "Noto+Serif+KR",
+		"google": "Noto+Serif+KR:400,700",
 		"stack": "'Noto Serif KR', serif"
 	},
 	"Noto Serif SC": {
-		"google": "Noto+Serif+SC",
+		"google": "Noto+Serif+SC:400,700",
 		"stack": "'Noto Serif SC', serif"
 	},
 	"Noto Serif TC": {
-		"google": "Noto+Serif+TC",
+		"google": "Noto+Serif+TC:400,700",
 		"stack": "'Noto Serif TC', serif"
 	},
 	"Nova Cut": {
-		"google": "Nova+Cut",
-		"stack": "'Nova Cut', sans-serif"
+		"google": "Nova+Cut:400",
+		"stack": "'Nova Cut', cursive"
 	},
 	"Nova Flat": {
-		"google": "Nova+Flat",
-		"stack": "'Nova Flat', sans-serif"
+		"google": "Nova+Flat:400",
+		"stack": "'Nova Flat', cursive"
 	},
 	"Nova Oval": {
-		"google": "Nova+Oval",
-		"stack": "'Nova Oval', sans-serif"
+		"google": "Nova+Oval:400",
+		"stack": "'Nova Oval', cursive"
 	},
 	"Nova Round": {
-		"google": "Nova+Round",
-		"stack": "'Nova Round', sans-serif"
+		"google": "Nova+Round:400",
+		"stack": "'Nova Round', cursive"
 	},
 	"Nova Script": {
-		"google": "Nova+Script",
-		"stack": "'Nova Script', sans-serif"
+		"google": "Nova+Script:400",
+		"stack": "'Nova Script', cursive"
 	},
 	"Nova Slim": {
-		"google": "Nova+Slim",
-		"stack": "'Nova Slim', sans-serif"
+		"google": "Nova+Slim:400",
+		"stack": "'Nova Slim', cursive"
 	},
 	"Nova Square": {
-		"google": "Nova+Square",
-		"stack": "'Nova Square', sans-serif"
+		"google": "Nova+Square:400",
+		"stack": "'Nova Square', cursive"
 	},
 	"Numans": {
-		"google": "Numans",
+		"google": "Numans:400",
 		"stack": "'Numans', sans-serif"
 	},
 	"Nunito": {
-		"google": "Nunito",
+		"google": "Nunito:400,700",
 		"stack": "'Nunito', sans-serif"
 	},
 	"Nunito Sans": {
-		"google": "Nunito+Sans",
+		"google": "Nunito+Sans:400,700",
 		"stack": "'Nunito Sans', sans-serif"
 	},
 	"Odibee Sans": {
-		"google": "Odibee+Sans",
-		"stack": "'Odibee Sans', sans-serif"
+		"google": "Odibee+Sans:400",
+		"stack": "'Odibee Sans', cursive"
 	},
 	"Odor Mean Chey": {
-		"google": "Odor+Mean+Chey",
-		"stack": "'Odor Mean Chey', sans-serif"
+		"google": "Odor+Mean+Chey:400",
+		"stack": "'Odor Mean Chey', cursive"
 	},
 	"Offside": {
-		"google": "Offside",
-		"stack": "'Offside', sans-serif"
+		"google": "Offside:400",
+		"stack": "'Offside', cursive"
 	},
 	"Old Standard TT": {
-		"google": "Old+Standard+TT",
+		"google": "Old+Standard+TT:400,700",
 		"stack": "'Old Standard TT', serif"
 	},
 	"Oldenburg": {
-		"google": "Oldenburg",
-		"stack": "'Oldenburg', sans-serif"
+		"google": "Oldenburg:400",
+		"stack": "'Oldenburg', cursive"
 	},
 	"Oleo Script": {
-		"google": "Oleo+Script",
-		"stack": "'Oleo Script', sans-serif"
+		"google": "Oleo+Script:400,700",
+		"stack": "'Oleo Script', cursive"
 	},
 	"Oleo Script Swash Caps": {
-		"google": "Oleo+Script+Swash+Caps",
-		"stack": "'Oleo Script Swash Caps', sans-serif"
+		"google": "Oleo+Script+Swash+Caps:400,700",
+		"stack": "'Oleo Script Swash Caps', cursive"
 	},
 	"Open Sans": {
-		"google": "Open+Sans",
+		"google": "Open+Sans:400,700",
 		"stack": "'Open Sans', sans-serif"
 	},
 	"Open Sans Condensed": {
-		"google": "Open+Sans+Condensed",
+		"google": "Open+Sans+Condensed:700",
 		"stack": "'Open Sans Condensed', sans-serif"
 	},
 	"Oranienbaum": {
-		"google": "Oranienbaum",
+		"google": "Oranienbaum:400",
 		"stack": "'Oranienbaum', serif"
 	},
 	"Orbitron": {
-		"google": "Orbitron",
+		"google": "Orbitron:400,700",
 		"stack": "'Orbitron', sans-serif"
 	},
 	"Oregano": {
-		"google": "Oregano",
-		"stack": "'Oregano', sans-serif"
+		"google": "Oregano:400",
+		"stack": "'Oregano', cursive"
 	},
 	"Orienta": {
-		"google": "Orienta",
+		"google": "Orienta:400",
 		"stack": "'Orienta', sans-serif"
 	},
 	"Original Surfer": {
-		"google": "Original+Surfer",
-		"stack": "'Original Surfer', sans-serif"
+		"google": "Original+Surfer:400",
+		"stack": "'Original Surfer', cursive"
 	},
 	"Oswald": {
-		"google": "Oswald",
+		"google": "Oswald:400,700",
 		"stack": "'Oswald', sans-serif"
 	},
 	"Over the Rainbow": {
-		"google": "Over+the+Rainbow",
+		"google": "Over+the+Rainbow:400",
 		"stack": "'Over the Rainbow', cursive"
 	},
 	"Overlock": {
-		"google": "Overlock",
-		"stack": "'Overlock', sans-serif"
+		"google": "Overlock:400,700",
+		"stack": "'Overlock', cursive"
 	},
 	"Overlock SC": {
-		"google": "Overlock+SC",
-		"stack": "'Overlock SC', sans-serif"
+		"google": "Overlock+SC:400",
+		"stack": "'Overlock SC', cursive"
 	},
 	"Overpass": {
-		"google": "Overpass",
+		"google": "Overpass:400,700",
 		"stack": "'Overpass', sans-serif"
 	},
 	"Ovo": {
-		"google": "Ovo",
+		"google": "Ovo:400",
 		"stack": "'Ovo', serif"
 	},
 	"Oxygen": {
-		"google": "Oxygen",
+		"google": "Oxygen:400,700",
 		"stack": "'Oxygen', sans-serif"
 	},
 	"PT Sans": {
-		"google": "PT+Sans",
+		"google": "PT+Sans:400,700",
 		"stack": "'PT Sans', sans-serif"
 	},
 	"PT Sans Caption": {
-		"google": "PT+Sans+Caption",
+		"google": "PT+Sans+Caption:400,700",
 		"stack": "'PT Sans Caption', sans-serif"
 	},
 	"PT Sans Narrow": {
-		"google": "PT+Sans+Narrow",
+		"google": "PT+Sans+Narrow:400,700",
 		"stack": "'PT Sans Narrow', sans-serif"
 	},
 	"PT Serif": {
-		"google": "PT+Serif",
+		"google": "PT+Serif:400,700",
 		"stack": "'PT Serif', serif"
 	},
 	"PT Serif Caption": {
-		"google": "PT+Serif+Caption",
+		"google": "PT+Serif+Caption:400",
 		"stack": "'PT Serif Caption', serif"
 	},
 	"Pacifico": {
-		"google": "Pacifico",
+		"google": "Pacifico:400",
 		"stack": "'Pacifico', cursive"
 	},
 	"Padauk": {
-		"google": "Padauk",
+		"google": "Padauk:400,700",
 		"stack": "'Padauk', sans-serif"
 	},
 	"Palanquin": {
-		"google": "Palanquin",
+		"google": "Palanquin:400,700",
 		"stack": "'Palanquin', sans-serif"
 	},
 	"Palanquin Dark": {
-		"google": "Palanquin+Dark",
+		"google": "Palanquin+Dark:400,700",
 		"stack": "'Palanquin Dark', sans-serif"
 	},
 	"Pangolin": {
-		"google": "Pangolin",
+		"google": "Pangolin:400",
 		"stack": "'Pangolin', cursive"
 	},
 	"Paprika": {
-		"google": "Paprika",
-		"stack": "'Paprika', sans-serif"
+		"google": "Paprika:400",
+		"stack": "'Paprika', cursive"
 	},
 	"Parisienne": {
-		"google": "Parisienne",
+		"google": "Parisienne:400",
 		"stack": "'Parisienne', cursive"
 	},
 	"Passero One": {
-		"google": "Passero+One",
-		"stack": "'Passero One', sans-serif"
+		"google": "Passero+One:400",
+		"stack": "'Passero One', cursive"
 	},
 	"Passion One": {
-		"google": "Passion+One",
-		"stack": "'Passion One', sans-serif"
+		"google": "Passion+One:400,700",
+		"stack": "'Passion One', cursive"
 	},
 	"Pathway Gothic One": {
-		"google": "Pathway+Gothic+One",
+		"google": "Pathway+Gothic+One:400",
 		"stack": "'Pathway Gothic One', sans-serif"
 	},
 	"Patrick Hand": {
-		"google": "Patrick+Hand",
+		"google": "Patrick+Hand:400",
 		"stack": "'Patrick Hand', cursive"
 	},
 	"Patrick Hand SC": {
-		"google": "Patrick+Hand+SC",
+		"google": "Patrick+Hand+SC:400",
 		"stack": "'Patrick Hand SC', cursive"
 	},
 	"Pattaya": {
-		"google": "Pattaya",
+		"google": "Pattaya:400",
 		"stack": "'Pattaya', sans-serif"
 	},
 	"Patua One": {
-		"google": "Patua+One",
-		"stack": "'Patua One', sans-serif"
+		"google": "Patua+One:400",
+		"stack": "'Patua One', cursive"
 	},
 	"Pavanam": {
-		"google": "Pavanam",
+		"google": "Pavanam:400",
 		"stack": "'Pavanam', sans-serif"
 	},
 	"Paytone One": {
-		"google": "Paytone+One",
+		"google": "Paytone+One:400",
 		"stack": "'Paytone One', sans-serif"
 	},
 	"Peddana": {
-		"google": "Peddana",
+		"google": "Peddana:400",
 		"stack": "'Peddana', serif"
 	},
 	"Peralta": {
-		"google": "Peralta",
-		"stack": "'Peralta', sans-serif"
+		"google": "Peralta:400",
+		"stack": "'Peralta', cursive"
 	},
 	"Permanent Marker": {
-		"google": "Permanent+Marker",
+		"google": "Permanent+Marker:400",
 		"stack": "'Permanent Marker', cursive"
 	},
 	"Petit Formal Script": {
-		"google": "Petit+Formal+Script",
+		"google": "Petit+Formal+Script:400",
 		"stack": "'Petit Formal Script', cursive"
 	},
 	"Petrona": {
-		"google": "Petrona",
+		"google": "Petrona:400",
 		"stack": "'Petrona', serif"
 	},
 	"Philosopher": {
-		"google": "Philosopher",
+		"google": "Philosopher:400,700",
 		"stack": "'Philosopher', sans-serif"
 	},
 	"Piedra": {
-		"google": "Piedra",
-		"stack": "'Piedra', sans-serif"
+		"google": "Piedra:400",
+		"stack": "'Piedra', cursive"
 	},
 	"Pinyon Script": {
-		"google": "Pinyon+Script",
+		"google": "Pinyon+Script:400",
 		"stack": "'Pinyon Script', cursive"
 	},
 	"Pirata One": {
-		"google": "Pirata+One",
-		"stack": "'Pirata One', sans-serif"
+		"google": "Pirata+One:400",
+		"stack": "'Pirata One', cursive"
 	},
 	"Plaster": {
-		"google": "Plaster",
-		"stack": "'Plaster', sans-serif"
+		"google": "Plaster:400",
+		"stack": "'Plaster', cursive"
 	},
 	"Play": {
-		"google": "Play",
+		"google": "Play:400,700",
 		"stack": "'Play', sans-serif"
 	},
 	"Playball": {
-		"google": "Playball",
-		"stack": "'Playball', sans-serif"
+		"google": "Playball:400",
+		"stack": "'Playball', cursive"
 	},
 	"Playfair Display": {
-		"google": "Playfair+Display",
+		"google": "Playfair+Display:400,700",
 		"stack": "'Playfair Display', serif"
 	},
 	"Playfair Display SC": {
-		"google": "Playfair+Display+SC",
+		"google": "Playfair+Display+SC:400,700",
 		"stack": "'Playfair Display SC', serif"
 	},
 	"Podkova": {
-		"google": "Podkova",
+		"google": "Podkova:400,700",
 		"stack": "'Podkova', serif"
 	},
 	"Poiret One": {
-		"google": "Poiret+One",
-		"stack": "'Poiret One', sans-serif"
+		"google": "Poiret+One:400",
+		"stack": "'Poiret One', cursive"
 	},
 	"Poller One": {
-		"google": "Poller+One",
-		"stack": "'Poller One', sans-serif"
+		"google": "Poller+One:400",
+		"stack": "'Poller One', cursive"
 	},
 	"Poly": {
-		"google": "Poly",
+		"google": "Poly:400",
 		"stack": "'Poly', serif"
 	},
 	"Pompiere": {
-		"google": "Pompiere",
-		"stack": "'Pompiere', sans-serif"
+		"google": "Pompiere:400",
+		"stack": "'Pompiere', cursive"
 	},
 	"Pontano Sans": {
-		"google": "Pontano+Sans",
+		"google": "Pontano+Sans:400",
 		"stack": "'Pontano Sans', sans-serif"
 	},
 	"Poor Story": {
-		"google": "Poor+Story",
-		"stack": "'Poor Story', sans-serif"
+		"google": "Poor+Story:400",
+		"stack": "'Poor Story', cursive"
 	},
 	"Poppins": {
-		"google": "Poppins",
+		"google": "Poppins:400,700",
 		"stack": "'Poppins', sans-serif"
 	},
 	"Port Lligat Sans": {
-		"google": "Port+Lligat+Sans",
+		"google": "Port+Lligat+Sans:400",
 		"stack": "'Port Lligat Sans', sans-serif"
 	},
 	"Port Lligat Slab": {
-		"google": "Port+Lligat+Slab",
+		"google": "Port+Lligat+Slab:400",
 		"stack": "'Port Lligat Slab', serif"
 	},
 	"Pragati Narrow": {
-		"google": "Pragati+Narrow",
+		"google": "Pragati+Narrow:400,700",
 		"stack": "'Pragati Narrow', sans-serif"
 	},
 	"Prata": {
-		"google": "Prata",
+		"google": "Prata:400",
 		"stack": "'Prata', serif"
 	},
 	"Preahvihear": {
-		"google": "Preahvihear",
-		"stack": "'Preahvihear', sans-serif"
+		"google": "Preahvihear:400",
+		"stack": "'Preahvihear', cursive"
 	},
 	"Press Start 2P": {
-		"google": "Press+Start+2P",
-		"stack": "'Press Start 2P', sans-serif"
+		"google": "Press+Start+2P:400",
+		"stack": "'Press Start 2P', cursive"
 	},
 	"Pridi": {
-		"google": "Pridi",
+		"google": "Pridi:400,700",
 		"stack": "'Pridi', serif"
 	},
 	"Princess Sofia": {
-		"google": "Princess+Sofia",
+		"google": "Princess+Sofia:400",
 		"stack": "'Princess Sofia', cursive"
 	},
 	"Prociono": {
-		"google": "Prociono",
+		"google": "Prociono:400",
 		"stack": "'Prociono', serif"
 	},
 	"Prompt": {
-		"google": "Prompt",
+		"google": "Prompt:400,700",
 		"stack": "'Prompt', sans-serif"
 	},
 	"Prosto One": {
-		"google": "Prosto+One",
-		"stack": "'Prosto One', sans-serif"
+		"google": "Prosto+One:400",
+		"stack": "'Prosto One', cursive"
 	},
 	"Proza Libre": {
-		"google": "Proza+Libre",
+		"google": "Proza+Libre:400,700",
 		"stack": "'Proza Libre', sans-serif"
 	},
 	"Public Sans": {
-		"google": "Public+Sans",
+		"google": "Public+Sans:400,700",
 		"stack": "'Public Sans', sans-serif"
 	},
 	"Puritan": {
-		"google": "Puritan",
+		"google": "Puritan:400,700",
 		"stack": "'Puritan', sans-serif"
 	},
 	"Purple Purse": {
-		"google": "Purple+Purse",
-		"stack": "'Purple Purse', sans-serif"
+		"google": "Purple+Purse:400",
+		"stack": "'Purple Purse', cursive"
 	},
 	"Quando": {
-		"google": "Quando",
+		"google": "Quando:400",
 		"stack": "'Quando', serif"
 	},
 	"Quantico": {
-		"google": "Quantico",
+		"google": "Quantico:400,700",
 		"stack": "'Quantico', sans-serif"
 	},
 	"Quattrocento": {
-		"google": "Quattrocento",
+		"google": "Quattrocento:400,700",
 		"stack": "'Quattrocento', serif"
 	},
 	"Quattrocento Sans": {
-		"google": "Quattrocento+Sans",
+		"google": "Quattrocento+Sans:400,700",
 		"stack": "'Quattrocento Sans', sans-serif"
 	},
 	"Questrial": {
-		"google": "Questrial",
+		"google": "Questrial:400",
 		"stack": "'Questrial', sans-serif"
 	},
 	"Quicksand": {
-		"google": "Quicksand",
+		"google": "Quicksand:400,700",
 		"stack": "'Quicksand', sans-serif"
 	},
 	"Quintessential": {
-		"google": "Quintessential",
+		"google": "Quintessential:400",
 		"stack": "'Quintessential', cursive"
 	},
 	"Qwigley": {
-		"google": "Qwigley",
+		"google": "Qwigley:400",
 		"stack": "'Qwigley', cursive"
 	},
 	"Racing Sans One": {
-		"google": "Racing+Sans+One",
-		"stack": "'Racing Sans One', sans-serif"
+		"google": "Racing+Sans+One:400",
+		"stack": "'Racing Sans One', cursive"
 	},
 	"Radley": {
-		"google": "Radley",
+		"google": "Radley:400",
 		"stack": "'Radley', serif"
 	},
 	"Rajdhani": {
-		"google": "Rajdhani",
+		"google": "Rajdhani:400,700",
 		"stack": "'Rajdhani', sans-serif"
 	},
 	"Rakkas": {
-		"google": "Rakkas",
-		"stack": "'Rakkas', sans-serif"
+		"google": "Rakkas:400",
+		"stack": "'Rakkas', cursive"
 	},
 	"Raleway": {
-		"google": "Raleway",
+		"google": "Raleway:400,700",
 		"stack": "'Raleway', sans-serif"
 	},
 	"Raleway Dots": {
-		"google": "Raleway+Dots",
-		"stack": "'Raleway Dots', sans-serif"
+		"google": "Raleway+Dots:400",
+		"stack": "'Raleway Dots', cursive"
 	},
 	"Ramabhadra": {
-		"google": "Ramabhadra",
+		"google": "Ramabhadra:400",
 		"stack": "'Ramabhadra', sans-serif"
 	},
 	"Ramaraja": {
-		"google": "Ramaraja",
+		"google": "Ramaraja:400",
 		"stack": "'Ramaraja', serif"
 	},
 	"Rambla": {
-		"google": "Rambla",
+		"google": "Rambla:400,700",
 		"stack": "'Rambla', sans-serif"
 	},
 	"Rammetto One": {
-		"google": "Rammetto+One",
-		"stack": "'Rammetto One', sans-serif"
+		"google": "Rammetto+One:400",
+		"stack": "'Rammetto One', cursive"
 	},
 	"Ranchers": {
-		"google": "Ranchers",
-		"stack": "'Ranchers', sans-serif"
+		"google": "Ranchers:400",
+		"stack": "'Ranchers', cursive"
 	},
 	"Rancho": {
-		"google": "Rancho",
+		"google": "Rancho:400",
 		"stack": "'Rancho', cursive"
 	},
 	"Ranga": {
-		"google": "Ranga",
-		"stack": "'Ranga', sans-serif"
+		"google": "Ranga:400,700",
+		"stack": "'Ranga', cursive"
 	},
 	"Rasa": {
-		"google": "Rasa",
+		"google": "Rasa:400,700",
 		"stack": "'Rasa', serif"
 	},
 	"Rationale": {
-		"google": "Rationale",
+		"google": "Rationale:400",
 		"stack": "'Rationale', sans-serif"
 	},
 	"Ravi Prakash": {
-		"google": "Ravi+Prakash",
-		"stack": "'Ravi Prakash', sans-serif"
+		"google": "Ravi+Prakash:400",
+		"stack": "'Ravi Prakash', cursive"
 	},
 	"Red Hat Display": {
-		"google": "Red+Hat+Display",
+		"google": "Red+Hat+Display:400,700",
 		"stack": "'Red Hat Display', sans-serif"
 	},
 	"Red Hat Text": {
-		"google": "Red+Hat+Text",
+		"google": "Red+Hat+Text:400,700",
 		"stack": "'Red Hat Text', sans-serif"
 	},
 	"Redressed": {
-		"google": "Redressed",
+		"google": "Redressed:400",
 		"stack": "'Redressed', cursive"
 	},
 	"Reem Kufi": {
-		"google": "Reem+Kufi",
+		"google": "Reem+Kufi:400",
 		"stack": "'Reem Kufi', sans-serif"
 	},
 	"Reenie Beanie": {
-		"google": "Reenie+Beanie",
+		"google": "Reenie+Beanie:400",
 		"stack": "'Reenie Beanie', cursive"
 	},
 	"Revalia": {
-		"google": "Revalia",
-		"stack": "'Revalia', sans-serif"
+		"google": "Revalia:400",
+		"stack": "'Revalia', cursive"
 	},
 	"Rhodium Libre": {
-		"google": "Rhodium+Libre",
+		"google": "Rhodium+Libre:400",
 		"stack": "'Rhodium Libre', serif"
 	},
 	"Ribeye": {
-		"google": "Ribeye",
-		"stack": "'Ribeye', sans-serif"
+		"google": "Ribeye:400",
+		"stack": "'Ribeye', cursive"
 	},
 	"Ribeye Marrow": {
-		"google": "Ribeye+Marrow",
-		"stack": "'Ribeye Marrow', sans-serif"
+		"google": "Ribeye+Marrow:400",
+		"stack": "'Ribeye Marrow', cursive"
 	},
 	"Righteous": {
-		"google": "Righteous",
-		"stack": "'Righteous', sans-serif"
+		"google": "Righteous:400",
+		"stack": "'Righteous', cursive"
 	},
 	"Risque": {
-		"google": "Risque",
-		"stack": "'Risque', sans-serif"
+		"google": "Risque:400",
+		"stack": "'Risque', cursive"
 	},
 	"Roboto": {
-		"google": "Roboto",
+		"google": "Roboto:400,700",
 		"stack": "'Roboto', sans-serif"
 	},
 	"Roboto Condensed": {
-		"google": "Roboto+Condensed",
+		"google": "Roboto+Condensed:400,700",
 		"stack": "'Roboto Condensed', sans-serif"
 	},
 	"Roboto Slab": {
-		"google": "Roboto+Slab",
+		"google": "Roboto+Slab:400,700",
 		"stack": "'Roboto Slab', serif"
 	},
 	"Rochester": {
-		"google": "Rochester",
+		"google": "Rochester:400",
 		"stack": "'Rochester', cursive"
 	},
 	"Rock Salt": {
-		"google": "Rock+Salt",
+		"google": "Rock+Salt:400",
 		"stack": "'Rock Salt', cursive"
 	},
 	"Rokkitt": {
-		"google": "Rokkitt",
+		"google": "Rokkitt:400,700",
 		"stack": "'Rokkitt', serif"
 	},
 	"Romanesco": {
-		"google": "Romanesco",
+		"google": "Romanesco:400",
 		"stack": "'Romanesco', cursive"
 	},
 	"Ropa Sans": {
-		"google": "Ropa+Sans",
+		"google": "Ropa+Sans:400",
 		"stack": "'Ropa Sans', sans-serif"
 	},
 	"Rosario": {
-		"google": "Rosario",
+		"google": "Rosario:400,700",
 		"stack": "'Rosario', sans-serif"
 	},
 	"Rosarivo": {
-		"google": "Rosarivo",
+		"google": "Rosarivo:400",
 		"stack": "'Rosarivo', serif"
 	},
 	"Rouge Script": {
-		"google": "Rouge+Script",
+		"google": "Rouge+Script:400",
 		"stack": "'Rouge Script', cursive"
 	},
 	"Rozha One": {
-		"google": "Rozha+One",
+		"google": "Rozha+One:400",
 		"stack": "'Rozha One', serif"
 	},
 	"Rubik": {
-		"google": "Rubik",
+		"google": "Rubik:400,700",
 		"stack": "'Rubik', sans-serif"
 	},
 	"Rubik Mono One": {
-		"google": "Rubik+Mono+One",
+		"google": "Rubik+Mono+One:400",
 		"stack": "'Rubik Mono One', sans-serif"
 	},
 	"Ruda": {
-		"google": "Ruda",
+		"google": "Ruda:400,700",
 		"stack": "'Ruda', sans-serif"
 	},
 	"Rufina": {
-		"google": "Rufina",
+		"google": "Rufina:400,700",
 		"stack": "'Rufina', serif"
 	},
 	"Ruge Boogie": {
-		"google": "Ruge+Boogie",
+		"google": "Ruge+Boogie:400",
 		"stack": "'Ruge Boogie', cursive"
 	},
 	"Ruluko": {
-		"google": "Ruluko",
+		"google": "Ruluko:400",
 		"stack": "'Ruluko', sans-serif"
 	},
 	"Rum Raisin": {
-		"google": "Rum+Raisin",
+		"google": "Rum+Raisin:400",
 		"stack": "'Rum Raisin', sans-serif"
 	},
 	"Ruslan Display": {
-		"google": "Ruslan+Display",
-		"stack": "'Ruslan Display', sans-serif"
+		"google": "Ruslan+Display:400",
+		"stack": "'Ruslan Display', cursive"
 	},
 	"Russo One": {
-		"google": "Russo+One",
+		"google": "Russo+One:400",
 		"stack": "'Russo One', sans-serif"
 	},
 	"Ruthie": {
-		"google": "Ruthie",
+		"google": "Ruthie:400",
 		"stack": "'Ruthie', cursive"
 	},
 	"Rye": {
-		"google": "Rye",
-		"stack": "'Rye', sans-serif"
+		"google": "Rye:400",
+		"stack": "'Rye', cursive"
 	},
 	"Sacramento": {
-		"google": "Sacramento",
+		"google": "Sacramento:400",
 		"stack": "'Sacramento', cursive"
 	},
 	"Sahitya": {
-		"google": "Sahitya",
+		"google": "Sahitya:400,700",
 		"stack": "'Sahitya', serif"
 	},
 	"Sail": {
-		"google": "Sail",
-		"stack": "'Sail', sans-serif"
+		"google": "Sail:400",
+		"stack": "'Sail', cursive"
 	},
 	"Saira": {
-		"google": "Saira",
+		"google": "Saira:400,700",
 		"stack": "'Saira', sans-serif"
 	},
 	"Saira Condensed": {
-		"google": "Saira+Condensed",
+		"google": "Saira+Condensed:400,700",
 		"stack": "'Saira Condensed', sans-serif"
 	},
 	"Saira Extra Condensed": {
-		"google": "Saira+Extra+Condensed",
+		"google": "Saira+Extra+Condensed:400,700",
 		"stack": "'Saira Extra Condensed', sans-serif"
 	},
 	"Saira Semi Condensed": {
-		"google": "Saira+Semi+Condensed",
+		"google": "Saira+Semi+Condensed:400,700",
 		"stack": "'Saira Semi Condensed', sans-serif"
 	},
 	"Saira Stencil One": {
-		"google": "Saira+Stencil+One",
-		"stack": "'Saira Stencil One', sans-serif"
+		"google": "Saira+Stencil+One:400",
+		"stack": "'Saira Stencil One', cursive"
 	},
 	"Salsa": {
-		"google": "Salsa",
-		"stack": "'Salsa', sans-serif"
+		"google": "Salsa:400",
+		"stack": "'Salsa', cursive"
 	},
 	"Sanchez": {
-		"google": "Sanchez",
+		"google": "Sanchez:400",
 		"stack": "'Sanchez', serif"
 	},
 	"Sancreek": {
-		"google": "Sancreek",
-		"stack": "'Sancreek', sans-serif"
+		"google": "Sancreek:400",
+		"stack": "'Sancreek', cursive"
 	},
 	"Sansita": {
-		"google": "Sansita",
+		"google": "Sansita:400,700",
 		"stack": "'Sansita', sans-serif"
 	},
 	"Sarabun": {
-		"google": "Sarabun",
+		"google": "Sarabun:400,700",
 		"stack": "'Sarabun', sans-serif"
 	},
 	"Sarala": {
-		"google": "Sarala",
+		"google": "Sarala:400,700",
 		"stack": "'Sarala', sans-serif"
 	},
 	"Sarina": {
-		"google": "Sarina",
-		"stack": "'Sarina', sans-serif"
+		"google": "Sarina:400",
+		"stack": "'Sarina', cursive"
 	},
 	"Sarpanch": {
-		"google": "Sarpanch",
+		"google": "Sarpanch:400,700",
 		"stack": "'Sarpanch', sans-serif"
 	},
 	"Satisfy": {
-		"google": "Satisfy",
+		"google": "Satisfy:400",
 		"stack": "'Satisfy', cursive"
 	},
 	"Sawarabi Gothic": {
-		"google": "Sawarabi+Gothic",
+		"google": "Sawarabi+Gothic:400",
 		"stack": "'Sawarabi Gothic', sans-serif"
 	},
 	"Sawarabi Mincho": {
-		"google": "Sawarabi+Mincho",
+		"google": "Sawarabi+Mincho:400",
 		"stack": "'Sawarabi Mincho', sans-serif"
 	},
 	"Scada": {
-		"google": "Scada",
+		"google": "Scada:400,700",
 		"stack": "'Scada', sans-serif"
 	},
 	"Scheherazade": {
-		"google": "Scheherazade",
+		"google": "Scheherazade:400,700",
 		"stack": "'Scheherazade', serif"
 	},
 	"Schoolbell": {
-		"google": "Schoolbell",
+		"google": "Schoolbell:400",
 		"stack": "'Schoolbell', cursive"
 	},
 	"Scope One": {
-		"google": "Scope+One",
+		"google": "Scope+One:400",
 		"stack": "'Scope One', serif"
 	},
 	"Seaweed Script": {
-		"google": "Seaweed+Script",
-		"stack": "'Seaweed Script', sans-serif"
+		"google": "Seaweed+Script:400",
+		"stack": "'Seaweed Script', cursive"
 	},
 	"Secular One": {
-		"google": "Secular+One",
+		"google": "Secular+One:400",
 		"stack": "'Secular One', sans-serif"
 	},
 	"Sedgwick Ave": {
-		"google": "Sedgwick+Ave",
+		"google": "Sedgwick+Ave:400",
 		"stack": "'Sedgwick Ave', cursive"
 	},
 	"Sedgwick Ave Display": {
-		"google": "Sedgwick+Ave+Display",
+		"google": "Sedgwick+Ave+Display:400",
 		"stack": "'Sedgwick Ave Display', cursive"
 	},
 	"Sevillana": {
-		"google": "Sevillana",
-		"stack": "'Sevillana', sans-serif"
+		"google": "Sevillana:400",
+		"stack": "'Sevillana', cursive"
 	},
 	"Seymour One": {
-		"google": "Seymour+One",
+		"google": "Seymour+One:400",
 		"stack": "'Seymour One', sans-serif"
 	},
 	"Shadows Into Light": {
-		"google": "Shadows+Into+Light",
+		"google": "Shadows+Into+Light:400",
 		"stack": "'Shadows Into Light', cursive"
 	},
 	"Shadows Into Light Two": {
-		"google": "Shadows+Into+Light+Two",
+		"google": "Shadows+Into+Light+Two:400",
 		"stack": "'Shadows Into Light Two', cursive"
 	},
 	"Shanti": {
-		"google": "Shanti",
+		"google": "Shanti:400",
 		"stack": "'Shanti', sans-serif"
 	},
 	"Share": {
-		"google": "Share",
-		"stack": "'Share', sans-serif"
+		"google": "Share:400,700",
+		"stack": "'Share', cursive"
 	},
 	"Share Tech": {
-		"google": "Share+Tech",
+		"google": "Share+Tech:400",
 		"stack": "'Share Tech', sans-serif"
 	},
 	"Shojumaru": {
-		"google": "Shojumaru",
-		"stack": "'Shojumaru', sans-serif"
+		"google": "Shojumaru:400",
+		"stack": "'Shojumaru', cursive"
 	},
 	"Short Stack": {
-		"google": "Short+Stack",
+		"google": "Short+Stack:400",
 		"stack": "'Short Stack', cursive"
 	},
 	"Shrikhand": {
-		"google": "Shrikhand",
-		"stack": "'Shrikhand', sans-serif"
+		"google": "Shrikhand:400",
+		"stack": "'Shrikhand', cursive"
 	},
 	"Siemreap": {
-		"google": "Siemreap",
-		"stack": "'Siemreap', sans-serif"
+		"google": "Siemreap:400",
+		"stack": "'Siemreap', cursive"
 	},
 	"Sigmar One": {
-		"google": "Sigmar+One",
-		"stack": "'Sigmar One', sans-serif"
+		"google": "Sigmar+One:400",
+		"stack": "'Sigmar One', cursive"
 	},
 	"Signika": {
-		"google": "Signika",
+		"google": "Signika:400,700",
 		"stack": "'Signika', sans-serif"
 	},
 	"Signika Negative": {
-		"google": "Signika+Negative",
+		"google": "Signika+Negative:400,700",
 		"stack": "'Signika Negative', sans-serif"
 	},
 	"Simonetta": {
-		"google": "Simonetta",
-		"stack": "'Simonetta', sans-serif"
+		"google": "Simonetta:400",
+		"stack": "'Simonetta', cursive"
 	},
 	"Single Day": {
-		"google": "Single+Day",
-		"stack": "'Single Day', sans-serif"
+		"google": "Single+Day:400",
+		"stack": "'Single Day', cursive"
 	},
 	"Sintony": {
-		"google": "Sintony",
+		"google": "Sintony:400,700",
 		"stack": "'Sintony', sans-serif"
 	},
 	"Sirin Stencil": {
-		"google": "Sirin+Stencil",
-		"stack": "'Sirin Stencil', sans-serif"
+		"google": "Sirin+Stencil:400",
+		"stack": "'Sirin Stencil', cursive"
 	},
 	"Six Caps": {
-		"google": "Six+Caps",
+		"google": "Six+Caps:400",
 		"stack": "'Six Caps', sans-serif"
 	},
 	"Skranji": {
-		"google": "Skranji",
-		"stack": "'Skranji', sans-serif"
+		"google": "Skranji:400,700",
+		"stack": "'Skranji', cursive"
 	},
 	"Slabo 13px": {
-		"google": "Slabo+13px",
+		"google": "Slabo+13px:400",
 		"stack": "'Slabo 13px', serif"
 	},
 	"Slabo 27px": {
-		"google": "Slabo+27px",
+		"google": "Slabo+27px:400",
 		"stack": "'Slabo 27px', serif"
 	},
 	"Slackey": {
-		"google": "Slackey",
-		"stack": "'Slackey', sans-serif"
+		"google": "Slackey:400",
+		"stack": "'Slackey', cursive"
 	},
 	"Smokum": {
-		"google": "Smokum",
-		"stack": "'Smokum', sans-serif"
+		"google": "Smokum:400",
+		"stack": "'Smokum', cursive"
 	},
 	"Smythe": {
-		"google": "Smythe",
-		"stack": "'Smythe', sans-serif"
+		"google": "Smythe:400",
+		"stack": "'Smythe', cursive"
 	},
 	"Sniglet": {
-		"google": "Sniglet",
-		"stack": "'Sniglet', sans-serif"
+		"google": "Sniglet:400",
+		"stack": "'Sniglet', cursive"
 	},
 	"Snippet": {
-		"google": "Snippet",
+		"google": "Snippet:400",
 		"stack": "'Snippet', sans-serif"
 	},
 	"Snowburst One": {
-		"google": "Snowburst+One",
-		"stack": "'Snowburst One', sans-serif"
+		"google": "Snowburst+One:400",
+		"stack": "'Snowburst One', cursive"
 	},
 	"Sofadi One": {
-		"google": "Sofadi+One",
-		"stack": "'Sofadi One', sans-serif"
+		"google": "Sofadi+One:400",
+		"stack": "'Sofadi One', cursive"
 	},
 	"Sofia": {
-		"google": "Sofia",
+		"google": "Sofia:400",
 		"stack": "'Sofia', cursive"
 	},
 	"Solway": {
-		"google": "Solway",
+		"google": "Solway:400,700",
 		"stack": "'Solway', serif"
 	},
 	"Song Myung": {
-		"google": "Song+Myung",
+		"google": "Song+Myung:400",
 		"stack": "'Song Myung', serif"
 	},
 	"Sonsie One": {
-		"google": "Sonsie+One",
-		"stack": "'Sonsie One', sans-serif"
+		"google": "Sonsie+One:400",
+		"stack": "'Sonsie One', cursive"
 	},
 	"Sorts Mill Goudy": {
-		"google": "Sorts+Mill+Goudy",
+		"google": "Sorts+Mill+Goudy:400",
 		"stack": "'Sorts Mill Goudy', serif"
 	},
 	"Source Sans Pro": {
-		"google": "Source+Sans+Pro",
+		"google": "Source+Sans+Pro:400,700",
 		"stack": "'Source Sans Pro', sans-serif"
 	},
 	"Source Serif Pro": {
-		"google": "Source+Serif+Pro",
+		"google": "Source+Serif+Pro:400,700",
 		"stack": "'Source Serif Pro', serif"
 	},
 	"Special Elite": {
-		"google": "Special+Elite",
-		"stack": "'Special Elite', sans-serif"
+		"google": "Special+Elite:400",
+		"stack": "'Special Elite', cursive"
 	},
 	"Spectral": {
-		"google": "Spectral",
+		"google": "Spectral:400,700",
 		"stack": "'Spectral', serif"
 	},
 	"Spectral SC": {
-		"google": "Spectral+SC",
+		"google": "Spectral+SC:400,700",
 		"stack": "'Spectral SC', serif"
 	},
 	"Spicy Rice": {
-		"google": "Spicy+Rice",
-		"stack": "'Spicy Rice', sans-serif"
+		"google": "Spicy+Rice:400",
+		"stack": "'Spicy Rice', cursive"
 	},
 	"Spinnaker": {
-		"google": "Spinnaker",
+		"google": "Spinnaker:400",
 		"stack": "'Spinnaker', sans-serif"
 	},
 	"Spirax": {
-		"google": "Spirax",
-		"stack": "'Spirax', sans-serif"
+		"google": "Spirax:400",
+		"stack": "'Spirax', cursive"
 	},
 	"Squada One": {
-		"google": "Squada+One",
-		"stack": "'Squada One', sans-serif"
+		"google": "Squada+One:400",
+		"stack": "'Squada One', cursive"
 	},
 	"Sree Krushnadevaraya": {
-		"google": "Sree+Krushnadevaraya",
+		"google": "Sree+Krushnadevaraya:400",
 		"stack": "'Sree Krushnadevaraya', serif"
 	},
 	"Sriracha": {
-		"google": "Sriracha",
+		"google": "Sriracha:400",
 		"stack": "'Sriracha', cursive"
 	},
 	"Srisakdi": {
-		"google": "Srisakdi",
-		"stack": "'Srisakdi', sans-serif"
+		"google": "Srisakdi:400,700",
+		"stack": "'Srisakdi', cursive"
 	},
 	"Staatliches": {
-		"google": "Staatliches",
-		"stack": "'Staatliches', sans-serif"
+		"google": "Staatliches:400",
+		"stack": "'Staatliches', cursive"
 	},
 	"Stalemate": {
-		"google": "Stalemate",
+		"google": "Stalemate:400",
 		"stack": "'Stalemate', cursive"
 	},
 	"Stalinist One": {
-		"google": "Stalinist+One",
-		"stack": "'Stalinist One', sans-serif"
+		"google": "Stalinist+One:400",
+		"stack": "'Stalinist One', cursive"
 	},
 	"Stardos Stencil": {
-		"google": "Stardos+Stencil",
-		"stack": "'Stardos Stencil', sans-serif"
+		"google": "Stardos+Stencil:400,700",
+		"stack": "'Stardos Stencil', cursive"
 	},
 	"Stint Ultra Condensed": {
-		"google": "Stint+Ultra+Condensed",
-		"stack": "'Stint Ultra Condensed', sans-serif"
+		"google": "Stint+Ultra+Condensed:400",
+		"stack": "'Stint Ultra Condensed', cursive"
 	},
 	"Stint Ultra Expanded": {
-		"google": "Stint+Ultra+Expanded",
-		"stack": "'Stint Ultra Expanded', sans-serif"
+		"google": "Stint+Ultra+Expanded:400",
+		"stack": "'Stint Ultra Expanded', cursive"
 	},
 	"Stoke": {
-		"google": "Stoke",
+		"google": "Stoke:400",
 		"stack": "'Stoke', serif"
 	},
 	"Strait": {
-		"google": "Strait",
+		"google": "Strait:400",
 		"stack": "'Strait', sans-serif"
 	},
 	"Stylish": {
-		"google": "Stylish",
+		"google": "Stylish:400",
 		"stack": "'Stylish', sans-serif"
 	},
 	"Sue Ellen Francisco": {
-		"google": "Sue+Ellen+Francisco",
+		"google": "Sue+Ellen+Francisco:400",
 		"stack": "'Sue Ellen Francisco', cursive"
 	},
 	"Suez One": {
-		"google": "Suez+One",
+		"google": "Suez+One:400",
 		"stack": "'Suez One', serif"
 	},
 	"Sulphur Point": {
-		"google": "Sulphur+Point",
+		"google": "Sulphur+Point:400,700",
 		"stack": "'Sulphur Point', sans-serif"
 	},
 	"Sumana": {
-		"google": "Sumana",
+		"google": "Sumana:400,700",
 		"stack": "'Sumana', serif"
 	},
 	"Sunflower": {
-		"google": "Sunflower",
+		"google": "Sunflower:700",
 		"stack": "'Sunflower', sans-serif"
 	},
 	"Sunshiney": {
-		"google": "Sunshiney",
+		"google": "Sunshiney:400",
 		"stack": "'Sunshiney', cursive"
 	},
 	"Supermercado One": {
-		"google": "Supermercado+One",
-		"stack": "'Supermercado One', sans-serif"
+		"google": "Supermercado+One:400",
+		"stack": "'Supermercado One', cursive"
 	},
 	"Sura": {
-		"google": "Sura",
+		"google": "Sura:400,700",
 		"stack": "'Sura', serif"
 	},
 	"Suranna": {
-		"google": "Suranna",
+		"google": "Suranna:400",
 		"stack": "'Suranna', serif"
 	},
 	"Suravaram": {
-		"google": "Suravaram",
+		"google": "Suravaram:400",
 		"stack": "'Suravaram', serif"
 	},
 	"Suwannaphum": {
-		"google": "Suwannaphum",
-		"stack": "'Suwannaphum', sans-serif"
+		"google": "Suwannaphum:400",
+		"stack": "'Suwannaphum', cursive"
 	},
 	"Swanky and Moo Moo": {
-		"google": "Swanky+and+Moo+Moo",
+		"google": "Swanky+and+Moo+Moo:400",
 		"stack": "'Swanky and Moo Moo', cursive"
 	},
 	"Syncopate": {
-		"google": "Syncopate",
+		"google": "Syncopate:400,700",
 		"stack": "'Syncopate', sans-serif"
 	},
 	"Tajawal": {
-		"google": "Tajawal",
+		"google": "Tajawal:400,700",
 		"stack": "'Tajawal', sans-serif"
 	},
 	"Tangerine": {
-		"google": "Tangerine",
+		"google": "Tangerine:400,700",
 		"stack": "'Tangerine', cursive"
 	},
 	"Taprom": {
-		"google": "Taprom",
-		"stack": "'Taprom', sans-serif"
+		"google": "Taprom:400",
+		"stack": "'Taprom', cursive"
 	},
 	"Tauri": {
-		"google": "Tauri",
+		"google": "Tauri:400",
 		"stack": "'Tauri', sans-serif"
 	},
 	"Taviraj": {
-		"google": "Taviraj",
+		"google": "Taviraj:400,700",
 		"stack": "'Taviraj', serif"
 	},
 	"Teko": {
-		"google": "Teko",
+		"google": "Teko:400,700",
 		"stack": "'Teko', sans-serif"
 	},
 	"Telex": {
-		"google": "Telex",
+		"google": "Telex:400",
 		"stack": "'Telex', sans-serif"
 	},
 	"Tenali Ramakrishna": {
-		"google": "Tenali+Ramakrishna",
+		"google": "Tenali+Ramakrishna:400",
 		"stack": "'Tenali Ramakrishna', sans-serif"
 	},
 	"Tenor Sans": {
-		"google": "Tenor+Sans",
+		"google": "Tenor+Sans:400",
 		"stack": "'Tenor Sans', sans-serif"
 	},
 	"Text Me One": {
-		"google": "Text+Me+One",
+		"google": "Text+Me+One:400",
 		"stack": "'Text Me One', sans-serif"
 	},
 	"Thasadith": {
-		"google": "Thasadith",
+		"google": "Thasadith:400,700",
 		"stack": "'Thasadith', sans-serif"
 	},
 	"The Girl Next Door": {
-		"google": "The+Girl+Next+Door",
+		"google": "The+Girl+Next+Door:400",
 		"stack": "'The Girl Next Door', cursive"
 	},
 	"Tienne": {
-		"google": "Tienne",
+		"google": "Tienne:400,700",
 		"stack": "'Tienne', serif"
 	},
 	"Tillana": {
-		"google": "Tillana",
+		"google": "Tillana:400,700",
 		"stack": "'Tillana', cursive"
 	},
 	"Timmana": {
-		"google": "Timmana",
+		"google": "Timmana:400",
 		"stack": "'Timmana', sans-serif"
 	},
 	"Tinos": {
-		"google": "Tinos",
+		"google": "Tinos:400,700",
 		"stack": "'Tinos', serif"
 	},
 	"Titan One": {
-		"google": "Titan+One",
-		"stack": "'Titan One', sans-serif"
+		"google": "Titan+One:400",
+		"stack": "'Titan One', cursive"
 	},
 	"Titillium Web": {
-		"google": "Titillium+Web",
+		"google": "Titillium+Web:400,700",
 		"stack": "'Titillium Web', sans-serif"
 	},
 	"Tomorrow": {
-		"google": "Tomorrow",
+		"google": "Tomorrow:400,700",
 		"stack": "'Tomorrow', sans-serif"
 	},
 	"Trade Winds": {
-		"google": "Trade+Winds",
-		"stack": "'Trade Winds', sans-serif"
+		"google": "Trade+Winds:400",
+		"stack": "'Trade Winds', cursive"
 	},
 	"Trirong": {
-		"google": "Trirong",
+		"google": "Trirong:400,700",
 		"stack": "'Trirong', serif"
 	},
 	"Trocchi": {
-		"google": "Trocchi",
+		"google": "Trocchi:400",
 		"stack": "'Trocchi', serif"
 	},
 	"Trochut": {
-		"google": "Trochut",
-		"stack": "'Trochut', sans-serif"
+		"google": "Trochut:400,700",
+		"stack": "'Trochut', cursive"
 	},
 	"Trykker": {
-		"google": "Trykker",
+		"google": "Trykker:400",
 		"stack": "'Trykker', serif"
 	},
 	"Tulpen One": {
-		"google": "Tulpen+One",
-		"stack": "'Tulpen One', sans-serif"
+		"google": "Tulpen+One:400",
+		"stack": "'Tulpen One', cursive"
 	},
 	"Turret Road": {
-		"google": "Turret+Road",
-		"stack": "'Turret Road', sans-serif"
+		"google": "Turret+Road:400,700",
+		"stack": "'Turret Road', cursive"
 	},
 	"Ubuntu": {
-		"google": "Ubuntu",
+		"google": "Ubuntu:400,700",
 		"stack": "'Ubuntu', sans-serif"
 	},
 	"Ubuntu Condensed": {
-		"google": "Ubuntu+Condensed",
+		"google": "Ubuntu+Condensed:400",
 		"stack": "'Ubuntu Condensed', sans-serif"
 	},
 	"Ultra": {
-		"google": "Ultra",
+		"google": "Ultra:400",
 		"stack": "'Ultra', serif"
 	},
 	"Uncial Antiqua": {
-		"google": "Uncial+Antiqua",
-		"stack": "'Uncial Antiqua', sans-serif"
+		"google": "Uncial+Antiqua:400",
+		"stack": "'Uncial Antiqua', cursive"
 	},
 	"Underdog": {
-		"google": "Underdog",
-		"stack": "'Underdog', sans-serif"
+		"google": "Underdog:400",
+		"stack": "'Underdog', cursive"
 	},
 	"Unica One": {
-		"google": "Unica+One",
-		"stack": "'Unica One', sans-serif"
+		"google": "Unica+One:400",
+		"stack": "'Unica One', cursive"
 	},
 	"UnifrakturCook": {
-		"google": "UnifrakturCook",
-		"stack": "'UnifrakturCook', sans-serif"
+		"google": "UnifrakturCook:700",
+		"stack": "'UnifrakturCook', cursive"
 	},
 	"UnifrakturMaguntia": {
-		"google": "UnifrakturMaguntia",
-		"stack": "'UnifrakturMaguntia', sans-serif"
+		"google": "UnifrakturMaguntia:400",
+		"stack": "'UnifrakturMaguntia', cursive"
 	},
 	"Unkempt": {
-		"google": "Unkempt",
-		"stack": "'Unkempt', sans-serif"
+		"google": "Unkempt:400,700",
+		"stack": "'Unkempt', cursive"
 	},
 	"Unlock": {
-		"google": "Unlock",
-		"stack": "'Unlock', sans-serif"
+		"google": "Unlock:400",
+		"stack": "'Unlock', cursive"
 	},
 	"Unna": {
-		"google": "Unna",
+		"google": "Unna:400,700",
 		"stack": "'Unna', serif"
 	},
 	"Vampiro One": {
-		"google": "Vampiro+One",
-		"stack": "'Vampiro One', sans-serif"
+		"google": "Vampiro+One:400",
+		"stack": "'Vampiro One', cursive"
 	},
 	"Varela": {
-		"google": "Varela",
+		"google": "Varela:400",
 		"stack": "'Varela', sans-serif"
 	},
 	"Varela Round": {
-		"google": "Varela+Round",
+		"google": "Varela+Round:400",
 		"stack": "'Varela Round', sans-serif"
 	},
 	"Vast Shadow": {
-		"google": "Vast+Shadow",
-		"stack": "'Vast Shadow', sans-serif"
+		"google": "Vast+Shadow:400",
+		"stack": "'Vast Shadow', cursive"
 	},
 	"Vesper Libre": {
-		"google": "Vesper+Libre",
+		"google": "Vesper+Libre:400,700",
 		"stack": "'Vesper Libre', serif"
 	},
 	"Vibes": {
-		"google": "Vibes",
-		"stack": "'Vibes', sans-serif"
+		"google": "Vibes:400",
+		"stack": "'Vibes', cursive"
 	},
 	"Vibur": {
-		"google": "Vibur",
+		"google": "Vibur:400",
 		"stack": "'Vibur', cursive"
 	},
 	"Vidaloka": {
-		"google": "Vidaloka",
+		"google": "Vidaloka:400",
 		"stack": "'Vidaloka', serif"
 	},
 	"Viga": {
-		"google": "Viga",
+		"google": "Viga:400",
 		"stack": "'Viga', sans-serif"
 	},
 	"Voces": {
-		"google": "Voces",
-		"stack": "'Voces', sans-serif"
+		"google": "Voces:400",
+		"stack": "'Voces', cursive"
 	},
 	"Volkhov": {
-		"google": "Volkhov",
+		"google": "Volkhov:400,700",
 		"stack": "'Volkhov', serif"
 	},
 	"Vollkorn": {
-		"google": "Vollkorn",
+		"google": "Vollkorn:400,700",
 		"stack": "'Vollkorn', serif"
 	},
 	"Vollkorn SC": {
-		"google": "Vollkorn+SC",
+		"google": "Vollkorn+SC:400,700",
 		"stack": "'Vollkorn SC', serif"
 	},
 	"Voltaire": {
-		"google": "Voltaire",
+		"google": "Voltaire:400",
 		"stack": "'Voltaire', sans-serif"
 	},
 	"Waiting for the Sunrise": {
-		"google": "Waiting+for+the+Sunrise",
+		"google": "Waiting+for+the+Sunrise:400",
 		"stack": "'Waiting for the Sunrise', cursive"
 	},
 	"Wallpoet": {
-		"google": "Wallpoet",
-		"stack": "'Wallpoet', sans-serif"
+		"google": "Wallpoet:400",
+		"stack": "'Wallpoet', cursive"
 	},
 	"Walter Turncoat": {
-		"google": "Walter+Turncoat",
+		"google": "Walter+Turncoat:400",
 		"stack": "'Walter Turncoat', cursive"
 	},
 	"Warnes": {
-		"google": "Warnes",
-		"stack": "'Warnes', sans-serif"
+		"google": "Warnes:400",
+		"stack": "'Warnes', cursive"
 	},
 	"Wellfleet": {
-		"google": "Wellfleet",
-		"stack": "'Wellfleet', sans-serif"
+		"google": "Wellfleet:400",
+		"stack": "'Wellfleet', cursive"
 	},
 	"Wendy One": {
-		"google": "Wendy+One",
+		"google": "Wendy+One:400",
 		"stack": "'Wendy One', sans-serif"
 	},
 	"Wire One": {
-		"google": "Wire+One",
+		"google": "Wire+One:400",
 		"stack": "'Wire One', sans-serif"
 	},
 	"Work Sans": {
-		"google": "Work+Sans",
+		"google": "Work+Sans:400,700",
 		"stack": "'Work Sans', sans-serif"
 	},
 	"Yanone Kaffeesatz": {
-		"google": "Yanone+Kaffeesatz",
+		"google": "Yanone+Kaffeesatz:400,700",
 		"stack": "'Yanone Kaffeesatz', sans-serif"
 	},
 	"Yantramanav": {
-		"google": "Yantramanav",
+		"google": "Yantramanav:400,700",
 		"stack": "'Yantramanav', sans-serif"
 	},
 	"Yatra One": {
-		"google": "Yatra+One",
-		"stack": "'Yatra One', sans-serif"
+		"google": "Yatra+One:400",
+		"stack": "'Yatra One', cursive"
 	},
 	"Yellowtail": {
-		"google": "Yellowtail",
+		"google": "Yellowtail:400",
 		"stack": "'Yellowtail', cursive"
 	},
 	"Yeon Sung": {
-		"google": "Yeon+Sung",
-		"stack": "'Yeon Sung', sans-serif"
+		"google": "Yeon+Sung:400",
+		"stack": "'Yeon Sung', cursive"
 	},
 	"Yeseva One": {
-		"google": "Yeseva+One",
-		"stack": "'Yeseva One', sans-serif"
+		"google": "Yeseva+One:400",
+		"stack": "'Yeseva One', cursive"
 	},
 	"Yesteryear": {
-		"google": "Yesteryear",
+		"google": "Yesteryear:400",
 		"stack": "'Yesteryear', cursive"
 	},
 	"Yrsa": {
-		"google": "Yrsa",
+		"google": "Yrsa:400,700",
 		"stack": "'Yrsa', serif"
 	},
 	"ZCOOL KuaiLe": {
-		"google": "ZCOOL+KuaiLe",
-		"stack": "'ZCOOL KuaiLe', sans-serif"
+		"google": "ZCOOL+KuaiLe:400",
+		"stack": "'ZCOOL KuaiLe', cursive"
 	},
 	"ZCOOL QingKe HuangYou": {
-		"google": "ZCOOL+QingKe+HuangYou",
-		"stack": "'ZCOOL QingKe HuangYou', sans-serif"
+		"google": "ZCOOL+QingKe+HuangYou:400",
+		"stack": "'ZCOOL QingKe HuangYou', cursive"
 	},
 	"ZCOOL XiaoWei": {
-		"google": "ZCOOL+XiaoWei",
+		"google": "ZCOOL+XiaoWei:400",
 		"stack": "'ZCOOL XiaoWei', serif"
 	},
 	"Zeyada": {
-		"google": "Zeyada",
+		"google": "Zeyada:400",
 		"stack": "'Zeyada', cursive"
 	},
 	"Zhi Mang Xing": {
-		"google": "Zhi+Mang+Xing",
+		"google": "Zhi+Mang+Xing:400",
 		"stack": "'Zhi Mang Xing', cursive"
 	},
 	"Zilla Slab": {
-		"google": "Zilla+Slab",
+		"google": "Zilla+Slab:400,700",
 		"stack": "'Zilla Slab', serif"
 	},
 	"Zilla Slab Highlight": {
-		"google": "Zilla+Slab+Highlight",
-		"stack": "'Zilla Slab Highlight', sans-serif"
+		"google": "Zilla+Slab+Highlight:400,700",
+		"stack": "'Zilla Slab Highlight', cursive"
 	}
 }

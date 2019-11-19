@@ -1,86 +1,86 @@
 {
 	"Default": {
 		"google": "",
-		"stack": "SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace"
+		"stack": "sfmono-regular, menlo, monaco, consolas, \"Liberation Mono\", \"Courier New\", monospace"
 	},
 	"Anonymous Pro": {
-		"google": "Anonymous+Pro",
+		"google": "Anonymous+Pro:400,700",
 		"stack": "'Anonymous Pro', monospace"
 	},
 	"B612 Mono": {
-		"google": "B612+Mono",
+		"google": "B612+Mono:400,700",
 		"stack": "'B612 Mono', monospace"
 	},
 	"Cousine": {
-		"google": "Cousine",
+		"google": "Cousine:400,700",
 		"stack": "'Cousine', monospace"
 	},
 	"Cutive Mono": {
-		"google": "Cutive+Mono",
+		"google": "Cutive+Mono:400",
 		"stack": "'Cutive Mono', monospace"
 	},
 	"Fira Code": {
-		"google": "Fira+Code",
+		"google": "Fira+Code:400,700",
 		"stack": "'Fira Code', monospace"
 	},
 	"Fira Mono": {
-		"google": "Fira+Mono",
+		"google": "Fira+Mono:400,700",
 		"stack": "'Fira Mono', monospace"
 	},
 	"IBM Plex Mono": {
-		"google": "IBM+Plex+Mono",
+		"google": "IBM+Plex+Mono:400,700",
 		"stack": "'IBM Plex Mono', monospace"
 	},
 	"Inconsolata": {
-		"google": "Inconsolata",
+		"google": "Inconsolata:400,700",
 		"stack": "'Inconsolata', monospace"
 	},
 	"Major Mono Display": {
-		"google": "Major+Mono+Display",
+		"google": "Major+Mono+Display:400",
 		"stack": "'Major Mono Display', monospace"
 	},
 	"Nanum Gothic Coding": {
-		"google": "Nanum+Gothic+Coding",
+		"google": "Nanum+Gothic+Coding:400,700",
 		"stack": "'Nanum Gothic Coding', monospace"
 	},
 	"Nova Mono": {
-		"google": "Nova+Mono",
+		"google": "Nova+Mono:400",
 		"stack": "'Nova Mono', monospace"
 	},
 	"Overpass Mono": {
-		"google": "Overpass+Mono",
+		"google": "Overpass+Mono:400,700",
 		"stack": "'Overpass Mono', monospace"
 	},
 	"Oxygen Mono": {
-		"google": "Oxygen+Mono",
+		"google": "Oxygen+Mono:400",
 		"stack": "'Oxygen Mono', monospace"
 	},
 	"PT Mono": {
-		"google": "PT+Mono",
+		"google": "PT+Mono:400",
 		"stack": "'PT Mono', monospace"
 	},
 	"Roboto Mono": {
-		"google": "Roboto+Mono",
+		"google": "Roboto+Mono:400,700",
 		"stack": "'Roboto Mono', monospace"
 	},
 	"Share Tech Mono": {
-		"google": "Share+Tech+Mono",
+		"google": "Share+Tech+Mono:400",
 		"stack": "'Share Tech Mono', monospace"
 	},
 	"Source Code Pro": {
-		"google": "Source+Code+Pro",
+		"google": "Source+Code+Pro:400,700",
 		"stack": "'Source Code Pro', monospace"
 	},
 	"Space Mono": {
-		"google": "Space+Mono",
+		"google": "Space+Mono:400,700",
 		"stack": "'Space Mono', monospace"
 	},
 	"Ubuntu Mono": {
-		"google": "Ubuntu+Mono",
+		"google": "Ubuntu+Mono:400,700",
 		"stack": "'Ubuntu Mono', monospace"
 	},
 	"VT323": {
-		"google": "VT323",
+		"google": "VT323:400",
 		"stack": "'VT323', monospace"
 	}
 }
