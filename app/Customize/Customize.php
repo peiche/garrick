@@ -185,6 +185,11 @@ class Customize implements Bootable {
 			'transport' => 'refresh',
 		) );
 
+		$manager->add_setting( 'archive_hide_readmore', array(
+			'default'   => false,
+			'transport' => 'refresh',
+		) );
+
 		$manager->add_setting( 'font_primary', array(
 			'default'   => 'sans-serif',
 			'transport' => 'refresh',
@@ -306,6 +311,13 @@ class Customize implements Bootable {
 			'section'     => 'content',
 			'label'       => __( 'Hide excerpt', 'garrick' ),
 			'description' => __( 'Do not display the post excerpt.', 'garrick' ),
+		) );
+
+		$manager->add_control( 'archive_hide_readmore', array(
+			'type'        => 'checkbox',
+			'section'     => 'content',
+			'label'       => __( 'Hide Read More', 'garrick' ),
+			'description' => __( 'Do not display the Read More link.', 'garrick' ),
 		) );
 
 		$manager->add_control( 'archive_show_tags', array(
