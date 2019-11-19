@@ -159,11 +159,11 @@
 			display: none;
 		}
 
-		.menu__item:not(:first-child) {
+		.menu__item:not(:first-of-type) {
 			margin-left: var(--space-md);
 
 			&::before {
-				content: '\B7';
+				content: '\B7'; // bullet
 				position: absolute;
 				left: calc(-1 * var(--space-sm));
 			}
