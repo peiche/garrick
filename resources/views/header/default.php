@@ -9,7 +9,7 @@
 
 <div class="app">
 
-	<header id="app-header" class="app-header js-app-header flex flex-column justify-center has-margin@md margin-y-md padding-y-xxs">
+	<header id="app-header" class="app-header js-app-header flex flex-column justify-center has-margin@md margin-y-md padding-y-xxxxs">
 
 		<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'garrick' ) ?></a>
 
