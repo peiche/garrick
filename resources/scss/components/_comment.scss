@@ -54,6 +54,21 @@
 
 		a {
 			color: var(--color-contrast-high);
+			text-decoration: none;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	&__permalink,
+	&__edit,
+	&__reply {
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
 		}
 	}
 
