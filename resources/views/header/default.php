@@ -9,7 +9,7 @@
 
 <div class="app">
 
-	<header id="app-header" class="app-header js-app-header flex flex-column justify-center has-margin@md margin-y-md padding-y-xxxxs">
+	<header id="app-header" class="app-header js-app-header flex flex-column justify-center has-margin@md margin-y-md padding-y-xs">
 
 		<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'garrick' ) ?></a>
 
@@ -22,8 +22,8 @@
 					<?php Hybrid\Site\display_title( [ 'class' => 'app-header__title margin-y-auto' ] ) ?>
 
 					<?php if ( '' != Hybrid\Site\render_description() ) : ?>
-						<span class="display@md">
-							<span>&nbsp;<span class="sep">&middot;</span>&nbsp;</span>
+						<span class="display@md flex items-center">
+							<span class="margin-x-xxs"><?php echo \Garrick\sep() ?></span>
 							<?php Hybrid\Site\display_description( [ 'tag' => 'span' ] ) ?>
 						</span>
 					<?php endif ?>
