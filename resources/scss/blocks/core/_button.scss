@@ -24,7 +24,8 @@
 		white-space: normal;
 		color: var(--color-contrast-lower);
 		background-color: var(--color-contrast-high);
-		border-radius: 25em;
+		border-radius: var(--radius-pill);
+		text-decoration: none;
 
 		&:hover {
 			text-decoration: none;
