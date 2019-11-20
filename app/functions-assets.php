@@ -49,13 +49,13 @@ add_action( 'wp_enqueue_scripts', function() {
 	$font_mono    = get_theme_mod( 'font_mono', '' );
 
 	$fonts = array();
-	if ( '' != $font_primary ) :
+	if ( '|' != $font_primary ) :
 		$fonts[] = $font_primary;
 	endif;
-	if ( '' != $font_heading ) :
+	if ( '|' != $font_heading ) :
 		$fonts[] = $font_heading;
 	endif;
-	if ( '' != $font_mono ) :
+	if ( '|' != $font_mono ) :
 		$fonts[] = $font_mono;
 	endif;
 
