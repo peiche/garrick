@@ -1,7 +1,7 @@
 {
 	"Default": {
 		"google": "",
-		"stack": "sfmono-regular, menlo, monaco, consolas, \"Liberation Mono\", \"Courier New\", monospace"
+		"stack": ""
 	},
 	"Anonymous Pro": {
 		"google": "Anonymous+Pro:400,700",
