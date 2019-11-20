@@ -110,8 +110,8 @@ var sassConfig = {
 };
 
 // Compile SASS/CSS.
-mix.sass( `${devPath}/scss/screen.scss`,             'css', sassConfig )
-   .sass( `${devPath}/scss/editor.scss`,             'css', sassConfig )
+mix.sass( `${devPath}/scss/screen.scss`,    'css', sassConfig )
+   .sass( `${devPath}/scss/editor.scss`,    'css', sassConfig )
 	 .sass( `${devPath}/scss/customize.scss`, 'css', sassConfig );
 
 // Compile fallback CSS.
