@@ -17,6 +17,8 @@
 wp.customize( 'color_theme', value => {
 	value.bind( to => {
 		document.body.setAttribute( 'data-theme', to );
-		document.getElementById('theme-switch').checked = ( 'dark' === to ? true : false );
+		if ( document.getElementById('theme-switch') ) {
+			document.getElementById('theme-switch').checked = ( 'dark' === to ? true : false );
+		}
 	} );
 } );
