@@ -7,6 +7,7 @@
 ////
 
 @use '~codyhouse-framework/main/assets/css/base/breakpoints';
+@use '~codyhouse-framework/main/assets/css/base/mixins';
 
 .entry {
 	position: relative;
@@ -144,4 +145,37 @@
 	}
 
 	&__comments {}
+
+	// Categories and tags.
+	&__terms {
+
+		a {
+			@include mixins.reset; // reset button native style
+
+			text-decoration: none;
+			font-size: var(--text-sm);
+			padding: var(--space-xxxs) var(--space-xs);
+			border: 2px solid var(--color-contrast-low);
+			border-radius: var(--radius-pill);
+		}
+
+		&--category {
+
+			a {
+				background-color: var(--color-contrast-low);
+
+				&:hover {
+					background-color: var(--color-primary);
+					color: var(--color-white);
+				}
+			}
+		}
+
+		a:hover {
+			border-color: var(--color-primary);
+			text-decoration: none;
+		}
+
+		&--post_tag {}
+	}
 }
