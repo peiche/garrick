@@ -20,7 +20,7 @@
 
 			<?php if ( get_theme_mod( 'archive_show_tags', false ) && has_tag() ) : ?>
 				<div class="margin-top-xs">
-					<?php Hybrid\View\display( 'partials', 'post-tags' ) ?>
+					<?php Hybrid\View\display( 'partials', 'post-terms', [ 'taxonomy' => 'post_tag' ] ) ?>
 				</div>
 			<?php endif ?>
 
