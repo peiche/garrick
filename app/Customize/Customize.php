@@ -170,7 +170,7 @@ class Customize implements Bootable {
 			'transport' => 'refresh',
 		) );
 
-		$manager->add_setting( 'archive_image_aspect_ratio', array(
+		$manager->add_setting( 'featured_image_aspect_ratio', array(
 			'default'   => '',
 			'transport' => 'refresh',
 		) );
@@ -285,11 +285,11 @@ class Customize implements Bootable {
 			),
 		) );
 
-		$manager->add_control( 'archive_image_aspect_ratio', array(
+		$manager->add_control( 'featured_image_aspect_ratio', array(
 			'type'        => 'select',
 			'section'     => 'content',
 			'label'       => __( 'Featured Image Options', 'garrick' ),
-			'description' => __( 'Customize how images are displayed on blog and archive pages.', 'garrick' ),
+			'description' => __( 'Customize how featured images are displayed.', 'garrick' ),
 			'choices'     => array(
 				''                                  => 'Natural Size',
 				'media-wrapper media-wrapper--21:9' => 'Landscape (21:9)',

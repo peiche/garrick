@@ -35,12 +35,15 @@
 	?>
 
 	<?php if ( $show_image ) : ?>
-		<?php Hybrid\Carbon\Image::display( 'featured', [
-			'size' => 'full',
-			'class' => 'entry__image',
-			'before' => '<figure class="entry__featured ' . ( $cover_image ? '' : 'alignwide margin-y-md margin-x-auto' ) . '">',
-			'after' => '</figure>',
-		] ) ?>
+		<?php $image_aspect_ratio = get_theme_mod( 'featured_image_aspect_ratio', '' ); ?>
+		<div class="<?php echo $cover_image ? '' : 'alignwide margin-y-md margin-x-auto' ?>">
+			<?php Hybrid\Carbon\Image::display( 'featured', [
+				'size' => 'full',
+				'class' => 'entry__image',
+				'before' => '<figure class="entry__featured ' . $image_aspect_ratio . '">',
+				'after' => '</figure>',
+			] ) ?>
+		</div>
 	<?php endif; ?>
 
 </header>
