@@ -18,6 +18,11 @@
 	justify-content: center;
 	align-items: center;
 
+	// override `.aligncenter` class display property
+	&.aligncenter {
+		display: flex;
+	}
+
 	// Parallax images should have a fixed background so that the image
 	// stays in place while everything else scrolls.
 	&.has-parallax {
