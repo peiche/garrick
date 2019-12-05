@@ -227,7 +227,7 @@ class Customize implements Bootable {
 			'type'        => 'checkbox',
 			'section'     => 'header',
 			'label'       => __( 'Show Search', 'garrick' ),
-			'description' => __( 'Display the search overlay button in the header. The overlay also contains a widget area.', 'garrick' ),
+			'description' => __( 'Display the search button in the header.', 'garrick' ),
 		) );
 
 		$manager->add_control( 'color_theme', array(
