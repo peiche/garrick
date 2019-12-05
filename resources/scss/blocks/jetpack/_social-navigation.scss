@@ -1,0 +1,23 @@
+.jetpack-social-navigation {
+
+	.menu {
+		margin: 0;
+
+		&:not(:first-child) {
+			margin-left: var(--space-xxs);
+		}
+
+		&__link {
+			justify-content: center;
+			width: auto;
+			height: auto;
+		}
+	}
+
+	// double up the specificity to override jetpack.css
+	&.jetpack-social-navigation-svg .icon {
+		width: 1.5em;
+		height: 1.5em;
+		stroke: none;
+	}
+}

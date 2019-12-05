@@ -67,17 +67,10 @@
 		stroke: var(--color-black);
 	}
 
-	.jetpack-social-navigation &,
 	&-sun,
 	&-moon,
 	&-heart {
 		stroke: none; // remove for colored or filled icons
-	}
-
-	// double up the specificity to override jetpack.css
-	.jetpack-social-navigation.jetpack-social-navigation-svg & {
-		width: 1.5em;
-		height: 1.5em;
 	}
 
 	&-boldoakdesign {

@@ -23,10 +23,6 @@
 		@include breakpoints.breakpoint(md) {
 			align-self: center;
 		}
-
-		.jetpack-social-navigation &:not(:first-child) {
-			margin-left: var(--space-xxs);
-		}
 	}
 
 	&__link {
@@ -41,12 +37,6 @@
 
 		.btn > & {
 			color: inherit;
-		}
-
-		.jetpack-social-navigation & {
-			justify-content: center;
-			width: auto;
-			height: auto;
 		}
 	}
 
@@ -199,10 +189,6 @@
 				margin: 0;
 			}
 		}
-	}
-
-	.jetpack-social-navigation & {
-		margin: 0;
 	}
 }
 
