@@ -15,11 +15,14 @@
  */
 
 // Import required packages.
-const mix                = require( 'laravel-mix' );
-const ImageminPlugin     = require( 'imagemin-webpack-plugin' ).default;
-const CopyWebpackPlugin  = require( 'copy-webpack-plugin' );
-const imageminMozjpeg    = require( 'imagemin-mozjpeg' );
-const SVGSpritemapPlugin = require( 'svg-spritemap-webpack-plugin' );
+const mix                 = require( 'laravel-mix' );
+const ImageminPlugin      = require( 'imagemin-webpack-plugin' ).default;
+const CopyWebpackPlugin   = require( 'copy-webpack-plugin' );
+const imageminMozjpeg     = require( 'imagemin-mozjpeg' );
+const SVGSpritemapPlugin  = require( 'svg-spritemap-webpack-plugin' );
+const purgecss            = require( '@fullhuman/postcss-purgecss' );
+const purgecssWordpress   = require( 'purgecss-with-wordpress' );
+const purgecssWhitelister = require( 'purgecss-whitelister' );
 
 /*
  * -----------------------------------------------------------------------------
@@ -50,7 +53,7 @@ if ( process.env.export ) {
  * Sets the development path to assets. By default, this is the `/resources`
  * folder in the theme.
  */
-const devPath  = 'resources';
+const devPath = 'resources';
 
 /*
  * Sets the path to the generated assets. By default, this is the `/dist` folder
@@ -109,18 +112,66 @@ var sassConfig = {
 	indentWidth : 1
 };
 
-// Compile SASS/CSS.
-mix.sass( `${devPath}/scss/screen.scss`,    'css', sassConfig )
-   .sass( `${devPath}/scss/editor.scss`,    'css', sassConfig )
+// Compile admin styles using base config.
+mix.sass( `${devPath}/scss/editor.scss`,    'css', sassConfig )
 	 .sass( `${devPath}/scss/customize.scss`, 'css', sassConfig );
 
-// Compile fallback CSS.
-// Run this last so the options don't get used to build the default styles.
+// Compile user-facing styles with Purgecss to keep it small.
+mix.sass( `${devPath}/scss/screen.scss`, 'css', sassConfig, [
+	purgecss( {
+		content: [
+			'app/**/*.php',
+			'resources/js/**/*.js',
+			'resources/views/**/*.php',
+		],
+		whitelist: [
+			...purgecssWordpress.whitelist,
+			...purgecssWhitelister( [
+				'node_modules/codyhouse-framework/main/assets/css/base/_reset.scss',
+				'resources/scss/elements/*.scss',
+				'resources/scss/blocks/**/*.scss',
+			] ),
+			'ltr',
+			'error-404',
+			'customize-support',
+			'logged-out',
+			'single',
+			'plural',
+			'alignwide',
+			'alignfull',
+			'odd',
+			'even',
+			'emoji',
+		],
+		whitelistPatterns: [
+			...purgecssWordpress.whitelistPatterns,
+			/^taxonomy(-.*)?$/,
+			/^(.*)?-?app(-.*)?$/,
+			/^(.*)?-?menu(-.*)?$/,
+			/^(.*)?-?widget(-.*)?$/,
+			/^icon(-.*)?$/,
+			/^sidebar(-.*)?$/,
+			/^entry([_-].*)?$/,
+			/^menu([_-].*)?$/,
+			/^pagination([_-].*)?$/,
+			/^col(-.*)?$/,
+			/^has(-.*)?$/,
+			/^is(-.*)?$/,
+			/^wp(-.*)?$/,
+			/^columns(-.*)?$/,
+			/^blocks(-.*)?$/,
+		],
+		whitelistPatternsChildren: [],
+		defaultExtractor: content => content.match(/[A-z0-9-:@%\/]+/g) || [],
+	} ),
+] );
+
+// Compile fallback CSS replacing custom properties and calc().
 // @link https://github.com/JeffreyWay/laravel-mix/issues/2143#issuecomment-524368071
 mix.sass( `${devPath}/scss/screen-fallback.scss`, 'css', sassConfig, [
-	require( 'postcss-css-variables' )({
+	require( 'postcss-css-variables' )( {
 		preserve: false,
-	}),
+	} ),
 	require( 'postcss-calc' )(),
 ] );
 
