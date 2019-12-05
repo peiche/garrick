@@ -6,8 +6,8 @@
 /// @link   https://boldoak.design/themes/garrick
 ////
 
-@use '~codyhouse-framework/main/assets/css/base/mixins' as cf-mixins;
-@use '../tools/mixins';
+@use '~codyhouse-framework/main/assets/css/base/mixins';
+@use '../tools/extends';
 
 // Body styles. Note that we're hiding horizontal overflow so that wide images
 // don't overflow.
@@ -60,10 +60,10 @@ ol {
 }
 
 blockquote {
-	@include mixins.blockquote;
+	@extend %blockquote;
 
 	cite {
-		@include mixins.cite;
+		@extend %cite;
 	}
 }
 
@@ -80,42 +80,39 @@ blockquote {
 
 pre,
 code,
-kbd {
+kbd,
+tt,
+var {
 	font-family: var(--font-mono);
-	border-radius: var(--radius);
 	font-size: 0.9em;
 }
 
 code,
-kbd {
+kbd,
+tt,
+var {
 	border-radius: var(--radius);
+	background-color: hsla(var(--color-contrast-higher-h), var(--color-contrast-higher-s), var(--color-contrast-higher-l), 0.08);
+	padding: var(--space-xxxxs) var(--space-xxxs);
 }
 
 pre {
-	@include mixins.preformatted;
+	@extend %preformatted;
 }
 
-code {
-	background-color: hsla(var(--color-contrast-higher-h), var(--color-contrast-higher-s), var(--color-contrast-higher-l), 0.08);
-	padding: var(--space-xxxxs) var(--space-xxxs);
-
-	pre & {
-		background-color: transparent;
-		color: inherit;
-		font-size: 1em;
-		padding: 0;
-	}
+pre code {
+	background-color: transparent;
+	color: inherit;
+	font-size: 1em;
+	padding: 0;
 }
 
 kbd {
-	color: var(--color-contrast-high);
-	background-color: var(--color-contrast-low);
-	padding: var(--space-xxxxs) var(--space-xxxs);
-	box-shadow: 0 1px 0 1px var(--color-contrast-medium);
+	box-shadow: 0 -1px 0 1px var(--color-contrast-low) inset;
 }
 
 hr {
-	@include mixins.separator;
+	@extend %separator;
 }
 
 b,
@@ -129,6 +126,6 @@ em {
 }
 
 mark {
-	background-color: cf-mixins.alpha(var(--color-accent), 0.2);
+	background-color: mixins.alpha(var(--color-accent), 0.2);
 	color: inherit;
 }

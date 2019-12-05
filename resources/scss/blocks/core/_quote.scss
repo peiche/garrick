@@ -6,10 +6,10 @@
 /// @link   https://boldoak.design/themes/garrick
 ////
 
-@use '../../tools/mixins';
+@use '../../tools/extends';
 
 .wp-block-quote {
-	@include mixins.blockquote;
+	@extend %blockquote;
 
 	p {
 		margin-bottom: var(--space-sm);
@@ -17,7 +17,7 @@
 
 	cite,
 	.wp-block-quote__citation {
-		@include mixins.cite;
+		@extend %cite;
 	}
 
 	&.is-style-large {

@@ -7,7 +7,7 @@
 ////
 
 @use '~codyhouse-framework/main/assets/css/base/breakpoints';
-@use '../../tools/mixins';
+@use '../../tools/extends';
 
 // The wrapper element for the entire gallery.
 .wp-block-gallery {
@@ -63,7 +63,7 @@
 	}
 
 	figcaption {
-		@include mixins.caption;
+		@extend %caption;
 
 		position: absolute;
 		padding: var(--space-xxxs) var(--space-xs);
@@ -78,7 +78,7 @@
 }
 
 .blocks-gallery-caption {
-	@include mixins.caption;
+	@extend %caption;
 
 	flex-basis: 100%;
 }
