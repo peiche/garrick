@@ -8,7 +8,7 @@
 
 			<?php $archive_columns = get_theme_mod( 'archive_columns', 'stacked' ) ?>
 
-			<div class="container margin-y-lg max-width-<?php echo ( 1 < $archive_columns ? 'lg' : 'sm' ) ?>">
+			<div class="container margin-y-lg <?php echo ( 1 < $archive_columns ? 'max-width-lg' : 'max-width-sm' ) ?>">
 
 				<div class="entry__wrapper grid grid-gap-md">
 
