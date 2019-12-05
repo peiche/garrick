@@ -6,7 +6,6 @@
 /// @link   https://boldoak.design/themes/garrick
 ////
 
-@use '~codyhouse-framework/main/assets/css/base/breakpoints';
 @use '../../tools/extends';
 
 .wp-block-image {
@@ -25,22 +24,26 @@
 
 	.alignleft {
 
-		@include breakpoints.breakpoint(md) {
+		// Using `breakpoints.breakpoint()` breaks purgecss-whitelister
+		@media (min-width: 64rem) {
 			margin-left: -15%;
 		}
 
-		@include breakpoints.breakpoint(lg) {
+		// Using `breakpoints.breakpoint()` breaks purgecss-whitelister
+		@media (min-width: 80rem) {
 			margin-left: -30%;
 		}
 	}
 
 	.alignright {
 
-		@include breakpoints.breakpoint(md) {
+		// Using `breakpoints.breakpoint()` breaks purgecss-whitelister
+		@media (min-width: 64rem) {
 			margin-right: -15%;
 		}
 
-		@include breakpoints.breakpoint(lg) {
+		// Using `breakpoints.breakpoint()` breaks purgecss-whitelister
+		@media (min-width: 80rem) {
 			margin-right: -30%;
 		}
 	}
