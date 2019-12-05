@@ -210,6 +210,11 @@ class Customize implements Bootable {
 			'transport' => 'refresh',
 		) );
 
+		$manager->add_setting( 'hide_title_on_mobile', array(
+			'default'   => false,
+			'transport' => 'refresh',
+		) );
+
 	}
 
 	/**
@@ -222,6 +227,13 @@ class Customize implements Bootable {
 	 * @return void
 	 */
 	public function registerControls( WP_Customize_Manager $manager ) {
+
+		$manager->add_control( 'hide_title_on_mobile', array(
+			'type' => 'checkbox',
+			'section' => 'title_tagline',
+			'label' => __( 'Hide Title on Mobile', 'garrick' ),
+			'description' => __( 'Do not show the title on small screens.', 'garrick' ),
+		) );
 
 		$manager->add_control( 'show_header_search', array(
 			'type'        => 'checkbox',

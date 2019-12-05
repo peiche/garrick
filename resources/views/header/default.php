@@ -18,8 +18,15 @@
 
 				<?php the_custom_logo() ?>
 
+				<?php
+					$title_class = 'app-header__title margin-y-auto';
+					$hide_title_on_mobile = get_theme_mod( 'hide_title_on_mobile', false );
+					if ( $hide_title_on_mobile ) :
+						$title_class = $title_class . ' display@md';
+					endif;
+				?>
 				<?php if ( display_header_text() ) : ?>
-					<?php Hybrid\Site\display_title( [ 'class' => 'app-header__title margin-y-auto' ] ) ?>
+					<?php Hybrid\Site\display_title( [ 'class' => $title_class ] ) ?>
 
 					<?php if ( '' != Hybrid\Site\render_description() ) : ?>
 						<span class="display@md flex items-center">
