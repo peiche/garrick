@@ -44,6 +44,7 @@
 		margin-bottom: var(--space-md);
 		width: 100%;
 		padding-right: var(--space-sm);
+		flex-grow: 1;
 
 		@include breakpoints.breakpoint(xs) {
 			width: calc(100% / 2);
