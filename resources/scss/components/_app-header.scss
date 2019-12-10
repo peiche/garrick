@@ -13,6 +13,13 @@
 .app-header {
 	position: relative;
 	z-index: var(--zindex-header);
+	padding-top: var(--space-xs);
+	padding-bottom: var(--space-xs);
+
+	@include breakpoints.breakpoint(md) {
+		padding-top: var(--space-md);
+		padding-bottom: var(--space-md);
+	}
 
 	// Wrapper around the title and description.
 	&__branding {
@@ -41,33 +48,14 @@
 
 	&__layout {}
 
-	.post-template-hero-header &,
-	.page-template-hero-header {
-
-		.app-header__branding,
-		.app-header__nav {
-			--color-contrast-lower: hsl(240, 6%, 19%);
-			--color-contrast-low: hsl(240, 3%, 27%);
-			--color-contrast-medium: hsl(240, 1%, 57%);
-			--color-contrast-high: hsl(0, 0%, 89%);
-			--color-contrast-higher: hsl(0, 0%, 100%);
-			color: var(--color-contrast-high); // Fixes icon color
-		}
-
-		.menu__sub-menu {
-			--color-contrast-lower: hsl(0, 0%, 95%);
-			--color-contrast-low: hsl(240, 1%, 83%);
-			--color-contrast-medium: hsl(240, 1%, 48%);
-			--color-contrast-high: hsl(240, 4%, 20%);
-			--color-contrast-higher: hsl(240, 8%, 12%);
-		}
+	[class*="-template-hero-header"] & {
+		background-color: var(--color-bg);
 	}
 
-	.post-template-hero-header &,
-	.page-template-hero-header &,
-	.post-template-cover-header &,
-	.page-template-cover-header & {
+	[class*="-template-hero-header"] &,
+	[class*="-template-cover-header"] & {
 		position: absolute;
+		top: 0;
 		width: 100%;
 	}
 
