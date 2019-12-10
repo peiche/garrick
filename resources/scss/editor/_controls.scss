@@ -25,3 +25,18 @@
 .block-editor-block-list__insertion-point-inserter {
 	--display: flex;
 }
+
+.components-responsive-wrapper .components-responsive-wrapper__content {
+	width: 100%;
+}
+
+svg.dashicon.components-checkbox-control__checked {
+
+	@media (min-width: 600px) {
+		left: -1px;
+	}
+}
+
+.wp-admin select {
+	padding-right: 25px;
+}
