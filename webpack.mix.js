@@ -166,6 +166,8 @@ mix.sass( `${devPath}/scss/screen.scss`, 'css', sassConfig, [
 			/^max-width(-.*)?$/,
 			/^text(-.*)?$/,
 			/^color(-.*)?$/,
+			/^border(-.*)?$/,
+			/^bg(-.*)?$/,
 		],
 		whitelistPatternsChildren: [],
 		defaultExtractor: content => content.match(/[A-z0-9-:@%\/]+/g) || [],
