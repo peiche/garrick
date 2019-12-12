@@ -6,6 +6,8 @@
 /// @link   https://boldoak.design/themes/garrick
 ////
 
+@use '../../tools/extends';
+
 .wp-block-table {
 
 	&.has-fixed-layout {
@@ -78,5 +80,9 @@
 		&.has-subtle-pale-pink-background-color tr:nth-child(odd) {
 			background-color: hsla(var(--color-error-h), var(--color-error-s), var(--color-error-l), 0.1);
 		}
+	}
+
+	figcaption {
+		@extend %caption;
 	}
 }
