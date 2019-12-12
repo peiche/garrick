@@ -116,7 +116,7 @@ var sassConfig = {
 mix.sass( `${devPath}/scss/editor.scss`,    'css', sassConfig )
 	 .sass( `${devPath}/scss/customize.scss`, 'css', sassConfig );
 
-// Compile user-facing styles with Purgecss to keep it small.
+// Compile user-facing styles with Purgecss.
 mix.sass( `${devPath}/scss/screen.scss`, 'css', sassConfig, [
 	purgecss( {
 		content: [
@@ -154,12 +154,18 @@ mix.sass( `${devPath}/scss/screen.scss`, 'css', sassConfig, [
 			/^entry([_-].*)?$/,
 			/^menu([_-].*)?$/,
 			/^pagination([_-].*)?$/,
+			/^grid(-.*)?$/,
 			/^col(-.*)?$/,
 			/^has(-.*)?$/,
 			/^is(-.*)?$/,
 			/^wp(-.*)?$/,
 			/^columns(-.*)?$/,
 			/^blocks(-.*)?$/,
+			/^margin(-.*)?$/,
+			/^padding(-.*)?$/,
+			/^max-width(-.*)?$/,
+			/^text(-.*)?$/,
+			/^color(-.*)?$/,
 		],
 		whitelistPatternsChildren: [],
 		defaultExtractor: content => content.match(/[A-z0-9-:@%\/]+/g) || [],
