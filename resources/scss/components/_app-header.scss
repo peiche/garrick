@@ -13,13 +13,6 @@
 .app-header {
 	position: relative;
 	z-index: var(--zindex-header);
-	padding-top: var(--space-xs);
-	padding-bottom: var(--space-xs);
-
-	@include breakpoints.breakpoint(md) {
-		padding-top: var(--space-md);
-		padding-bottom: var(--space-md);
-	}
 
 	// Wrapper around the title and description.
 	&__branding {
@@ -44,9 +37,17 @@
 	}
 
 	// Navigation wrapper.
-	&__nav {}
+	&__layout {
+		padding-top: var(--space-xs);
+		padding-bottom: var(--space-xs);
 
-	&__layout {}
+		@include breakpoints.breakpoint(md) {
+			padding-top: var(--space-md);
+			padding-bottom: var(--space-md);
+		}
+	}
+
+	&__nav {}
 
 	[class*="-template-hero-header"] & {
 		background-color: var(--color-bg);
@@ -130,7 +131,9 @@
 		top: 0;
 		left: 0;
 		right: 0;
-		height: 100%;
+		margin: auto;
+		bottom: 0;
+		height: 3.25em;
 
 		.search-input {
 			position: static;
