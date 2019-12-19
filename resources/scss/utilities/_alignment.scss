@@ -58,6 +58,13 @@
 	margin-right: calc( -100vw / 2 + 100% / 2);
 	width: auto;
 	max-width: 100vw;
+
+	// prevent content from going too wide in nested blocks
+	.alignfull,
+	.alignwide {
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 @include breakpoints.breakpoint(md) {
@@ -67,6 +74,12 @@
 	.alignwide:not(.alignfull) {
 		max-width: calc(100% + 2 * var(--space-xxl));
 		margin-left: calc(-1 * var(--space-xxl));
+
+		// check for nesting
+		.alignwide:not(.alignfull) {
+			max-width: calc(100% + var(--space-xxl));
+			margin-left: auto;
+		}
 	}
 }
 
