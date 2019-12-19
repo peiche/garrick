@@ -23,6 +23,8 @@ const SVGSpritemapPlugin  = require( 'svg-spritemap-webpack-plugin' );
 const purgecss            = require( '@fullhuman/postcss-purgecss' );
 const purgecssWordpress   = require( 'purgecss-with-wordpress' );
 const purgecssWhitelister = require( 'purgecss-whitelister' );
+const postcssVariables    = require( 'postcss-css-variables' );
+const postcssCalc         = require( 'postcss-calc' );
 
 /*
  * -----------------------------------------------------------------------------
@@ -116,63 +118,67 @@ var sassConfig = {
 mix.sass( `${devPath}/scss/editor.scss`,    'css', sassConfig )
 	 .sass( `${devPath}/scss/customize.scss`, 'css', sassConfig );
 
+let purgecssConfig = purgecss( {
+	content: [
+		'app/**/*.php',
+		'resources/js/**/*.js',
+		'resources/views/**/*.php',
+		'../eichefam/resources/views/**/*.php',
+	],
+	whitelist: [
+		...purgecssWordpress.whitelist,
+		...purgecssWhitelister( [
+			'node_modules/codyhouse-framework/main/assets/css/base/_reset.scss',
+			'resources/scss/elements/*.scss',
+			'resources/scss/blocks/**/*.scss',
+		] ),
+		'ltr',
+		'error-404',
+		'customize-support',
+		'logged-out',
+		'single',
+		'plural',
+		'alignwide',
+		'alignfull',
+		'odd',
+		'even',
+		'emoji',
+	],
+	whitelistPatterns: [
+		...purgecssWordpress.whitelistPatterns,
+		/^taxonomy(-.*)?$/,
+		/^(.*)?-?app(-.*)?$/,
+		/^(.*)?-?menu(-.*)?$/,
+		/^(.*)?-?widget(-.*)?$/,
+		/^icon(-.*)?$/,
+		/^sidebar(-.*)?$/,
+		/^entry([_-].*)?$/,
+		/^menu([_-].*)?$/,
+		/^pagination([_-].*)?$/,
+		/^col(-.*)?$/,
+		/^has(-.*)?$/,
+		/^is(-.*)?$/,
+		/^wp(-.*)?$/,
+		/^columns(-.*)?$/,
+		/^blocks(-.*)?$/,
+	],
+	whitelistPatternsChildren: [],
+	defaultExtractor: content => content.match(/[A-z0-9-:@%\/]+/g) || [],
+} );
+
 // Compile user-facing styles with Purgecss.
 mix.sass( `${devPath}/scss/screen.scss`, 'css', sassConfig, [
-	purgecss( {
-		content: [
-			'app/**/*.php',
-			'resources/js/**/*.js',
-			'resources/views/**/*.php',
-		],
-		whitelist: [
-			...purgecssWordpress.whitelist,
-			...purgecssWhitelister( [
-				'node_modules/codyhouse-framework/main/assets/css/base/_reset.scss',
-				'resources/scss/elements/*.scss',
-				'resources/scss/blocks/**/*.scss',
-			] ),
-			'ltr',
-			'error-404',
-			'customize-support',
-			'logged-out',
-			'single',
-			'plural',
-			'alignwide',
-			'alignfull',
-			'odd',
-			'even',
-			'emoji',
-		],
-		whitelistPatterns: [
-			...purgecssWordpress.whitelistPatterns,
-			/^taxonomy(-.*)?$/,
-			/^(.*)?-?app(-.*)?$/,
-			/^(.*)?-?menu(-.*)?$/,
-			/^(.*)?-?widget(-.*)?$/,
-			/^icon(-.*)?$/,
-			/^sidebar(-.*)?$/,
-			/^entry([_-].*)?$/,
-			/^menu([_-].*)?$/,
-			/^pagination([_-].*)?$/,
-			/^col(-.*)?$/,
-			/^has(-.*)?$/,
-			/^is(-.*)?$/,
-			/^wp(-.*)?$/,
-			/^columns(-.*)?$/,
-			/^blocks(-.*)?$/,
-		],
-		whitelistPatternsChildren: [],
-		defaultExtractor: content => content.match(/[A-z0-9-:@%\/]+/g) || [],
-	} ),
+	purgecssConfig,
 ] );
 
 // Compile fallback CSS replacing custom properties and calc().
 // @link https://github.com/JeffreyWay/laravel-mix/issues/2143#issuecomment-524368071
 mix.sass( `${devPath}/scss/screen-fallback.scss`, 'css', sassConfig, [
-	require( 'postcss-css-variables' )( {
+	postcssVariables( {
 		preserve: false,
 	} ),
-	require( 'postcss-calc' )(),
+	postcssCalc(),
+	purgecssConfig,
 ] );
 
 /*
@@ -232,19 +238,21 @@ mix.webpackConfig( {
 			output: {
 				filename: 'img/icons.svg',
 				svg: {
-					sizes: false
+					sizes: false,
 				},
 				chunk: {
-					keep: true
-				}
+					// mix.version() requires the chunk to exist
+					// @link https://github.com/cascornelissen/svg-spritemap-webpack-plugin/issues/88
+					keep: true,
+				},
 			},
 			sprite: {
 				prefix: 'icon-',
 				idify: (filename) => filename.replace(/[\s]+/g, '-'),
 				generate: {
-					title: false
-				}
-			}
+					title: false,
+				},
+			},
 		}),
 	]
 } );
