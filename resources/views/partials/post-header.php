@@ -1,6 +1,6 @@
 <?php
 	$cover_image = false;
-	if ( array_key_exists( 'cover_image', $data) && $data->cover_image ) :
+	if ( array_key_exists( 'cover_image', $data ) && $data->cover_image ) :
 		$cover_image = true;
 	endif;
 ?>
@@ -36,24 +36,13 @@
 
 	<?php if ( $show_image ) : ?>
 		<?php $image_aspect_ratio = get_theme_mod( 'featured_image_aspect_ratio', '' ); ?>
-
-		<?php if ( ! $cover_image ) : ?>
-			<div class="alignwide margin-y-md margin-x-auto">
-				<?php Hybrid\Carbon\Image::display( 'featured', [
-					'size' => 'full',
-					'class' => 'entry__image',
-					'before' => '<figure class="entry__featured ' . $image_aspect_ratio . '">',
-					'after' => '</figure>',
-				] ) ?>
-			</div>
-		<?php else : ?>
-			<?php Hybrid\Carbon\Image::display( 'featured', [
-				'size' => 'full',
-				'class' => 'entry__image',
-				'before' => '<figure class="entry__featured ' . $image_aspect_ratio . '">',
-				'after' => '</figure>',
-			] ) ?>
-		<?php endif ?>
+		<?php Hybrid\Carbon\Image::display( 'featured', [
+			'size' => 'full',
+			'class' => 'entry__image',
+			'before' => ( ! $cover_image ? '<div class="alignwide margin-y-md margin-x-auto">' : '' ) .
+					'<figure class="entry__featured ' . $image_aspect_ratio . ' bg-contrast-lower">',
+			'after' => '</figure>' . ( $cover_image ? '</div>' : '' ),
+		] ) ?>
 	<?php endif; ?>
 
 </header>
