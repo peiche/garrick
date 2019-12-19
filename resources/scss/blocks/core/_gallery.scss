@@ -15,7 +15,8 @@
 	flex-wrap: wrap;
 	list-style-type: none;
 	padding: 0;
-	margin: var(--component-padding) -8px;
+	margin-top: var(--component-padding);
+	margin-bottom: var(--component-padding);
 }
 
 // The wrapper for gallery images.
@@ -66,8 +67,9 @@
 		@extend %caption;
 
 		position: absolute;
-		padding: var(--space-xxxs) var(--space-xs);
-		background-color: hsla(var(--color-bg-h), var(--color-bg-s), var(--color-bg-l), 0.75);
+		padding: var(--space-xl) var(--space-md) var(--space-sm);
+		background-image: linear-gradient(to top, hsla(var(--color-black-h), var(--color-black-s), var(--color-black-l), 0.9), 75%, hsla(var(--color-black-h), var(--color-black-s), var(--color-black-l), 0));
+		color: var(--color-white);
 		bottom: 0;
 		width: 100%;
 

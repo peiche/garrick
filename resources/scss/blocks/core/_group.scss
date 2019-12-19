@@ -8,6 +8,8 @@
 
 @use '~codyhouse-framework/main/assets/css/base/breakpoints';
 
+// width: calc(100% - var(--component-padding));
+
 .wp-block-group {
 	margin-bottom: var(--component-padding);
 	padding-left: var(--component-padding);
@@ -26,9 +28,10 @@
 		padding: var(--component-padding);
 	}
 
-	> * {
+	&__inner-container {
 		margin-left: auto;
 		margin-right: auto;
 		max-width: var(--max-width-sm);
+		width: calc(100% - var(--component-padding));
 	}
 }
