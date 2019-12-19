@@ -49,21 +49,10 @@
 
 	&__nav {}
 
-	[class*="-template-hero-header"] & {
-		background-color: var(--color-bg);
-	}
-
-	[class*="-template-hero-header"] &,
 	[class*="-template-cover-header"] & {
 		position: absolute;
 		top: 0;
 		width: 100%;
-	}
-
-	// Logo link. Output from the `custom-logo` feature.
-	&__logo-link {
-		display: block;
-		height: inherit;
 	}
 
 	// Logo image. Output from the `custom-logo` feature.
@@ -72,6 +61,12 @@
 		max-height: 100%;
 		width: auto;
 		height: 2.5em;
+
+		// Logo link. Output from the `custom-logo` feature.
+		&-link {
+			display: block;
+			height: inherit;
+		}
 	}
 
 	// The site title.
