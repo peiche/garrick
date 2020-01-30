@@ -21,8 +21,6 @@ namespace Garrick;
 
 use Marando\Color\Color;
 
-// $blah =  new Marando/Color/Color;
-
 /**
  * Set up theme support.  This is where calls to `add_theme_support()` happen.
  *
@@ -132,6 +130,16 @@ add_action( 'after_setup_theme', function() {
 			'name'  => __( 'Lower Contrast', 'garrick' ),
 			'slug'  => 'lower-contrast',
 			'color' => '#f2f2f2',
+		],
+		[
+			'name'  => __( 'Black', 'garrick' ),
+			'slug'  => 'black',
+			'color' => '#000',
+		],
+		[
+			'name'  => __( 'White', 'garrick' ),
+			'slug'  => 'white',
+			'color' => '#fff',
 		],
 
 	] );
@@ -404,19 +412,6 @@ add_filter( 'body_class', function( $classes ) {
 } );
 
 /**
- * Add lazy loading attribute to every image in the_content.
- *
- * @link https://web.dev/native-lazy-loading
- * @link https://developer.wordpress.org/reference/hooks/the_content/
- * @since 1.0.0
- * @access public
- * @return $content
- */
-// add_filter( 'the_content', function( $content ) {
-// 	return preg_replace( '/src="/', 'loading="lazy" src="', $content );
-// } );
-
-/**
  * Add in custom properties (CSS variables) from Customizer.
  *
  * @link https://developer.wordpress.org/reference/hooks/wp_head/
@@ -449,7 +444,7 @@ add_action( 'wp_head', function() {
 		<?php if ( '' != $font_heading ) : ?>
 		--font-heading: <?php echo $font_heading // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped ?>;
 		<?php endif ?>
-		
+
 		<?php if ( '' != $font_mono ) : ?>
 		--font-mono: <?php echo $font_mono // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped ?>;
 		<?php endif ?>
