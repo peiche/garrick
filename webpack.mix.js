@@ -114,16 +114,12 @@ var sassConfig = {
 	indentWidth : 1
 };
 
-// Compile admin styles using base config.
-mix.sass( `${devPath}/scss/editor.scss`,    'css', sassConfig )
-	 .sass( `${devPath}/scss/customize.scss`, 'css', sassConfig );
-
 let purgecssConfig = purgecss( {
 	content: [
 		'app/**/*.php',
 		'resources/js/**/*.js',
 		'resources/views/**/*.php',
-		'../eichefam/resources/views/**/*.php',
+		// '../eichefam/resources/views/**/*.php',
 	],
 	whitelist: [
 		...purgecssWordpress.whitelist,
