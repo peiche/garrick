@@ -55,6 +55,7 @@ add_action( 'after_setup_theme', function() {
 
 	// Wide and full alignment. The styles for alignment is housed in the
 	// `resources/scss/utilities/_alignment.scss` file.
+	// @link https://developer.wordpress.org/block-editor/developers/themes/theme-support/#wide-alignment
 	add_theme_support( 'align-wide' );
 
 	// Outputs HTML5 markup for core features.
@@ -201,23 +202,7 @@ add_action( 'after_setup_theme', function() {
  * @access public
  * @return void
  */
-add_action( 'after_setup_theme', function() {
-
-	// add_theme_support( 'custom-background', [
-	// 	'default-image'          => '',
-	// 	'default-preset'         => 'default',
-	// 	'default-position-x'     => 'left',
-	// 	'default-position-y'     => 'top',
-	// 	'default-size'           => 'auto',
-	// 	'default-repeat'         => 'repeat',
-	// 	'default-attachment'     => 'scroll',
-	// 	'default-color'          => '',
-	// 	'wp-head-callback'       => '_custom_background_cb',
-	// 	'admin-head-callback'    => '',
-	// 	'admin-preview-callback' => '',
-	// ] );
-
-}, 15 );
+add_action( 'after_setup_theme', function() {}, 15 );
 
 /**
  * Adds support for the custom header feature. This is in its own function
@@ -233,20 +218,7 @@ add_action( 'after_setup_theme', function() {
 add_action( 'after_setup_theme', function() {
 
 	add_theme_support( 'custom-header', [
-	// 	'default-image'          => '',
-	// 	'random-default'         => false,
-	// 	'width'                  => 1600,
-	// 	'height'                 => 500,
-	// 	'flex-height'            => true,
-	// 	'flex-width'             => true,
-	// 	'default-text-color'     => '',
 		'header-text'            => true,
-	// 	'uploads'                => true,
-	// 	'wp-head-callback'       => '',
-	// 	'admin-head-callback'    => '',
-	// 	'admin-preview-callback' => '',
-	// 	'video'                  => true,
-	// 	'video-active-callback'  => 'is_front_page'
 	] );
 
 }, 15 );
