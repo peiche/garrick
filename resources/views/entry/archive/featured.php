@@ -1,5 +1,5 @@
-<article <?php Hybrid\Attr\display( 'entry ' ) ?>>
-	<div class="grid grid-gap-md">
+<article <?php Hybrid\Attr\display( 'entry col-12 text-sm' ) ?>>
+	<div class="grid grid-gap-md text-md">
 		<div class="col-12 col-6@md flex items-center">
 			<div class="width-100%">
 
