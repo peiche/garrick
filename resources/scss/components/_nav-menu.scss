@@ -195,21 +195,32 @@
 .menu-toggle {
 
 	.menu-toggle__icon {
-		transition: transform 200ms;
+		transition: all 200ms; // transform
+		opacity: 1;
+		visibility: visible;
+
+		+ .menu-toggle__icon {
+			position: absolute;
+		}
 	}
 
 	.menu-toggle__icon--on {
-		display: none;
+		visibility: hidden;
+		opacity: 0;
 	}
 
 	&[aria-expanded="true"] {
 
 		.menu-toggle__icon--off {
-			display: none;
+			visibility: hidden;
+			opacity: 0;
+			transform: rotate(90deg);
 		}
 
 		.menu-toggle__icon--on {
-			display: block;
+			visibility: visible;
+			opacity: 1;
+			transform: rotate(90deg);
 		}
 	}
 }
