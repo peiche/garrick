@@ -12,9 +12,17 @@
 
 				<div class="entry__wrapper grid grid-gap-md">
 
-					<?php while ( have_posts() ) : the_post(); ?>
-						<?php Hybrid\View\display( 'entry/archive', Hybrid\Post\hierarchy(), [ 'grid_class' => ( 1 < $archive_columns ? 'col-12 col-' . ( 12 / $archive_columns ) . '@md' : 'col-12' ) ] ) ?>
-					<?php endwhile ?>
+					<?php
+						$i = 0;
+						while ( have_posts() ) : the_post();
+							if ( 0 == $i ) :
+								Hybrid\View\display( 'entry/archive', 'featured' );
+							else :
+								Hybrid\View\display( 'entry/archive', Hybrid\Post\hierarchy(), [ 'grid_class' => ( 1 < $archive_columns ? 'col-12 col-' . ( 12 / $archive_columns ) . '@md' : 'col-12' ) ] );
+							endif;
+							$i++;
+						endwhile;
+					?>
 
 				</div>
 

@@ -1,4 +1,4 @@
-<?php if ( ! get_theme_mod( 'archive_hide_excerpt', false ) ) : ?>
+<?php if ( ! get_theme_mod( 'archive_hide_excerpt', false ) || ( isset( $data->featured ) && $data->featured ) ) : ?>
 	<div class="entry__summary margin-y-sm">
 		<?php the_excerpt() ?>
 
