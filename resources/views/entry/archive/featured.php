@@ -1,16 +1,32 @@
+<?php
+	$show_image = false;
+	if ( has_post_thumbnail() || ( get_theme_mod( 'archive_image_placeholder', false ) && '' != get_theme_mod( 'featured_image_aspect_ratio', '' ) ) ) :
+		$show_image = true;
+	endif;
+?>
+
 <article <?php Hybrid\Attr\display( 'entry col-12 text-sm' ) ?>>
 	<div class="grid grid-gap-md text-md">
-		<div class="col-12 col-6@md flex items-center">
-			<div class="width-100%">
 
-				<?php Hybrid\View\display( 'partials', 'archive-image' ) ?>
+		<?php if ( $show_image ) : ?>
 
+			<div class="col-12 col-6@md flex items-center">
+				<div class="width-100%">
+
+					<?php Hybrid\View\display( 'partials', 'archive-image' ) ?>
+
+				</div>
 			</div>
-		</div>
-		<div class="col-12 col-6@md flex items-center">
+
+		<?php endif ?>
+
+		<div class="col-12<?php echo ( $show_image ? ' col-6@md' : ' ' ) ?> flex items-center">
 			<div>
 
 				<header class="entry__header">
+					<div class="margin-bottom-xxxxs">
+						<span class="badge badge--primary"><?php esc_html_e( 'Latest', 'garrick' ) ?></span>
+					</div>
 					<?php Hybrid\Post\display_title( [ 'class' => 'entry__title margin-top-auto' ] ) ?>
 				</header>
 
