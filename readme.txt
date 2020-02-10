@@ -1,9 +1,9 @@
-=== Mythic ===
+=== Garrick ===
 
-Contributors: greenshady
+Contributors: Paul Eiche
 Tags:
 Requires at least: 4.9
-Tested up to: 5.0
+Tested up to: 5.2
 Requires PHP: 5.6
 Stable tag: 1.0.0
 License: GNU General Public License v2.0 or later
