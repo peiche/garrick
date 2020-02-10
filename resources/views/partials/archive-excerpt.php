@@ -3,7 +3,7 @@
 		<?php the_excerpt() ?>
 
 		<?php if ( ! get_theme_mod( 'archive_hide_readmore', false ) ) : ?>
-			<a href="<?php echo esc_url( get_permalink() ) ?>" class="btn btn--primary">
+			<a href="<?php echo esc_url( get_permalink() ) ?>" class="btn btn--subtle btn--sm">
 				<?php echo esc_html__( 'Read More', 'garrick' ) ?>
 				<?php echo \Garrick\get_svg( [ 'icon' => 'arrow-right', 'class' => 'margin-left-xxs' ] ) ?>
 			</a>
