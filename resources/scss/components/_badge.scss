@@ -1,0 +1,71 @@
+/* --------------------------------
+
+File#: _1_badge
+Title: Badge
+Descr: A small label containing a text string
+Usage: codyhouse.co/license
+
+-------------------------------- */
+
+@use '~codyhouse-framework/main/assets/css/base/mixins';
+
+.badge {
+  @include mixins.reset; // reset button native style
+  display: inline-flex;
+  align-items: center;
+  font-size: var(--text-sm);
+  background-color: var(--color-contrast-low);
+  padding: var(--space-xxxxs) var(--space-xxs);
+  border-radius: var(--radius-md);
+  @include mixins.fontSmooth;
+}
+
+.badge--outline {
+  background-color: transparent;
+  border: 1px solid mixins.alpha(var(--color-contrast-higher), 0.25);
+}
+
+.badge--contrast-higher {
+  background-color: var(--color-contrast-higher);
+  color: var(--color-bg);
+}
+
+.badge--primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.badge--primary-light {
+  background-color: mixins.alpha(var(--color-primary), 0.2);
+  color: var(--color-contrast-higher);
+}
+
+.badge--accent {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+}
+
+.badge--accent-light {
+  background-color: mixins.alpha(var(--color-accent), 0.2);
+  color: var(--color-contrast-higher);
+}
+
+.badge--error {
+  background-color: var(--color-error);
+  color: var(--color-white);
+}
+
+.badge--error-light {
+  background-color: mixins.alpha(var(--color-error), 0.2);
+  color: var(--color-contrast-higher);
+}
+
+.badge--success {
+  background-color: var(--color-success);
+  color: var(--color-white);
+}
+
+.badge--success-light {
+  background-color: mixins.alpha(var(--color-success), 0.2);
+  color: var(--color-contrast-higher);
+}
