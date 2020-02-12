@@ -189,6 +189,14 @@ add_action( 'after_setup_theme', function() {
 	// Add support for Jetpack SVG icons instead of the icon font.
 	add_theme_support( 'jetpack-social-menu', 'svg' );
 
+	// Add support for Jetpack featured content.
+	// @link https://jetpack.com/support/featured-content/
+	add_theme_support( 'featured-content', array(
+		'filter'     => 'garrick_get_featured_posts',
+		'max_posts'  => 1,
+		'post_types' => array( 'post' ),
+	));
+
 }, 5 );
 
 /**

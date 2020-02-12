@@ -6,6 +6,12 @@
 
 		<?php if ( have_posts() ) : ?>
 
+			<?php if ( \Garrick\has_featured_posts( 1 ) ) : ?>
+				<div class="container max-width-xl">
+					<?php Hybrid\View\display( 'entry/archive', 'featured' ) ?>
+				</div>
+			<?php endif ?>
+
 			<?php $archive_columns = get_theme_mod( 'archive_columns', 'stacked' ) ?>
 
 			<div class="container margin-y-lg <?php echo ( 1 < $archive_columns ? 'max-width-lg' : 'max-width-sm' ) ?>">
@@ -13,14 +19,8 @@
 				<div class="entry__wrapper grid grid-gap-md">
 
 					<?php
-						$i = 0;
 						while ( have_posts() ) : the_post();
-							if ( get_theme_mod( 'archive_showcase_latest', false ) && 0 == $i && 1 < $archive_columns ) :
-								Hybrid\View\display( 'entry/archive', 'featured' );
-							else :
 								Hybrid\View\display( 'entry/archive', Hybrid\Post\hierarchy(), [ 'grid_class' => ( 1 < $archive_columns ? 'col-12 col-' . ( 12 / $archive_columns ) . '@md text-sm' : 'col-12' ) ] );
-							endif;
-							$i++;
 						endwhile;
 					?>
 

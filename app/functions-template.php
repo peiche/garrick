@@ -152,3 +152,26 @@ function social_menu() {
 		jetpack_social_menu();
 	}
 }
+
+function get_featured_posts() {
+	return apply_filters( 'garrick_get_featured_posts', array() );
+}
+
+function has_featured_posts( $minimum = 1 ) {
+	if ( is_paged() ) :
+		return false;
+	endif;
+
+	$minimum = absint( $minimum );
+	$featured_posts = apply_filters( 'garrick_get_featured_posts', array() );
+
+	if ( ! is_array( $featured_posts ) ) :
+		return false;
+	endif;
+
+	if ( $minimum > count( $featured_posts ) ) :
+		return false;
+	endif;
+
+	return true;
+}

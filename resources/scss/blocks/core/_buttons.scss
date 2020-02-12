@@ -6,12 +6,41 @@
 /// @link   https://boldoak.design/themes/garrick
 ////
 
-.wp-block-button {
-	margin-bottom: var(--component-padding);
+.wp-block-buttons {
+	display: flex;
+	margin-bottom: calc(-1 * var(--gap, 0.5em));
+	margin-left: calc(-1 * var(--gap, 0.5em));
 
-	&:last-child {
-		margin-bottom: 0;
+	&.alignleft,
+	&.alignright {
+		float: none;
+		margin-bottom: calc(-1 * var(--gap, 0.5em));
+		margin-left: calc(-1 * var(--gap, 0.5em));
+		margin-right: 0;
+		max-width: 100%;
 	}
+
+	&.alignleft {
+		justify-content: flex-start;
+	}
+
+	&.alignright {
+		justify-content: flex-end;
+	}
+
+	&.aligncenter {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+.wp-block-button {
+	margin-bottom: var(--gap, 0.5em);
+	margin-left: var(--gap, 0.5em);
+
+	// &:last-child {
+	// 	margin-bottom: 0;
+	// }
 
 	&__link {
 		border: 0;

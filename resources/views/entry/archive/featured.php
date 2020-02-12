@@ -3,6 +3,18 @@
 	if ( has_post_thumbnail() || ( get_theme_mod( 'archive_image_placeholder', false ) && '' != get_theme_mod( 'featured_image_aspect_ratio', '' ) ) ) :
 		$show_image = true;
 	endif;
+
+	$featured_posts = \Garrick\get_featured_posts();
+	if ( empty( $featured_posts ) ) :
+		return;
+	endif;
+
+	// Note: setup_postdata() cannot be used without overriding global $post.
+	// @link https://github.com/WPTRT/theme-sniffer/issues/177
+	global $post;
+	foreach ( $featured_posts as $current_post ) :
+		$post = $current_post; // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited
+		setup_postdata( $post );
 ?>
 
 <article <?php Hybrid\Attr\display( 'entry col-12 text-sm' ) ?>>
@@ -25,7 +37,7 @@
 
 				<header class="entry__header">
 					<div class="margin-bottom-xxxxs">
-						<span class="badge badge--primary"><?php esc_html_e( 'Latest', 'garrick' ) ?></span>
+						<span class="badge badge--primary"><?php esc_html_e( 'Featured', 'garrick' ) ?></span>
 					</div>
 					<?php Hybrid\Post\display_title( [ 'class' => 'entry__title margin-top-auto' ] ) ?>
 				</header>
@@ -55,3 +67,8 @@
 		</div>
 	</div>
 </article>
+
+<?php
+	endforeach;
+	wp_reset_postdata();
+?>
