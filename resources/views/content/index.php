@@ -6,10 +6,8 @@
 
 		<?php if ( have_posts() ) : ?>
 
-			<?php if ( \Garrick\has_featured_posts( 1 ) ) : ?>
-				<div class="container max-width-xl">
-					<?php Hybrid\View\display( 'entry/archive', 'featured' ) ?>
-				</div>
+			<?php if ( is_home() && ! is_paged() && \Garrick\has_featured_posts( 1 ) ) : ?>
+				<?php Hybrid\View\display( 'entry/archive', 'featured' ) ?>
 			<?php endif ?>
 
 			<?php $archive_columns = get_theme_mod( 'archive_columns', 'stacked' ) ?>
