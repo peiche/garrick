@@ -7,7 +7,7 @@
 	<label class="form-label margin-bottom-xxs" for="<?php echo esc_attr( $label ) ?>">
 		<?php echo esc_html__( 'Password:', 'garrick' ) ?>
 	</label>
-	<div class="flex flex-gap-sm">
+	<div class="flex gap-sm">
 		<input class="form-control" name="post_password" id="<?php echo esc_attr( $label ) ?>" type="password" size="20" autocomplete="off" required>
 		<button type="submit" class="btn btn--primary"><?php echo esc_attr_x( 'Enter', 'post password form', 'garrick' ) ?></button>
 	</div>

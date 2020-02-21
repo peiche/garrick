@@ -13,8 +13,10 @@
 <div class="container max-width-xl">
 
 	<?php
-		// Note: setup_postdata() cannot be used without overriding global $post.
-		// @link https://github.com/WPTRT/theme-sniffer/issues/177
+		/*
+		 * setup_postdata() cannot be used without overriding global $post.
+		 * @link https://github.com/WPTRT/theme-sniffer/issues/177
+		 */
 		global $post;
 		foreach ( $featured_posts as $current_post ) :
 			$post = $current_post; // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited
@@ -22,7 +24,7 @@
 	?>
 
 	<article <?php Hybrid\Attr\display( 'entry col-12 text-sm' ) ?>>
-		<div class="grid grid-gap-md text-md">
+		<div class="grid gap-md text-md">
 
 			<?php if ( $show_image ) : ?>
 

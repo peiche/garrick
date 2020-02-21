@@ -14,7 +14,7 @@
 
 			<div class="container margin-y-lg <?php echo ( 1 < $archive_columns ? 'max-width-lg' : 'max-width-sm' ) ?>">
 
-				<div class="entry__wrapper grid grid-gap-md">
+				<div class="entry__wrapper grid gap-md">
 
 					<?php
 						while ( have_posts() ) : the_post();
