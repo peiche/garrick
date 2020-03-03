@@ -6,22 +6,47 @@
 /// @link   https://boldoak.design/themes/garrick
 ////
 
+@use '~codyhouse-framework/main/assets/css/base/breakpoints';
+
 .nav-links {
-	display: flex;
-	justify-content: space-between;
+
+	@include breakpoints.breakpoint(sm) {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.nav-previous,
+.nav-next {
+	text-align: center;
+	margin-bottom: var(--space-xxs);
 
 	a {
-
-		&:hover {
-			text-decoration: none;
-		}
+		position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    text-decoration: none;
+    line-height: 1;
+    font-size: var(--btn-font-size, 1em);
+    padding-top: var(--btn-padding-y, 0.5em);
+    padding-bottom: var(--btn-padding-y, 0.5em);
+    padding-left: var(--btn-padding-x, 0.75em);
+    padding-right: var(--btn-padding-x, 0.75em);
+		border-radius: var(--btn-radius, 0.25em);
+		background-color: var(--color-contrast-lower);
 	}
 }
 
 .nav-previous {
-	margin-right: auto;
+	@include breakpoints.breakpoint(sm) {
+		margin-right: auto;
+	}
 }
 
 .nav-next {
-	margin-left: auto;
+	@include breakpoints.breakpoint(sm) {
+		margin-left: auto;
+	}
 }

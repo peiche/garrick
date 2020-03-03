@@ -21,6 +21,8 @@
 
 		</div>
 
+		<?php Hybrid\View\display( 'partials', 'post-navigation' ) ?>
+
 	</main>
 
 </div>
