@@ -3,7 +3,7 @@
 	$post_format = get_post_format() ?: 'standard';
 	$image_icon = '';
 	if ( '' != $image_aspect_ratio ) :
-		$image_aspect_ratio = $image_aspect_ratio . ' bg-contrast-lower';
+		$image_aspect_ratio = $image_aspect_ratio . ' bg-contrast-lower radius-md';
 		$image_icon = '<div class="media-wrapper--icon flex items-center justify-center">' .
 				\Garrick\get_svg( [ 'icon' => 'format-' . $post_format, 'class' => 'icon--md color-inherit' ] ) .
 				'</div>';
