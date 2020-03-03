@@ -42,8 +42,13 @@
 	// Metadata wrapper.
 	&__meta {
 
-		a {
+		a:not(.btn) {
 			color: var(--color-contrast-medium);
+			text-decoration: none;
+
+			&:hover {
+				text-decoration: underline;
+			}
 		}
 	}
 
