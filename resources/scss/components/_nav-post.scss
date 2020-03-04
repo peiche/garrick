@@ -23,17 +23,17 @@
 
 	a {
 		position: relative;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    white-space: nowrap;
-    text-decoration: none;
-    line-height: 1;
-    font-size: var(--btn-font-size, 1em);
-    padding-top: var(--btn-padding-y, 0.5em);
-    padding-bottom: var(--btn-padding-y, 0.5em);
-    padding-left: var(--btn-padding-x, 0.75em);
-    padding-right: var(--btn-padding-x, 0.75em);
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		white-space: nowrap;
+		text-decoration: none;
+		line-height: 1;
+		font-size: var(--btn-font-size, 1em);
+		padding-top: var(--btn-padding-y, 0.5em);
+		padding-bottom: var(--btn-padding-y, 0.5em);
+		padding-left: var(--btn-padding-x, 0.75em);
+		padding-right: var(--btn-padding-x, 0.75em);
 		border-radius: var(--btn-radius, 0.25em);
 		background-color: var(--color-contrast-lower);
 	}
