@@ -2,7 +2,7 @@
 	return;
 } ?>
 
-<hr>
+<hr class="wp-block-separator is-style-dots">
 
 <section id="comments" class="comments">
 
