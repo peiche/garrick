@@ -21,12 +21,17 @@
 	text-align: center;
 	margin-bottom: var(--space-xxs);
 
+	@include breakpoints.breakpoint(sm) {
+		max-width: 50%;
+		margin-bottom: 0;
+	}
+
 	a {
 		position: relative;
 		display: inline-flex;
 		justify-content: center;
 		align-items: center;
-		white-space: nowrap;
+		// white-space: nowrap;
 		text-decoration: none;
 		line-height: 1;
 		font-size: var(--btn-font-size, 1em);
@@ -41,12 +46,14 @@
 }
 
 .nav-previous {
+
 	@include breakpoints.breakpoint(sm) {
 		margin-right: auto;
 	}
 }
 
 .nav-next {
+
 	@include breakpoints.breakpoint(sm) {
 		margin-left: auto;
 	}
