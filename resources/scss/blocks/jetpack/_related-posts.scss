@@ -15,8 +15,8 @@
 	@include breakpoints.breakpoint(md) {
 		margin-right: calc(-50vw + 50%);
 		width: auto;
-		max-width: calc(100% + 2*var(--space-xxl));
-		margin-left: calc(-1*var(--space-xxl));
+		max-width: calc(100% + 2 * var(--space-xxl));
+		margin-left: calc(-1 * var(--space-xxl));
 	}
 
 	h3.jp-relatedposts-headline {
