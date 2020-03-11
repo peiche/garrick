@@ -120,6 +120,7 @@ let purgecssConfig = purgecss( {
 		'resources/js/**/*.js',
 		'resources/views/**/*.php',
 		'../eichefam/resources/views/**/*.php',
+		'../eichefam/resources/js/**/*.js',
 	],
 	whitelist: [
 		...purgecssWordpress.whitelist,
