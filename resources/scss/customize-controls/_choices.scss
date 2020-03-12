@@ -9,8 +9,6 @@
 .choices__inner {
 	padding: 0;
 	min-height: 0;
-	border-color: #7e8993;
-	border-radius: 4px;
 }
 
 .choices[data-type*="select-one"] .choices__inner {
@@ -23,17 +21,13 @@
 
 .choices__list--single .choices__item {
 	width: auto;
-	padding: 5px;
+	padding: 5px 10px;
 }
 
 .choices__list--dropdown {
 	top: 0;
-
-	.choices__item {
-		padding: 5px 10px;
-	}
 }
 
 .choices[data-type*="select-one"] .choices__input {
-	padding: 0 5px;
+	padding: 5px 10px;
 }

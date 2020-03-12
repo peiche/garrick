@@ -84,7 +84,14 @@ add_action( 'wp_enqueue_scripts', function() {
  * @access public
  * @return void
  */
-add_action( 'enqueue_block_editor_assets', function() {} );
+add_action( 'enqueue_block_editor_assets', function() {
+
+	// Enqueue theme editor styles.
+	wp_enqueue_style( 'garrick-editor', asset( 'css/editor.css' ), null, null );
+
+	// Unregister core block and theme styles.
+	// wp_deregister_style( 'wp-block-library' );
+} );
 
 /**
  * Helper function for outputting an asset URL in the theme. This integrates

@@ -1,0 +1,21 @@
+.wp-block-media-text {
+
+	.block-editor-inner-blocks {
+		align-self: flex-start;
+		padding: 0;
+	}
+
+	&.is-vertically-aligned-center {
+
+		.block-editor-inner-blocks {
+			align-self: center;
+		}
+	}
+
+	&.is-vertically-aligned-bottom {
+
+		.block-editor-inner-blocks {
+			align-self: flex-end;
+		}
+	}
+}

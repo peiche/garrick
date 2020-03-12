@@ -179,6 +179,9 @@ mix.sass( `${devPath}/scss/screen-fallback.scss`, 'css', sassConfig, [
 	purgecssConfig,
 ] );
 
+mix.sass( `${devPath}/scss/editor.scss`, 'css', sassConfig )
+	 .sass( `${devPath}/scss/customize.scss`, 'css', sassConfig );
+
 /*
  * Add custom Webpack configuration.
  *

@@ -1,0 +1,47 @@
+////
+/// Block editor control overrides.
+///
+/// @group  Editor
+/// @author Paul Eiche <paul@boldoak.design>
+/// @link   https://boldoak.design/themes/garrick
+////
+
+.edit-post-header,
+.edit-post-sidebar {
+	font-size: var(--text-sm);
+}
+
+.block-editor-media-placeholder > * {
+	font-size: var(--text-sm);
+}
+
+.components-icon-button {
+
+	svg {
+		max-width: unset;
+	}
+}
+
+.block-editor-block-list__insertion-point-inserter {
+	--display: flex;
+}
+
+.components-dropdown-menu .components-dropdown-menu__toggle {
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+
+.components-button-group {
+	border: 0;
+
+	.components-button {
+
+		&::first-child {
+			border-radius: 2px 0 0 2px;
+		}
+
+		&::last-child {
+			border-radius: 0 2px 2px 0;
+		}
+	}
+}

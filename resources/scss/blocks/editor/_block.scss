@@ -1,0 +1,46 @@
+////
+/// Block overrides.
+///
+/// @group  Editor
+/// @author Paul Eiche <paul@boldoak.design>
+/// @link   https://boldoak.design/themes/garrick
+////
+
+.wp-block {
+	font-family: var(--font-primary);
+	font-size: var(--text-base-size);
+	color: var(--color-contrast-high);
+	margin-left: auto;
+	margin-right: auto;
+
+	// prevent nested elements from applying the font size recursively
+	.wp-block {
+		font-size: inherit;
+	}
+}
+
+.block-editor-rich-text__editable {
+
+	a {
+		color: var(--color-primary);
+	}
+}
+
+.block-editor-rich-text__editable:focus [data-rich-text-format-boundary] {
+	border-radius: var(--radius);
+}
+
+.block-editor-rich-text__editable:focus *[data-rich-text-format-boundary] {
+	background-color: var(--color-warning-lighter);
+}
+
+.block-editor-default-block-appender textarea.block-editor-default-block-appender__content {
+	font-family: var(--font-primary);
+	font-size: var(--text-base-size);
+}
+
+.block-editor-block-preview__content .block-editor-block-list__block {
+	margin-top: auto;
+	margin-bottom: auto;
+}
+

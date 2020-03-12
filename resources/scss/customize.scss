@@ -1,0 +1,19 @@
+////
+/// Customize controls stylesheet.
+///
+/// This is the primary stylesheet for the customize controls panel. Use this
+/// for importing styles for custom panels, sections, and controls.
+///
+/// @group  Styles
+/// @author Paul Eiche <paul@boldoak.design>
+/// @link   https://boldoak.design/themes/garrick
+////
+
+// Import third-party CSS.
+
+@use 'vendor/hybrid-customize';
+@use 'vendor/choices';
+
+// Import `customize-controls` partials.
+
+@use 'customize-controls';

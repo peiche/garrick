@@ -10,6 +10,7 @@
 
 // Single, shared caption style.
 %caption {
+	display: block;
 	text-align: center;
 	font-size: var(--text-sm);
 	color: var(--color-contrast-medium);

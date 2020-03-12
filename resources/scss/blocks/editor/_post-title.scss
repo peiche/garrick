@@ -1,0 +1,15 @@
+////
+/// Post title overrides.
+///
+/// @group  Editor
+/// @author Paul Eiche <paul@boldoak.design>
+/// @link   https://boldoak.design/themes/garrick
+////
+
+.editor-post-title__block {
+
+	.editor-post-title__input {
+		font-family: var(--font-heading);
+		color: var(--color-contrast-higher);
+	}
+}

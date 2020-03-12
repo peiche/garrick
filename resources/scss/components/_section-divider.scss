@@ -1,0 +1,49 @@
+/* --------------------------------
+
+SVG Section Divider by codyhouse.co
+
+-------------------------------- */
+
+:root {
+  --section-divider-width: 1920; // px
+  --section-divider-height: 60; // px
+  --section-divider-ratio: calc(100% * var(--section-divider-height) / var(--section-divider-width));
+}
+
+[class*="has-section-divider"] {
+  position: relative;
+}
+
+.has-section-dividers { // section with dividers on both sides
+  padding-top: var(--section-divider-ratio);
+  padding-bottom: var(--section-divider-ratio);
+
+  .section-divider:first-child {
+    bottom: auto;
+    top: -1px;
+    transform: scaleY(-1);
+  }
+}
+
+.has-section-divider-top { // section with bottom divider
+  padding-top: var(--section-divider-ratio);
+
+  .section-divider {
+    bottom: auto;
+    top: -1px;
+    transform: scaleY(-1);
+  }
+}
+
+.has-section-divider-bottom { // section with top divider
+  padding-bottom: var(--section-divider-ratio);
+}
+
+.section-divider {
+  display: block;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  height: auto;
+  width: 100%;
+}
