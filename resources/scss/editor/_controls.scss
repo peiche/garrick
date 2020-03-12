@@ -45,3 +45,17 @@
 		}
 	}
 }
+
+.editor-post-featured-image .components-responsive-wrapper__content {
+	width: 100%;
+}
+
+svg.components-checkbox-control__checked {
+	width: 20px;
+	height: 20px;
+
+	@media (min-width: 600px) {
+		left: 0;
+		top: 0;
+	}
+}
