@@ -6,6 +6,7 @@
 /// @link   https://boldoak.design/themes/garrick
 ////
 
+@use '~codyhouse-framework/main/assets/css/base/breakpoints';
 @use '../../tools/extends';
 
 .wp-block-quote {
@@ -24,6 +25,11 @@
 		border: 0;
 		padding-left: 0;
 		font-size: 1.25em;
+
+		@include breakpoints.breakpoint(md) {
+			width: 120%;
+			transform: translateX(-8.33%);
+		}
 
 		p {
 			font-style: italic;
