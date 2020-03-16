@@ -24,7 +24,7 @@
 	&.is-style-large {
 		border: 0;
 		padding-left: 0;
-		font-size: 1.25em;
+		font-size: var(--text-lg);
 
 		@include breakpoints.breakpoint(md) {
 			width: 120%;
