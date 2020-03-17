@@ -7,7 +7,7 @@
 
 <header class="entry__header entry__header--single <?php echo $cover_image ? 'alignfull flex items-center margin-bottom-md' : 'margin-y-lg' ?>">
 	<div class="<?php echo $cover_image ? 'container max-width-sm margin-top-xxxl margin-bottom-xl' : 'margin-bottom-md' ?>">
-		<?php Hybrid\Post\display_title( [ 'class' => 'entry__title text-xl text-xxxl@md' ] ) ?>
+		<?php Hybrid\Post\display_title( [ 'class' => 'entry__title text-xxl text-xxxl@md' ] ) ?>
 
 		<?php $post_content_excerpt = preg_split( '/<!--more(.*?)?-->/', get_post()->post_content ); ?>
 		<?php if ( has_excerpt() && strcasecmp( trim( get_the_excerpt() ), trim( $post_content_excerpt[0] ) ) != 0 ) : ?>
