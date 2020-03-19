@@ -53,7 +53,7 @@
 		"sass-loader": "^7.3.1",
 		"stylelint": "^9.10.1",
 		"stylelint-config-wordpress": "^13.1.0",
-		"stylelint-scss": "^3.15.0",
+		"stylelint-scss": "^3.16.0",
 		"svg-spritemap-webpack-plugin": "^3.5.4",
 		"theme-claim": "^0.2.0",
 		"vue-template-compiler": "^2.6.11"
