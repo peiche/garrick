@@ -52,7 +52,7 @@
 		"sass": "^1.26.3",
 		"sass-loader": "^8.0.2",
 		"stylelint": "^9.10.1",
-		"stylelint-config-wordpress": "^13.1.0",
+		"stylelint-config-wordpress": "^14.0.0",
 		"stylelint-scss": "^3.16.0",
 		"svg-spritemap-webpack-plugin": "^3.5.4",
 		"theme-claim": "^0.2.0",
