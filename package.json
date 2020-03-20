@@ -40,7 +40,7 @@
 		"cross-env": "^7.0.2",
 		"eslint": "^6.8.0",
 		"eslint-config-wordpress": "^2.0.0",
-		"imagemin-mozjpeg": "^6.0.0",
+		"imagemin-mozjpeg": "^8.0.0",
 		"imagemin-webpack-plugin": "^2.4.2",
 		"laravel-mix": "^5.0.4",
 		"node-wp-i18n": "^1.2.3",
