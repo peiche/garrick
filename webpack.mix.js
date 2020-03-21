@@ -109,9 +109,11 @@ mix.js( `${devPath}/js/app.js`,                'js' )
 
 // Sass configuration.
 var sassConfig = {
-	outputStyle : 'expanded',
-	indentType  : 'tab',
-	indentWidth : 1
+	sassOptions: {
+		outputStyle : 'expanded',
+		indentType  : 'tab',
+		indentWidth : 1,
+	},
 };
 
 let purgecssConfig = purgecss( {
