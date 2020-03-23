@@ -34,7 +34,7 @@
 		"@fullhuman/postcss-purgecss": "^2.1.0",
 		"browser-sync": "^2.26.7",
 		"browser-sync-webpack-plugin": "2.2.2",
-		"choices.js": "^7.1.5",
+		"choices.js": "^9.0.1",
 		"codyhouse-framework": "^2.5.5",
 		"copy-webpack-plugin": "^5.1.1",
 		"cross-env": "^7.0.2",
