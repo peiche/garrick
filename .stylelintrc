@@ -13,6 +13,7 @@
 		"declaration-colon-space-before": null,
 		"at-rule-empty-line-before": null,
 		"no-descending-specificity": null,
-		"no-empty-source": null
+		"no-empty-source": null,
+		"selector-class-pattern": null
 	}
 }
