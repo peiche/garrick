@@ -26,8 +26,12 @@ import Choices          from 'choices.js/src/scripts/choices.js';
 
 wp.customize.bind( 'ready', () => {
 
-	new Choices( '#_customize-input-font_primary, #_customize-input-font_heading, #_customize-input-font_mono', {
-		shouldSort: false
-	} );
+	let choicesOptions = {
+		shouldSort: false,
+	};
+
+	new Choices( '#_customize-input-font_primary', choicesOptions );
+	new Choices( '#_customize-input-font_heading', choicesOptions );
+	new Choices( '#_customize-input-font_mono',    choicesOptions );
 
 } );
