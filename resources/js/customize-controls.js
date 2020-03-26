@@ -27,7 +27,7 @@ import Choices          from 'choices.js/src/scripts/choices.js';
 wp.customize.bind( 'ready', () => {
 
 	let choicesOptions = {
-		shouldSort: false,
+		shouldSort: false
 	};
 
 	new Choices( '#_customize-input-font_primary', choicesOptions );
