@@ -6,13 +6,17 @@
 /// @link   https://boldoak.design/themes/garrick
 ////
 
+:root {
+	--wp-text-default: 13px;
+}
+
 .edit-post-header,
 .edit-post-sidebar {
-	font-size: var(--text-sm);
+	font-size: var(--wp-text-default);
 }
 
 .block-editor-media-placeholder > * {
-	font-size: var(--text-sm);
+	font-size: var(--wp-text-default);
 }
 
 .components-icon-button {
@@ -58,4 +62,9 @@ svg.components-checkbox-control__checked {
 		left: 0;
 		top: 0;
 	}
+}
+
+.editor-post-saved-state,
+.edit-post-post-link__link {
+	font-size: var(--wp-text-default);
 }
