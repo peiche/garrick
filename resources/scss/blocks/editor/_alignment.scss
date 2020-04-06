@@ -11,3 +11,13 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+
+.wp-block.alignwide,
+.wp-block[data-align="wide"] {
+	max-width: calc(100% + 2 * var(--space-xxl));
+}
+
+.wp-block.alignfull,
+.wp-block[data-align="full"] {
+	max-width: 100vw;
+}
