@@ -165,11 +165,6 @@ class Customize implements Bootable {
 			'transport' => 'refresh',
 		) );
 
-		$manager->add_setting( 'archive_showcase_latest', array(
-			'default'   => false,
-			'transport' => 'refresh',
-		) );
-
 		$manager->add_setting( 'archive_columns', array(
 			'default'   => 1,
 			'transport' => 'refresh',
@@ -342,13 +337,6 @@ class Customize implements Bootable {
 			'section'     => 'content',
 			'label'       => __( 'Show tags', 'garrick' ),
 			'description' => __( 'Display tags on blog and archive pages.', 'garrick' ),
-		) );
-
-		$manager->add_control( 'archive_showcase_latest', array(
-			'type' => 'checkbox',
-			'section' => 'content',
-			'label' => __( 'Showcase the latest post', 'garrick' ),
-			'description' => __( 'Show the latest post in a larger feature-style block', 'garrick' ),
 		) );
 
 		$fonts_body = json_decode( file_get_contents( get_theme_file_path( 'app/Customize/fonts-body.json' ) ), true );
