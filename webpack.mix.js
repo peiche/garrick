@@ -209,9 +209,9 @@ mix.webpackConfig( {
 	plugins     : [
 		// @link https://github.com/webpack-contrib/copy-webpack-plugin
 		new CopyWebpackPlugin( [
-			{ from : `${devPath}/img`,   to : 'img'   },
+			// { from : `${devPath}/img`,   to : 'img'   },
 			{ from : `${devPath}/svg`,   to : 'svg'   },
-			{ from : `${devPath}/fonts`, to : 'fonts' },
+			// { from : `${devPath}/fonts`, to : 'fonts' },
 			{ from : `node_modules/codyhouse-framework/main/assets/js/util.js`, to : 'js' }
 		] ),
 		// @link https://github.com/Klathmon/imagemin-webpack-plugin
