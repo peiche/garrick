@@ -16,10 +16,10 @@
 @function editor-font-sizes() {
 
 	@return (
-		small: 16px,
-		regular: 20px,
-		large: 25px,
-		larger: 31px
+		small: var(--text-sm),
+		regular: var(--text-md),
+		large: var(--text-lg),
+		larger: var(--text-xl)
 	);
 }
 
