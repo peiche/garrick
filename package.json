@@ -49,7 +49,7 @@
 		"purgecss-whitelister": "^2.4.0",
 		"purgecss-with-wordpress": "^2.1.0",
 		"rimraf": "^3.0.2",
-		"sass": "^1.26.3",
+		"sass": "^1.26.5",
 		"sass-loader": "^8.0.2",
 		"stylelint": "^12.0.1",
 		"stylelint-config-wordpress": "^16.0.0",
