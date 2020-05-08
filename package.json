@@ -38,7 +38,7 @@
 		"codyhouse-framework": "^2.6.2",
 		"copy-webpack-plugin": "^5.1.1",
 		"cross-env": "^7.0.2",
-		"eslint": "^6.8.0",
+		"eslint": "^7.0.0",
 		"eslint-config-wordpress": "^2.0.0",
 		"imagemin-mozjpeg": "^8.0.0",
 		"imagemin-webpack-plugin": "^2.4.2",
