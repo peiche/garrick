@@ -8,24 +8,21 @@
 
 .wp-block-buttons {
 	display: flex;
-	margin-bottom: calc(-1 * var(--gap, 0.5em));
+	flex-wrap: wrap;
+	margin-bottom: calc(var(--space-xxxs) * var(--text-vspace-multiplier, 1));
 	margin-left: calc(-1 * var(--gap, 0.5em));
 
 	&.alignleft,
 	&.alignright {
-		float: none;
 		margin-bottom: calc(-1 * var(--gap, 0.5em));
-		margin-left: calc(-1 * var(--gap, 0.5em));
-		margin-right: 0;
-		max-width: 100%;
 	}
 
 	&.alignleft {
-		justify-content: flex-start;
+		margin-right: var(--space-xs);
 	}
 
 	&.alignright {
-		justify-content: flex-end;
+		margin-left: var(--space-xs);
 	}
 
 	&.aligncenter {
@@ -37,10 +34,6 @@
 .wp-block-button {
 	margin-bottom: var(--gap, 0.5em);
 	margin-left: var(--gap, 0.5em);
-
-	// &:last-child {
-	// 	margin-bottom: 0;
-	// }
 
 	&__link {
 		border: 0;
