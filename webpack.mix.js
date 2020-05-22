@@ -17,7 +17,7 @@
 // Import required packages.
 const mix                 = require( 'laravel-mix' );
 const ImageminPlugin      = require( 'imagemin-webpack-plugin' ).default;
-const CopyWebpackPlugin   = require( 'copy-webpack-plugin' );
+const CopyPlugin          = require( 'copy-webpack-plugin' );
 const imageminMozjpeg     = require( 'imagemin-mozjpeg' );
 const SVGSpritemapPlugin  = require( 'svg-spritemap-webpack-plugin' );
 const purgecss            = require( '@fullhuman/postcss-purgecss' );
@@ -208,12 +208,18 @@ mix.webpackConfig( {
 	},
 	plugins     : [
 		// @link https://github.com/webpack-contrib/copy-webpack-plugin
-		new CopyWebpackPlugin( [
-			// { from : `${devPath}/img`,   to : 'img'   },
-			{ from : `${devPath}/svg`,   to : 'svg'   },
-			// { from : `${devPath}/fonts`, to : 'fonts' },
-			{ from : `node_modules/codyhouse-framework/main/assets/js/util.js`, to : 'js' }
-		] ),
+		new CopyPlugin({
+			patterns: [
+				{
+					from : `${devPath}/svg`,
+					to   : 'svg',
+				},
+				{
+					from : `node_modules/codyhouse-framework/main/assets/js/util.js`,
+					to   : 'js',
+				},
+			]
+		}),
 		// @link https://github.com/Klathmon/imagemin-webpack-plugin
 		new ImageminPlugin( {
 			test     : /\.(jpe?g|png|gif|svg)$/i,
