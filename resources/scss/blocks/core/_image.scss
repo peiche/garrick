@@ -6,7 +6,7 @@
 /// @link   https://boldoak.design/themes/garrick
 ////
 
-@use '../../tools/extends';
+@use '../../tools/mixins';
 
 .wp-block-image {
 	margin-top: var(--component-padding);
@@ -24,12 +24,12 @@
 
 	.alignleft {
 
-		// Using `breakpoints.breakpoint()` breaks purgecss-whitelister
+		// Using `breakpoint()` breaks purgecss-whitelister
 		@media (min-width: 64rem) {
 			margin-left: -15%;
 		}
 
-		// Using `breakpoints.breakpoint()` breaks purgecss-whitelister
+		// Using `breakpoint()` breaks purgecss-whitelister
 		@media (min-width: 80rem) {
 			margin-left: -30%;
 		}
@@ -37,12 +37,12 @@
 
 	.alignright {
 
-		// Using `breakpoints.breakpoint()` breaks purgecss-whitelister
+		// Using `breakpoint()` breaks purgecss-whitelister
 		@media (min-width: 64rem) {
 			margin-right: -15%;
 		}
 
-		// Using `breakpoints.breakpoint()` breaks purgecss-whitelister
+		// Using `breakpoint()` breaks purgecss-whitelister
 		@media (min-width: 80rem) {
 			margin-right: -30%;
 		}
@@ -77,7 +77,12 @@
 	}
 
 	figcaption {
-		@extend %caption;
+		// using mixins.caption breaks compiler, not sure why
+		display: block;
+		text-align: center;
+		font-size: var(--text-sm);
+		color: var(--color-contrast-medium);
+		margin-top: var(--space-xs);
 	}
 
 	.is-resized {}

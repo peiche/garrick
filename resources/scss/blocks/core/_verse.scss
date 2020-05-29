@@ -6,8 +6,8 @@
 /// @link   https://boldoak.design/themes/garrick
 ////
 
-@use '../../tools/extends';
+@use '../../tools/mixins';
 
 .wp-block-verse {
-	@extend %preformatted;
+	@include mixins.preformatted;
 }

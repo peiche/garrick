@@ -6,8 +6,8 @@
 /// @link   https://boldoak.design/themes/garrick
 ////
 
-@use '~codyhouse-framework/main/assets/css/base/mixins';
-@use '../tools/extends';
+@use '~codyhouse-framework/main/assets/css/base' as *;
+@use '../tools/mixins';
 
 // Body styles. Note that we're hiding horizontal overflow so that wide images
 // don't overflow.
@@ -60,10 +60,10 @@ ol {
 }
 
 blockquote {
-	@extend %blockquote;
+	@include mixins.blockquote;
 
 	cite {
-		@extend %cite;
+		@include mixins.cite;
 	}
 }
 
@@ -97,7 +97,7 @@ var {
 }
 
 pre {
-	@extend %preformatted;
+	@include mixins.preformatted;
 }
 
 pre code {
@@ -112,7 +112,7 @@ kbd {
 }
 
 hr {
-	@extend %separator;
+	@include mixins.separator;
 }
 
 b,
@@ -126,6 +126,6 @@ em {
 }
 
 mark {
-	background-color: mixins.alpha(var(--color-accent), 0.2);
+	background-color: alpha(var(--color-accent), 0.2);
 	color: inherit;
 }

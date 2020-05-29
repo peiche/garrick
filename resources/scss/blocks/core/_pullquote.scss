@@ -6,7 +6,7 @@
 /// @link   https://boldoak.design/themes/garrick
 ////
 
-@use '../../tools/extends';
+@use '../../tools/mixins';
 
 .wp-block-pullquote {
 	margin-top: var(--component-padding);
@@ -20,7 +20,7 @@
 	cite,
 	footer,
 	.wp-block-pullquote__citation {
-		@extend %cite;
+		@include mixins.cite;
 
 		position: relative;
 		font-size: 0.5em;

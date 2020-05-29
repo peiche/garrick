@@ -7,7 +7,7 @@
 /// @link   https://boldoak.design/themes/garrick
 ////
 
-@use '~codyhouse-framework/main/assets/css/base/breakpoints';
+@use '~codyhouse-framework/main/assets/css/base' as *;
 
 .wp-block-jetpack-tiled-gallery {
 	margin-top: var(--component-padding);
@@ -21,7 +21,7 @@
 
 	&.alignwide {
 
-		@include breakpoints.breakpoint(md) {
+		@include breakpoint(md) {
 			margin-left: 50%;
 		}
 	}

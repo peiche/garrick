@@ -8,7 +8,7 @@
 /// @link   https://boldoak.design/themes/garrick
 ////
 
-@use '~codyhouse-framework/main/assets/css/base/mixins';
+@use '~codyhouse-framework/main/assets/css/base' as *;
 
 :root {
 	--search-input-btn-width: 2.8em;
@@ -55,7 +55,7 @@
 }
 
 .search-input__btn {
-	@include mixins.reset;
+	@include reset;
 
 	position: absolute;
 	top: 0;

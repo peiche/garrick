@@ -8,7 +8,7 @@
 /// @link   https://boldoak.design/themes/garrick
 ////
 
-@use '../tools/extends';
+@use '../tools/mixins';
 
 .wp-caption {
 	margin-top: var(--component-padding);
@@ -21,5 +21,5 @@
 }
 
 .wp-caption-text {
-	@extend %caption;
+	@include mixins.caption;
 }

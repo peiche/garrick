@@ -6,13 +6,13 @@
 /// @link   https://boldoak.design/themes/garrick
 ////
 
-@use '../../tools/extends';
+@use '../../tools/mixins';
 
 .wp-block-search {
 	display: flex;
 
 	&__label {
-		@extend %screen-reader-text;
+		@include mixins.screen-reader-text;
 	}
 
 	&__input {

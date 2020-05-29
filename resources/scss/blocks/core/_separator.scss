@@ -6,10 +6,10 @@
 /// @link   https://boldoak.design/themes/garrick
 ////
 
-@use '../../tools/extends';
+@use '../../tools/mixins';
 
 .wp-block-separator {
-	@extend %separator;
+	@include mixins.separator;
 
 	&.is-style-wide {
 		width: 100%;

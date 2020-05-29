@@ -6,20 +6,20 @@
 /// @link   https://boldoak.design/themes/garrick
 ////
 
-@use '~codyhouse-framework/main/assets/css/base/mixins';
-@use '../tools/extends';
+@use '~codyhouse-framework/main/assets/css/base' as *;
+@use '../tools/mixins';
 
 // Text only shown to screen readers.
 
 .screen-reader-text {
-	@extend %screen-reader-text;
+	@include mixins.screen-reader-text;
 }
 
 // Targets the "skip to content" link at the top of the page if it needs extra
 // style rules beyond the screen reader text rules.
 
 .skip-link {
-	@include mixins.fontSmooth;
+	@include fontSmooth;
 
 	position: absolute;
 	z-index: var(--zindex-fixed-element);

@@ -6,13 +6,13 @@
 /// @link   https://boldoak.design/themes/garrick
 ////
 
-@use '~codyhouse-framework/main/assets/css/base/breakpoints';
+@use '~codyhouse-framework/main/assets/css/base' as *;
 
 // The id and class increase specificity, allowing us
 // to override Jetpack's ridiculous high-specificity styles.
 #jp-relatedposts.jp-relatedposts {
 
-	@include breakpoints.breakpoint(md) {
+	@include breakpoint(md) {
 		margin-right: calc(-50vw + 50%);
 		width: auto;
 		max-width: calc(100% + 2 * var(--space-xxl));

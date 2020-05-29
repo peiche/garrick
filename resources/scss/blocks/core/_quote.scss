@@ -6,11 +6,11 @@
 /// @link   https://boldoak.design/themes/garrick
 ////
 
-@use '~codyhouse-framework/main/assets/css/base/breakpoints';
-@use '../../tools/extends';
+@use '~codyhouse-framework/main/assets/css/base' as *;
+@use '../../tools/mixins';
 
 .wp-block-quote {
-	@extend %blockquote;
+	@include mixins.blockquote;
 
 	p {
 		margin-bottom: var(--space-sm);
@@ -18,7 +18,7 @@
 
 	cite,
 	.wp-block-quote__citation {
-		@extend %cite;
+		@include mixins.cite;
 	}
 
 	&.is-style-large {
@@ -26,7 +26,7 @@
 		padding-left: 0;
 		font-size: var(--text-lg);
 
-		@include breakpoints.breakpoint(md) {
+		@include breakpoint(md) {
 			width: 120%;
 			transform: translateX(-8.33%);
 		}

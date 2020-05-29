@@ -6,8 +6,8 @@
 /// @link   https://boldoak.design/themes/garrick
 ////
 
-@use '~codyhouse-framework/main/assets/css/base/breakpoints';
-@use '../../tools/extends';
+@use '~codyhouse-framework/main/assets/css/base' as *;
+@use '../../tools/mixins';
 
 // The wrapper element for the entire gallery.
 .wp-block-gallery {
@@ -64,7 +64,7 @@
 	}
 
 	figcaption {
-		@extend %caption;
+		@include mixins.caption;
 
 		position: absolute;
 		padding: var(--space-xl) var(--space-md) var(--space-sm);
@@ -80,7 +80,7 @@
 }
 
 .blocks-gallery-caption {
-	@extend %caption;
+	@include mixins.caption;
 
 	flex-basis: 100%;
 }
@@ -108,7 +108,7 @@
 }
 
 // 3-8 columns on larger screens.
-@include breakpoints.breakpoint(sm) {
+@include breakpoint(sm) {
 
 	@for $i from 3 through 8 {
 

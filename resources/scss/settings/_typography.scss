@@ -7,7 +7,7 @@
 /// @link   https://boldoak.design/themes/garrick
 ////
 
-@use '~codyhouse-framework/main/assets/css/base/breakpoints';
+@use '~codyhouse-framework/main/assets/css/base' as *;
 
 :root {
 	// body font size
@@ -40,7 +40,7 @@
 
 	:root {
 
-		@include breakpoints.breakpoint(md) {
+		@include breakpoint(md) {
 			--text-base-size: 1.25em;
 			--text-scale-ratio: 1.25;
 		}
