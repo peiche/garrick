@@ -6,19 +6,6 @@
 /// @link   https://boldoak.design/themes/garrick
 ////
 
-
-// Body styles. Note that we're hiding horizontal overflow so that wide images
-// don't overflow.
-body {
-	overflow-x: hidden;
-	word-wrap: break-word; // Force text to wrap.
-	word-break: break-word;
-	overflow-wrap: break-word; // Hide SVG sprite.
-
-	> svg {
-		display: none;
-	}
-}
 @use 'tools/functions';
 @use 'tools/mixins';
 
@@ -126,6 +113,6 @@ em {
 }
 
 mark {
-	background-color: alpha(var(--color-accent), 0.2);
+	background-color: functions.alpha(var(--color-accent), 0.2);
 	color: inherit;
 }
