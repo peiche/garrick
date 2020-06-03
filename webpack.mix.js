@@ -113,6 +113,9 @@ var sassConfig = {
 		outputStyle : 'expanded',
 		indentType  : 'tab',
 		indentWidth : 1,
+		includePaths: [
+			'resources/scss',
+		],
 	},
 };
 
