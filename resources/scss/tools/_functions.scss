@@ -5,3 +5,109 @@
 /// @author Paul Eiche <paul@boldoak.design>
 /// @link   https://boldoak.design/themes/garrick
 ////
+
+/// Returns a map of block colors in name-value format. These are the colors
+/// defined via the `editor-color-palette` setting in `app/functions-setup.php`
+/// for the WordPress editor.
+///
+/// @since  1.0.0
+/// @access public
+/// @return {map}  Map of defined colors.
+@function block-colors() {
+
+	@return (
+		'primary': var(--color-primary),
+		'accent': var(--color-accent),
+		'success': var(--color-success),
+		'error': var(--color-error),
+		'warning': var(--color-warning),
+		'higher-contrast': var(--color-contrast-higher),
+		'high-contrast': var(--color-contrast-high),
+		'medium-contrast': var(--color-contrast-medium),
+		'low-contrast': var(--color-contrast-low),
+		'lower-contrast': var(--color-contrast-lower),
+		'black': var(--color-black),
+		'white': var(--color-white),
+	);
+}
+
+@function block-gradients() {
+
+	@return (
+		'vivid-cyan-blue-to-vivid-purple': linear-gradient(135deg, #0693e3, #9b51e0),
+		'vivid-green-cyan-to-vivid-cyan-blue': linear-gradient(135deg, #00d084, #0693e3),
+		'light-green-cyan-to-vivid-green-cyan': linear-gradient(135deg, #7adcb4, #00d082),
+		'luminous-vivid-amber-to-luminous-vivid-orange': linear-gradient(135deg, #fcb900, #ff6900),
+		'luminous-vivid-orange-to-vivid-red': linear-gradient(135deg, #ff6900, #cf2e2e),
+		'very-light-gray-to-cyan-bluish-gray': linear-gradient(135deg, #eee, #a9b8c3),
+		'cool-to-warm-spectrum': linear-gradient(135deg, #4aeadc, #9778d1 20%, #cf2aba 40%, #ee2c82 60%, #fb6962 80%, #fef84c),
+		'blush-light-purple': linear-gradient(135deg,#ffceec,#9896f0),
+		'blush-bordeaux': linear-gradient(135deg,#fecda5,#fe2d2d 50%,#6b003e),
+		'purple-crush': linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe),
+		'luminous-dusk': linear-gradient(135deg,#ffcb70,#c751c0 50%,#4158d0),
+		'hazy-dawn': linear-gradient(135deg,#faaca8,#dad0ec),
+		'pale-ocean': linear-gradient(135deg,#fff5cb,#b6e3d4 50%,#33a7b5),
+		'electric-grass': linear-gradient(135deg,#caf880,#71ce7e),
+		'subdued-olive': linear-gradient(135deg,#fafae1,#67a671),
+		'atomic-cream': linear-gradient(135deg, #fdd79a, #004a59),
+		'nightshade': linear-gradient(135deg, #330968, #31cdcf),
+		'midnight': linear-gradient(135deg, #020381, #2874fc),
+	);
+}
+
+// return color with different opacity value
+@function alpha($color, $opacity) {
+	$color: str-replace($color, 'var(');
+	$color: str-replace($color, ')');
+	$color-h: var(#{$color+'-h'});
+	$color-s: var(#{$color+'-s'});
+	$color-l: var(#{$color+'-l'});
+	@return hsla($color-h, $color-s, $color-l, $opacity);
+}
+
+// return color with different lightness value
+@function lightness($color, $lightnessMultiplier) {
+	$color: str-replace($color, 'var(');
+	$color: str-replace($color, ')');
+	$color-h: var(#{$color+'-h'});
+	$color-s: var(#{$color+'-s'});
+	$color-l: var(#{$color+'-l'});
+	@return hsl($color-h, $color-s, calc(#{$color-l} * #{$lightnessMultiplier}));
+}
+
+// replace substring with another string
+// credits: https://css-tricks.com/snippets/sass/str-replace-function/
+@function str-replace($string, $search, $replace: '') {
+	$index: str-index($string, $search);
+	@if $index {
+		@return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+	}
+	@return $string;
+}
+
+/// Returns a map of editor font sizes in name-value format. These are the sizes
+/// defined via the `editor-font-sizes` setting in `app/functions-setup.php`
+/// for the WordPress editor.
+///
+/// @since  1.0.0
+/// @access public
+/// @return {map}  Map of defined font sizes.
+@function editor-font-sizes() {
+
+	@return (
+		small: var(--text-sm),
+		regular: var(--text-md),
+		large: var(--text-lg),
+		larger: var(--text-xl)
+	);
+}
+
+/// Defines the content width. This should match the theme's `$content_width`
+/// setting in `app/functions-setup.php`.
+///
+/// @since  1.0.0
+/// @access public
+/// @return {number}  The content width in pixels.
+@function content-width() {
+	@return 48rem; // width of --max-width-sm
+}

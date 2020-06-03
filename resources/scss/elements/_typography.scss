@@ -6,8 +6,6 @@
 /// @link   https://boldoak.design/themes/garrick
 ////
 
-@use '~codyhouse-framework/main/assets/css/base' as *;
-@use '../tools/mixins';
 
 // Body styles. Note that we're hiding horizontal overflow so that wide images
 // don't overflow.
@@ -21,6 +19,8 @@ body {
 		display: none;
 	}
 }
+@use 'tools/functions';
+@use 'tools/mixins';
 
 h1,
 h2,

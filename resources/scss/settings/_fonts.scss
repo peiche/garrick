@@ -6,23 +6,6 @@
 /// @link   https://boldoak.design/themes/garrick
 ////
 
-/// Returns a map of editor font sizes in name-value format. These are the sizes
-/// defined via the `editor-font-sizes` setting in `app/functions-setup.php`
-/// for the WordPress editor.
-///
-/// @since  1.0.0
-/// @access public
-/// @return {map}  Map of defined font sizes.
-@function editor-font-sizes() {
-
-	@return (
-		small: var(--text-sm),
-		regular: var(--text-md),
-		large: var(--text-lg),
-		larger: var(--text-xl)
-	);
-}
-
 :root,
 body {
 	--font-primary: system-ui, -apple-system, blinkmacsystemfont, 'Segoe UI', roboto, 'Helvetica Neue', arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';

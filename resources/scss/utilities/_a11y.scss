@@ -6,8 +6,7 @@
 /// @link   https://boldoak.design/themes/garrick
 ////
 
-@use '~codyhouse-framework/main/assets/css/base' as *;
-@use '../tools/mixins';
+@use 'tools/mixins';
 
 // Text only shown to screen readers.
 
@@ -19,7 +18,7 @@
 // style rules beyond the screen reader text rules.
 
 .skip-link {
-	@include fontSmooth;
+	@include mixins.fontSmooth;
 
 	position: absolute;
 	z-index: var(--zindex-fixed-element);

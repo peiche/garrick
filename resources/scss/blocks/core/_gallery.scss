@@ -6,8 +6,7 @@
 /// @link   https://boldoak.design/themes/garrick
 ////
 
-@use '~codyhouse-framework/main/assets/css/base' as *;
-@use '../../tools/mixins';
+@use 'tools/mixins';
 
 // The wrapper element for the entire gallery.
 .wp-block-gallery {
@@ -108,7 +107,7 @@
 }
 
 // 3-8 columns on larger screens.
-@include breakpoint(sm) {
+@include mixins.breakpoint(sm) {
 
 	@for $i from 3 through 8 {
 

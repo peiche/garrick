@@ -6,7 +6,7 @@
 /// @link   https://boldoak.design/themes/garrick
 ////
 
-@use '~codyhouse-framework/main/assets/css/base' as *;
+@use 'tools/mixins';
 
 .widget {
 
@@ -46,11 +46,11 @@
 		padding-right: var(--space-sm);
 		flex-grow: 1;
 
-		@include breakpoint(xs) {
+		@include mixins.breakpoint(xs) {
 			width: calc(100% / 2);
 		}
 
-		@include breakpoint(md) {
+		@include mixins.breakpoint(md) {
 			width: calc(100% / 4);
 		}
 	}

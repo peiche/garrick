@@ -5,19 +5,3 @@
 /// @author Paul Eiche <paul@boldoak.design>
 /// @link   https://boldoak.design/themes/garrick
 ////
-
-// Single line, end with ellipses
-%truncate {
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-}
-
-%clearfix {
-
-	&::after {
-		display: block;
-		content: '';
-		clear: both;
-	}
-}

@@ -6,7 +6,7 @@
 /// @link   https://boldoak.design/themes/garrick
 ////
 
-@use '~codyhouse-framework/main/assets/css/base' as *;
+@use 'tools/mixins';
 
 :root {
 	--pagination-item-padding: var(--space-xs);
@@ -44,7 +44,7 @@
 		list-style: none;
 		padding: 0;
 
-		@include breakpoint(md) {
+		@include mixins.breakpoint(md) {
 			justify-content: normal;
 			width: auto;
 		}
@@ -67,7 +67,7 @@
 		&--dots {
 			display: none;
 
-			@include breakpoint(md) {
+			@include mixins.breakpoint(md) {
 				display: inline-flex;
 			}
 		}
@@ -122,7 +122,7 @@
 			background-color: var(--color-primary);
 			color: var(--color-white);
 
-			@include fontSmooth;
+			@include mixins.fontSmooth;
 
 			&:active {
 				background-color: var(--color-primary-dark);

@@ -6,7 +6,7 @@
 /// @link   https://boldoak.design/themes/garrick
 ////
 
-@use '~codyhouse-framework/main/assets/css/base' as *;
+@use 'tools/mixins';
 
 .wp-block-columns {
 	display: flex;
@@ -37,7 +37,7 @@
 	background-clip: content-box;
 	flex-basis: 100%;
 
-	@include breakpoint(sm) {
+	@include mixins.breakpoint(sm) {
 		flex-basis: 0;
 		flex-grow: 1;
 		max-width: 100%;

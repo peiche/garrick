@@ -6,133 +6,84 @@
 /// @link   https://boldoak.design/themes/garrick
 ////
 
-@use '~codyhouse-framework/main/assets/css/base' as *;
-
-/// Returns a map of block colors in name-value format. These are the colors
-/// defined via the `editor-color-palette` setting in `app/functions-setup.php`
-/// for the WordPress editor.
-///
-/// @since  1.0.0
-/// @access public
-/// @return {map}  Map of defined colors.
-@function block-colors() {
-
-	@return (
-		'primary': var(--color-primary),
-		'accent': var(--color-accent),
-		'success': var(--color-success),
-		'error': var(--color-error),
-		'warning': var(--color-warning),
-		'higher-contrast': var(--color-contrast-higher),
-		'high-contrast': var(--color-contrast-high),
-		'medium-contrast': var(--color-contrast-medium),
-		'low-contrast': var(--color-contrast-low),
-		'lower-contrast': var(--color-contrast-lower),
-		'black': var(--color-black),
-		'white': var(--color-white),
-	);
-}
-
-@function block-gradients() {
-
-	@return (
-		'vivid-cyan-blue-to-vivid-purple': linear-gradient(135deg, #0693e3, #9b51e0),
-		'vivid-green-cyan-to-vivid-cyan-blue': linear-gradient(135deg, #00d084, #0693e3),
-		'light-green-cyan-to-vivid-green-cyan': linear-gradient(135deg, #7adcb4, #00d082),
-		'luminous-vivid-amber-to-luminous-vivid-orange': linear-gradient(135deg, #fcb900, #ff6900),
-		'luminous-vivid-orange-to-vivid-red': linear-gradient(135deg, #ff6900, #cf2e2e),
-		'very-light-gray-to-cyan-bluish-gray': linear-gradient(135deg, #eee, #a9b8c3),
-		'cool-to-warm-spectrum': linear-gradient(135deg, #4aeadc, #9778d1 20%, #cf2aba 40%, #ee2c82 60%, #fb6962 80%, #fef84c),
-		'blush-light-purple': linear-gradient(135deg,#ffceec,#9896f0),
-		'blush-bordeaux': linear-gradient(135deg,#fecda5,#fe2d2d 50%,#6b003e),
-		'purple-crush': linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe),
-		'luminous-dusk': linear-gradient(135deg,#ffcb70,#c751c0 50%,#4158d0),
-		'hazy-dawn': linear-gradient(135deg,#faaca8,#dad0ec),
-		'pale-ocean': linear-gradient(135deg,#fff5cb,#b6e3d4 50%,#33a7b5),
-		'electric-grass': linear-gradient(135deg,#caf880,#71ce7e),
-		'subdued-olive': linear-gradient(135deg,#fafae1,#67a671),
-		'atomic-cream': linear-gradient(135deg, #fdd79a, #004a59),
-		'nightshade': linear-gradient(135deg, #330968, #31cdcf),
-		'midnight': linear-gradient(135deg, #020381, #2874fc),
-	);
-}
+@use 'tools/mixins';
 
 :root,
 [data-theme="default"] {
 	// main
-	@include defineColorHSL(--color-primary-darker, 220, 90%, 36%);
-	@include defineColorHSL(--color-primary-dark, 220, 90%, 46%);
-	@include defineColorHSL(--color-primary, 220, 90%, 56%);
-	@include defineColorHSL(--color-primary-light, 220, 90%, 66%);
-	@include defineColorHSL(--color-primary-lighter, 220, 90%, 76%);
+	@include mixins.defineColorHSL(--color-primary-darker, 220, 90%, 36%);
+	@include mixins.defineColorHSL(--color-primary-dark, 220, 90%, 46%);
+	@include mixins.defineColorHSL(--color-primary, 220, 90%, 56%);
+	@include mixins.defineColorHSL(--color-primary-light, 220, 90%, 66%);
+	@include mixins.defineColorHSL(--color-primary-lighter, 220, 90%, 76%);
 
-	@include defineColorHSL(--color-accent-darker, 355, 90%, 41%);
-	@include defineColorHSL(--color-accent-dark, 355, 90%, 51%);
-	@include defineColorHSL(--color-accent, 355, 90%, 61%);
-	@include defineColorHSL(--color-accent-light, 355, 90%, 71%);
-	@include defineColorHSL(--color-accent-lighter, 355, 90%, 81%);
+	@include mixins.defineColorHSL(--color-accent-darker, 355, 90%, 41%);
+	@include mixins.defineColorHSL(--color-accent-dark, 355, 90%, 51%);
+	@include mixins.defineColorHSL(--color-accent, 355, 90%, 61%);
+	@include mixins.defineColorHSL(--color-accent-light, 355, 90%, 71%);
+	@include mixins.defineColorHSL(--color-accent-lighter, 355, 90%, 81%);
 
-	// // black + white
-	@include defineColorHSL(--color-black, 0, 0%, 0%);
-	@include defineColorHSL(--color-white, 0, 0%, 100%);
+	// black + white
+	@include mixins.defineColorHSL(--color-black, 0, 0%, 0%);
+	@include mixins.defineColorHSL(--color-white, 0, 0%, 100%);
 
-	// // feedback
-	@include defineColorHSL(--color-success-darker, 94, 48%, 36%);
-	@include defineColorHSL(--color-success-dark, 94, 48%, 46%);
-	@include defineColorHSL(--color-success, 94, 48%, 56%);
-	@include defineColorHSL(--color-success-light, 94, 48%, 66%);
-	@include defineColorHSL(--color-success-lighter, 94, 48%, 76%);
+	// feedback
+	@include mixins.defineColorHSL(--color-success-darker, 94, 48%, 36%);
+	@include mixins.defineColorHSL(--color-success-dark, 94, 48%, 46%);
+	@include mixins.defineColorHSL(--color-success, 94, 48%, 56%);
+	@include mixins.defineColorHSL(--color-success-light, 94, 48%, 66%);
+	@include mixins.defineColorHSL(--color-success-lighter, 94, 48%, 76%);
 
-	@include defineColorHSL(--color-error-darker, 355, 90%, 41%);
-	@include defineColorHSL(--color-error-dark, 355, 90%, 51%);
-	@include defineColorHSL(--color-error, 355, 90%, 61%);
-	@include defineColorHSL(--color-error-light, 355, 90%, 71%);
-	@include defineColorHSL(--color-error-lighter, 355, 90%, 81%);
+	@include mixins.defineColorHSL(--color-error-darker, 355, 90%, 41%);
+	@include mixins.defineColorHSL(--color-error-dark, 355, 90%, 51%);
+	@include mixins.defineColorHSL(--color-error, 355, 90%, 61%);
+	@include mixins.defineColorHSL(--color-error-light, 355, 90%, 71%);
+	@include mixins.defineColorHSL(--color-error-lighter, 355, 90%, 81%);
 
-	@include defineColorHSL(--color-warning-darker, 46, 100%, 41%);
-	@include defineColorHSL(--color-warning-dark, 46, 100%, 51%);
-	@include defineColorHSL(--color-warning, 46, 100%, 61%);
-	@include defineColorHSL(--color-warning-light, 46, 100%, 71%);
-	@include defineColorHSL(--color-warning-lighter, 46, 100%, 81%);
+	@include mixins.defineColorHSL(--color-warning-darker, 46, 100%, 41%);
+	@include mixins.defineColorHSL(--color-warning-dark, 46, 100%, 51%);
+	@include mixins.defineColorHSL(--color-warning, 46, 100%, 61%);
+	@include mixins.defineColorHSL(--color-warning-light, 46, 100%, 71%);
+	@include mixins.defineColorHSL(--color-warning-lighter, 46, 100%, 81%);
 
-	@include defineColorHSL(--color-info-darker, 188, 78%, 61%);
-	@include defineColorHSL(--color-info-dark, 188, 78%, 51%);
-	@include defineColorHSL(--color-info, 188, 78%, 41%);
-	@include defineColorHSL(--color-info-light, 188, 78%, 31%);
-	@include defineColorHSL(--color-info-lighter, 188, 78%, 21%);
+	@include mixins.defineColorHSL(--color-info-darker, 188, 78%, 61%);
+	@include mixins.defineColorHSL(--color-info-dark, 188, 78%, 51%);
+	@include mixins.defineColorHSL(--color-info, 188, 78%, 41%);
+	@include mixins.defineColorHSL(--color-info-light, 188, 78%, 31%);
+	@include mixins.defineColorHSL(--color-info-lighter, 188, 78%, 21%);
 
-	@include defineColorHSL(--color-boldoakdesign-foreground, 19, 84%, 55%);
-	@include defineColorHSL(--color-boldoakdesign-background, 354, 22%, 18%);
+	@include mixins.defineColorHSL(--color-boldoakdesign-foreground, 19, 84%, 55%);
+	@include mixins.defineColorHSL(--color-boldoakdesign-background, 354, 22%, 18%);
 
 	// color contrasts
-	@include defineColorHSL(--color-bg, 0, 0%, 100%);
-	@include defineColorHSL(--color-contrast-lower, 0, 0%, 95%);
-	@include defineColorHSL(--color-contrast-low, 240, 1%, 83%);
-	@include defineColorHSL(--color-contrast-medium, 240, 1%, 48%);
-	@include defineColorHSL(--color-contrast-high, 240, 4%, 20%);
-	@include defineColorHSL(--color-contrast-higher, 240, 8%, 12%);
+	@include mixins.defineColorHSL(--color-bg, 0, 0%, 100%);
+	@include mixins.defineColorHSL(--color-contrast-lower, 0, 0%, 95%);
+	@include mixins.defineColorHSL(--color-contrast-low, 240, 1%, 83%);
+	@include mixins.defineColorHSL(--color-contrast-medium, 240, 1%, 48%);
+	@include mixins.defineColorHSL(--color-contrast-high, 240, 4%, 20%);
+	@include mixins.defineColorHSL(--color-contrast-higher, 240, 8%, 12%);
 
 	// code
-	@include defineColorHSL(--color-code, 202, 32%, 15%);
+	@include mixins.defineColorHSL(--color-code, 202, 32%, 15%);
 }
 
 [data-theme="dark"],
 .theme-dark {
 	// main
-	@include defineColorHSL(--color-primary-darker, 197, 73%, 37%);
-	@include defineColorHSL(--color-primary-dark, 197, 73%, 47%);
-	@include defineColorHSL(--color-primary, 197, 73%, 57%);
-	@include defineColorHSL(--color-primary-light, 197, 73%, 67%);
-	@include defineColorHSL(--color-primary-lighter, 197, 73%, 95%);
+	@include mixins.defineColorHSL(--color-primary-darker, 197, 73%, 37%);
+	@include mixins.defineColorHSL(--color-primary-dark, 197, 73%, 47%);
+	@include mixins.defineColorHSL(--color-primary, 197, 73%, 57%);
+	@include mixins.defineColorHSL(--color-primary-light, 197, 73%, 67%);
+	@include mixins.defineColorHSL(--color-primary-lighter, 197, 73%, 95%);
 
 	// color contrasts
-	@include defineColorHSL(--color-bg, 240, 8%, 12%);
-	@include defineColorHSL(--color-contrast-lower, 240, 6%, 19%);
-	@include defineColorHSL(--color-contrast-low, 240, 3%, 27%);
-	@include defineColorHSL(--color-contrast-medium, 240, 1%, 57%);
-	@include defineColorHSL(--color-contrast-high, 0, 0%, 89%);
-	@include defineColorHSL(--color-contrast-higher, 0, 0%, 100%);
+	@include mixins.defineColorHSL(--color-bg, 240, 8%, 12%);
+	@include mixins.defineColorHSL(--color-contrast-lower, 240, 6%, 19%);
+	@include mixins.defineColorHSL(--color-contrast-low, 240, 3%, 27%);
+	@include mixins.defineColorHSL(--color-contrast-medium, 240, 1%, 57%);
+	@include mixins.defineColorHSL(--color-contrast-high, 0, 0%, 89%);
+	@include mixins.defineColorHSL(--color-contrast-higher, 0, 0%, 100%);
 
-	@include defineColorHSL(--color-boldoakdesign-foreground, 354, 22%, 18%);
-	@include defineColorHSL(--color-boldoakdesign-background, 19, 84%, 55%);
+	@include mixins.defineColorHSL(--color-boldoakdesign-foreground, 354, 22%, 18%);
+	@include mixins.defineColorHSL(--color-boldoakdesign-background, 19, 84%, 55%);
 }

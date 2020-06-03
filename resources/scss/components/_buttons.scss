@@ -7,7 +7,7 @@
 /// @link   https://boldoak.design/themes/garrick
 ////
 
-@use '~codyhouse-framework/main/assets/css/base' as *;
+@use 'tools/mixins';
 
 :root {
 	--btn-font-size: 1em;
@@ -27,11 +27,11 @@
 
 // themes
 .btn--primary {
-	@include fontSmooth;
+	@include mixins.fontSmooth;
 }
 
 .btn--accent {
-	@include fontSmooth;
+	@include mixins.fontSmooth;
 }
 
 .btn--subtle {}

@@ -6,7 +6,7 @@
 /// @link   https://boldoak.design/themes/garrick
 ////
 
-@use '~codyhouse-framework/main/assets/css/base' as *;
+@use 'tools/mixins';
 
 .wp-block-code {
 	background-color: var(--color-code);
@@ -14,7 +14,7 @@
 	padding: var(--space-md);
 	line-height: 1.3;
 
-	@include breakpoint(md) {
+	@include mixins.breakpoint(md) {
 		width: 120%;
 		transform: translateX(-8.33%);
 	}
