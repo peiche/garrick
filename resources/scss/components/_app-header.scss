@@ -49,7 +49,8 @@
 
 	&__nav {}
 
-	[class*="-template-cover-header"] & {
+	.post-template-cover-header &,
+	.page-template-cover-header & {
 		position: absolute;
 		top: 0;
 		width: 100%;

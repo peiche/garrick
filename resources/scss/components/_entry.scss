@@ -38,7 +38,8 @@
 	// Featured image.
 	&__featured {
 
-		[class*="-template-cover-header"] & {
+		.post-template-cover-header &,
+		.page-template-cover-header & {
 			position: absolute;
 			top: 0;
 			bottom: 0;
@@ -53,24 +54,29 @@
 		display: block;
 		margin: auto;
 
-		[class*="-template-hero-header"] &,
-		[class*="-template-cover-header"] & {
+		.post-template-hero-header &,
+		.page-template-hero-header &,
+		.post-template-cover-header &,
+		.page-template-cover-header & {
 			object-fit: cover;
 			width: 100%;
 		}
 
-		[class*="-template-hero-header"] & {
+		.post-template-hero-header &,
+		.page-template-hero-header {
 			max-height: 60vh;
 		}
 
-		[class*="-template-cover-header"] & {
+		.post-template-cover-header &,
+		.page-template-cover-header & {
 			height: 100%;
 		}
 	}
 
 	&__header {
 
-		[class*="-template-cover-header"] & {
+		.post-template-cover-header &,
+		.page-template-cover-header & {
 			position: relative;
 			min-height: 100vh;
 

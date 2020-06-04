@@ -164,6 +164,7 @@ let purgecssConfig = purgecss( {
 		/^columns(-.*)?$/,
 		/^blocks(-.*)?$/,
 		/^nav(-.*)?$/,
+		/^(post|page)-template(-.*)?$/,
 	],
 	whitelistPatternsChildren: [],
 	defaultExtractor: content => content.match(/[A-z0-9-:@%\/]+/g) || [],
