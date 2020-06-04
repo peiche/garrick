@@ -56,23 +56,26 @@
 		border-radius: 50%;
 	}
 
-	&.is-style-circle-mask,
-	&.rounded--circle {
+	&.is-style-rounded {
 
 		img {
 			// A pill-shape prevents the oval shape that
 			// a circular border radius would give.
 			border-radius: var(--radius-pill);
+		}
+	}
 
-			// If a browser supports it, we will switch to using a circular SVG mask.
-			@supports (mask-image: none) or (-webkit-mask-image: none) {
-				mask-image: url(../svg/circle-mask.svg);
-				mask-mode: alpha;
-				mask-repeat: no-repeat;
-				mask-size: contain;
-				mask-position: center;
-				border-radius: 0;
-			}
+	&.rounded--circle,
+	&.is-style-circle-mask {
+
+		// If a browser supports it, use a circular SVG mask.
+		@supports (mask-image: none) or (-webkit-mask-image: none) {
+			mask-image: url(../svg/circle-mask.svg);
+			mask-mode: alpha;
+			mask-repeat: no-repeat;
+			mask-size: contain;
+			mask-position: center;
+			border-radius: 0;
 		}
 	}
 
