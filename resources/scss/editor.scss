@@ -20,8 +20,8 @@
 @use 'editor/controls';
 
 // Prefixes all of the styles with `.editor-styles-wrapper` for use within the
-// block editor.
-.editor-styles-wrapper {
+// block editor. We're doubling up the specificity to override Gutenberg styles.
+.editor-styles-wrapper.editor-styles-wrapper {
 	overflow-x: hidden;
 
 	@include meta.load-css('elements/typography');
