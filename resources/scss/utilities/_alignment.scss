@@ -9,17 +9,17 @@
 /// @link   https://boldoak.design/themes/garrick
 ////
 
-@use 'tools/mixins';
+@use '~codyhouse-framework/main/assets/css/base/breakpoints';
 
 // Shared left and right alignment styles.
 .alignleft,
 .alignright {
 
-	@include mixins.breakpoint(sm) {
+	@include breakpoints.breakpoint(sm) {
 		max-width: 35%;
 	}
 
-	@include mixins.breakpoint(md) {
+	@include breakpoints.breakpoint(md) {
 		max-width: 50%;
 	}
 }
@@ -27,7 +27,7 @@
 // Left alignment.
 .alignleft {
 
-	@include mixins.breakpoint(sm) {
+	@include breakpoints.breakpoint(sm) {
 		float: left;
 		margin: 0 var(--component-padding) var(--component-padding) 0;
 	}
@@ -36,7 +36,7 @@
 // Right alignment.
 .alignright {
 
-	@include mixins.breakpoint(sm) {
+	@include breakpoints.breakpoint(sm) {
 		float: right;
 		margin: 0 0 var(--component-padding) var(--component-padding);
 	}
@@ -67,7 +67,7 @@
 	}
 }
 
-@include mixins.breakpoint(md) {
+@include breakpoints.breakpoint(md) {
 
 	// We have to check for `.alignfull` because
 	// some blocks still include both classes.

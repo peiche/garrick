@@ -6,14 +6,14 @@
 /// @link   https://boldoak.design/themes/garrick
 ////
 
-@use 'tools/mixins';
+@use '~codyhouse-framework/main/assets/css/base/breakpoints';
 
 .gallery {
 	display: flex;
 	flex-wrap: wrap;
 	margin: var(--component-padding) -8px;
 
-	@include mixins.breakpoint(sm) {
+	@include breakpoints.breakpoint(sm) {
 		flex-direction: row;
 
 		@for $i from 1 through 10 {

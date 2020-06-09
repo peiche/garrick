@@ -6,7 +6,7 @@
 /// @link   https://boldoak.design/themes/garrick
 ////
 
-@use 'tools/mixins';
+@use '~codyhouse-framework/main/assets/css/base/breakpoints';
 
 .wp-block-rss {
 
@@ -32,7 +32,7 @@
 			margin: 0;
 		}
 
-		@include mixins.breakpoint(sm) {
+		@include breakpoints.breakpoint(sm) {
 
 			@for $i from 2 through 6 {
 				.columns-#{ $i } & {

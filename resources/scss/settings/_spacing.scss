@@ -7,13 +7,13 @@
 /// @link   https://boldoak.design/themes/garrick
 ////
 
-@use 'tools/mixins';
+@use '~codyhouse-framework/main/assets/css/base/breakpoints';
 
 @supports (--css: variables) {
 
 	:root {
 
-		@include mixins.breakpoint(md) {
+		@include breakpoints.breakpoint(md) {
 			--space-unit:  1.25em;
 		}
 	}

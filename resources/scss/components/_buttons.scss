@@ -7,7 +7,8 @@
 /// @link   https://boldoak.design/themes/garrick
 ////
 
-@use 'tools/mixins';
+@use '~codyhouse-framework/main/assets/css/base/breakpoints';
+@use '~codyhouse-framework/main/assets/css/base/mixins';
 
 :root {
 	--btn-font-size: 1em;
@@ -19,27 +20,61 @@
 	--btn-radius: var(--radius);
 }
 
-.btn {
-	// basic button style
-	--color-shadow: hsla(var(--color-black-h), var(--color-black-s), var(--color-black-l), 0.15);
-	cursor: pointer;
+.btn { // style affecting all buttons
+  cursor: pointer;
+  @include mixins.fontSmooth;
+  transition: .3s;
+
+  &:hover {
+    box-shadow: var(--shadow-sm);
+  }
+
+  &:focus {
+    box-shadow: 0px 0px 0px 2px mixins.alpha(var(--color-contrast-higher), 0.15);
+    outline: none;
+  }
+
+  &:active {
+    transform: translateY(2px);
+  }
 }
 
 // themes
 .btn--primary {
-	@include mixins.fontSmooth;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+
+  &:hover {
+    background-color: var(--color-primary-dark);
+  }
+
+  &:focus {
+    box-shadow: 0px 0px 0px 2px mixins.alpha(var(--color-primary), 0.2);
+  }
 }
 
 .btn--accent {
-	@include mixins.fontSmooth;
+  background-color: var(--color-accent);
+  color: var(--color-white);
+
+  &:hover {
+    background-color: var(--color-accent-dark);
+  }
+
+  &:focus {
+    box-shadow: 0px 0px 0px 2px mixins.alpha(var(--color-accent), 0.2);
+  }
 }
 
-.btn--subtle {}
+.btn--subtle {
+  background-color: var(--color-contrast-lower);
+  color: var(--color-contrast-higher);
+}
 
 // feedback
 .btn--disabled {
-	opacity: 0.6;
-	cursor: not-allowed;
+  opacity: 0.6;
+  cursor: not-allowed;
 }
 
 // ghost buttons

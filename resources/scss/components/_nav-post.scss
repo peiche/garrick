@@ -6,11 +6,11 @@
 /// @link   https://boldoak.design/themes/garrick
 ////
 
-@use 'tools/mixins';
+@use '~codyhouse-framework/main/assets/css/base/breakpoints';
 
 .nav-links {
 
-	@include mixins.breakpoint(sm) {
+	@include breakpoints.breakpoint(sm) {
 		display: flex;
 		justify-content: space-between;
 	}
@@ -21,7 +21,7 @@
 	text-align: center;
 	margin-bottom: var(--space-xxs);
 
-	@include mixins.breakpoint(sm) {
+	@include breakpoints.breakpoint(sm) {
 		max-width: 50%;
 		margin-bottom: 0;
 	}
@@ -46,14 +46,14 @@
 
 .nav-previous {
 
-	@include mixins.breakpoint(sm) {
+	@include breakpoints.breakpoint(sm) {
 		margin-right: auto;
 	}
 }
 
 .nav-next {
 
-	@include mixins.breakpoint(sm) {
+	@include breakpoints.breakpoint(sm) {
 		margin-left: auto;
 	}
 }

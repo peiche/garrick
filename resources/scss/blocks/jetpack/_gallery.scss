@@ -8,7 +8,7 @@
 /// @link   https://boldoak.design/themes/garrick
 ////
 
-@use 'tools/mixins';
+@use '~codyhouse-framework/main/assets/css/base/breakpoints';
 
 .wp-block-jetpack-tiled-gallery {
 	margin-top: var(--component-padding);
@@ -22,7 +22,7 @@
 
 	&.alignwide {
 
-		@include mixins.breakpoint(md) {
+		@include breakpoints.breakpoint(md) {
 			margin-left: 50%;
 		}
 	}

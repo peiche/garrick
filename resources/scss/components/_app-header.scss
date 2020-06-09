@@ -6,7 +6,7 @@
 /// @link   https://boldoak.design/themes/garrick
 ////
 
-@use 'tools/mixins';
+@use '~codyhouse-framework/main/assets/css/base/breakpoints';
 
 :root {}
 
@@ -41,7 +41,7 @@
 		padding-top: var(--space-xs);
 		padding-bottom: var(--space-xs);
 
-		@include mixins.breakpoint(md) {
+		@include breakpoints.breakpoint(md) {
 			padding-top: var(--space-md);
 			padding-bottom: var(--space-md);
 		}
@@ -86,7 +86,7 @@
 		padding-right: 0;
 		z-index: var(--zindex-fixed-element);
 
-		@include mixins.breakpoint(md) {
+		@include breakpoints.breakpoint(md) {
 			display: none;
 		}
 

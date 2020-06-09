@@ -6,8 +6,8 @@
 /// @link   https://boldoak.design/themes/garrick
 ////
 
-@use 'tools/functions';
-@use 'tools/mixins';
+@use '~codyhouse-framework/main/assets/css/base/mixins';
+@use 'tools/mixins' as *;
 
 h1,
 h2,
@@ -47,10 +47,10 @@ ol {
 }
 
 blockquote {
-	@include mixins.blockquote;
+	@include blockquote;
 
 	cite {
-		@include mixins.cite;
+		@include cite;
 	}
 }
 
@@ -84,7 +84,7 @@ var {
 }
 
 pre {
-	@include mixins.preformatted;
+	@include preformatted;
 }
 
 pre code {
@@ -99,7 +99,7 @@ kbd {
 }
 
 hr {
-	@include mixins.separator;
+	@include separator;
 }
 
 b,
@@ -113,6 +113,6 @@ em {
 }
 
 mark {
-	background-color: functions.alpha(var(--color-accent), 0.2);
+	background-color: mixins.alpha(var(--color-accent), 0.2);
 	color: inherit;
 }

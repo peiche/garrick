@@ -6,6 +6,7 @@
 /// @link   https://boldoak.design/themes/garrick
 ////
 
+@use '~codyhouse-framework/main/assets/css/base/breakpoints';
 @use 'tools/mixins';
 
 :root {
@@ -113,7 +114,7 @@
 }
 
 // 3-8 columns on larger screens.
-@include mixins.breakpoint(sm) {
+@include breakpoints.breakpoint(sm) {
 
 	@for $i from 3 through 8 {
 
