@@ -9,10 +9,6 @@
 @use '~codyhouse-framework/main/assets/css/base/breakpoints';
 @use 'tools/mixins';
 
-:root {
-	--wp-gallery-gap: 4px;
-}
-
 // The wrapper element for the entire gallery.
 .wp-block-gallery {
 	display: flex;
@@ -29,8 +25,8 @@
 	flex-wrap: wrap;
 	flex-basis: 100%;
 	list-style: none;
-	margin-bottom: calc(-1 * var(--wp-gallery-gap));
-	margin-left: calc(-1 * var(--wp-gallery-gap));
+	margin-bottom: calc(-1 * 4px);
+	margin-left: calc(-1 * 4px);
 	padding: 0;
 }
 
@@ -41,9 +37,9 @@
 	flex-direction: column;
 	justify-content: center;
 	position: relative; // Image figure.
-	width: calc(100% / 2 - var(--wp-gallery-gap)); // Default to 2 columns.
-	margin-bottom: var(--wp-gallery-gap);
-	margin-left: var(--wp-gallery-gap);
+	width: calc(100% / 2 - 4px); // Default to 2 columns.
+	margin-bottom: 4px;
+	margin-left: 4px;
 
 	figure {
 		margin: 0;
@@ -119,7 +115,7 @@
 	@for $i from 3 through 8 {
 
 		.columns-#{ $i } .blocks-gallery-item {
-			width: calc( 100% / #{ $i } - var(--wp-gallery-gap));
+			width: calc( 100% / #{ $i } - 4px);
 		}
 	}
 }
