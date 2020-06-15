@@ -6,6 +6,8 @@
 /// @link   https://boldoak.design/themes/garrick
 ////
 
+@use '~codyhouse-framework/main/assets/css/base/breakpoints';
+
 .wp-block-gallery {
 
 	.components-form-file-upload {
@@ -26,11 +28,13 @@
 		width: 100%;
 	}
 
-	.blocks-gallery-grid {
+	@include breakpoints.breakpoint(sm) {
 
-		// An additional specificity override is necessary because Gutenberg.
-		.blocks-gallery-item {
-			margin: 8px;
+		@for $i from 2 through 8 {
+
+			&.columns-#{ $i } .blocks-gallery-item {
+				margin-right: 0;
+			}
 		}
 	}
 }
