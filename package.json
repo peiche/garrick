@@ -47,7 +47,7 @@
 		"postcss-calc": "^7.0.2",
 		"postcss-css-variables": "github:CodyHouse/postcss-css-variables",
 		"purgecss-whitelister": "^2.4.0",
-		"purgecss-with-wordpress": "^2.1.0",
+		"purgecss-with-wordpress": "^2.3.0",
 		"rimraf": "^3.0.2",
 		"sass": "^1.26.8",
 		"sass-loader": "^8.0.2",
