@@ -21,60 +21,60 @@
 }
 
 .btn { // style affecting all buttons
-  cursor: pointer;
-  @include mixins.fontSmooth;
-  transition: .3s;
+	cursor: pointer;
+	@include mixins.fontSmooth;
+	transition: 0.3s;
 
-  &:hover {
-    box-shadow: var(--shadow-sm);
-  }
+	&:hover {
+		box-shadow: var(--shadow-sm);
+	}
 
-  &:focus {
-    box-shadow: 0px 0px 0px 2px mixins.alpha(var(--color-contrast-higher), 0.15);
-    outline: none;
-  }
+	&:focus {
+		box-shadow: 0 0 0 2px mixins.alpha(var(--color-contrast-higher), 0.15);
+		outline: none;
+	}
 
-  &:active {
-    transform: translateY(2px);
-  }
+	&:active {
+		transform: translateY(2px);
+	}
 }
 
 // themes
 .btn--primary {
-  background-color: var(--color-primary);
-  color: var(--color-white);
+	background-color: var(--color-primary);
+	color: var(--color-white);
 
-  &:hover {
-    background-color: var(--color-primary-dark);
-  }
+	&:hover {
+		background-color: var(--color-primary-dark);
+	}
 
-  &:focus {
-    box-shadow: 0px 0px 0px 2px mixins.alpha(var(--color-primary), 0.2);
-  }
+	&:focus {
+		box-shadow: 0 0 0 2px mixins.alpha(var(--color-primary), 0.2);
+	}
 }
 
 .btn--accent {
-  background-color: var(--color-accent);
-  color: var(--color-white);
+	background-color: var(--color-accent);
+	color: var(--color-white);
 
-  &:hover {
-    background-color: var(--color-accent-dark);
-  }
+	&:hover {
+		background-color: var(--color-accent-dark);
+	}
 
-  &:focus {
-    box-shadow: 0px 0px 0px 2px mixins.alpha(var(--color-accent), 0.2);
-  }
+	&:focus {
+		box-shadow: 0 0 0 2px mixins.alpha(var(--color-accent), 0.2);
+	}
 }
 
 .btn--subtle {
-  background-color: var(--color-contrast-lower);
-  color: var(--color-contrast-higher);
+	background-color: var(--color-contrast-lower);
+	color: var(--color-contrast-higher);
 }
 
 // feedback
 .btn--disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
+	opacity: 0.6;
+	cursor: not-allowed;
 }
 
 // ghost buttons
