@@ -25,10 +25,6 @@
 	@include mixins.fontSmooth;
 	transition: 0.3s;
 
-	&:hover {
-		box-shadow: var(--shadow-sm);
-	}
-
 	&:focus {
 		box-shadow: 0 0 0 2px mixins.alpha(var(--color-contrast-higher), 0.15);
 		outline: none;
