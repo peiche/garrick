@@ -77,12 +77,11 @@ add_action( 'after_setup_theme', function() {
 	] );
 
 	// Editor color palette. These colors are also defined in the
-	// `resources/scss/settings/_colors.scss` file.
+	// `resources/scss/tools/_functions.scss` file.
 	add_theme_support( 'editor-color-palette', [
 
 		[
 			'name'  => __( 'Primary', 'garrick' ),
-			'description' => __( 'test', 'garrick' ),
 			'slug'  => 'primary',
 			'color' => get_theme_mod('primary_color_light', '#2a6df4'),
 		],
@@ -146,7 +145,7 @@ add_action( 'after_setup_theme', function() {
 	] );
 
 	// Editor block font sizes. These font sizes are also defined in the
-	// `resources/scss/settings/_fonts.scss` file.
+	// `resources/scss/tools/_functions.scss` file.
 	add_theme_support( 'editor-font-sizes', [
 		[
 			'name'      => __( 'Small', 'garrick' ),
@@ -198,19 +197,6 @@ add_action( 'after_setup_theme', function() {
 	));
 
 }, 5 );
-
-/**
- * Adds support for the custom background feature. This is in its own function
- * hooked to `after_setup_theme` so that we can give it a later priority.  This
- * is so that child themes can more easily overwrite this feature.  Note that
- * overwriting the background should be done *before* rather than after.
- *
- * @link   https://developer.wordpress.org/reference/functions/add_theme_support/#custom-background
- * @since  1.0.0
- * @access public
- * @return void
- */
-add_action( 'after_setup_theme', function() {}, 15 );
 
 /**
  * Adds support for the custom header feature. This is in its own function
