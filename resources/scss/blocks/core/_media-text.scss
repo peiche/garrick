@@ -121,7 +121,7 @@
 		> .wp-block-media-text__media {
 			grid-column: 1;
 			grid-row: 1;
-			
+
 			@include breakpoints.breakpoint(sm) {
 				grid-area: media-text-media;
 			}
