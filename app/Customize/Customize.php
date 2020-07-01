@@ -17,7 +17,6 @@ namespace Garrick\Customize;
 
 use WP_Customize_Manager;
 use Hybrid\Contracts\Bootable;
-// use \Hybrid\Customize\Controls;
 use function Garrick\asset;
 
 /**
@@ -239,7 +238,7 @@ class Customize implements Bootable {
 			'type'        => 'checkbox',
 			'section'     => 'header',
 			'label'       => __( 'Show Search', 'garrick' ),
-			'description' => __( 'Display the search button in the header.', 'garrick' ),
+			'description' => __( 'Show the search button in the header.', 'garrick' ),
 		) );
 
 		$manager->add_control( 'color_theme', array(
@@ -322,21 +321,21 @@ class Customize implements Bootable {
 			'type'        => 'checkbox',
 			'section'     => 'content',
 			'label'       => __( 'Hide excerpt', 'garrick' ),
-			'description' => __( 'Do not display the post excerpt.', 'garrick' ),
+			'description' => __( 'Do not show the post excerpt.', 'garrick' ),
 		) );
 
 		$manager->add_control( 'archive_hide_readmore', array(
 			'type'        => 'checkbox',
 			'section'     => 'content',
 			'label'       => __( 'Hide Read More', 'garrick' ),
-			'description' => __( 'Do not display the Read More link.', 'garrick' ),
+			'description' => __( 'Do not show the Read More link.', 'garrick' ),
 		) );
 
 		$manager->add_control( 'archive_show_tags', array(
 			'type'        => 'checkbox',
 			'section'     => 'content',
 			'label'       => __( 'Show tags', 'garrick' ),
-			'description' => __( 'Display tags on blog and archive pages.', 'garrick' ),
+			'description' => __( 'Show tags on blog and archive pages.', 'garrick' ),
 		) );
 
 		$fonts_body = json_decode( file_get_contents( get_theme_file_path( 'app/Customize/fonts-body.json' ) ), true );
