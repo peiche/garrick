@@ -12,13 +12,11 @@
 	display: grid;
 	grid-template-rows: auto;
 	grid-gap: var(--space-md);
+	grid-template-areas: 'media-text-media media-text-content';
+	grid-template-columns: 50% auto;
 	margin-top: var(--component-padding);
 	margin-bottom: var(--component-padding);
-
-	@include breakpoints.breakpoint(sm) {
-		grid-template-areas: 'media-text-media media-text-content';
-		grid-template-columns: 50% auto;
-	}
+	align-items: center;
 
 	&.is-vertically-aligned-top {
 		align-items: flex-start;
@@ -54,18 +52,12 @@
 
 	> .wp-block-media-text__media {
 		margin: 0;
-
-		@include breakpoints.breakpoint(sm) {
-			grid-area: media-text-media;
-		}
+		grid-area: media-text-media;
 	}
 
 	> .wp-block-media-text__content {
 		word-break: break-word;
-
-		@include breakpoints.breakpoint(sm) {
-			grid-area: media-text-content;
-		}
+		grid-area: media-text-content;
 
 		> *:last-child {
 			margin-bottom: 0;
@@ -73,11 +65,8 @@
 	}
 
 	&.has-media-on-the-right {
-
-		@include breakpoints.breakpoint(sm) {
-			grid-template-areas: 'media-text-content media-text-media';
-			grid-template-columns: auto 50%;
-		}
+		grid-template-areas: 'media-text-content media-text-media';
+		grid-template-columns: auto 50%;
 	}
 
 	&.alignwide,
@@ -120,11 +109,56 @@
 			}
 		}
 	}
-}
 
-@include breakpoints.breakpoint(sm) {
+	&.is-stacked-on-mobile {
+		grid-template-columns: 100%;
 
-	.wp-block-media-text.is-stacked-on-mobile {}
+		@include breakpoints.breakpoint(sm) {
+			grid-template-areas: 'media-text-media media-text-content';
+			grid-template-columns: 50% auto;
+		}
 
-	.wp-block-media-text.is-stacked-on-mobile.has-media-on-the-right {}
+		> .wp-block-media-text__media {
+			grid-column: 1;
+			grid-row: 1;
+			
+			@include breakpoints.breakpoint(sm) {
+				grid-area: media-text-media;
+			}
+		}
+
+		> .wp-block-media-text__content {
+			grid-column: 1;
+			grid-row: 2;
+
+			@include breakpoints.breakpoint(sm) {
+				grid-area: media-text-content;
+			}
+		}
+
+		&.has-media-on-the-right {
+
+			@include breakpoints.breakpoint(sm) {
+				grid-template-areas: 'media-text-content media-text-media';
+			}
+
+			> .wp-block-media-text__media {
+				grid-column: 1;
+				grid-row: 2;
+
+				@include breakpoints.breakpoint(sm) {
+					grid-area: media-text-media;
+				}
+			}
+
+			> .wp-block-media-text__content {
+				grid-column: 1;
+				grid-row: 1;
+
+				@include breakpoints.breakpoint(sm) {
+					grid-area: media-text-content;
+				}
+			}
+		}
+	}
 }
