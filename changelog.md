@@ -1,7 +1,7 @@
 # Change Log
 
-## [1.0.0] - 2019-07-31
+## 1.0.0 - 04/07/2020
 
 ### Added
 
-- Everything's new!
+- Initial release.
