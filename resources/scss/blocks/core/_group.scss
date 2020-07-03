@@ -13,6 +13,10 @@
 	padding-left: var(--component-padding);
 	padding-right: var(--component-padding);
 
+	&:last-child {
+		margin-bottom: 0;
+	}
+
 	@include breakpoints.breakpoint(md) {
 		padding-left: 0;
 		padding-right: 0;
