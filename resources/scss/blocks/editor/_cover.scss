@@ -8,7 +8,7 @@
 
 .wp-block-cover__inner-container {
 
-	.wp-block {
+	.wp-block:not([class*="has-text-color"]) {
 		color: var(--color-white);
 	}
 }
