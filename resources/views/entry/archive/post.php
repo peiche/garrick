@@ -2,6 +2,14 @@
 
 	<?php Hybrid\View\display( 'partials', 'archive-image' ) ?>
 
+	<?php $format = get_post_format() ?>
+	<?php if ( '' != $format ) : ?>
+		<a href="<?php echo get_post_format_link( $format ) ?>" class="btn btn--subtle btn--sm">
+			<?php echo \Garrick\get_svg( [ 'icon' => 'format-' . $format, 'class' => 'color-contrast-high margin-right-xxxs' ] ) ?>
+			<?php echo ucwords( $format ) ?>
+		</a>
+	<?php endif ?>
+
 	<header class="entry__header">
 		<?php Hybrid\Post\display_title( [ 'class' => 'entry__title margin-top-auto' ] ) ?>
 	</header>
