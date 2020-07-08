@@ -11,14 +11,13 @@
 			<?php endif ?>
 
 			<?php $archive_columns = get_theme_mod( 'archive_columns', 'stacked' ) ?>
-
 			<div class="container margin-y-lg <?php echo ( 1 < $archive_columns ? 'max-width-lg' : 'max-width-sm' ) ?>">
 
 				<div class="entry__wrapper grid gap-md">
 
 					<?php
 						while ( have_posts() ) : the_post();
-								Hybrid\View\display( 'entry/archive', Hybrid\Post\hierarchy(), [ 'grid_class' => ( 1 < $archive_columns ? 'col-12 col-' . ( 12 / $archive_columns ) . '@md text-sm' : 'col-12' ) ] );
+							Hybrid\View\display( 'entry/archive', Hybrid\Post\hierarchy(), [ 'grid_class' => ( 1 < $archive_columns ? 'col-12 col-' . ( 12 / $archive_columns ) . '@md text-sm' : 'col-12' ) ] );
 						endwhile;
 					?>
 
