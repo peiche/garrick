@@ -4,9 +4,9 @@
 
 	<?php $format = get_post_format() ?>
 	<?php if ( '' != $format ) : ?>
-		<a href="<?php echo get_post_format_link( $format ) ?>" class="btn btn--subtle btn--sm">
+		<a href="<?php echo esc_url( get_post_format_link( $format ) ) ?>" class="btn btn--subtle btn--sm">
 			<?php echo \Garrick\get_svg( [ 'icon' => 'format-' . $format, 'class' => 'color-contrast-high margin-right-xxxs' ] ) ?>
-			<?php echo ucwords( $format ) ?>
+			<?php echo esc_html( ucwords( $format ) ) ?>
 		</a>
 	<?php endif ?>
 
