@@ -44,9 +44,9 @@ add_action( 'wp_enqueue_scripts', function() {
 	wp_enqueue_style( 'garrick-screen', asset( 'css/screen.css' ), null, null );
 
 	// Enqueue fonts set in Customizer.
-	$font_primary = get_theme_mod( 'font_primary', '' );
-	$font_heading = get_theme_mod( 'font_heading', '' );
-	$font_mono    = get_theme_mod( 'font_mono', '' );
+	$font_primary = get_theme_mod( 'font_primary', '|' );
+	$font_heading = get_theme_mod( 'font_heading', '|' );
+	$font_mono    = get_theme_mod( 'font_mono', '|' );
 
 	$fonts = array();
 	if ( '|' != $font_primary ) :
@@ -59,7 +59,7 @@ add_action( 'wp_enqueue_scripts', function() {
 		$fonts[] = $font_mono;
 	endif;
 
-	if ( ! empty ( $fonts ) ) :
+	if ( count( $fonts ) > 0 ) :
 
 		// Register Google Fonts.
 		// @link https://github.com/justintadlock/hybrid-font
