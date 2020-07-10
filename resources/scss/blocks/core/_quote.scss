@@ -33,6 +33,13 @@
 
 		p {
 			font-style: italic;
+			margin-bottom: var(--space-xxxs);
+		}
+
+		cite,
+		.wp-block-quote__citation {
+			margin-top: 0;
+			font-size: 0.7em;
 		}
 	}
 }
