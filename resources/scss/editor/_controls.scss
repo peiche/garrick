@@ -53,6 +53,8 @@
 
 .editor-post-featured-image .components-responsive-wrapper__content {
 	width: 100%;
+	height: 100%;
+	object-fit: contain;
 }
 
 svg.components-checkbox-control__checked {
