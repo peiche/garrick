@@ -131,6 +131,7 @@ let purgecssConfig = purgecss( {
 		...purgecssWordpress.whitelist,
 		...purgecssWhitelister( [
 			'node_modules/codyhouse-framework/main/assets/css/base/_reset.scss',
+			'node_modules/codyhouse-framework/main/assets/css/base/_util.scss',
 			'resources/scss/elements/*.scss',
 			'resources/scss/blocks/**/*.scss',
 		] ),
