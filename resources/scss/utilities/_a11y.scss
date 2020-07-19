@@ -11,7 +11,8 @@
 
 // Text only shown to screen readers.
 
-.screen-reader-text {
+.screen-reader-text,
+.sr-only {
 	@include screen-reader-text;
 }
 
