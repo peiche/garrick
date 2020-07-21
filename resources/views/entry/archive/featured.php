@@ -10,7 +10,7 @@
 	endif;
 ?>
 
-<div class="container max-width-xl">
+<div class="container">
 
 	<?php
 		/*
@@ -24,7 +24,7 @@
 	?>
 
 	<article <?php Hybrid\Attr\display( 'entry col-12 text-sm' ) ?>>
-		<div class="grid gap-md text-md">
+		<div class="grid gap-md@md text-md">
 
 			<?php if ( $show_image ) : ?>
 
