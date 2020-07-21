@@ -31,7 +31,6 @@
 		"url": "https://github.com/peiche/trunc/issues"
 	},
 	"devDependencies": {
-		"@fullhuman/postcss-purgecss": "^2.3.0",
 		"browser-sync": "^2.26.10",
 		"browser-sync-webpack-plugin": "2.2.2",
 		"choices.js": "^9.0.1",
@@ -46,8 +45,6 @@
 		"node-wp-i18n": "^1.2.3",
 		"postcss-calc": "^7.0.2",
 		"postcss-css-variables": "github:CodyHouse/postcss-css-variables",
-		"purgecss-whitelister": "^2.4.0",
-		"purgecss-with-wordpress": "^2.3.0",
 		"rimraf": "^3.0.2",
 		"sass": "^1.26.10",
 		"sass-loader": "^9.0.2",

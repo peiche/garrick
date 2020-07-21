@@ -20,9 +20,6 @@ const ImageminPlugin      = require( 'imagemin-webpack-plugin' ).default;
 const CopyPlugin          = require( 'copy-webpack-plugin' );
 const imageminMozjpeg     = require( 'imagemin-mozjpeg' );
 const SVGSpritemapPlugin  = require( 'svg-spritemap-webpack-plugin' );
-const purgecss            = require( '@fullhuman/postcss-purgecss' );
-const purgecssWordpress   = require( 'purgecss-with-wordpress' );
-const purgecssWhitelister = require( 'purgecss-whitelister' );
 const postcssVariables    = require( 'postcss-css-variables' );
 const postcssCalc         = require( 'postcss-calc' );
 
@@ -119,62 +116,8 @@ var sassConfig = {
 	},
 };
 
-let purgecssConfig = purgecss( {
-	content: [
-		'app/**/*.php',
-		'resources/js/**/*.js',
-		'resources/views/**/*.php',
-		'../eichefam/resources/views/**/*.php',
-		'../eichefam/resources/js/**/*.js',
-	],
-	whitelist: [
-		...purgecssWordpress.whitelist,
-		...purgecssWhitelister( [
-			'node_modules/codyhouse-framework/main/assets/css/base/_reset.scss',
-			'node_modules/codyhouse-framework/main/assets/css/base/_util.scss',
-			'resources/scss/elements/*.scss',
-			'resources/scss/blocks/**/*.scss',
-		] ),
-		'ltr',
-		'error-404',
-		'customize-support',
-		'logged-out',
-		'single',
-		'plural',
-		'alignwide',
-		'alignfull',
-		'odd',
-		'even',
-		'emoji',
-	],
-	whitelistPatterns: [
-		...purgecssWordpress.whitelistPatterns,
-		/^taxonomy(-.*)?$/,
-		/^(.*)?-?app(-.*)?$/,
-		/^(.*)?-?menu(-.*)?$/,
-		/^(.*)?-?widget(-.*)?$/,
-		/^icon(-.*)?$/,
-		/^sidebar(-.*)?$/,
-		/^entry([_-].*)?$/,
-		/^menu([_-].*)?$/,
-		/^pagination([_-].*)?$/,
-		/^col(-.*)?$/,
-		/^has(-.*)?$/,
-		/^is(-.*)?$/,
-		/^wp(-.*)?$/,
-		/^columns(-.*)?$/,
-		/^blocks(-.*)?$/,
-		/^nav(-.*)?$/,
-		/^(post|page)-template(-.*)?$/,
-	],
-	whitelistPatternsChildren: [],
-	defaultExtractor: content => content.match(/[A-z0-9-:@%\/]+/g) || [],
-} );
-
-// Compile user-facing styles with Purgecss.
-mix.sass( `${devPath}/scss/screen.scss`, 'css', sassConfig, [
-	purgecssConfig,
-] );
+// Compile user-facing styles.
+mix.sass( `${devPath}/scss/screen.scss`, 'css', sassConfig );
 
 // Compile fallback CSS replacing custom properties and calc().
 // @link https://github.com/JeffreyWay/laravel-mix/issues/2143#issuecomment-524368071
@@ -183,9 +126,9 @@ mix.sass( `${devPath}/scss/screen-fallback.scss`, 'css', sassConfig, [
 		preserve: false,
 	} ),
 	postcssCalc(),
-	purgecssConfig,
 ] );
 
+// Compile editor and Customizer styles.
 mix.sass( `${devPath}/scss/editor.scss`,    'css', sassConfig )
 	 .sass( `${devPath}/scss/customize.scss`, 'css', sassConfig );
 
