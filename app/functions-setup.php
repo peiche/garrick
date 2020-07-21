@@ -88,48 +88,52 @@ add_action( 'after_setup_theme', function() {
 		[
 			'name'  => __( 'Accent', 'garrick' ),
 			'slug'  => 'accent',
-			'color' => '#f54251',
+			'color' => 'var(--color-accent)',
 		],
 		[
 			'name'  => __( 'Success', 'garrick' ),
 			'slug'  => 'success',
-			'color' => '#88c559',
+			'color' => 'var(--color-success)',
 		],
 		[
 			'name'  => __( 'Error', 'garrick' ),
 			'slug'  => 'error',
-			'color' => '#f54251',
+			'color' => 'var(--color-error)',
 		],
 		[
 			'name'  => __( 'Warning', 'garrick' ),
 			'slug'  => 'warning',
-			'color' => '#ffd138',
+			'color' => 'var(--color-warning)',
 		],
-
 		[
 			'name'  => __( 'Higher Contrast', 'garrick' ),
 			'slug'  => 'higher-contrast',
-			'color' => '#1c1c21',
+			'color' => 'var(--color-contrast-higher)',
 		],
 		[
 			'name'  => __( 'High Contrast', 'garrick' ),
 			'slug'  => 'high-contrast',
-			'color' => '#313135',
+			'color' => 'var(--color-contrast-high)',
 		],
 		[
 			'name'  => __( 'Medium Contrast', 'garrick' ),
 			'slug'  => 'medium-contrast',
-			'color' => '#79797c',
+			'color' => 'var(--color-contrast-medium)',
 		],
 		[
 			'name'  => __( 'Low Contrast', 'garrick' ),
 			'slug'  => 'low-contrast',
-			'color' => '#d3d3d4',
+			'color' => 'var(--color-contrast-low)',
 		],
 		[
 			'name'  => __( 'Lower Contrast', 'garrick' ),
 			'slug'  => 'lower-contrast',
-			'color' => '#f2f2f2',
+			'color' => 'var(--color-contrast-lower)',
+		],
+		[
+			'name'  => __( 'Background', 'garrick' ),
+			'slug'  => 'background',
+			'color' => 'var(--color-bg)',
 		],
 		[
 			'name'  => __( 'Black', 'garrick' ),
