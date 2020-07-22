@@ -35,6 +35,22 @@
 		margin: auto;
 	}
 
+	&--label {
+		position: absolute;
+		background-color: hsla(var(--color-black-h), var(--color-black-s), var(--color-black-l), 0.9);
+		width: auto;
+		height: auto;
+		z-index: 1;
+		top: var(--space-xs);
+		right: var(--space-xs);
+		left: auto;
+		padding: var(--space-xxs) var(--space-sm);
+		color: var(--color-white);
+		pointer-events: none;
+		font-size: var(--text-sm);
+		border-radius: var(--radius-sm);
+	}
+
 	img {
 		position: absolute;
 		top: 0;

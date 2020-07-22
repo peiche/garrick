@@ -8,12 +8,17 @@
 				\Garrick\get_svg( [ 'icon' => 'format-' . $post_format, 'class' => 'icon--md color-inherit' ] ) .
 				'</div>';
 	endif;
+
+	$image_label = '';
+	if ( ( time() - ( 86400 * 7 ) ) < get_the_date( 'U' ) ) :
+		$image_label = '<div class="media-wrapper--label">' . __( 'New', 'garrick' ) . '</div>';
+	endif;
 ?>
 <?php if ( has_post_thumbnail() ) : ?>
 	<?php Hybrid\Carbon\Image::display( 'featured', [
 		'size' => 'full',
 		'class' => 'entry__image radius-md',
-		'before' => '<figure class="margin-y-sm color-contrast-low ' . $image_aspect_ratio . '">' . $image_icon,
+		'before' => '<figure class="margin-y-sm color-contrast-low ' . $image_aspect_ratio . '">' . $image_icon . $image_label,
 		'after' => '</figure>',
 		'link' => true,
 		'link_class' => 'entry__featured-image__link',
