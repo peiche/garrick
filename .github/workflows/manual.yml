@@ -29,9 +29,7 @@ jobs:
         composer install --no-dev --optimize-autoloader
         mkdir build
     - name: Install npm deps
-      uses: Jaid/action-npm-install@1.2.4
-      with:
-        packageManager: npm
+      uses: bahmutov/npm-install@v1.1.0
     - name: Build project
       run: |
         npm run build
