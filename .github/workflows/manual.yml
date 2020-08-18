@@ -18,13 +18,29 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "greet"
-  greet:
-    # The type of runner that the job will run on
+  build:
+    name: Upload Release
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    # Runs a single command using the runners shell
-    - name: Send greeting
-      run: echo "Hello ${{ github.event.inputs.name }}"
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Build project
+      run: |
+        composer install --no-dev --optimize-autoloader
+        mkdir build
+    # TODO: npm install
+    - name: Create artifact
+      uses: montudor/action-zip@v0.1.0
+      with:
+        args: zip -X -r build/garrick.zip . -x *.git* node_modules/\* .* "*/\.*" composer.* package*.* readme.md webpack.*
+    - name: Upload artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: garrick
+        path: build/garrick.zip
+    - name: Upload to release
+      uses: JasonEtco/upload-to-release@master
+      with:
+        args: build/garrick.zip application/zip
+      env: 
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
