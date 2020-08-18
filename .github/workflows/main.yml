@@ -33,7 +33,7 @@ jobs:
     - name: Create zip
       uses: montudor/action-zip@v0.1.0
       with:
-        args: zip -X -r build/garrick.zip ./garrick -x .* node_modules/\* readme.md composer.* package*.* webpack.* dist/spritemap.* build**
+        args: zip -X -r build/garrick.zip ./garrick
     - name: Upload artifact
       uses: actions/upload-artifact@v2
       with:
