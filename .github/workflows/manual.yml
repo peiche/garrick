@@ -22,11 +22,11 @@ jobs:
     - name: Upload artifact
       uses: actions/upload-artifact@v2
       with:
-        name: garrick.zip
+        name: garrick
         path: garrick
-    - name: Upload to release
-      uses: JasonEtco/upload-to-release@master
-      with:
-        args: garrick.zip application/zip
+#    - name: Upload to release
+#      uses: JasonEtco/upload-to-release@master
+#      with:
+#        args: garrick.zip application/zip
       env: 
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
