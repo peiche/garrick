@@ -10,7 +10,8 @@
 	endif;
 
 	$image_label = '';
-	if ( ( time() - ( 86400 * 7 ) ) < get_the_date( 'U' ) ) :
+	$days = get_theme_mod( 'archive_new_days_count', false );
+	if ( $days > 0 && ( time() - ( 86400 * $days ) ) < get_the_date( 'U' ) ) :
 		$image_label = '<div class="media-wrapper--label">' . __( 'New', 'garrick' ) . '</div>';
 	endif;
 ?>

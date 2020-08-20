@@ -214,6 +214,11 @@ class Customize implements Bootable {
 			'transport' => 'refresh',
 		) );
 
+		$manager->add_setting( 'archive_new_days_count', array(
+			'default'   => 0,
+			'transport' => 'refresh',
+		) );
+
 	}
 
 	/**
@@ -228,9 +233,9 @@ class Customize implements Bootable {
 	public function registerControls( WP_Customize_Manager $manager ) {
 
 		$manager->add_control( 'hide_title_on_mobile', array(
-			'type' => 'checkbox',
-			'section' => 'title_tagline',
-			'label' => __( 'Hide Title on Mobile', 'garrick' ),
+			'type'        => 'checkbox',
+			'section'     => 'title_tagline',
+			'label'       => __( 'Hide Title on Mobile', 'garrick' ),
 			'description' => __( 'Do not show the title on small screens.', 'garrick' ),
 		) );
 
@@ -336,6 +341,13 @@ class Customize implements Bootable {
 			'section'     => 'content',
 			'label'       => __( 'Show tags', 'garrick' ),
 			'description' => __( 'Show tags on blog and archive pages.', 'garrick' ),
+		) );
+
+		$manager->add_control( 'archive_new_days_count', array(
+			'type'        => 'number',
+			'section'     => 'content',
+			'label'       => __( 'Show "New" label on recent posts', 'garrick' ),
+			'description' => __( 'Enter a number of days to enable.', 'garrick' ),
 		) );
 
 		$fonts_body = json_decode( file_get_contents( get_theme_file_path( 'app/Customize/fonts-body.json' ) ), true );
