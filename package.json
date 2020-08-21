@@ -54,6 +54,6 @@
 		"stylelint-scss": "^3.18.0",
 		"svg-spritemap-webpack-plugin": "^3.5.7",
 		"theme-claim": "^0.2.0",
-		"vue-template-compiler": "^2.6.11"
+		"vue-template-compiler": "^2.6.12"
 	}
 }
