@@ -44,7 +44,7 @@
 		"imagemin-webpack-plugin": "^2.4.2",
 		"laravel-mix": "^5.0.5",
 		"node-wp-i18n": "^1.2.3",
-		"postcss-calc": "^7.0.3",
+		"postcss-calc": "^7.0.4",
 		"postcss-css-variables": "github:CodyHouse/postcss-css-variables",
 		"rimraf": "^3.0.2",
 		"sass": "^1.26.10",
