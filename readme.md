@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/peiche/garrick.svg?branch=master)](https://travis-ci.org/peiche/garrick)
+
 # Garrick
 
 Garrick is a modern, multi-purpose theme built to be compatible with Gutenberg, the WordPress core block editor and page builder. Personalize your website from the built-in Customizer, including choosing from hundreds of supported Google Fonts.
