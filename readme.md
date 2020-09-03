@@ -1,5 +1,7 @@
 # Garrick
 
+[![GPLv2 License](https://img.shields.io/github/license/peiche/garrick.svg)](./LICENSE)
+
 Garrick is a modern, multi-purpose theme built to be compatible with Gutenberg, the WordPress core block editor and page builder. Personalize your website from the built-in Customizer, including choosing from hundreds of supported Google Fonts.
 
 Garrick is based on the Mythic theme by Justin Tadlock, and is modular in nature. Copy any file inside the `resources/views` directory to your child theme and edit. Change as little or as much as you want! The theme uses the CodyFrame framework, making all utility classes available in Gutenberg blocks.
