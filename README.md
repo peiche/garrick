@@ -1,4 +1,6 @@
 [![Build Status](https://travis-ci.org/peiche/garrick.svg?branch=master)](https://travis-ci.org/peiche/garrick)
+[![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](./LICENSE)
+[![GitHub release](https://img.shields.io/github/v/release/peiche/garrick.svg)](https://github.com/peiche/garrick/releases/latest)
 
 # Garrick
 
