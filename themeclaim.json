@@ -1,8 +1,8 @@
 {
   "from": {
-    "Name": "Trunc",
-    "Description": "Mythic is a next-generation starter theme designed to help theme authors write elegant, intelligent, and modern code.",
-    "Uri": "https://boldoak.design/themes/trunc",
+    "Name": "Garrick",
+    "Description": "Garrick is a modern, responsive theme.",
+    "Uri": "https://boldoak.design/work/garrick",
     "Author": "Paul Eiche",
     "AuthorEmail": "paul@boldoak.design",
     "AuthorUri": "https://boldoak.design"
@@ -10,7 +10,7 @@
   "to": {
     "Name": "Garrick",
     "Description": "Garrick is a modern, responsive theme.",
-    "Uri": "https://boldoak.design/themes/garrick",
+    "Uri": "https://boldoak.design/work/garrick",
     "Author": "Paul Eiche",
     "AuthorEmail": "paul@boldoak.design",
     "AuthorUri": "https://boldoak.design"

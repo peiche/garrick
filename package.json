@@ -4,7 +4,7 @@
 	"description": "Garrick is a modern, responsive theme.",
 	"author": "Paul Eiche",
 	"license": "GPL-2.0+",
-	"homepage": "https://boldoak.design/themes/garrick",
+	"homepage": "https://boldoak.design/work/garrick",
 	"main": "resources/js/app.js",
 	"scripts": {
 		"build": "npm run prod && npm run i18n && npm run export",

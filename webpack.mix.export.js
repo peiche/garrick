@@ -8,7 +8,7 @@
  * @package   Garrick
  * @author    Paul Eiche <paul@boldoak.design>
  * @copyright 2019 Paul Eiche
- * @link      https://boldoak.design/themes/garrick
+ * @link      https://boldoak.design/work/garrick
  * @license   https://www.gnu.org/licenses/gpl-2.0.html GPL-2.0-or-later
  */
 
@@ -27,6 +27,7 @@ let files = [
 	'functions.php',
 	'index.php',
 	'license.md',
+	'nucleo-license.md',
 	'readme.md',
 	'readme.txt',        // Required for WordPress.org theme review.
 	'screenshot.png'
