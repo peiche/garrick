@@ -23,14 +23,14 @@ let exportPath = 'garrick';
 // Theme root-level files to include.
 let files = [
 	'style.css',
-	'changelog.md',
+	'CHANGELOG.md',
 	'functions.php',
 	'index.php',
-	'license.md',
+	'LICENSE',
 	'nucleo-license.md',
-	'readme.md',
+	'README.md',
 	'readme.txt',        // Required for WordPress.org theme review.
-	'screenshot.png'
+	'screenshot.jpg'
 ];
 
 // Folders to include.
