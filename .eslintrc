@@ -11,6 +11,8 @@
 	"rules": {
 		"space-in-parens": 0,
 		"wrap-iife": 0,
-		"linebreak-style": 0
+		"linebreak-style": 0,
+		"quotes": [ 2, "single", { "avoidEscape": true, "allowTemplateLiterals": true } ],
+		"comma-dangle": [ 2, "only-multiline" ]
 	}
 }
