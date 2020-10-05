@@ -36,7 +36,7 @@
 		"browser-sync-webpack-plugin": "2.2.2",
 		"choices.js": "^9.0.1",
 		"codyhouse-framework": "^2.8.0",
-		"copy-webpack-plugin": "^6.1.1",
+		"copy-webpack-plugin": "^6.2.0",
 		"cross-env": "^7.0.2",
 		"eslint": "^7.10.0",
 		"eslint-config-wordpress": "^2.0.0",
