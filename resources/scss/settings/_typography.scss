@@ -10,8 +10,9 @@
 @use '~codyhouse-framework/main/assets/css/base/breakpoints';
 
 :root {
-	// body font size
-	--text-base-size: 1em;
+	// font size
+	--text-base-size: 1em; // body font-size
+	--text-scale-ratio: 1.2; // multiplier used to generate the type scale values 👇
 
 	// type scale
 	--text-scale-ratio: 1.2;
@@ -34,6 +35,9 @@
 	--text-vspace-multiplier: 1.2;
 	--component-body-line-height: calc(var(--body-line-height) * var(--line-height-multiplier, 1));
 	--component-heading-line-height: calc(var(--heading-line-height) * var(--line-height-multiplier, 1));
+
+	// unit - don't modify unless you want to change the typography unit
+	--text-unit: 1em; // if not Em units → --text-unit: var(--text-base-size);
 }
 
 @supports (--css: variables) {
