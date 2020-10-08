@@ -42,7 +42,7 @@
 		"eslint-config-wordpress": "^2.0.0",
 		"imagemin-mozjpeg": "^9.0.0",
 		"imagemin-webpack-plugin": "^2.4.2",
-		"laravel-mix": "^5.0.5",
+		"laravel-mix": "^5.0.6",
 		"node-wp-i18n": "^1.2.3",
 		"postcss-calc": "^7.0.5",
 		"postcss-css-variables": "github:CodyHouse/postcss-css-variables",
