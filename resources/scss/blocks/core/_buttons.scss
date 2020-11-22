@@ -6,6 +6,8 @@
 /// @link   https://boldoak.design/work/garrick
 ////
 
+@use '~codyhouse-framework/main/assets/css/base/breakpoints';
+
 .wp-block-buttons {
 	display: flex;
 	flex-wrap: wrap;
@@ -46,7 +48,7 @@
 		white-space: normal;
 		color: var(--color-contrast-lower);
 		background-color: var(--color-contrast-high);
-		border-radius: var(--radius-pill);
+		border-radius: var(--radius-md);
 		text-decoration: none;
 
 		&:hover {
@@ -71,6 +73,25 @@
 			&:not(.has-text-color) {
 				color: var(--color-contrast-high);
 			}
+		}
+	}
+
+	$widths: 25, 50, 75, 100;
+	&.has-custom-width {
+
+		@each $width in $widths {
+
+			@include breakpoints.breakpoint(md) {
+
+				&.wp-block-button__width-#{$width} {
+					flex-basis: calc(#{$width * 1%} - 0.01px - var(--space-md));
+					max-width: calc(#{$width * 1%} - 0.01px - var(--space-md));
+				}
+			}
+		}
+
+		.wp-block-button__link {
+			display: block;
 		}
 	}
 }
