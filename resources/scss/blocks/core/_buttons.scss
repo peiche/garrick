@@ -14,22 +14,16 @@
 	margin-bottom: calc(var(--space-xxxs) * var(--text-vspace-multiplier, 1));
 	margin-left: calc(-1 * var(--gap, 0.5em));
 
-	&.alignleft,
-	&.alignright {
-		margin-bottom: calc(-1 * var(--gap, 0.5em));
+	&.is-content-justification-left {
+		justify-content: flex-start;
 	}
 
-	&.alignleft {
-		margin-right: var(--space-xs);
-	}
-
-	&.alignright {
-		margin-left: var(--space-xs);
-	}
-
-	&.aligncenter {
-		display: flex;
+	&.is-content-justification-center {
 		justify-content: center;
+	}
+
+	&.is-content-justification-right {
+		justify-content: flex-end;
 	}
 }
 
