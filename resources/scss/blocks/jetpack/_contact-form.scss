@@ -1,0 +1,41 @@
+@use '~codyhouse-framework/main/assets/css/base/breakpoints';
+@use '~codyhouse-framework/main/assets/css/base/mixins';
+
+// double up specificity to override Jetpack's CSS
+.wp-block-jetpack-contact-form.wp-block-jetpack-contact-form {
+	--gap: var(--space-md);
+	--gap-x: var(--gap);
+	--gap-y: var(--gap);
+	--offset: var(--gap-x);
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: calc(var(--gap-y)*-1);
+    margin-left: calc(var(--gap-x)*-1);
+
+	> * {
+		flex-basis: 100%;
+		max-width: 100%;
+		min-width: 0;
+		margin-bottom: var(--gap-y);
+		margin-left: var(--offset);
+	}
+
+	.grunion-field-wrap {
+		border: 0;
+		flex-basis: calc(100% - 0.01px - var(--gap-x));
+		max-width: calc(100% - 0.01px - var(--gap-x));
+	}
+
+	input[type="email"],
+	input[type="tel"],
+	input[type="text"],
+	input[type="url"],
+	textarea {
+		@include mixins.reset;
+		font-size: var(--form-control-font-size);
+		padding: var(--form-control-padding-y) var(--form-control-padding-x);
+		border-radius: var(--form-control-radius);
+		border: 2px solid var(--color-contrast-low);
+		margin-bottom: 0;
+	}
+}
