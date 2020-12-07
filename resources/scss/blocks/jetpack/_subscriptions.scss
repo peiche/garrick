@@ -7,8 +7,10 @@
 ////
 
 @use '~codyhouse-framework/main/assets/css/base/breakpoints';
+@use '~codyhouse-framework/main/assets/css/base/mixins';
 
-.wp-block-jetpack-subscriptions {
+// triple up specificity to override Jetpack's ridiculous CSS
+.wp-block-jetpack-subscriptions.wp-block-jetpack-subscriptions.wp-block-jetpack-subscriptions.wp-block-jetpack-subscriptions {
 	margin-bottom: var(--space-md);
 
 	form {
@@ -16,37 +18,34 @@
 		flex-wrap: wrap;
 	}
 
+	&.wp-block-jetpack-subscriptions__use-newline {
+		
+		form {
+			display: block;
+		}
+	}
+
 	p {
 		color: var(--color-contrast-medium);
 	}
 
-	#subscribe-email,
-	#subscribe-submit {
-		color: var(--color-contrast-high);
-		margin: 0;
-	}
+	input[type="email"] {
+		background-color: var(--color-bg);
 
-	#subscribe-email {
 		flex-grow: 1;
 		display: flex;
 		margin-bottom: var(--space-xxs);
 
+		@include mixins.reset;
+		font-size: var(--form-control-font-size, 1em);
+		padding: var(--form-control-padding-y, 0.5em) var(--form-control-padding-x, 0.75em);
+		border-radius: var(--form-control-radius, 0.25em);
+		border: 2px solid var(--color-contrast-low);
+		margin-bottom: 0;
+
 		@include breakpoints.breakpoint(md) {
 			margin-bottom: 0;
 		}
-	}
-
-	#subscribe-submit {}
-
-	input[type="email"],
-	button[type="submit"] {
-		padding: var(--space-xs) var(--space-sm);
-		border: 2px solid var(--color-contrast-low);
-		border-radius: 25em;
-	}
-
-	input[type="email"] {
-		background-color: var(--color-bg);
 	}
 
 	button[type="submit"] {
