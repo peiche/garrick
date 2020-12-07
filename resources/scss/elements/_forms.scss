@@ -5,3 +5,10 @@
 /// @author Paul Eiche <paul@boldoak.design>
 /// @link   https://boldoak.design/work/garrick
 ////
+
+:root {
+    --form-control-padding-y: var(--space-xxs); // padding top/bottom
+    --form-control-padding-x: var(--space-xs); // padding left/right
+    --form-control-radius: 0.25em; // border radius
+    --form-control-font-size: 1em; // font size
+}
