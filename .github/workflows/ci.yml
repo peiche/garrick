@@ -1,0 +1,35 @@
+name: Continuous Integration Tests
+on:
+  # Triggers the workflow on push or pull request events but only for the master branch
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Validation Tests
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Install Composer deps
+      run: |
+        composer install --no-dev --optimize-autoloader
+    - name: Install npm deps
+      uses: bahmutov/npm-install@v1.1.0
+    - name: Validate composer.json
+      run: |
+        composer validate --no-check-all --strict
+    - name: Validate PHP using phpcs.xml.dist
+      run: |
+        npm run lint:php
+    - name: Validate JS files
+      run: |
+        npm run lint:scripts
+    - name: Validate Sass files
+      run: |
+        npm run lint:styles
