@@ -11,8 +11,6 @@
 .wp-block-columns {
 	display: flex;
 	flex-wrap: wrap;
-	margin-bottom: calc(-1 * var(--component-padding));
-	margin-left: calc(-1 * var(--component-padding));
 
 	&.are-vertically-aligned-top {
 		align-items: flex-start;
@@ -38,8 +36,6 @@
 .wp-block-column {
 	background-clip: content-box;
 	flex-basis: 100%;
-	margin-bottom: var(--component-padding);
-	margin-left: var(--component-padding);
 
 	@include breakpoints.breakpoint(sm) {
 		flex-basis: 0;
