@@ -19,7 +19,7 @@
 	}
 
 	&.wp-block-jetpack-subscriptions__use-newline {
-		
+
 		form {
 			display: block;
 		}
@@ -30,13 +30,10 @@
 	}
 
 	input[type="email"] {
-		background-color: var(--color-bg);
-
-		flex-grow: 1;
-		display: flex;
-		margin-bottom: var(--space-xxs);
-
 		@include mixins.reset;
+		background-color: var(--color-bg);
+		display: flex;
+		flex-grow: 1;
 		font-size: var(--form-control-font-size, 1em);
 		padding: var(--form-control-padding-y, 0.5em) var(--form-control-padding-x, 0.75em);
 		border-radius: var(--form-control-radius, 0.25em);

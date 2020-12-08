@@ -9,8 +9,8 @@
 	--offset: var(--gap-x);
 	display: flex;
 	flex-wrap: wrap;
-	margin-bottom: calc(var(--gap-y)*-1);
-    margin-left: calc(var(--gap-x)*-1);
+	margin-bottom: calc(var(--gap-y) * -1);
+	margin-left: calc(var(--gap-x) * -1);
 
 	> * {
 		flex-basis: 100%;
