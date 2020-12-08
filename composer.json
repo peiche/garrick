@@ -28,6 +28,6 @@
 	},
 	"require-dev": {
 		"wptrt/wpthemereview": "*",
-		"dealerdirect/phpcodesniffer-composer-installer": "0.7.0"
+		"dealerdirect/phpcodesniffer-composer-installer": "0.7.1"
 	}
 }
