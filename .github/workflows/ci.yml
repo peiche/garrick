@@ -17,12 +17,12 @@ jobs:
     - uses: actions/checkout@v2
     - uses: bahmutov/npm-install@v1
     - run: |
-        composer install --no-dev --optimize-autoloader
+        composer install --optimize-autoloader
     - run: |
         composer validate --no-check-all --strict
-#     - run: |
-#         npm run lint:php
-    - uses: chekalsky/phpcs-action@v1
+    - run: |
+        npm run lint:php
+#     - uses: chekalsky/phpcs-action@v1
 #       with:
 #         phpcs_bin_path: './vendor/bin/phpcs'
     - run: |
