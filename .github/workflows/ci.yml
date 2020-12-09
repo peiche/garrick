@@ -14,22 +14,15 @@ jobs:
     name: Validation Tests
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-    - name: Install Composer deps
-      run: |
+    - uses: actions/checkout@v2
+    - uses: bahmutov/npm-install@v1.1.0
+    - run: |
         composer install --no-dev --optimize-autoloader
-    - name: Install npm deps
-      uses: bahmutov/npm-install@v1.1.0
-    - name: Validate composer.json
-      run: |
+    - run: |
         composer validate --no-check-all --strict
-    - name: Validate PHP using phpcs.xml.dist
-      run: |
+    - run: |
         npm run lint:php
-    - name: Validate JS files
-      run: |
+    - run: |
         npm run lint:scripts
-    - name: Validate Sass files
-      run: |
+    - run: |
         npm run lint:styles
