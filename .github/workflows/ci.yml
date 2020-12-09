@@ -20,8 +20,8 @@ jobs:
         composer install --no-dev --optimize-autoloader
     - run: |
         composer validate --no-check-all --strict
-    - run: |
-        npm run lint:php
+#     - run: |
+#         npm run lint:php
     - run: |
         npm run lint:scripts
     - run: |
