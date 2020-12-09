@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/peiche/garrick.svg?branch=master)](https://travis-ci.org/peiche/garrick)
+![Build Status](https://github.com/peiche/garrick/workflows/Continuous%20Integration/badge.svg)
 ![Tested on WordPress 5.5](https://img.shields.io/badge/wordpress-v5.5%20tested-%234c1)
 [![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](./LICENSE)
 [![GitHub release](https://img.shields.io/github/v/release/peiche/garrick.svg)](https://github.com/peiche/garrick/releases/latest)
