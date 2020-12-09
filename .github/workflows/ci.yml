@@ -23,8 +23,8 @@ jobs:
 #     - run: |
 #         npm run lint:php
     - uses: chekalsky/phpcs-action@v1
-      with:
-        phpcs_bin_path: './vendor/bin/phpcs'
+#       with:
+#         phpcs_bin_path: './vendor/bin/phpcs'
     - run: |
         npm run lint:scripts
     - run: |
