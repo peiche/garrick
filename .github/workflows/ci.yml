@@ -1,17 +1,7 @@
-name: Continuous Integration Tests
-on:
-  # Triggers the workflow on push or pull request events but only for the master branch
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
-
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
+name: Continuous Integration
+on: [ push, pull_request ]
 jobs:
   build:
-    name: Validation Tests
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -22,9 +12,6 @@ jobs:
         composer validate --no-check-all --strict
     - run: |
         npm run lint:php
-#     - uses: chekalsky/phpcs-action@v1
-#       with:
-#         phpcs_bin_path: './vendor/bin/phpcs'
     - run: |
         npm run lint:scripts
     - run: |
