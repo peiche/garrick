@@ -15,7 +15,6 @@
 
 	form {
 		display: flex;
-		flex-wrap: wrap;
 	}
 
 	&.wp-block-jetpack-subscriptions__use-newline {
@@ -27,6 +26,7 @@
 
 	p {
 		color: var(--color-contrast-medium);
+		height: var(--space-lg);
 	}
 
 	input[type="email"] {
@@ -39,6 +39,7 @@
 		border-radius: var(--form-control-radius, 0.25em);
 		border: 2px solid var(--color-contrast-low);
 		margin-bottom: 0;
+		line-height: normal;
 
 		@include breakpoints.breakpoint(md) {
 			margin-bottom: 0;
@@ -48,5 +49,6 @@
 	button[type="submit"] {
 		background-color: var(--color-contrast-low);
 		color: var(--color-contrast-high);
+		white-space: nowrap;
 	}
 }
