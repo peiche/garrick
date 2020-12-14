@@ -22,6 +22,13 @@ $aspect-ratios: (
 	margin-top: var(--component-padding);
 	margin-bottom: var(--component-padding);
 
+	// override CodyFrame aspect ratio wildcard selector
+	&.wp-has-aspect-ratio {
+		padding-bottom: 0;
+		height: auto;
+		position: relative;
+	}
+
 	// Directly target iframes.
 	iframe {
 		display: block;
@@ -70,5 +77,6 @@ $aspect-ratios: (
 	// Caption below embedded content.
 	figcaption {
 		@include mixins.caption;
+		position: static;
 	}
 }
