@@ -57,7 +57,7 @@
 
 	&__author {
 
-		a {
+		a:not(.btn) {
 			color: var(--color-contrast-high);
 			text-decoration: none;
 
