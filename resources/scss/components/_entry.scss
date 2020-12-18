@@ -124,6 +124,10 @@
 		&:hover {
 			text-decoration: underline;
 		}
+	}
+
+	&__author,
+	&__author-link {
 
 		.single & {
 			color: inherit;
