@@ -124,6 +124,9 @@ mix.sass( `${devPath}/scss/screen.scss`, 'css', sassConfig );
 mix.sass( `${devPath}/scss/screen-fallback.scss`, 'css', sassConfig, [
 	postcssVariables( {
 		preserve: false,
+		variables: {
+			'--gap-x': '0px',
+		},
 	} ),
 	postcssCalc(),
 ] );
