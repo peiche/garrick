@@ -20,3 +20,5 @@ jobs:
         npm run lint:scripts
     - run: |
         npm run lint:styles
+    - run: |
+        npm run dev
