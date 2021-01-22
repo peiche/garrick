@@ -17,30 +17,24 @@ jobs:
     name: Upload Release
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-    - name: Install Composer deps
-      run: |
+    - uses: actions/checkout@v2
+    - uses: bahmutov/npm-install@v1
+    - run: |
         composer install --no-dev --optimize-autoloader
-    - name: Install npm deps
-      uses: bahmutov/npm-install@v1.1.0
-    - name: Build project
-      run: |
+    - run: |
+        composer validate --no-check-all --strict
+    - run: |
         npm run build
-    - name: Create build folder
-      run: |
+    - run: |
         mkdir build
-    - name: Create zip
-      uses: montudor/action-zip@v0.1.0
+    - uses: montudor/action-zip@v0.1.0
       with:
         args: zip -X -r build/garrick.zip ./garrick
-    - name: Upload artifact
-      uses: actions/upload-artifact@v2
+    - uses: actions/upload-artifact@v2
       with:
         name: garrick
         path: build/garrick.zip
-    - name: Upload to release
-      uses: JasonEtco/upload-to-release@master
+    - uses: JasonEtco/upload-to-release@master
       with:
         args: build/garrick.zip application/zip
       env: 
