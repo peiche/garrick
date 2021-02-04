@@ -43,7 +43,7 @@
 		"imagemin-mozjpeg": "^9.0.0",
 		"imagemin-webpack-plugin": "^2.4.2",
 		"laravel-mix": "^5.0.9",
-		"node-wp-i18n": "^1.2.4",
+		"node-wp-i18n": "^1.2.5",
 		"postcss-calc": "^7.0.5",
 		"postcss-css-variables": "github:CodyHouse/postcss-css-variables",
 		"rimraf": "^3.0.2",
