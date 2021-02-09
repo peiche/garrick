@@ -45,7 +45,7 @@
 		"laravel-mix": "^5.0.9",
 		"node-wp-i18n": "^1.2.5",
 		"postcss-calc": "^7.0.5",
-		"postcss-css-variables": "github:CodyHouse/postcss-css-variables",
+		"postcss-css-variables": "git+https://git@github.com/codyhouse/postcss-css-variables.git",
 		"rimraf": "^3.0.2",
 		"sass": "^1.32.6",
 		"sass-loader": "^10.1.1",
