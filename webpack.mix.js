@@ -16,7 +16,7 @@
 
 // Import required packages.
 const mix                 = require( 'laravel-mix' );
-const path                = require('path');
+const path                = require( 'path' );
 const ImageminPlugin      = require( 'imagemin-webpack-plugin' ).default;
 const CopyPlugin          = require( 'copy-webpack-plugin' );
 const imageminMozjpeg     = require( 'imagemin-mozjpeg' );
