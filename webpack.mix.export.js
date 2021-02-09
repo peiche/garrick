@@ -26,7 +26,7 @@ let files = [
 	'CHANGELOG.md',
 	'functions.php',
 	'index.php',
-	'LICENSE',
+	'LICENSE.txt',
 	'nucleo-license.md',
 	'README.md',
 	'readme.txt',        // Required for WordPress.org theme review.
