@@ -47,7 +47,7 @@
 		"postcss-calc": "^8.0.0",
 		"postcss-css-variables": "git+https://git@github.com/codyhouse/postcss-css-variables.git",
 		"rimraf": "^3.0.2",
-		"sass": "^1.32.7",
+		"sass": "^1.32.8",
 		"sass-loader": "^11.0.1",
 		"stylelint": "^13.10.0",
 		"stylelint-config-wordpress": "^17.0.0",
