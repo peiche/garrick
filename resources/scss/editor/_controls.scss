@@ -8,6 +8,7 @@
 
 :root {
 	--wp-font-size: 13px;
+	--wp-color: #1e1e1e;
 }
 
 .edit-post-header,
@@ -70,4 +71,8 @@ svg.components-checkbox-control__checked {
 .editor-post-saved-state,
 .edit-post-post-link__link {
 	font-size: var(--wp-font-size);
+}
+
+[class*=color-gradient-][class*=-color-gradient-] {
+	color: var(--wp-color) !important;
 }
