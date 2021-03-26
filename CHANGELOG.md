@@ -1,5 +1,11 @@
 # Change Log
 
+## 1.1.1 - 03/26/2021
+
+#### Changed
+
+- Fixed transparent text on block editor.
+
 ## 1.1.0 - 01/22/2021
 
 ### Changed
