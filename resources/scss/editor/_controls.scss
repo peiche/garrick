@@ -73,6 +73,6 @@ svg.components-checkbox-control__checked {
 	font-size: var(--wp-font-size);
 }
 
-[class*=color-gradient-][class*=-color-gradient-] {
+[class*="color-gradient-"][class*="-color-gradient-"] {
 	color: var(--wp-color) !important;
 }
