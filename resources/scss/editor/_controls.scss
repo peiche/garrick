@@ -7,16 +7,16 @@
 ////
 
 :root {
-	--wp-text-default: 13px;
+	--wp-font-size: 13px;
 }
 
 .edit-post-header,
 .edit-post-sidebar {
-	font-size: var(--wp-text-default);
+	font-size: var(--wp-font-size);
 }
 
 .block-editor-media-placeholder > * {
-	font-size: var(--wp-text-default);
+	font-size: var(--wp-font-size);
 }
 
 .components-button,
@@ -69,5 +69,5 @@ svg.components-checkbox-control__checked {
 
 .editor-post-saved-state,
 .edit-post-post-link__link {
-	font-size: var(--wp-text-default);
+	font-size: var(--wp-font-size);
 }
