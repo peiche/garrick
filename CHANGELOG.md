@@ -5,6 +5,7 @@
 - Updated to Hybrid Core 5.2.
 - Restructured block styles.
 - Added sticky post label and icon.
+- Added selective refresh for tagline in Customizer.
 
 ## 1.1.1 - 03/26/2021
 
