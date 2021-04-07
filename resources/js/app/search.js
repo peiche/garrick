@@ -7,10 +7,9 @@
 	if ( headerSearch ) {
 		let formControl = headerSearch.getElementsByClassName( 'form-control' );
 		if ( formControl ) {
-
 			let searchShow = document.getElementById( 'search-show' );
 			if ( searchShow ) {
-				searchShow.addEventListener( 'click', ( event ) => {
+				searchShow.addEventListener( 'click', () => {
 					headerSearch.classList.remove( 'is-hidden' );
 					formControl[0].focus();
 				} );
@@ -18,20 +17,18 @@
 
 			let searchHide = document.getElementById( 'search-hide' );
 			if ( searchHide) {
-				searchHide.addEventListener( 'click', ( event ) => {
+				searchHide.addEventListener( 'click', () => {
 					headerSearch.classList.add( 'is-hidden' );
 					formControl[0].value = '';
 				} );
 			}
 
 			formControl[ 0 ].addEventListener( 'keydown', ( event ) => {
-				if ( event.keyCode && KEYCODE_ESCAPE == event.keyCode || event.key && KEY == event.key ) {
+				if ( ( event.keyCode && KEYCODE_ESCAPE === event.keyCode ) || ( event.key && KEY === event.key ) ) {
 					headerSearch.classList.add( 'is-hidden' );
 					formControl[ 0 ].blur();
 				}
 			} );
-
 		}
 	}
-
 }() );

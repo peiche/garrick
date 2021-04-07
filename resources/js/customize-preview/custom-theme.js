@@ -4,11 +4,9 @@
  * This file handles the JavaScript for the live preview of the `color`
  * feature in the customizer.
  *
- * @package   Garrick
  * @author    Paul Eiche <paul@boldoak.design>
  * @copyright 2018 Paul Eiche
  * @license   https://www.gnu.org/licenses/gpl-2.0.html GPL-2.0-or-later
- * @link      https://boldoak.design/work/garrick
  */
 
 /* global wp */
