@@ -32,6 +32,7 @@
 	},
 	"devDependencies": {
 		"@babel/compat-data": "^7.13.12",
+		"@wordpress/eslint-plugin": "^9.0.2",
 		"@wordpress/stylelint-config": "^19.0.2",
 		"browser-sync": "^2.26.14",
 		"browser-sync-webpack-plugin": "2.3.0",
@@ -40,7 +41,6 @@
 		"copy-webpack-plugin": "^8.1.1",
 		"cross-env": "^7.0.3",
 		"eslint": "^7.23.0",
-		"eslint-config-wordpress": "^2.0.0",
 		"imagemin-mozjpeg": "^9.0.0",
 		"imagemin-webpack-plugin": "^2.4.2",
 		"laravel-mix": "^6.0.16",
