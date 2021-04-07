@@ -24,5 +24,6 @@
 @use 'generic';
 @use 'elements';
 @use 'components';
-@use 'blocks';
+@use 'blocks/core';
+@use 'blocks/jetpack';
 @use 'utilities';
