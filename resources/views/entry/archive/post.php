@@ -6,7 +6,7 @@
 	<?php if ( is_sticky() ) : ?>
 		<span class="btn btn--subtle btn--sm">
 			<?php echo \Garrick\get_svg( [ 'icon' => 'pin', 'class' => 'color-contrast-high margin-right-xxxs' ] ) ?>
-			<?php echo __( 'Pinned', 'garrick' ) ?>
+			<?php echo esc_html_e( 'Pinned', 'garrick' ) ?>
 		</span>
 	<?php elseif ( '' != $format ) : ?>
 		<a href="<?php echo esc_url( get_post_format_link( $format ) ) ?>" class="btn btn--subtle btn--sm">
