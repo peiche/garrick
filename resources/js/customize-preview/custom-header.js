@@ -17,3 +17,10 @@ wp.customize( 'blogname', value => {
 		document.querySelector( '.app-header__title-link' ).textContent = to;
 	} );
 } );
+
+// Site tagline.
+wp.customize( 'blogdescription', value => {
+	value.bind( to => {
+		document.querySelector( '.app-header__description' ).textContent = to;
+	} );
+} );
