@@ -1,11 +1,10 @@
 ( function() {
-
 	// Menu toggle
 	let menu = document.getElementById( 'menu--primary' );
 	if ( menu ) {
 		let menuToggle = document.getElementById( 'menu-toggle' );
 		if ( menuToggle ) {
-			menuToggle.addEventListener( 'click', ( event ) => {
+			menuToggle.addEventListener( 'click', () => {
 				if ( 'true' === menuToggle.getAttribute('aria-expanded')) {
 					menuToggle.setAttribute('aria-expanded', 'false');
 					menu.classList.remove( 'is-visible' );
@@ -16,5 +15,4 @@
 			} );
 		}
 	}
-
 }() );
