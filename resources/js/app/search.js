@@ -11,7 +11,7 @@
 			if ( searchShow ) {
 				searchShow.addEventListener( 'click', () => {
 					headerSearch.classList.remove( 'is-hidden' );
-					formControl[0].focus();
+					formControl[ 0 ].focus();
 				} );
 			}
 
@@ -19,7 +19,7 @@
 			if ( searchHide) {
 				searchHide.addEventListener( 'click', () => {
 					headerSearch.classList.add( 'is-hidden' );
-					formControl[0].value = '';
+					formControl[ 0 ].value = '';
 				} );
 			}
 
