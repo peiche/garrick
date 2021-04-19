@@ -22,11 +22,6 @@ $aspect-ratios: (
 	margin-top: var(--component-padding);
 	margin-bottom: var(--component-padding);
 
-	// override CodyFrame aspect ratio wildcard selector
-	> * {
-		position: static;
-	}
-
 	&.wp-has-aspect-ratio {
 		padding-bottom: 0;
 		height: auto;

@@ -27,14 +27,8 @@
 	.block-editor-rich-text {
 		width: 100%;
 	}
+}
 
-	@include breakpoints.breakpoint(sm) {
-
-		@for $i from 2 through 8 {
-
-			&.columns-#{ $i } .blocks-gallery-item {
-				margin-right: 0;
-			}
-		}
-	}
+.blocks-gallery-grid {
+	margin-left: 0;
 }

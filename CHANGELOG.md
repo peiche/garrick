@@ -1,6 +1,22 @@
 # Change Log
 
+## 1.3.0 - 04/15/2021
+
+### New
+
+- Added style for spacer block.
+
+### Changed
+
+- Updated to CodyFrame 2.8.7.
+- Removed embed block nested style override.
+- Fixed search header background color.
+- Fixed align-wide blocks being cut off on smaller screen sizes.
+- Fixed gallery block margins.
+
 ## 1.2.0 - 04/07/2021
+
+### Changed
 
 - Updated to Hybrid Core 5.2.
 - Restructured block styles.
