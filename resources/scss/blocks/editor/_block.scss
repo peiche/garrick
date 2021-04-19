@@ -14,27 +14,38 @@
 	margin-right: auto;
 	max-width: var(--max-width-sm);
 
+	@at-root h1#{ & } {
+		font-size: var(--text-xxl);
+	}
+
+	@at-root h2#{ & } {
+		font-size: var(--text-xl);
+	}
+
+	@at-root h3#{ & } {
+		font-size: var(--text-lg);
+	}
+
+	@at-root h4#{ & } {
+		font-size: var(--text-md);
+	}
+
+	@at-root h5#{ & } {
+		font-size: var(--text-sm);
+	}
+
+	@at-root h6#{ & } {
+		font-size: var(--text-xs);
+	}
+
+	small {
+		font-size: var(--text-sm);
+	}
+
 	// prevent nested elements from applying the font size recursively
 	.wp-block {
 		font-size: inherit;
 	}
-}
-
-// copied from codyhouse-framework
-h1.wp-block {
-	font-size: var(--text-xxl);
-}
-
-h2.wp-block {
-	font-size: var(--text-xl);
-}
-
-h3.wp-block {
-	font-size: var(--text-lg);
-}
-
-h4.wp-block {
-	font-size: var(--text-md);
 }
 
 .block-editor-rich-text__editable {

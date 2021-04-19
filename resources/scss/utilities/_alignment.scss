@@ -16,11 +16,7 @@
 .alignright {
 
 	@include breakpoints.breakpoint(sm) {
-		max-width: 35%;
-	}
-
-	@include breakpoints.breakpoint(md) {
-		max-width: 50%;
+		max-width: 45%;
 	}
 }
 
