@@ -9,6 +9,8 @@
 @use '~codyhouse-framework/main/assets/css/base/breakpoints';
 @use 'tools/mixins';
 
+$gap-size: var(--space-sm);
+
 // The wrapper element for the entire gallery.
 .wp-block-gallery {
 	display: flex;
@@ -25,8 +27,8 @@
 	flex-wrap: wrap;
 	flex-basis: 100%;
 	list-style: none;
-	margin-bottom: calc(-1 * 4px);
-	margin-left: calc(-1 * 4px);
+	margin-bottom: calc(-1 * #{ $gap-size });
+	margin-left: calc(-1 * #{ $gap-size });
 	padding: 0;
 }
 
@@ -37,20 +39,19 @@
 	flex-direction: column;
 	justify-content: center;
 	position: relative; // Image figure.
-	width: calc(100% / 2 - 4px); // Default to 2 columns.
-	margin-bottom: 4px;
-	margin-left: 4px;
+	width: calc(100% / 2 - #{ $gap-size }); // Default to 2 columns.
+	margin-bottom: $gap-size;
+	margin-right: $gap-size;
+	overflow: auto;
+
+	&:nth-of-type(2n),
+	&:last-child {
+		margin-right: 0;
+	}
 
 	figure {
 		margin: 0;
 		height: 100%;
-
-		// IE11 doesn't support flex and can't read this.
-		@supports (position: sticky) {
-			display: flex;
-			align-items: flex-end;
-			justify-content: flex-start;
-		}
 	}
 
 	img {
@@ -114,8 +115,17 @@
 
 	@for $i from 3 through 8 {
 
-		.columns-#{ $i } .blocks-gallery-item {
-			width: calc( 100% / #{ $i } - 4px);
+		.columns-#{ $i } {
+
+			.blocks-gallery-item {
+				width: calc( 100% / #{ $i } - #{ $gap-size });
+				margin-right: $gap-size;
+
+				&:nth-of-type( #{ $i }n ),
+				&:last-of-type {
+					margin-right: 0;
+				}
+			}
 		}
 	}
 }
