@@ -24,13 +24,13 @@
 .editor-styles-wrapper.editor-styles-wrapper {
 	overflow-x: hidden;
 
-	@include meta.load-css('elements/typography');
-	@include meta.load-css('elements/forms');
-	@include meta.load-css('elements/tables');
-	@include meta.load-css('blocks/core');
-	@include meta.load-css('utilities');
+	@import 'elements/typography';
+	@import 'elements/forms';
+	@import 'elements/tables';
+	@import 'blocks/core';
+	@import 'utilities';
 
 	// Additional editor overrides, for styles where wrapping with
 	// `.editor-styles-wrapper` isn't enough.
-	@include meta.load-css('blocks/editor');
+	@import 'blocks/editor';
 }
