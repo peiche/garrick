@@ -1,5 +1,12 @@
 # Change Log
 
+## 1.3.1 - 04/19/2021
+
+### Changed
+
+- Fixed preformatted block text color.
+- Tweaked width of left- and right-aligned blocks on large screens.
+
 ## 1.3.0 - 04/15/2021
 
 ### New
