@@ -63,16 +63,6 @@
 
 .alignwide {
 
-	@include breakpoints.breakpoint(md) {
-		max-width: calc(100% + 2 * var(--space-xl));
-		margin-left: calc(-1 * var(--space-xl));
-		margin-right: calc(-1 * var(--space-xl));
-
-		.alignwide {
-			max-width: calc(100% + var(--space-xl));
-		}
-	}
-
 	@include breakpoints.breakpoint(lg) {
 		max-width: calc(100% + 2 * var(--space-xxl));
 		margin-left: calc(-1 * var(--space-xxl));
