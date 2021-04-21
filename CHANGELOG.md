@@ -1,5 +1,13 @@
 # Change Log
 
+## 1.3.2 - 04/21/2021
+
+### Changed
+
+- Fixed gallery block margins.
+- Removed medium screen size breakpoint for align-wide blocks.
+- Adjusted caption top margin.
+
 ## 1.3.1 - 04/19/2021
 
 ### Changed
