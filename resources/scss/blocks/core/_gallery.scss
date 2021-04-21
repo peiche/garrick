@@ -28,8 +28,12 @@ $gap-size: var(--space-sm);
 	flex-basis: 100%;
 	list-style: none;
 	margin-bottom: calc(-1 * #{ $gap-size });
-	margin-left: calc(-1 * #{ $gap-size });
 	padding: 0;
+
+	// override ul:last-child rule
+	@at-root ul#{ & } {
+		margin-bottom: calc(-1 * #{ $gap-size });
+	}
 }
 
 // The wrapper for individual gallery images/figures.

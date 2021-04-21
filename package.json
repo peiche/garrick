@@ -1,6 +1,6 @@
 {
 	"name": "garrick",
-	"version": "1.3.1",
+	"version": "1.3.2",
 	"description": "Garrick is a modern, responsive theme.",
 	"author": "Paul Eiche",
 	"license": "GPL-2.0+",
@@ -43,7 +43,7 @@
 		"eslint": "^7.24.0",
 		"imagemin-mozjpeg": "^9.0.0",
 		"imagemin-webpack-plugin": "^2.4.2",
-		"laravel-mix": "^6.0.17",
+		"laravel-mix": "^6.0.18",
 		"node-wp-i18n": "^1.2.5",
 		"postcss-calc": "^8.0.0",
 		"postcss-css-variables": "git+https://git@github.com/codyhouse/postcss-css-variables.git",
