@@ -202,6 +202,10 @@ add_action( 'after_setup_theme', function() {
 		'post_types' => array( 'post' ),
 	));
 
+	// Remove support for block templates.
+	// @link https://wptavern.com/gutenberg-10-5-embeds-pdfs-adds-verse-block-color-options-and-introduces-new-patterns
+	remove_theme_support('block-templates');
+
 }, 5 );
 
 /**
