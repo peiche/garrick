@@ -12,7 +12,6 @@
 	background-size: cover;
 	background-position: 50%;
 	min-height: 430px;
-	width: 100%;
 	margin: 0 0 var(--component-padding);
 	display: flex;
 	justify-content: center;
@@ -39,6 +38,7 @@
 		right: 0;
 		background-color: var(--color-black);
 		opacity: 0.5; // default dim of 50% opacity
+		z-index: 1;
 	}
 
 	// The background dim can be any number from 10-100. We're just running
@@ -59,6 +59,7 @@
 		justify-content: flex-end;
 	}
 
+	&__image-background,
 	&__video-background {
 		position: absolute;
 		width: 100%;
@@ -69,6 +70,10 @@
 		transform: translateX(-50%) translateY(-50%);
 		z-index: 1;
 	}
+
+	&__image-background {}
+
+	&__video-background {}
 }
 
 // Paragraph of text shown within the cover image element.
