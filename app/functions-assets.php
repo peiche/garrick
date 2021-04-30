@@ -37,6 +37,7 @@ add_action( 'wp_enqueue_scripts', function() {
 	}
 
 	// Enqueue theme scripts.
+	wp_enqueue_script( 'garrick-dark-mode', asset( 'js/dark-mode.js' ), null, null, false );
 	wp_enqueue_script( 'codyhouse-util', asset( 'js/util.js' ), null, null, true );
 	wp_enqueue_script( 'garrick-app', asset( 'js/app.js' ), null, null, true );
 
