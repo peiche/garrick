@@ -29,7 +29,7 @@
 
 	<?php
 		$show_image = true;
-		if ( array_key_exists( 'hide_image', $data) && $data->hide_image ) :
+		if ( array_key_exists( 'hide_image', $data ) && $data->hide_image ) :
 			$show_image = false;
 		endif;
 	?>
