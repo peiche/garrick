@@ -1,5 +1,11 @@
 <?php
 
+add_filter( 'body_class', function( $classes ) {
+	$classes[] = 'template--cover-header';
+
+	return $classes;
+} );
+
 // Load header/* template.
 Hybrid\View\display( 'header', Hybrid\Template\hierarchy() );
 
