@@ -1,7 +1,7 @@
 <?php
 
 add_filter( 'body_class', function( $classes ) {
-	$classes[] = 'template--hero-header';
+	$classes[] = 'template--hero-inset-header';
 
 	return $classes;
 } );

@@ -220,6 +220,11 @@ class Customize implements Bootable {
 			'transport' => 'refresh',
 		) );
 
+		$manager->add_setting( 'single_template', array(
+			'default'   => '',
+			'transport' => 'refresh',
+		) );
+
 	}
 
 	/**
@@ -349,6 +354,17 @@ class Customize implements Bootable {
 			'section'     => 'content',
 			'label'       => __( 'Show "New" label on recent posts', 'garrick' ),
 			'description' => __( 'Enter a number of days to enable.', 'garrick' ),
+		) );
+
+		$manager->add_control( 'single_template', array(
+			'type'        => 'select',
+			'section'     => 'content',
+			'label'       => __( 'Default template', 'garrick' ),
+			'description' => __( 'Use this template for all single posts and pages using "Default template."', 'garrick' ),
+			'choices'     => array_merge(
+				array( '' => 'Default template' ),
+				wp_get_theme()->get_page_templates(),
+			),
 		) );
 
 		$fonts_body = json_decode( file_get_contents( get_theme_file_path( 'app/Customize/fonts-body.json' ) ), true );

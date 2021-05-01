@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html <?php Hybrid\Attr\display( 'html' ) ?>>
+<html <?php Hybrid\Attr\display( 'html' ) ?> data-theme="<?php echo esc_attr( get_theme_mod( 'color_theme', 'default' ) ) ?>">
 
 <head>
 <?php wp_head() ?>
 </head>
 
-<body <?php Hybrid\Attr\display( 'body' ) ?> data-theme="<?php echo esc_attr( get_theme_mod( 'color_theme', 'default' ) ) ?>">
+<body <?php Hybrid\Attr\display( 'body' ) ?>>
 
 <div class="app">
 
@@ -44,11 +44,11 @@
 
 				<?php if ( get_theme_mod( 'show_theme_switch', 0 ) ) : ?>
 
-					<div class="theme-switch margin-right-xxs margin-left-sm inline-flex">
-						<input type="checkbox" id="theme-switch" class="theme-switch__input"<?php if ( 'dark' == esc_attr( get_theme_mod( 'color_theme', 'default' ) ) ) { echo ' checked'; } ?>>
-						<label for="theme-switch" class="theme-switch__label screen-reader-text"><?php esc_html_e( 'Toggle theme', 'garrick' ) ?></label>
-						<?php echo \Garrick\get_svg( [ 'icon' => 'moon', 'class' => 'icon--md theme-switch__icon theme-switch__icon--off' ] ) ?>
-						<?php echo \Garrick\get_svg( [ 'icon' => 'sun', 'class' => 'icon--md theme-switch__icon theme-switch__icon--on' ] ) ?>
+					<div id="theme-switch" class="theme-switch margin-right-xxs margin-left-sm inline-flex">
+						<input type="checkbox" id="theme-switch__input" value="dark" class="theme-switch__input"<?php if ( 'dark' == esc_attr( get_theme_mod( 'color_theme', 'default' ) ) ) { echo ' checked'; } ?>>
+						<label for="theme-switch__input" class="theme-switch__label screen-reader-text"><?php esc_html_e( 'Toggle theme', 'garrick' ) ?></label>
+						<?php echo \Garrick\get_svg( [ 'icon' => 'moon', 'class' => 'icon--md icon--stroke-none theme-switch__icon theme-switch__icon--off' ] ) ?>
+						<?php echo \Garrick\get_svg( [ 'icon' => 'sun', 'class' => 'icon--md icon--stroke-none theme-switch__icon theme-switch__icon--on' ] ) ?>
 					</div>
 
 				<?php endif; ?>

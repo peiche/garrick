@@ -202,6 +202,10 @@ add_action( 'after_setup_theme', function() {
 		'post_types' => array( 'post' ),
 	));
 
+	// Remove support for block templates.
+	// @link https://wptavern.com/gutenberg-10-5-embeds-pdfs-adds-verse-block-color-options-and-introduces-new-patterns
+	remove_theme_support('block-templates');
+
 }, 5 );
 
 /**
@@ -384,6 +388,84 @@ add_filter( 'body_class', function( $classes ) {
 } );
 
 /**
+ * Add post/page templates.
+ */
+add_action( 'hybrid/templates/register', function( $templates ) {
+
+	$templates->add(
+		'template/hero-header.php',
+		[
+			'label'      => __( 'Hero Header', 'garrick' ),
+			'post_types' => [ 'post', 'page' ]
+		]
+	);
+
+	$templates->add(
+		'template/hero-inset-header.php',
+		[
+			'label'      => __( 'Inset Hero Header', 'garrick' ),
+			'post_types' => [ 'post', 'page' ]
+		]
+	);
+
+	$templates->add(
+		'template/no-header.php',
+		[
+			'label'      => __( 'No Header', 'garrick' ),
+			'post_types' => [ 'post', 'page' ]
+		]
+	);
+
+	$templates->add(
+		'template/no-image.php',
+		[
+			'label'      => __( 'No Featured Image', 'garrick' ),
+			'post_types' => [ 'post', 'page' ]
+		]
+	);
+
+	$templates->add(
+		'template/full-width.php',
+		[
+			'label'      => __( 'Full Width', 'garrick' ),
+			'post_types' => [ 'post', 'page' ]
+		]
+	);
+
+	$templates->add(
+		'template/cover-header.php',
+		[
+			'label'	     => __( 'Cover Header', 'garrick' ),
+			'post_types' => [ 'post', 'page' ]
+		]
+	);
+
+} );
+
+/**
+ * Set default page template based on Customizer setting. This can be overridden
+ * by the template meta field on the individual post or page.
+ * 
+ * @link https://developer.wordpress.org/reference/hooks/type_template/
+ * @since 1.4.0
+ * @access public
+ * @return $single_template
+ */
+add_filter( 'single_template', function( $single_template ) {
+	if ( '' == $single_template ) :
+		$template = get_theme_mod( 'single_template', '' );
+		if ( '' != $template ) :
+			$default_template = locate_template( array( 'resources/views/' . $template ) );
+			if ( '' != $default_template ) :
+				return $default_template;
+			endif;
+		endif;
+	endif;
+
+	return $single_template;
+} );
+
+/**
  * Add in custom properties (CSS variables) from Customizer.
  *
  * @link https://developer.wordpress.org/reference/hooks/wp_head/
@@ -473,51 +555,4 @@ add_action( 'wp_head', function() {
 </style>
 
 	<?php
-} );
-
-/**
- * Add post/page templates.
- */
-add_action( 'hybrid/templates/register', function( $templates ) {
-
-	$templates->add(
-		'template/hero-header.php',
-		[
-			'label'      => __( 'Hero Header', 'garrick' ),
-			'post_types' => [ 'post', 'page' ]
-		]
-	);
-
-	$templates->add(
-		'template/no-header.php',
-		[
-			'label'      => __( 'No Header', 'garrick' ),
-			'post_types' => [ 'post', 'page' ]
-		]
-	);
-
-	$templates->add(
-		'template/no-image.php',
-		[
-			'label'      => __( 'No Featured Image', 'garrick' ),
-			'post_types' => [ 'post', 'page' ]
-		]
-	);
-
-	$templates->add(
-		'template/full-width.php',
-		[
-			'label'      => __( 'Full Width', 'garrick' ),
-			'post_types' => [ 'post', 'page' ]
-		]
-	);
-
-	$templates->add(
-		'template/cover-header.php',
-		[
-			'label'	     => __( 'Cover Header', 'garrick' ),
-			'post_types' => [ 'post', 'page' ]
-		]
-	);
-
 } );

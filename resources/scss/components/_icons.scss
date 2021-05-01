@@ -67,9 +67,7 @@
 		stroke: var(--color-black);
 	}
 
-	&-sun,
-	&-moon,
-	&-heart {
+	&--stroke-none {
 		stroke: none; // remove for colored or filled icons
 	}
 

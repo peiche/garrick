@@ -6,6 +6,7 @@
 /// @link   https://boldoak.design/work/garrick
 ////
 
+@use '~codyhouse-framework/main/assets/css/base/breakpoints';
 @use '~codyhouse-framework/main/assets/css/base/mixins';
 
 .entry {
@@ -38,8 +39,7 @@
 	// Featured image.
 	&__featured {
 
-		.post-template-cover-header &,
-		.page-template-cover-header & {
+		.template--cover-header & {
 			position: absolute;
 			top: 0;
 			bottom: 0;
@@ -54,29 +54,33 @@
 		display: block;
 		margin: auto;
 
-		.post-template-hero-header &,
-		.page-template-hero-header &,
-		.post-template-cover-header &,
-		.page-template-cover-header & {
+		.template--hero-header &,
+		.template--cover-header &,
+		.template--hero-inset-header & {
 			object-fit: cover;
 			width: 100%;
 		}
 
-		.post-template-hero-header &,
-		.page-template-hero-header {
+		.template--hero-header & {
 			max-height: 60vh;
 		}
 
-		.post-template-cover-header &,
-		.page-template-cover-header & {
+		.template--hero-inset-header & {
+			height: 200px;
+
+			@include breakpoints.breakpoint(md) {
+				height: 400px;
+			}
+		}
+
+		.template--cover-header & {
 			height: 100%;
 		}
 	}
 
 	&__header {
 
-		.post-template-cover-header &,
-		.page-template-cover-header & {
+		.template--cover-header & {
 			position: relative;
 			min-height: 100vh;
 
@@ -84,6 +88,14 @@
 				position: relative;
 				z-index: 1;
 			}
+		}
+
+		.template--hero-inset-header & {
+			margin-top: calc(-1 * var(--space-xxl));
+			background-color: var(--color-bg);
+			padding: var(--space-sm) var(--space-md) 0 var(--space-md);
+			margin-left: calc(-1 * var(--space-md));
+			margin-right: calc(-1 * var(--space-md));
 		}
 	}
 

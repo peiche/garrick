@@ -1,5 +1,23 @@
 # Change Log
 
+## 1.4.0 - 04/30/2021
+
+### New
+
+- Added new "Inset Hero Header" page and post template.
+- Added new Customizer option for setting a default post and page template.
+- Added icon utility class to override SVG stroke property.
+
+### Changed
+
+- Removed padding overrides on media text block.
+- Removed icon-specific styles.
+- Removed theme support for block templates.
+- Changed color theme and heart icons to monochrome.
+- Changed color theme JavaScript to prevent screen flash.
+- Fixed duplicate screen reader styles.
+- Fixed image styles for cover block.
+
 ## 1.3.2 - 04/21/2021
 
 ### Changed

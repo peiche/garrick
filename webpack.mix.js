@@ -93,6 +93,7 @@ mix.version();
  * @link https://laravel.com/docs/5.6/mix#working-with-scripts
  */
 mix.js( `${devPath}/js/app.js`,                'js' )
+   .js( `${devPath}/js/dark-mode.js`,          'js' )
    .js( `${devPath}/js/customize-controls.js`, 'js' )
    .js( `${devPath}/js/customize-preview.js`,  'js' );
 

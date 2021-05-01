@@ -69,30 +69,6 @@
 		grid-template-columns: auto 50%;
 	}
 
-	&.alignwide,
-	&.alignfull {
-
-		> .wp-block-media-text__content {
-			padding-left: var(--component-padding);
-			padding-right: var(--component-padding);
-
-			@include breakpoints.breakpoint(sm) {
-				padding-left: 0;
-			}
-		}
-
-		&.has-media-on-the-right {
-
-			> .wp-block-media-text__content {
-
-				@include breakpoints.breakpoint(sm) {
-					padding-left: var(--component-padding);
-					padding-right: 0;
-				}
-			}
-		}
-	}
-
 	> figure > img,
 	> figure > video {
 		max-width: unset;
