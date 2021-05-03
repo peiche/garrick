@@ -33,6 +33,8 @@ Hybrid\View\display( 'header', Hybrid\Template\hierarchy() );
 					</div>
 				</div>
 
+				<?php Hybrid\View\display( 'partials', 'post-navigation' ) ?>
+
 			<?php endwhile ?>
 
 		<?php endif ?>
