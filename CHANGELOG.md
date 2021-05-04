@@ -1,5 +1,14 @@
 # Change Log
 
+## 1.4.1 - 05/03/2021
+
+### Changed
+
+- Added post navigation to all custom templates.
+- Fixed excerpt color contrast on Cover template.
+- Normalized hero sizes the same across Hero Header and Inset Hero Header templates.
+- Fixed Inset Hero Header template's negative margin for small screen sizes.
+
 ## 1.4.0 - 04/30/2021
 
 ### New
