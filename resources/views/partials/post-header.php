@@ -5,7 +5,7 @@
 	endif;
 ?>
 
-<header class="entry__header entry__header--single <?php echo $cover_image ? 'alignfull flex items-center margin-bottom-md' : 'margin-y-lg' ?>">
+<header class="entry__header entry__header--single<?php echo $cover_image ? ' alignfull flex items-center margin-bottom-md' : ' margin-y-lg' ?>">
 	<div class="<?php echo $cover_image ? 'container max-width-sm margin-top-xxxl margin-bottom-xl' : 'margin-bottom-md' ?>">
 		<?php Hybrid\Post\display_title( [ 'class' => 'entry__title text-xxl text-xxxl@md' ] ) ?>
 
