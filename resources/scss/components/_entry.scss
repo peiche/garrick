@@ -61,16 +61,9 @@
 			width: 100%;
 		}
 
-		.template--hero-header & {
-			max-height: 60vh;
-		}
-
+		.template--hero-header &,
 		.template--hero-inset-header & {
-			height: 200px;
-
-			@include breakpoints.breakpoint(md) {
-				height: 400px;
-			}
+			max-height: 60vh;
 		}
 
 		.template--cover-header & {
