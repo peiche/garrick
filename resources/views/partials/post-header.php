@@ -11,7 +11,7 @@
 
 		<?php $post_content_excerpt = preg_split( '/<!--more(.*?)?-->/', get_post()->post_content ); ?>
 		<?php if ( has_excerpt() && strcasecmp( trim( get_the_excerpt() ), trim( $post_content_excerpt[0] ) ) != 0 ) : ?>
-			<div class="entry__excerpt margin-bottom-sm text-md color-contrast-medium">
+			<div class="entry__excerpt margin-bottom-sm text-md<? echo $cover_image ? '' : ' color-contrast-medium' ?>">
 				<?php the_excerpt() ?>
 			</div>
 		<?php endif; ?>
