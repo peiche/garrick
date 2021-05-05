@@ -5,13 +5,13 @@
 	endif;
 ?>
 
-<header class="entry__header entry__header--single <?php echo $cover_image ? 'alignfull flex items-center margin-bottom-md' : 'margin-y-lg' ?>">
+<header class="entry__header entry__header--single<?php echo $cover_image ? ' alignfull flex items-center margin-bottom-md' : ' margin-y-lg' ?>">
 	<div class="<?php echo $cover_image ? 'container max-width-sm margin-top-xxxl margin-bottom-xl' : 'margin-bottom-md' ?>">
 		<?php Hybrid\Post\display_title( [ 'class' => 'entry__title text-xxl text-xxxl@md' ] ) ?>
 
 		<?php $post_content_excerpt = preg_split( '/<!--more(.*?)?-->/', get_post()->post_content ); ?>
 		<?php if ( has_excerpt() && strcasecmp( trim( get_the_excerpt() ), trim( $post_content_excerpt[0] ) ) != 0 ) : ?>
-			<div class="entry__excerpt margin-bottom-sm text-md color-contrast-medium">
+			<div class="entry__excerpt margin-bottom-sm text-md<?php echo $cover_image ? '' : ' color-contrast-medium' ?>">
 				<?php the_excerpt() ?>
 			</div>
 		<?php endif; ?>

@@ -1,6 +1,6 @@
 {
 	"name": "garrick",
-	"version": "1.4.0",
+	"version": "1.4.1",
 	"description": "Garrick is a modern, responsive theme.",
 	"author": "Paul Eiche",
 	"license": "GPL-2.0+",
@@ -50,7 +50,7 @@
 		"rimraf": "^3.0.2",
 		"sass": "^1.32.12",
 		"sass-loader": "^11.0.1",
-		"stylelint": "^13.13.0",
+		"stylelint": "^13.13.1",
 		"stylelint-scss": "^3.19.0",
 		"svg-spritemap-webpack-plugin": "^3.9.1",
 		"theme-claim": "^0.2.0",
