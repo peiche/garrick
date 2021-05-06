@@ -1,6 +1,6 @@
 {
 	"name": "garrick",
-	"version": "1.4.1",
+	"version": "1.4.2",
 	"description": "Garrick is a modern, responsive theme.",
 	"author": "Paul Eiche",
 	"license": "GPL-2.0+",
@@ -37,7 +37,7 @@
 		"browser-sync": "^2.26.14",
 		"browser-sync-webpack-plugin": "2.3.0",
 		"choices.js": "^9.0.1",
-		"codyhouse-framework": "^2.8.7",
+		"codyhouse-framework": "^2.8.8",
 		"copy-webpack-plugin": "^8.1.1",
 		"cross-env": "^7.0.3",
 		"eslint": "^7.25.0",
