@@ -9,9 +9,9 @@
 @use '~codyhouse-framework/main/assets/css/base/breakpoints';
 
 .wp-block-buttons {
+	--gap: var(--space-sm);
 	display: flex;
 	flex-wrap: wrap;
-	margin-bottom: calc(var(--space-xxxs) * var(--text-vspace-multiplier, 1));
 	margin-left: calc(-1 * var(--gap, 0.5em));
 
 	&.is-content-justification-left {
@@ -28,8 +28,11 @@
 }
 
 .wp-block-button {
-	margin-bottom: var(--gap, 0.5em);
-	margin-left: var(--gap, 0.5em);
+
+	.wp-block-buttons & {
+		margin-left: var(--gap);
+		margin-bottom: var(--gap);
+	}
 
 	&__link {
 		border: 0;
