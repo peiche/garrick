@@ -45,7 +45,7 @@
 	@for $dim from 1 through 10 {
 
 		&.has-background-dim-#{ $dim * 10 } {
-			
+
 			.wp-block-cover__image-background {
 				opacity: $dim * 0.1;
 			}
