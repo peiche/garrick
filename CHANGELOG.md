@@ -6,6 +6,7 @@
 
 - Updated to CodyFrame 2.8.9.
 - Fixed buttons block spacing.
+- Fixed buttons block inside Jetpack forms.
 - Fixed code block text color and width in the block editor.
 - Fixed cover block color overlay.
 - Fixed quote block large variant citation alignment.
