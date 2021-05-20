@@ -1,5 +1,16 @@
 # Change Log
 
+## 1.4.3 - 05/18/2021
+
+### Changed
+
+- Updated to CodyFrame 2.8.9.
+- Fixed buttons block spacing.
+- Fixed code block text color and width in the block editor.
+- Fixed cover block color overlay.
+- Fixed quote block large variant citation alignment.
+- Fixed Inset Hero template header for when there is no featured image.
+
 ## 1.4.2 - 05/06/2021
 
 ### Changed
