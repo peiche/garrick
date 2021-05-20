@@ -34,7 +34,8 @@
 		margin-bottom: var(--gap);
 	}
 
-	&__link {
+	// double up specificity to override Jetpack
+	&__link.wp-block-button__link {
 		border: 0;
 		box-shadow: none;
 		cursor: pointer;
