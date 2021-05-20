@@ -88,6 +88,9 @@
 			padding: var(--space-sm) var(--space-md) 0 var(--space-md);
 			margin-left: calc(-1 * var(--space-md));
 			margin-right: calc(-1 * var(--space-md));
+		}
+
+		.template--hero-inset-header.single-has-post-thumbnail & {
 
 			@include breakpoints.breakpoint(sm) {
 				margin-top: calc(-1 * var(--space-xxl));
