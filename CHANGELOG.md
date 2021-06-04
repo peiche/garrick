@@ -11,6 +11,7 @@
 - Fixed cover block color overlay.
 - Fixed quote block large variant citation alignment.
 - Fixed Inset Hero template header for when there is no featured image.
+- Fixed editor visibility class.
 
 ## 1.4.2 - 05/06/2021
 
