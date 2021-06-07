@@ -40,7 +40,7 @@
 		"codyhouse-framework": "^2.8.8",
 		"copy-webpack-plugin": "^8.1.1",
 		"cross-env": "^7.0.3",
-		"eslint": "^7.26.0",
+		"eslint": "^7.28.0",
 		"imagemin-mozjpeg": "^9.0.0",
 		"imagemin-webpack-plugin": "^2.4.2",
 		"laravel-mix": "^6.0.19",
