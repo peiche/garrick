@@ -12,6 +12,7 @@
 - Fixed quote block large variant citation alignment.
 - Fixed Inset Hero template header for when there is no featured image.
 - Fixed editor visibility class.
+- Fixed Jetpack gallery block margins.
 
 ## 1.4.2 - 05/06/2021
 
