@@ -5,6 +5,7 @@
 ### Changed
 
 - Updated to CodyFrame 2.8.9.
+- Adjusted blockquote spacing.
 - Fixed buttons block spacing.
 - Fixed buttons block inside Jetpack forms.
 - Fixed code block text color and width in the block editor.
