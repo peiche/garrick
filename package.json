@@ -31,7 +31,7 @@
 		"url": "https://github.com/peiche/garrick/issues"
 	},
 	"devDependencies": {
-		"@babel/compat-data": "^7.14.0",
+		"@babel/compat-data": "^7.14.7",
 		"@wordpress/eslint-plugin": "^9.0.5",
 		"@wordpress/stylelint-config": "^19.0.4",
 		"browser-sync": "^2.26.14",
@@ -40,10 +40,10 @@
 		"codyhouse-framework": "^2.8.9",
 		"copy-webpack-plugin": "^9.0.0",
 		"cross-env": "^7.0.3",
-		"eslint": "^7.28.0",
+		"eslint": "^7.29.0",
 		"imagemin-mozjpeg": "^9.0.0",
 		"imagemin-webpack-plugin": "^2.4.2",
-		"laravel-mix": "^6.0.23",
+		"laravel-mix": "^6.0.24",
 		"node-wp-i18n": "^1.2.5",
 		"postcss-calc": "^8.0.0",
 		"postcss-css-variables": "git+https://git@github.com/codyhouse/postcss-css-variables.git",
