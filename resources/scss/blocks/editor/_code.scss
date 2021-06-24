@@ -6,7 +6,16 @@
 /// @link   https://boldoak.design/work/garrick
 ////
 
-.wp-block-code {
+@use '~codyhouse-framework/main/assets/css/base/breakpoints';
+
+// double up specificity to ensure correct editor styles.
+.wp-block-code.wp-block-code {
+	transform: none;
+	color: var(--color-white);
+
+	@include breakpoints.breakpoint(sm) {
+		max-width: calc(var(--max-width-sm) * 1.2);
+	}
 
 	textarea {
 		background-color: inherit;

@@ -1,0 +1,10 @@
+.wp-block-quote {
+
+	&.is-style-large {
+
+		cite,
+		footer {
+			text-align: inherit;
+		}
+	}
+}

@@ -1,5 +1,20 @@
 # Change Log
 
+## 1.4.3 - 05/18/2021
+
+### Changed
+
+- Updated to CodyFrame 2.8.9.
+- Adjusted blockquote spacing.
+- Fixed buttons block spacing.
+- Fixed buttons block inside Jetpack forms.
+- Fixed code block text color and width in the block editor.
+- Fixed cover block color overlay.
+- Fixed quote block large variant citation alignment.
+- Fixed Inset Hero template header for when there is no featured image.
+- Fixed editor visibility class.
+- Fixed Jetpack gallery block margins.
+
 ## 1.4.2 - 05/06/2021
 
 ### Changed

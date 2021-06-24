@@ -72,3 +72,7 @@ svg.components-checkbox-control__checked {
 .edit-post-post-link__link {
 	font-size: var(--wp-font-size);
 }
+
+.is-visible {
+	display: inherit !important;
+}
