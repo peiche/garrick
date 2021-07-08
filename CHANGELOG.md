@@ -1,6 +1,18 @@
 # Change Log
 
-# 1.4.3 - 06/24/2021
+## 1.4.4 - 07/06/2021
+
+### Changed
+
+- Removed double-specificity Jetpack stylesheet overrides.
+- Changed gallery width to 1 on small devices.
+- Dequeued Jetpack contact form styles.
+- Dequeued Jetpack infinite scroll styles for default themes.
+- Added missing styles for Jetpack contact form.
+
+Note that the unused `wp_deregister_style` lines are left commented out for ease of future use.
+
+## 1.4.3 - 06/24/2021
 
 ### Changed
 
