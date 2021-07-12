@@ -1,0 +1,129 @@
+.jp-carousel-garrick {
+
+	.jp-carousel-wrap {
+		background-color: var(--color-bg);
+	}
+
+	.jp-carousel-close-hint {
+		color: var(--color-contrast-high);
+		background-color: var(--color-bg);
+		border-radius: var(--radius-circle);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		&:hover {
+			color: var(--color-contrast-higher);
+		}
+
+		span {
+			height: auto;
+		}
+	}
+
+	.jp-carousel-overlay {
+		background-color: var(--color-bg);
+
+		.swiper-button-prev,
+		.swiper-button-next {
+
+			svg {
+				fill: var(--color-contrast-high);
+
+				&:hover {
+					fill: var(--color-contrast-higher);
+				}
+			}
+		}
+	}
+
+	.jp-carousel-info {
+		background-color: var(--color-bg);
+	}
+
+	.jp-carousel-info-footer {
+		background-color: var(--color-bg);
+
+		.jp-carousel-photo-title {
+			color: var(--color-contrast-high);
+		}
+	}
+
+	.jp-swiper-pagination {
+
+		.swiper-pagination-bullet {
+
+			&:not(.swiper-pagination-bullet-active) {
+				background-color: var(--color-contrast-medium);
+				opacity: 1;
+			}
+
+			&.swiper-pagination-bullet-active {
+				background-color: var(--color-contrast-high);
+			}
+		}
+	}
+
+	.jp-carousel-icon {
+		background-color: transparent;
+		color: var(--color-contrast-high);
+		fill: var(--color-contrast-high);
+	}
+
+	.jp-carousel-icon-btn.jp-carousel-selected .jp-carousel-icon {
+		background-color: var(--color-contrast-high);
+		color: var(--color-contrast-lower);
+		fill: var(--color-contrast-lower);
+	}
+
+	.jp-carousel-info-extra {
+		background-color: var(--color-bg);
+		border-color: var(--color-contrast-medium);
+	}
+
+	.jp-carousel-photo-title,
+	.jp-carousel-image-meta {
+		color: var(--color-contrast-high);
+	}
+
+	a.jp-carousel-image-download {
+		color: var(--color-contrast-medium);
+		background-image: none;
+		padding: 0;
+
+		&:hover {
+			color: var(--color-contrast-high);
+		}
+	}
+
+	#jp-carousel-comment-form-container {
+		color: var(--color-contrast-medium);
+	}
+
+	textarea#jp-carousel-comment-form-comment-field {
+		background-color: var(--color-bg);
+		border-color: var(--color-contrast-medium);
+		color: var(--color-contrast-high);
+		box-shadow: none;
+
+		&:focus {
+			background-color: var(--color-bg);
+			color: var(--color-contrast-high);
+		}
+
+		&:focus-visible {
+			outline-color: var(--color-contrast-medium);
+		}
+	}
+
+	#jp-carousel-comment-form-button-submit {
+		background-color: var(--color-contrast-high);
+		border-color: var(--color-contrast-high);
+		color: var(--color-contrast-lower);
+
+		&:focus {
+			background-color: var(--color-contrast-lower);
+			color: var(--color-contrast-high);
+		}
+	}
+}
