@@ -2,6 +2,10 @@
 
 ## 1.4.4 - 07/06/2021
 
+### New
+
+- Added setting to allow Jetpack image carousel theme to follow theme's color scheme.
+
 ### Changed
 
 - Removed double-specificity Jetpack stylesheet overrides.
@@ -9,8 +13,9 @@
 - Dequeued Jetpack contact form styles.
 - Dequeued Jetpack infinite scroll styles for default themes.
 - Added missing styles for Jetpack contact form.
+- Fixed miscellaneous block editor style weirdness.
 
-Note that the unused `wp_deregister_style` lines are left commented out for ease of future use.
+Note that the unused `wp_deregister_style` lines are left commented out for ease of future use or reference.
 
 ## 1.4.3 - 06/24/2021
 
