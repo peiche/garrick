@@ -31,11 +31,11 @@
 	}
 
 	.grunion-field-label {
-		
+
 		&.checkbox {
 			width: 100%;
 		}
-		
+
 		&:not(.checkbox) {
 			font-size: var(--text-sm);
 			margin-bottom: var(--space-xxs);
@@ -78,7 +78,7 @@
 }
 
 #jetpack-check-feedback-spam {
-	margin: 1px 8px 0px 0px;
+	margin: 1px 8px 0 0;
 }
 
 .jetpack-check-feedback-spam-spinner {
@@ -91,7 +91,10 @@
 	align-self: center;
 }
 
-// For the "Empty Spam" button on /wp-admin/edit.php?post_status=spam&post_type=feedback
+/**
+ * For the "Empty Spam" button on
+ * /wp-admin/edit.php?post_status=spam&post_type=feedback
+ */
 .jetpack-empty-spam-container {
 	display: inline-block;
 }
