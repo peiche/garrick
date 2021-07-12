@@ -138,6 +138,17 @@ class Customize implements Bootable {
 			},
 		) );
 
+		$manager->add_setting( 'carousel_theme', array(
+			'default' => 0,
+			'sanitize_callback' => function( $input ) {
+				if ( $input == 1 ) :
+					return $input;
+				else :
+					return 0;
+				endif;
+			},
+		) );
+
 		$manager->add_setting( 'color_theme', array(
 			'default' => 'default',
 			'transport' => 'postMessage',
@@ -268,6 +279,13 @@ class Customize implements Bootable {
 			'section' => 'colors',
 			'label' => __( 'Show Theme Toggle', 'garrick' ),
 			'description' => __( 'Allow users to switch between light and dark themes.', 'garrick' ),
+		) );
+
+		$manager->add_control( 'carousel_theme', array(
+			'type' => 'checkbox',
+			'section' => 'colors',
+			'label' => __( 'Carousel Follows Theme', 'garrick' ),
+			'description' => __( 'Jetpack image carousel theme follows light and dark themes.', 'garrick' ),
 		) );
 
 		$manager->add_control(

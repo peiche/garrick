@@ -384,6 +384,10 @@ add_filter( 'body_class', function( $classes ) {
 		$classes[] = 'single-has-post-thumbnail';
 	endif;
 
+	if ( get_theme_mod( 'carousel_theme', 0 ) ) :
+		$classes[] = 'jp-carousel-garrick';
+	endif;
+
 	return $classes;
 } );
 
