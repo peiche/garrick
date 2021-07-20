@@ -40,7 +40,7 @@
 		"codyhouse-framework": "^2.8.8",
 		"copy-webpack-plugin": "^9.0.1",
 		"cross-env": "^7.0.3",
-		"eslint": "^7.30.0",
+		"eslint": "^7.31.0",
 		"imagemin-mozjpeg": "^9.0.0",
 		"imagemin-webpack-plugin": "^2.4.2",
 		"laravel-mix": "^6.0.19",
@@ -51,7 +51,7 @@
 		"sass": "^1.35.2",
 		"sass-loader": "^12.1.0",
 		"stylelint": "^13.13.1",
-		"stylelint-scss": "^3.19.0",
+		"stylelint-scss": "^3.20.0",
 		"svg-spritemap-webpack-plugin": "^4.1.0",
 		"theme-claim": "^0.2.0",
 		"vue-template-compiler": "^2.6.14"
