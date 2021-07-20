@@ -51,7 +51,7 @@
 		"sass": "^1.32.13",
 		"sass-loader": "^12.1.0",
 		"stylelint": "^13.13.1",
-		"stylelint-scss": "^3.19.0",
+		"stylelint-scss": "^3.20.1",
 		"svg-spritemap-webpack-plugin": "^4.0.1",
 		"theme-claim": "^0.2.0",
 		"vue-template-compiler": "^2.6.14"
