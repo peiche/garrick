@@ -43,9 +43,9 @@ $gap-size: var(--space-sm);
 	flex-direction: column;
 	justify-content: center;
 	position: relative; // Image figure.
-	width: calc(100% / 2 - #{ $gap-size }); // Default to 2 columns.
+	width: calc(100% - #{ $gap-size });
 	margin-bottom: $gap-size;
-	margin-right: $gap-size;
+	margin-right: 0;
 	overflow: auto;
 
 	&:nth-of-type(2n),
@@ -109,15 +109,10 @@ $gap-size: var(--space-sm);
 	}
 }
 
-// 1 column.
-.columns-1 .blocks-gallery-item {
-	width: calc(100% / 1);
-}
-
-// 3-8 columns on larger screens.
+// 2-8 columns on larger screens.
 @include breakpoints.breakpoint(sm) {
 
-	@for $i from 3 through 8 {
+	@for $i from 2 through 8 {
 
 		.columns-#{ $i } {
 

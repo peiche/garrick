@@ -76,3 +76,49 @@ svg.components-checkbox-control__checked {
 .is-visible {
 	display: inherit !important;
 }
+
+.customize-control-checkbox label,
+.customize-control-radio label {
+	font-size: var(--text-xs);
+}
+
+.block-editor-url-popover__link-viewer-url {
+	font-size: var(--text-sm);
+	margin: 4px 7px;
+}
+
+.components-custom-select-control__label,
+.components-input-control__label {
+	line-height: 1.2;
+}
+
+.customize-control .customize-inside-control-row {
+	line-height: unset;
+}
+
+.customize-control .attachment-media-view .button-add-media,
+.customize-control .attachment-media-view .placeholder,
+.customize-control-header .placeholder {
+	font-size: var(--text-xs);
+}
+
+#customize-controls .description {
+	font-size: var(--text-xs);
+	line-height: 1.5;
+}
+
+.customize-control-dropdown-pages .add-new-toggle {
+	font-size: var(--text-xs);
+}
+
+.block-editor-media-flow__url-input .block-editor-media-replace-flow__image-url-label {
+	font-size: var(--text-xs);
+}
+
+.block-editor-link-control__search-item .block-editor-link-control__search-item-icon {
+	top: 1.5em;
+}
+
+.components-button.block-editor-link-control__search-item-action {
+	align-self: center;
+}

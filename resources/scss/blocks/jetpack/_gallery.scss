@@ -10,23 +10,7 @@
 
 @use '~codyhouse-framework/main/assets/css/base/breakpoints';
 
-// double specificity to override Jetpack styles
-.wp-block-jetpack-tiled-gallery.wp-block-jetpack-tiled-gallery {
+.wp-block-jetpack-tiled-gallery {
 	margin-top: var(--component-padding);
 	margin-bottom: var(--component-padding);
-
-	// duplicate style to override Jetpack
-	&.alignwide {
-
-		@include breakpoints.breakpoint(md) {
-			margin-left: calc(-1 * var(--space-xxl));
-			margin-right: calc(-1 * var(--space-xxl));
-		}
-	}
-
-	// duplicate style to override Jetpack
-	&.alignfull {
-		margin-left: calc( -100vw / 2 + 100% / 2);
-		margin-right: calc( -100vw / 2 + 100% / 2);
-	}
 }

@@ -9,8 +9,7 @@
 @use '~codyhouse-framework/main/assets/css/base/breakpoints';
 @use '~codyhouse-framework/main/assets/css/base/mixins';
 
-// triple up specificity to override Jetpack's ridiculous CSS
-.wp-block-jetpack-subscriptions.wp-block-jetpack-subscriptions.wp-block-jetpack-subscriptions.wp-block-jetpack-subscriptions {
+.wp-block-jetpack-subscriptions {
 	margin-bottom: var(--space-md);
 
 	form {

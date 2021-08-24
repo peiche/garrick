@@ -1,8 +1,7 @@
 @use '~codyhouse-framework/main/assets/css/base/breakpoints';
 @use '~codyhouse-framework/main/assets/css/base/mixins';
 
-// double up specificity to override Jetpack's CSS
-.wp-block-jetpack-contact-form.wp-block-jetpack-contact-form {
+.contact-form {
 	--gap: var(--space-md);
 	--gap-x: var(--gap);
 	--gap-y: var(--gap);
@@ -26,6 +25,27 @@
 		max-width: calc(100% - 0.01px - var(--gap-x));
 	}
 
+	.grunion-field-label,
+	.grunion-radio-label {
+		display: inline-block;
+	}
+
+	.grunion-field-label {
+
+		&.checkbox {
+			width: 100%;
+		}
+
+		&:not(.checkbox) {
+			font-size: var(--text-sm);
+			margin-bottom: var(--space-xxs);
+		}
+	}
+
+	.grunion-radio-label {
+		width: 100%;
+	}
+
 	input[type="email"],
 	input[type="tel"],
 	input[type="text"],
@@ -37,5 +57,53 @@
 		border-radius: var(--form-control-radius);
 		border: 2px solid var(--color-contrast-low);
 		margin-bottom: 0;
+		width: 100%;
 	}
+
+	@include breakpoints.breakpoint(md) {
+
+		$widths: 25, 50, 75;
+		@each $width in $widths {
+
+			.grunion-field-width-#{$width}-wrap {
+				flex-basis: calc(#{$width * 1%} - 0.01px - var(--gap-x));
+				max-width: calc(#{$width * 1%} - 0.01px - var(--gap-x));
+			}
+		}
+	}
+}
+
+.form-errors .form-error-message {
+	color: var(--color-error);
+}
+
+#jetpack-check-feedback-spam {
+	margin: 1px 8px 0 0;
+}
+
+.jetpack-check-feedback-spam-spinner {
+	display: inline-block;
+	margin-top: 7px;
+}
+
+.grunion-field-checkbox-wrap,
+.grunion-field-consent-wrap {
+	align-self: center;
+}
+
+/**
+ * For the "Empty Spam" button on
+ * /wp-admin/edit.php?post_status=spam&post_type=feedback
+ */
+.jetpack-empty-spam-container {
+	display: inline-block;
+}
+
+.jetpack-empty-spam {
+	display: inline-block;
+}
+
+.jetpack-empty-spam-spinner {
+	display: inline-block;
+	margin-top: 7px;
 }
