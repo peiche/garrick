@@ -18,7 +18,7 @@
 <?php if ( has_post_thumbnail() ) : ?>
 	<?php Hybrid\Carbon\Image::display( 'featured', [
 		'size' => 'full',
-		'class' => 'entry__image radius-md',
+		'class' => 'entry__image radius-md position-relative',
 		'before' => '<figure class="margin-y-sm color-contrast-low ' . $image_aspect_ratio . '">' . $image_icon . $image_label,
 		'after' => '</figure>',
 		'link' => true,
@@ -26,7 +26,7 @@
 	] ) ?>
 <?php elseif ( get_theme_mod( 'archive_image_placeholder', false ) && '' != get_theme_mod( 'featured_image_aspect_ratio', '' ) ) : ?>
 	<a href="<?php echo esc_url( get_permalink() ) ?>" class="entry__featured-image__link color-contrast-low" aria-hidden="true">
-		<div class="<?php echo esc_attr( $image_aspect_ratio ) ?> margin-y-sm radius-md">
+		<div class="<?php echo esc_attr( $image_aspect_ratio ) ?> margin-y-sm radius-md position-relative">
 			<div class="media-wrapper--icon flex items-center justify-center">
 				<?php echo \Garrick\get_svg( [ 'icon' => 'format-' . $post_format, 'class' => 'icon--md color-inherit' ] ) ?>
 			</div>
