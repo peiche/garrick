@@ -17,13 +17,13 @@ h4 {
 	font-weight: var(--font-weight-heading);
 	color: inherit;
 	line-height: var(--component-heading-line-height, 1.2);
-	margin-bottom: calc(var(--space-xxxs) * var(--text-vspace-multiplier, 1));
+	margin-bottom: calc(var(--space-xxxs) * var(--text-space-y-multiplier, 1));
 }
 
 h2,
 h3,
 h4 {
-	margin-top: calc(var(--space-sm) * var(--text-vspace-multiplier, 1));
+	margin-top: calc(var(--space-sm) * var(--text-space-y-multiplier, 1));
 }
 
 p,
@@ -58,7 +58,7 @@ ul,
 ol,
 p,
 blockquote {
-	margin-bottom: calc(var(--space-sm) * var(--text-vspace-multiplier, 1));
+	margin-bottom: calc(var(--space-sm) * var(--text-space-y-multiplier, 1));
 
 	&:last-child {
 		margin-bottom: 0;

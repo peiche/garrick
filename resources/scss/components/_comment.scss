@@ -10,7 +10,7 @@
 
 .comment {
 	--line-height-multiplier: 1.13; // increase article line-height
-	--text-vspace-multiplier: 1.2; // increase vertical spacing
+	--text-space-y-multiplier: 1.2; // increase vertical spacing
 
 	margin-top: var(--space-md);
 	border-bottom: 2px solid var(--color-contrast-low);

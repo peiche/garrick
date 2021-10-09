@@ -12,7 +12,7 @@
 
 .app-header {
 	position: relative;
-	z-index: var(--zindex-header);
+	z-index: var(--z-index-header);
 
 	// Wrapper around the title and description.
 	&__branding {
@@ -83,7 +83,7 @@
 	&__nav-trigger {
 		display: inline-flex;
 		padding-right: 0;
-		z-index: var(--zindex-fixed-element);
+		z-index: var(--z-index-fixed-element);
 
 		@include breakpoints.breakpoint(md) {
 			display: none;

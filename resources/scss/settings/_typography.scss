@@ -11,12 +11,12 @@
 
 :root {
 	// font size
-	--text-base-size: 1em; // body font-size
+	--text-base-size: 1rem; // body font-size
 	--text-scale-ratio: 1.2; // multiplier used to generate the type scale values 👇
 
 	// type scale
 	--text-scale-ratio: 1.2;
-	--text-xs: calc((1em / var(--text-scale-ratio)) / var(--text-scale-ratio));
+	--text-xs: calc((var(--text-unit) / var(--text-scale-ratio)) / var(--text-scale-ratio));
 	--text-sm: calc(var(--text-xs) * var(--text-scale-ratio));
 	--text-md: calc(var(--text-sm) * var(--text-scale-ratio) * var(--text-scale-ratio));
 	--text-lg: calc(var(--text-md) * var(--text-scale-ratio));
@@ -32,12 +32,12 @@
 	--font-primary-capital-letter: 1;
 
 	--line-height-multiplier: 1.13;
-	--text-vspace-multiplier: 1.2;
+	--text-space-y-multiplier: 1.2;
 	--component-body-line-height: calc(var(--body-line-height) * var(--line-height-multiplier, 1));
 	--component-heading-line-height: calc(var(--heading-line-height) * var(--line-height-multiplier, 1));
 
 	// unit - don't modify unless you want to change the typography unit
-	--text-unit: 1em; // if not Em units → --text-unit: var(--text-base-size);
+	--text-unit: var(--text-base-size);
 }
 
 @supports (--css: variables) {
@@ -45,8 +45,8 @@
 	:root {
 
 		@include breakpoints.breakpoint(md) {
-			--text-base-size: 1.25em;
-			--text-scale-ratio: 1.25;
+			--text-base-size: 1.25rem;
+    		--text-scale-ratio: 1.25;
 		}
 	}
 }
