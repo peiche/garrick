@@ -18,8 +18,8 @@
 <?php if ( has_post_thumbnail() ) : ?>
 	<?php Hybrid\Carbon\Image::display( 'featured', [
 		'size' => 'full',
-		'class' => 'entry__image radius-md position-relative',
-		'before' => '<figure class="margin-y-sm color-contrast-low ' . $image_aspect_ratio . '">' . $image_icon . $image_label,
+		'class' => 'entry__image radius-md',
+		'before' => '<figure class="margin-y-sm color-contrast-low ' . $image_aspect_ratio . ' position-relative">' . $image_icon . $image_label,
 		'after' => '</figure>',
 		'link' => true,
 		'link_class' => 'entry__featured-image__link',

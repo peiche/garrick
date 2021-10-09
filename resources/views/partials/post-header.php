@@ -40,7 +40,7 @@
 			'size' => 'full',
 			'class' => 'entry__image',
 			'before' => ( ! $cover_image ? '<div class="alignwide margin-y-md margin-x-auto">' : '' ) .
-					'<figure class="entry__featured ' . ( ! $cover_image ? $image_aspect_ratio : '' ) . ' bg-contrast-lower">',
+					'<figure class="entry__featured ' . ( ! $cover_image ? $image_aspect_ratio : '' ) . ' bg-contrast-lower position-relative">',
 			'after' => '</figure>' . ( $cover_image ? '</div>' : '' ),
 		] ) ?>
 	<?php endif; ?>
