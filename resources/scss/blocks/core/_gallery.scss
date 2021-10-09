@@ -27,12 +27,13 @@ $gap-size: var(--space-sm);
 	flex-wrap: wrap;
 	flex-basis: 100%;
 	list-style: none;
-	margin-bottom: calc(-1 * #{ $gap-size });
+	//margin-bottom: calc(-1 * #{ $gap-size });
 	padding: 0;
+	gap: $gap-size;
 
 	// override ul:last-child rule
 	@at-root ul#{ & } {
-		margin-bottom: calc(-1 * #{ $gap-size });
+		//margin-bottom: calc(-1 * #{ $gap-size });
 	}
 }
 
@@ -43,15 +44,8 @@ $gap-size: var(--space-sm);
 	flex-direction: column;
 	justify-content: center;
 	position: relative; // Image figure.
-	width: calc(100% - #{ $gap-size });
-	margin-bottom: $gap-size;
 	margin-right: 0;
 	overflow: auto;
-
-	&:nth-of-type(2n),
-	&:last-child {
-		margin-right: 0;
-	}
 
 	figure {
 		margin: 0;
@@ -61,13 +55,7 @@ $gap-size: var(--space-sm);
 	img {
 		display: block;
 		max-width: 100%;
-		height: auto; // Set an explicit width for IE.
 		width: 100%;
-
-		// IE11 can't read this.
-		@supports (position: sticky) {
-			width: auto;
-		}
 	}
 
 	figcaption {
@@ -99,13 +87,8 @@ $gap-size: var(--space-sm);
 	img {
 		flex: 1;
 		width: 100%;
-
-		// IE11 doesn't support object-fit.
-		@supports (position: sticky) {
-			flex: 1;
-			height: 100%;
-			object-fit: cover;
-		}
+		height: 100%;
+		object-fit: cover;
 	}
 }
 
@@ -117,13 +100,7 @@ $gap-size: var(--space-sm);
 		.columns-#{ $i } {
 
 			.blocks-gallery-item {
-				width: calc( 100% / #{ $i } - #{ $gap-size });
-				margin-right: $gap-size;
-
-				&:nth-of-type( #{ $i }n ),
-				&:last-of-type {
-					margin-right: 0;
-				}
+				width: calc(100% / #{ $i } - #{ $gap-size });
 			}
 		}
 	}

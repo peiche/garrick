@@ -28,3 +28,11 @@
 		width: 100%;
 	}
 }
+
+.blocks-gallery-grid {
+	margin-bottom: 0; // override default ul margin
+}
+
+.blocks-gallery-item {
+	margin-bottom: 0; // override margin-based gap
+}
