@@ -76,7 +76,7 @@
 	@include defineColorHSL(--color-boldoakdesign-background, 354, 22%, 18%);
 }
 
-@supports(--css: variables) {
+@supports (--css: variables) {
 	[data-theme="dark"] {
 		// main
 		@include defineColorHSL(--color-primary-darker, 250, 93%, 57%);

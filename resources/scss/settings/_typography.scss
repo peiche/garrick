@@ -46,7 +46,7 @@
 
 		@include breakpoints.breakpoint(md) {
 			--text-base-size: 1.25rem;
-    		--text-scale-ratio: 1.25;
+			--text-scale-ratio: 1.25;
 		}
 	}
 }
