@@ -27,14 +27,8 @@ $gap-size: var(--space-sm);
 	flex-wrap: wrap;
 	flex-basis: 100%;
 	list-style: none;
-	//margin-bottom: calc(-1 * #{ $gap-size });
 	padding: 0;
 	gap: $gap-size;
-
-	// override ul:last-child rule
-	@at-root ul#{ & } {
-		//margin-bottom: calc(-1 * #{ $gap-size });
-	}
 }
 
 // The wrapper for individual gallery images/figures.
