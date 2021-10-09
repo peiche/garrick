@@ -6,26 +6,26 @@
 /// @link   https://boldoak.design/work/garrick
 ////
 
-@use '~codyhouse-framework/main/assets/css/base/breakpoints';
-@use '~codyhouse-framework/main/assets/css/base/mixins';
+@use '~codyhouse-framework/main/assets/css/base/mixins' as *;
 
 :root {
 	--btn-font-size: 1em;
-	--btn-font-size-sm: calc(var(--btn-font-size) - 0.2em);
-	--btn-font-size-md: calc(var(--btn-font-size) + 0.2em);
-	--btn-font-size-lg: calc(var(--btn-font-size) + 0.4em);
-	--btn-padding-x: var(--space-sm); // padding left + right
-	--btn-padding-y: var(--space-xs); // padding top + bottom
-	--btn-radius: var(--radius);
+	--btn-padding-x: var(--space-sm);
+	--btn-padding-y: var(--space-xxs);
+	--btn-radius: var(--radius-md);
 }
 
-.btn { // style affecting all buttons
+.btn {
+	color: var(--color-contrast-higher);
 	cursor: pointer;
-	@include mixins.fontSmooth;
-	transition: 0.3s;
+	text-decoration: none;
+	line-height: 1.2;
+	@include fontSmooth;
+	transition: all 0.2s ease;
+	will-change: transform;
 
 	&:focus {
-		box-shadow: 0 0 0 2px mixins.alpha(var(--color-contrast-higher), 0.15);
+		box-shadow: 0px 0px 0px 2px alpha(var(--color-contrast-higher), 0.15);
 		outline: none;
 	}
 
@@ -36,38 +36,54 @@
 
 // themes
 .btn--primary {
-	background-color: var(--color-primary);
+	background: var(--color-primary);
 	color: var(--color-white);
+	box-shadow: inset 0px 1px 0px alpha(var(--color-white), 0.15), var(--shadow-xs);
 
 	&:hover {
-		background-color: var(--color-primary-dark);
+		background: var(--color-primary-light);
+		box-shadow: inset 0px 1px 0px alpha(var(--color-white), 0.15), var(--shadow-sm);
 	}
 
 	&:focus {
-		box-shadow: 0 0 0 2px mixins.alpha(var(--color-primary), 0.2);
-	}
-}
-
-.btn--accent {
-	background-color: var(--color-accent);
-	color: var(--color-white);
-
-	&:hover {
-		background-color: var(--color-accent-dark);
-	}
-
-	&:focus {
-		box-shadow: 0 0 0 2px mixins.alpha(var(--color-accent), 0.2);
+		box-shadow: inset 0px 1px 0px alpha(var(--color-white), 0.15), 0px 0px 0px 2px alpha(var(--color-primary), 0.2);
 	}
 }
 
 .btn--subtle {
-	background-color: var(--color-contrast-lower);
+	background: var(--color-bg-light);
 	color: var(--color-contrast-higher);
+	box-shadow: inset 0px 0px 0px 1px var(--color-contrast-lower), var(--shadow-xs);
+
+	&:hover {
+		background: var(--color-bg-lighter);
+		box-shadow: inset 0px 0px 0px 1px var(--color-contrast-lower), var(--shadow-sm);
+	}
+
+	&:focus {
+		box-shadow: inset 0px 0px 0px 1px var(--color-contrast-lower), 0px 0px 0px 2px alpha(var(--color-contrast-higher), 0.05);
+	}
+}
+
+.btn--accent {
+	background: var(--color-accent);
+	color: var(--color-white);
+	box-shadow: inset 0px 1px 0px alpha(var(--color-white), 0.15), var(--shadow-xs);
+
+	&:hover {
+		background: var(--color-accent-light);
+		box-shadow: inset 0px 1px 0px alpha(var(--color-white), 0.15), var(--shadow-sm);
+	}
+
+	&:focus {
+		box-shadow: inset 0px 1px 0px alpha(var(--color-white), 0.15), 0px 0px 0px 2px alpha(var(--color-accent), 0.2);
+	}
 }
 
 // feedback
-.btn--disabled {
+.btn--disabled,
+.btn[disabled],
+.btn[readonly] {
 	opacity: 0.6;
 	cursor: not-allowed;
 }
@@ -85,9 +101,15 @@
 	box-shadow: inset 0 0 0 2px var(--color-accent);
 }
 
-// sizes
-.btn--sm {}
+// size
+.btn--sm {
+	font-size: 0.8em;
+}
 
-.btn--md {}
+.btn--md {
+	font-size: 1.2em;
+}
 
-.btn--lg {}
+.btn--lg {
+	font-size: 1.4em;
+}
