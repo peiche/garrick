@@ -176,11 +176,6 @@ class Customize implements Bootable {
 			'transport' => 'refresh',
 		) );
 
-		$manager->add_setting( 'archive_columns', array(
-			'default'   => 1,
-			'transport' => 'refresh',
-		) );
-
 		$manager->add_setting( 'featured_image_aspect_ratio', array(
 			'default'   => '',
 			'transport' => 'refresh',
@@ -311,19 +306,6 @@ class Customize implements Bootable {
 				'settings'    => 'primary_color_dark',
 			) )
 		);
-
-		$manager->add_control( 'archive_columns', array(
-			'type'        => 'select',
-			'section'     => 'content',
-			'label'       => __( 'Post Columns', 'garrick' ),
-			'description' => __( 'Show posts and pages in a single column or grid.', 'garrick' ),
-			'choices'     => array(
-				'1' => 1,
-				'2' => 2,
-				'3' => 3,
-				'4' => 4,
-			),
-		) );
 
 		$manager->add_control( 'featured_image_aspect_ratio', array(
 			'type'        => 'select',

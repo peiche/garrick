@@ -1,4 +1,4 @@
-<article <?php Hybrid\Attr\display( 'entry ' . $data->grid_class ) ?>>
+<article <?php Hybrid\Attr\display( 'entry ' . $data->class ) ?>>
 
 	<?php Hybrid\View\display( 'partials', 'archive-image' ) ?>
 
