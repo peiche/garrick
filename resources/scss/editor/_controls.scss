@@ -11,6 +11,10 @@
 	--wp-color: #1e1e1e;
 }
 
+html :where(.editor-styles-wrapper) {
+	padding: var(--space-sm);
+}
+
 .edit-post-header,
 .edit-post-sidebar {
 	font-size: var(--wp-font-size);
