@@ -11,7 +11,7 @@
 
 :root {
 	// font size
-	--text-base-size: 1rem; // body font-size
+	--text-base-size: 1.25rem; // body font-size
 	--text-scale-ratio: 1.2; // multiplier used to generate the type scale values 👇
 
 	// type scale
@@ -45,7 +45,6 @@
 	:root {
 
 		@include breakpoint(md) {
-			--text-base-size: 1.25rem;
 			--text-scale-ratio: 1.25;
 		}
 	}
