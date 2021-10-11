@@ -1,5 +1,5 @@
-@use '~codyhouse-framework/main/assets/css/base/breakpoints';
-@use '~codyhouse-framework/main/assets/css/base/mixins';
+@use '~codyhouse-framework/main/assets/css/base/breakpoints' as *;
+@use '~codyhouse-framework/main/assets/css/base/mixins' as *;
 
 .contact-form {
 	--gap: var(--space-md);
@@ -51,7 +51,7 @@
 	input[type="text"],
 	input[type="url"],
 	textarea {
-		@include mixins.reset;
+		@include reset;
 		font-size: var(--form-control-font-size);
 		padding: var(--form-control-padding-y) var(--form-control-padding-x);
 		border-radius: var(--form-control-radius);
@@ -60,7 +60,7 @@
 		width: 100%;
 	}
 
-	@include breakpoints.breakpoint(md) {
+	@include breakpoint(md) {
 
 		$widths: 25, 50, 75;
 		@each $width in $widths {

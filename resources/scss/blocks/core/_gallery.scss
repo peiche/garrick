@@ -6,8 +6,8 @@
 /// @link   https://boldoak.design/work/garrick
 ////
 
-@use '~codyhouse-framework/main/assets/css/base/breakpoints';
-@use 'tools/mixins';
+@use '~codyhouse-framework/main/assets/css/base/breakpoints' as *;
+@use 'tools/mixins' as *;
 
 $gap-size: var(--space-sm);
 
@@ -53,7 +53,7 @@ $gap-size: var(--space-sm);
 	}
 
 	figcaption {
-		@include mixins.caption;
+		@include caption;
 
 		position: absolute;
 		padding: var(--space-xl) var(--space-md) var(--space-sm);
@@ -69,7 +69,7 @@ $gap-size: var(--space-sm);
 }
 
 .blocks-gallery-caption {
-	@include mixins.caption;
+	@include caption;
 
 	flex-basis: 100%;
 }
@@ -87,7 +87,7 @@ $gap-size: var(--space-sm);
 }
 
 // 2-8 columns on larger screens.
-@include breakpoints.breakpoint(sm) {
+@include breakpoint(sm) {
 
 	@for $i from 2 through 8 {
 

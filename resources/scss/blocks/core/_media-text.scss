@@ -6,7 +6,7 @@
 /// @link   https://boldoak.design/work/garrick
 ////
 
-@use '~codyhouse-framework/main/assets/css/base/breakpoints';
+@use '~codyhouse-framework/main/assets/css/base/breakpoints' as *;
 
 .wp-block-media-text {
 	display: grid;
@@ -89,7 +89,7 @@
 	&.is-stacked-on-mobile {
 		grid-template-columns: 100%;
 
-		@include breakpoints.breakpoint(sm) {
+		@include breakpoint(sm) {
 			grid-template-areas: 'media-text-media media-text-content';
 			grid-template-columns: 50% auto;
 		}
@@ -98,7 +98,7 @@
 			grid-column: 1;
 			grid-row: 1;
 
-			@include breakpoints.breakpoint(sm) {
+			@include breakpoint(sm) {
 				grid-area: media-text-media;
 			}
 		}
@@ -107,14 +107,14 @@
 			grid-column: 1;
 			grid-row: 2;
 
-			@include breakpoints.breakpoint(sm) {
+			@include breakpoint(sm) {
 				grid-area: media-text-content;
 			}
 		}
 
 		&.has-media-on-the-right {
 
-			@include breakpoints.breakpoint(sm) {
+			@include breakpoint(sm) {
 				grid-template-areas: 'media-text-content media-text-media';
 			}
 
@@ -122,7 +122,7 @@
 				grid-column: 1;
 				grid-row: 2;
 
-				@include breakpoints.breakpoint(sm) {
+				@include breakpoint(sm) {
 					grid-area: media-text-media;
 				}
 			}
@@ -131,7 +131,7 @@
 				grid-column: 1;
 				grid-row: 1;
 
-				@include breakpoints.breakpoint(sm) {
+				@include breakpoint(sm) {
 					grid-area: media-text-content;
 				}
 			}

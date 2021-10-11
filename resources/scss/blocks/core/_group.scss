@@ -6,7 +6,7 @@
 /// @link   https://boldoak.design/work/garrick
 ////
 
-@use '~codyhouse-framework/main/assets/css/base/breakpoints';
+@use '~codyhouse-framework/main/assets/css/base/breakpoints' as *;
 
 .wp-block-group {
 	margin-bottom: var(--component-padding);
@@ -17,7 +17,7 @@
 		margin-bottom: 0;
 	}
 
-	@include breakpoints.breakpoint(md) {
+	@include breakpoint(md) {
 		padding-left: 0;
 		padding-right: 0;
 	}

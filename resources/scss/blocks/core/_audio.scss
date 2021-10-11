@@ -6,7 +6,7 @@
 /// @link   https://boldoak.design/work/garrick
 ////
 
-@use 'tools/mixins';
+@use 'tools/mixins' as *;
 
 .wp-block-audio {
 	margin: 0;
@@ -16,6 +16,6 @@
 	}
 
 	figcaption {
-		@include mixins.caption;
+		@include caption;
 	}
 }

@@ -6,7 +6,7 @@
 /// @link   https://boldoak.design/work/garrick
 ////
 
-@use '~codyhouse-framework/main/assets/css/base/breakpoints';
+@use '~codyhouse-framework/main/assets/css/base/breakpoints' as *;
 
 .widget {
 
@@ -46,11 +46,11 @@
 		padding-right: var(--space-sm);
 		flex-grow: 1;
 
-		@include breakpoints.breakpoint(xs) {
+		@include breakpoint(xs) {
 			width: calc(100% / 2);
 		}
 
-		@include breakpoints.breakpoint(md) {
+		@include breakpoint(md) {
 			width: calc(100% / 4);
 		}
 	}

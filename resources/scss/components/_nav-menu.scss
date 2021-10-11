@@ -6,7 +6,7 @@
 /// @link   https://boldoak.design/work/garrick
 ////
 
-@use '~codyhouse-framework/main/assets/css/base/breakpoints';
+@use '~codyhouse-framework/main/assets/css/base/breakpoints' as *;
 
 .menu {
 
@@ -20,7 +20,7 @@
 		position: relative;
 		flex-shrink: 0;
 
-		@include breakpoints.breakpoint(md) {
+		@include breakpoint(md) {
 			align-self: center;
 		}
 	}
@@ -55,7 +55,7 @@
 			display: block;
 		}
 
-		@include breakpoints.breakpoint(md) {
+		@include breakpoint(md) {
 			position: static;
 			background-color: transparent;
 			padding: 0;
@@ -65,8 +65,9 @@
 
 		.menu__items {
 			flex-direction: column;
+			gap: var(--space-sm);
 
-			@include breakpoints.breakpoint(md) {
+			@include breakpoint(md) {
 				flex-direction: row;
 			}
 		}
@@ -78,7 +79,7 @@
 				margin-left: var(--btn-padding-x);
 				margin-right: var(--btn-padding-x);
 
-				@include breakpoints.breakpoint(md) {
+				@include breakpoint(md) {
 					margin: 0;
 				}
 
@@ -88,10 +89,10 @@
 				}
 			}
 
-			@include breakpoints.breakpoint(md) {
+			@include breakpoint(md) {
 
 				&:not(:first-child) {
-					margin-left: var(--space-sm);
+					//margin-left: var(--space-sm);
 				}
 			}
 		}
@@ -101,7 +102,7 @@
 			align-items: center;
 			padding: var(--space-xxxs) var(--space-sm);
 
-			@include breakpoints.breakpoint(md) {
+			@include breakpoint(md) {
 				padding: 0;
 			}
 		}
@@ -111,7 +112,7 @@
 			list-style: none;
 			padding: var(--space-xxxxs) 0;
 
-			@include breakpoints.breakpoint(md) {
+			@include breakpoint(md) {
 				position: absolute;
 				right: 0;
 				width: 200px;
@@ -127,7 +128,7 @@
 
 			.menu__link {
 
-				@include breakpoints.breakpoint(md) {
+				@include breakpoint(md) {
 					padding: var(--space-xxxs) var(--space-xs);
 
 					&:hover {

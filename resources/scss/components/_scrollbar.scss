@@ -6,8 +6,8 @@
 /// @link   https://boldoak.design/work/garrick
 ////
 
-@use 'tools/mixins';
+@use 'tools/mixins' as *;
 
 .scrollbar {
-	@include mixins.scrollbar;
+	@include scrollbar;
 }
