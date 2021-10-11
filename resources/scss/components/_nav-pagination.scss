@@ -39,7 +39,7 @@
 	&__items {
 		display: flex;
 		flex-wrap: wrap;
-		margin-bottom: calc(-1 * var(--pagination-item-gap));
+		gap: var(--pagination-item-gap);
 		justify-content: space-between;
 		width: 100%;
 		list-style: none;
@@ -53,10 +53,7 @@
 
 	// Individual items.
 	&__item {
-		margin-right: var(--pagination-item-gap);
-		margin-bottom: var(--pagination-item-gap);
 		align-items: center;
-		display: inline-block; // flex fallback
 		display: inline-flex;
 
 		&:last-child {
