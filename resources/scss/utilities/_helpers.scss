@@ -6,12 +6,12 @@
 /// @link   https://boldoak.design/work/garrick
 ////
 
-@use 'tools/functions';
+@use 'tools/functions' as *;
 
 /// Loops through the theme colors and adds utility classes for them. Primarily,
 /// these are the `.has-{$color}-color` and `.has-{$color}-background-color`
 /// classes added via Gutenberg. However, they are useful elsewhere.
-@each $color-name, $color-value in functions.block-colors() {
+@each $color-name, $color-value in block-colors() {
 
 	.has-#{ $color-name }-color {
 		color: #{ $color-value };
@@ -28,7 +28,7 @@
 	}
 }
 
-@each $gradient-name, $gradient-value in functions.block-gradients() {
+@each $gradient-name, $gradient-value in block-gradients() {
 
 	.has-#{ $gradient-name }-gradient-background {
 		background: #{ $gradient-value };
@@ -38,7 +38,7 @@
 /// Loops through the editor font sizes and adds utility classes for them. This
 /// handles the `.has-{$size}-font-size` classes added via Gutenberg, which may
 /// be useful elsewhere.
-@each $font-size-name, $font-size-value in functions.editor-font-sizes() {
+@each $font-size-name, $font-size-value in editor-font-sizes() {
 
 	.has-#{ $font-size-name }-font-size {
 		font-size: #{ $font-size-value };

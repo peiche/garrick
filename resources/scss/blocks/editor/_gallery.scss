@@ -6,8 +6,6 @@
 /// @link   https://boldoak.design/work/garrick
 ////
 
-@use '~codyhouse-framework/main/assets/css/base/breakpoints';
-
 .wp-block-gallery {
 
 	.components-form-file-upload {
@@ -27,4 +25,12 @@
 	.block-editor-rich-text {
 		width: 100%;
 	}
+}
+
+.blocks-gallery-grid {
+	margin-bottom: 0; // override default ul margin
+}
+
+.blocks-gallery-item {
+	margin-bottom: 0; // override margin-based gap
 }

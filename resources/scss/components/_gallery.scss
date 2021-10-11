@@ -6,14 +6,14 @@
 /// @link   https://boldoak.design/work/garrick
 ////
 
-@use '~codyhouse-framework/main/assets/css/base/breakpoints';
+@use '~codyhouse-framework/main/assets/css/base/breakpoints' as *;
 
 .gallery {
 	display: flex;
 	flex-wrap: wrap;
 	margin: var(--component-padding) -8px;
 
-	@include breakpoints.breakpoint(sm) {
+	@include breakpoint(sm) {
 		flex-direction: row;
 
 		@for $i from 1 through 10 {

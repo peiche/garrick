@@ -6,7 +6,7 @@
 /// @link   https://boldoak.design/work/garrick
 ////
 
-@use 'tools/mixins';
+@use 'tools/mixins' as *;
 
 $aspect-ratios: (
 	'21-9': 42.85%,
@@ -75,7 +75,7 @@ $aspect-ratios: (
 
 	// Caption below embedded content.
 	figcaption {
-		@include mixins.caption;
+		@include caption;
 		position: static;
 	}
 }

@@ -7,7 +7,7 @@
 /// @link   https://boldoak.design/work/garrick
 ////
 
-@use '~codyhouse-framework/main/assets/css/base/breakpoints';
+@use '~codyhouse-framework/main/assets/css/base/breakpoints' as *;
 
 :root {
 	--space-unit: 1em;
@@ -29,7 +29,7 @@
 
 	:root {
 
-		@include breakpoints.breakpoint(md) {
+		@include breakpoint(md) {
 			--space-unit:  1.25em;
 		}
 	}

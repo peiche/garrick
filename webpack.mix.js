@@ -121,18 +121,6 @@ var sassConfig = {
 // Compile user-facing styles.
 mix.sass( `${devPath}/scss/screen.scss`, 'css', sassConfig );
 
-// Compile fallback CSS replacing custom properties and calc().
-// @link https://github.com/JeffreyWay/laravel-mix/issues/2143#issuecomment-524368071
-mix.sass( `${devPath}/scss/screen-fallback.scss`, 'css', sassConfig, [
-	postcssVariables( {
-		preserve: false,
-		variables: {
-			'--gap-x': '0px',
-		},
-	} ),
-	postcssCalc(),
-] );
-
 // Compile editor and Customizer styles.
 mix.sass( `${devPath}/scss/editor.scss`,    'css', sassConfig )
 	 .sass( `${devPath}/scss/customize.scss`, 'css', sassConfig );

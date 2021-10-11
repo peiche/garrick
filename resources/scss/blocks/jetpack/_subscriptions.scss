@@ -6,8 +6,8 @@
 /// @link   https://boldoak.design/work/garrick
 ////
 
-@use '~codyhouse-framework/main/assets/css/base/breakpoints';
-@use '~codyhouse-framework/main/assets/css/base/mixins';
+@use '~codyhouse-framework/main/assets/css/base/breakpoints' as *;
+@use '~codyhouse-framework/main/assets/css/base/mixins' as *;
 
 .wp-block-jetpack-subscriptions {
 	margin-bottom: var(--space-md);
@@ -29,7 +29,7 @@
 	}
 
 	input[type="email"] {
-		@include mixins.reset;
+		@include reset;
 		background-color: var(--color-bg);
 		display: flex;
 		flex-grow: 1;
@@ -40,7 +40,7 @@
 		margin-bottom: 0;
 		line-height: normal;
 
-		@include breakpoints.breakpoint(md) {
+		@include breakpoint(md) {
 			margin-bottom: 0;
 		}
 	}

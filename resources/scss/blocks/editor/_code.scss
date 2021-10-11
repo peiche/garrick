@@ -6,14 +6,14 @@
 /// @link   https://boldoak.design/work/garrick
 ////
 
-@use '~codyhouse-framework/main/assets/css/base/breakpoints';
+@use '~codyhouse-framework/main/assets/css/base/breakpoints' as *;
 
 // double up specificity to ensure correct editor styles.
 .wp-block-code.wp-block-code {
 	transform: none;
 	color: var(--color-white);
 
-	@include breakpoints.breakpoint(sm) {
+	@include breakpoint(sm) {
 		max-width: calc(var(--max-width-sm) * 1.2);
 	}
 

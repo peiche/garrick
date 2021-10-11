@@ -8,23 +8,22 @@
 /// @link   https://boldoak.design/work/garrick
 ////
 
-@use '~codyhouse-framework/main/assets/css/base/breakpoints';
-@use '~codyhouse-framework/main/assets/css/base/mixins';
+@use '~codyhouse-framework/main/assets/css/base/mixins' as *;
 
 .badge {
-	@include mixins.reset; // reset button native style
+	@include reset; // reset button native style
 	display: inline-flex;
 	align-items: center;
 	font-size: var(--text-sm);
 	background-color: var(--color-contrast-low);
 	padding: var(--space-xxxxs) var(--space-xxs);
 	border-radius: var(--radius-md);
-	@include mixins.fontSmooth;
+	@include fontSmooth;
 }
 
 .badge--outline {
 	background-color: transparent;
-	border: 1px solid mixins.alpha(var(--color-contrast-higher), 0.25);
+	border: 1px solid alpha(var(--color-contrast-higher), 0.25);
 }
 
 .badge--contrast-higher {
@@ -38,7 +37,7 @@
 }
 
 .badge--primary-light {
-	background-color: mixins.alpha(var(--color-primary), 0.2);
+	background-color: alpha(var(--color-primary), 0.2);
 	color: var(--color-contrast-higher);
 }
 
@@ -48,7 +47,7 @@
 }
 
 .badge--accent-light {
-	background-color: mixins.alpha(var(--color-accent), 0.2);
+	background-color: alpha(var(--color-accent), 0.2);
 	color: var(--color-contrast-higher);
 }
 
@@ -58,7 +57,7 @@
 }
 
 .badge--error-light {
-	background-color: mixins.alpha(var(--color-error), 0.2);
+	background-color: alpha(var(--color-error), 0.2);
 	color: var(--color-contrast-higher);
 }
 
@@ -68,6 +67,6 @@
 }
 
 .badge--success-light {
-	background-color: mixins.alpha(var(--color-success), 0.2);
+	background-color: alpha(var(--color-success), 0.2);
 	color: var(--color-contrast-higher);
 }

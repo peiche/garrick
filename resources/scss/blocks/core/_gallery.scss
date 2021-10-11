@@ -6,8 +6,8 @@
 /// @link   https://boldoak.design/work/garrick
 ////
 
-@use '~codyhouse-framework/main/assets/css/base/breakpoints';
-@use 'tools/mixins';
+@use '~codyhouse-framework/main/assets/css/base/breakpoints' as *;
+@use 'tools/mixins' as *;
 
 $gap-size: var(--space-sm);
 
@@ -27,13 +27,8 @@ $gap-size: var(--space-sm);
 	flex-wrap: wrap;
 	flex-basis: 100%;
 	list-style: none;
-	margin-bottom: calc(-1 * #{ $gap-size });
 	padding: 0;
-
-	// override ul:last-child rule
-	@at-root ul#{ & } {
-		margin-bottom: calc(-1 * #{ $gap-size });
-	}
+	gap: $gap-size;
 }
 
 // The wrapper for individual gallery images/figures.
@@ -43,15 +38,8 @@ $gap-size: var(--space-sm);
 	flex-direction: column;
 	justify-content: center;
 	position: relative; // Image figure.
-	width: calc(100% - #{ $gap-size });
-	margin-bottom: $gap-size;
 	margin-right: 0;
 	overflow: auto;
-
-	&:nth-of-type(2n),
-	&:last-child {
-		margin-right: 0;
-	}
 
 	figure {
 		margin: 0;
@@ -61,17 +49,11 @@ $gap-size: var(--space-sm);
 	img {
 		display: block;
 		max-width: 100%;
-		height: auto; // Set an explicit width for IE.
 		width: 100%;
-
-		// IE11 can't read this.
-		@supports (position: sticky) {
-			width: auto;
-		}
 	}
 
 	figcaption {
-		@include mixins.caption;
+		@include caption;
 
 		position: absolute;
 		padding: var(--space-xl) var(--space-md) var(--space-sm);
@@ -87,7 +69,7 @@ $gap-size: var(--space-sm);
 }
 
 .blocks-gallery-caption {
-	@include mixins.caption;
+	@include caption;
 
 	flex-basis: 100%;
 }
@@ -99,31 +81,20 @@ $gap-size: var(--space-sm);
 	img {
 		flex: 1;
 		width: 100%;
-
-		// IE11 doesn't support object-fit.
-		@supports (position: sticky) {
-			flex: 1;
-			height: 100%;
-			object-fit: cover;
-		}
+		height: 100%;
+		object-fit: cover;
 	}
 }
 
 // 2-8 columns on larger screens.
-@include breakpoints.breakpoint(sm) {
+@include breakpoint(sm) {
 
 	@for $i from 2 through 8 {
 
 		.columns-#{ $i } {
 
 			.blocks-gallery-item {
-				width: calc( 100% / #{ $i } - #{ $gap-size });
-				margin-right: $gap-size;
-
-				&:nth-of-type( #{ $i }n ),
-				&:last-of-type {
-					margin-right: 0;
-				}
+				width: calc(100% / #{ $i } - #{ $gap-size });
 			}
 		}
 	}

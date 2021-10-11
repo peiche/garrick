@@ -6,8 +6,8 @@
 /// @link   https://boldoak.design/work/garrick
 ////
 
-@use '~codyhouse-framework/main/assets/css/base/breakpoints';
-@use '~codyhouse-framework/main/assets/css/base/mixins';
+@use '~codyhouse-framework/main/assets/css/base/breakpoints' as *;
+@use '~codyhouse-framework/main/assets/css/base/mixins' as *;
 
 // Shared scrollbar style
 @mixin scrollbar($background: var(--color-bg), $foreground: var(--color-contrast-medium)) {
@@ -25,7 +25,7 @@
 
 	// handle
 	&::-webkit-scrollbar-thumb {
-		background-color: mixins.alpha($foreground, 0.9);
+		background-color: alpha($foreground, 0.9);
 		border-radius: 0;
 
 		&:hover {
@@ -38,18 +38,18 @@ $blockquote-size-padding: var(--space-sm);
 $blockquote-size-border: var(--space-xxxxs);
 
 @mixin blockquote {
-	margin-top: calc(var(--space-sm) * var(--text-vspace-multiplier, 1));
+	margin-top: calc(var(--space-sm) * var(--text-space-y-multiplier, 1));
 	padding-left: $blockquote-size-padding;
 	border-left: $blockquote-size-border solid var(--color-contrast-low);
 
-	@include breakpoints.breakpoint(md) {
+	@include breakpoint(md) {
 		margin-left: calc(-1 * (#{$blockquote-size-padding} + #{$blockquote-size-border}));
 	}
 }
 
-@mixin cite {
+@mixin cite($font-size: var(--text-sm)) {
 	color: var(--color-contrast-medium);
-	font-size: 0.9em;
+	font-size: $font-size;
 	display: block;
 	margin-top: var(--space-sm);
 }

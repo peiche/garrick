@@ -1,7 +1,7 @@
 <?php if ( ! is_front_page() && ! is_home() ) : ?>
 
 <header class="archive-header margin-y-lg">
-  <div class="container max-width-lg">
+  <div class="container max-width-adaptive-lg">
     <h1 class="archive-header__title text-xxxl margin-bottom-auto">
 
       <?php if ( is_author() ) : ?>

@@ -6,8 +6,8 @@
 /// @link   https://boldoak.design/work/garrick
 ////
 
-@use 'tools/mixins';
+@use 'tools/mixins' as *;
 
 .wp-block-verse {
-	@include mixins.preformatted;
+	@include preformatted;
 }

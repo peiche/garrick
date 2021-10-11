@@ -6,13 +6,12 @@
 /// @link   https://boldoak.design/work/garrick
 ////
 
-@use '~codyhouse-framework/main/assets/css/base/breakpoints';
+@use '~codyhouse-framework/main/assets/css/base/breakpoints' as *;
 
 .wp-block-buttons {
-	--gap: var(--space-sm);
 	display: flex;
 	flex-wrap: wrap;
-	margin-left: calc(-1 * var(--gap, 0.5em));
+	gap: var(--space-sm);
 
 	&.is-content-justification-left {
 		justify-content: flex-start;
@@ -28,11 +27,6 @@
 }
 
 .wp-block-button {
-
-	.wp-block-buttons & {
-		margin-left: var(--gap);
-		margin-bottom: var(--gap);
-	}
 
 	&__link {
 		border: 0;
@@ -78,7 +72,7 @@
 
 		@each $width in $widths {
 
-			@include breakpoints.breakpoint(md) {
+			@include breakpoint(md) {
 
 				&.wp-block-button__width-#{$width} {
 					flex-basis: calc(#{$width * 1%} - 0.01px - var(--space-md));

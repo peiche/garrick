@@ -10,14 +10,19 @@
 				<?php Hybrid\View\display( 'entry/archive', 'featured' ) ?>
 			<?php endif ?>
 
-			<?php $archive_columns = get_theme_mod( 'archive_columns', 'stacked' ) ?>
-			<div class="container margin-y-lg <?php echo ( 1 < $archive_columns ? 'max-width-lg' : 'max-width-sm' ) ?>">
+			<div class="container margin-y-lg max-width-adaptive-lg">
 
-				<div class="entry__wrapper grid gap-md">
+				<div class="entry__wrapper grid gap-md grid-col-1 grid-col-2@sm grid-col-3@md">
 
 					<?php
 						while ( have_posts() ) : the_post();
-							Hybrid\View\display( 'entry/archive', Hybrid\Post\hierarchy(), [ 'grid_class' => ( 1 < $archive_columns ? 'col-12 col-' . ( 12 / $archive_columns ) . '@md text-sm' : 'col-12' ) ] );
+					?>
+					<div class="col-1">
+						<?php
+							Hybrid\View\display( 'entry/archive', Hybrid\Post\hierarchy(), [ 'class' => 'text-sm' ] );
+						?>
+					</div>
+					<?php
 						endwhile;
 					?>
 

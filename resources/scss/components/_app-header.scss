@@ -6,13 +6,13 @@
 /// @link   https://boldoak.design/work/garrick
 ////
 
-@use '~codyhouse-framework/main/assets/css/base/breakpoints';
+@use '~codyhouse-framework/main/assets/css/base/breakpoints' as *;
 
 :root {}
 
 .app-header {
 	position: relative;
-	z-index: var(--zindex-header);
+	z-index: var(--z-index-header);
 
 	// Wrapper around the title and description.
 	&__branding {
@@ -41,7 +41,7 @@
 		padding-top: var(--space-xs);
 		padding-bottom: var(--space-xs);
 
-		@include breakpoints.breakpoint(md) {
+		@include breakpoint(md) {
 			padding-top: var(--space-md);
 			padding-bottom: var(--space-md);
 		}
@@ -83,9 +83,9 @@
 	&__nav-trigger {
 		display: inline-flex;
 		padding-right: 0;
-		z-index: var(--zindex-fixed-element);
+		z-index: var(--z-index-fixed-element);
 
-		@include breakpoints.breakpoint(md) {
+		@include breakpoint(md) {
 			display: none;
 		}
 

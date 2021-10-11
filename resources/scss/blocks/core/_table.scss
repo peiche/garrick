@@ -6,7 +6,7 @@
 /// @link   https://boldoak.design/work/garrick
 ////
 
-@use 'tools/mixins';
+@use 'tools/mixins' as *;
 
 .wp-block-table {
 
@@ -83,6 +83,6 @@
 	}
 
 	figcaption {
-		@include mixins.caption;
+		@include caption;
 	}
 }
