@@ -1,6 +1,12 @@
 # Change Log
 
-## 1.5.0 - 08/27/2021
+## 1.5.1 - 10/11/2021
+
+### Changed
+
+- Changed posts navigation and footer navigation to use CSS gap.
+
+## 1.5.0 - 10/11/2021
 
 ### Changed
 
