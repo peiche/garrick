@@ -10,9 +10,9 @@
 				<?php Hybrid\View\display( 'entry/archive', 'featured' ) ?>
 			<?php endif ?>
 
-			<div class="container margin-y-lg max-width-lg">
+			<div class="container margin-y-lg max-width-adaptive-lg">
 
-				<div class="entry__wrapper grid gap-md grid-col-1 grid-col-3@md">
+				<div class="entry__wrapper grid gap-md grid-col-1 grid-col-2@sm grid-col-3@md">
 
 					<?php
 						while ( have_posts() ) : the_post();
