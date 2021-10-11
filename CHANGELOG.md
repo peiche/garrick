@@ -5,11 +5,11 @@
 ### Changed
 
 - Updated to CodyFrame 3.0.0.
+- Changed @import statements to support Sass modules.
+- Changed Choices.js stylesheet import from Sass to compiled CSS. (This is done to avoid compilation errors, since Choices.js [has not been updated to support Sass modules](https://github.com/Choices-js/Choices/issues/964).)
 - Removed fallback stylesheet.
-- Updated variables and text sizing units.
-- Converted @import statements to support Sass modules.
 - Removed Post Columns setting. All post archive pages now display 3 columns.
-- Import compiled Choices.js stylesheet. (This is done to avoid compilation errors, since Choices.js [has not been updated to support Sass modules](https://github.com/Choices-js/Choices/issues/964).)
+- Updated variables and text sizing units.
 - Fixed outer padding on block editor.
 - Overhauled buttons and colors [global settings](https://codyhouse.co/ds/globals).
 - Updated gallery styles to support CSS gap.
