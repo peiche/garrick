@@ -1,5 +1,11 @@
 # Change Log
 
+## 1.5.2 - 10/13/2021
+
+### Changed
+
+- Updated to CodyFrame 3.0.2.
+
 ## 1.5.1 - 10/11/2021
 
 ### Changed
