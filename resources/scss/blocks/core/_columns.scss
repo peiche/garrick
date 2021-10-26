@@ -10,48 +10,54 @@
 
 .wp-block-columns {
 	display: flex;
+	margin-top: var(--component-padding);
+	margin-bottom: var(--component-padding);
+	gap: var(--component-padding);
 	flex-wrap: wrap;
 
-	&.are-vertically-aligned-top {
-		align-items: flex-start;
+	@include breakpoint(md) {
+		flex-wrap: nowrap;
 	}
 
-	&.are-vertically-aligned-center {
-		align-items: center;
+	&.has-background {
+		padding: var(--component-padding);
 	}
 
-	&.are-vertically-aligned-bottom {
-		align-items: flex-end;
+	&:not(.is-not-stacked-on-mobile) > .wp-block-column {
+
+		@include breakpoint(lg) {
+			flex-basis: 0;
+			flex-grow: 1;
+
+			&[style*="flex-basis"] {
+				flex-grow: 0;
+			}
+		}
+	}
+
+	&.is-not-stacked-on-mobile {
+		flex-wrap: nowrap;
+
+		> .wp-block-column {
+			flex-basis: 0;
+			flex-grow: 1;
+
+			&[style*="flex-basis"] {
+				flex-grow: 0;
+			}
+		}
 	}
 }
 
-// Individual columns.
-
-// Please note that only equal split columns
-// collapse into a single column on small screens.
-// This is due to Gutenberg setting custom column
-// widths as inline styles, instead of assigning
-// classes.
-
 .wp-block-column {
-	background-clip: content-box;
-	flex-basis: 100%;
+	flex-grow: 1;
+	min-width: 0;
+	word-break: break-word;
+	overflow-wrap: break-word;
 
-	@include breakpoint(sm) {
-		flex-basis: 0;
-		flex-grow: 1;
-		max-width: 100%;
-	}
-
-	&.is-vertically-aligned-top {
-		align-self: flex-start;
-	}
-
-	&.is-vertically-aligned-center {
-		align-self: center;
-	}
-
+	&.is-vertically-aligned-top,
+	&.is-vertically-aligned-center,
 	&.is-vertically-aligned-bottom {
-		align-self: flex-end;
+		width: 100%;
 	}
 }
