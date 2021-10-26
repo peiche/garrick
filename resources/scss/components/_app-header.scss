@@ -60,7 +60,7 @@
 		display: block;
 		max-height: 100%;
 		width: auto;
-		height: 2.5em;
+		max-height: 2.5em;
 
 		// Logo link. Output from the `custom-logo` feature.
 		&-link {
