@@ -176,16 +176,6 @@ class Customize implements Bootable {
 			'transport' => 'refresh',
 		) );
 
-		$manager->add_setting( 'featured_image_aspect_ratio', array(
-			'default'   => '',
-			'transport' => 'refresh',
-		) );
-
-		$manager->add_setting( 'archive_image_placeholder', array(
-			'default'   => false,
-			'transport' => 'refresh',
-		) );
-
 		$manager->add_setting( 'archive_hide_excerpt', array(
 			'default'   => false,
 			'transport' => 'refresh',
@@ -306,27 +296,6 @@ class Customize implements Bootable {
 				'settings'    => 'primary_color_dark',
 			) )
 		);
-
-		$manager->add_control( 'featured_image_aspect_ratio', array(
-			'type'        => 'select',
-			'section'     => 'content',
-			'label'       => __( 'Featured Image Options', 'garrick' ),
-			'description' => __( 'Customize how featured images are displayed.', 'garrick' ),
-			'choices'     => array(
-				''                                  => 'Natural Size',
-				'media-wrapper media-wrapper--21:9' => 'Landscape (21:9)',
-				'media-wrapper media-wrapper--16:9' => 'Landscape (16:9)',
-				'media-wrapper media-wrapper--4:3'  => 'Landscape (4:3)',
-				'media-wrapper media-wrapper--1:1'  => 'Square (1:1)',
-			),
-		) );
-
-		$manager->add_control( 'archive_image_placeholder', array(
-			'type'        => 'checkbox',
-			'section'     => 'content',
-			'label'       => __( 'Image placeholder', 'garrick' ),
-			'description' => __( 'Show default fallback image if no featured image is available.', 'garrick' ),
-		) );
 
 		$manager->add_control( 'archive_hide_excerpt', array(
 			'type'        => 'checkbox',

@@ -5,7 +5,7 @@
 	endif;
 ?>
 
-<header class="entry__header entry__header--single<?php echo $cover_image ? ' alignfull flex items-center margin-bottom-md' : ' margin-y-lg' ?>">
+<header class="entry__header entry__header--single<?php echo $cover_image ? ' alignfull flex items-center margin-bottom-md' : ' alignwide margin-y-lg' ?>">
 	<div class="<?php echo $cover_image ? 'container max-width-sm margin-top-xxxl margin-bottom-xl' : 'margin-bottom-md' ?>">
 		<?php Hybrid\Post\display_title( [ 'class' => 'entry__title text-xxl text-xxxl@md' ] ) ?>
 
@@ -35,7 +35,7 @@
 	?>
 
 	<?php if ( $show_image ) : ?>
-		<?php $image_aspect_ratio = get_theme_mod( 'featured_image_aspect_ratio', '' ); ?>
+		<?php $image_aspect_ratio = 'media-wrapper media-wrapper--4:3'; ?>
 		<?php Hybrid\Carbon\Image::display( 'featured', [
 			'size' => 'full',
 			'class' => 'entry__image',
