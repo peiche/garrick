@@ -79,6 +79,33 @@
 	}
 }
 
+.items-justified-left {
+	justify-content: left;
+}
+
+.items-justified-center {
+	justify-content: center;
+}
+
+.items-justified-right {
+	justify-content: right;
+}
+
+.is-vertically-aligned-top,
+.are-vertically-aligned-top {
+	align-self: flex-start;
+}
+
+.is-vertically-aligned-center,
+.are-vertically-aligned-center {
+	align-self: center;
+}
+
+.is-vertically-aligned-bottom,
+.are-vertically-aligned-bottom {
+	align-self: flex-end;
+}
+
 // Duplicate utility classes.
 .has-text-align-left {
 	text-align: left;
