@@ -30,13 +30,12 @@
 			<?php endif ?>
 
 			<a href="<?php echo esc_url( get_permalink() ) ?>" class="entry__permalink"><?php Hybrid\Post\display_date() ?></a>
-
-			<?php if ( get_theme_mod( 'archive_show_tags', false ) && has_tag() ) : ?>
-				<div class="margin-top-xs">
-					<?php Hybrid\View\display( 'partials', 'post-terms', [ 'taxonomy' => 'post_tag' ] ) ?>
-				</div>
-			<?php endif ?>
-
 		</div>
+
+		<?php if ( get_theme_mod( 'archive_show_tags', false ) && has_tag() ) : ?>
+			<div class="margin-top-xs">
+				<?php Hybrid\View\display( 'partials', 'post-terms', [ 'taxonomy' => 'post_tag' ] ) ?>
+			</div>
+		<?php endif ?>
 	</div>
 </article>
