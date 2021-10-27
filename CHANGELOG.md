@@ -1,10 +1,25 @@
 # Change Log
 
-## 1.5.2 - 10/13/2021
+## 1.5.2 - 10/26/2021
+
+### New
+
+- Added theme.json for universal theme support.
+- Added global alignment styles.
+- Added legacy embed style.
 
 ### Changed
 
 - Updated to CodyFrame 3.0.2.
+- Adjusted block styles to match core.
+- Fixed site logo height.
+- Changed component spacing from `em` to `rem`.
+- Fixed post tag location in post archives.
+
+### Removed
+
+- Removed archive listing options from Customizer.
+- Dequeued block library theme styles.
 
 ## 1.5.1 - 10/11/2021
 
@@ -143,6 +158,6 @@ Note that the unused `wp_deregister_style` lines are left commented out for ease
 
 ## 1.0.0 - 04/07/2020
 
-### Added
+### New
 
 - Initial release.
