@@ -1,0 +1,9 @@
+{
+    "version": 1,
+    "settings": {
+        "layout": {
+            "contentSize": "var(--max-width-sm)",
+            "wideSize": "calc(100% + 2 * var(--space-xxl))"
+        }
+    }
+}
