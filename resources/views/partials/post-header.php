@@ -39,7 +39,7 @@
 		<?php Hybrid\Carbon\Image::display( 'featured', [
 			'size' => 'full',
 			'class' => 'entry__image',
-			'before' => ( ! $cover_image ? '<div class="alignwide margin-y-md margin-x-auto">' : '' ) .
+			'before' => ( ! $cover_image ? '<div class="margin-y-md margin-x-auto">' : '' ) .
 					'<figure class="entry__featured ' . ( ! $cover_image ? $image_aspect_ratio : '' ) . ' bg-contrast-lower position-relative">',
 			'after' => '</figure>' . ( $cover_image ? '</div>' : '' ),
 		] ) ?>
