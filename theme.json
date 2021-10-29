@@ -1,9 +1,168 @@
 {
+    "$schema": "https://json.schemastore.org/theme-v1.json",
     "version": 1,
     "settings": {
         "layout": {
             "contentSize": "var(--max-width-sm)",
-            "wideSize": "calc(100% + 2 * var(--space-xxl))"
+            "wideSize": "var(--max-width-md)"
+        },
+        "typography": {
+            "fontFamilies": [],
+            "fontSizes": [
+                {
+                    "slug": "xs",
+                    "size": "var(--text-xs)",
+                    "name": "Extra Small"
+                },
+                {
+                    "slug": "sm",
+                    "size": "var(--text-sm)",
+                    "name": "Small"
+                },
+                {
+                    "slug": "md",
+                    "size": "var(--text-md)",
+                    "name": "Medium"
+                },
+                {
+                    "slug": "lg",
+                    "size": "var(--text-lg)",
+                    "name": "Large"
+                },
+                {
+                    "slug": "xl",
+                    "size": "var(--text-xl)",
+                    "name": "Extra Large"
+                },
+                {
+                    "slug": "xxl",
+                    "size": "var(--text-xxl)",
+                    "name": "Extra Extra Large"
+                },
+                {
+                    "slug": "xxxl",
+                    "size": "var(--text-xxxl)",
+                    "name": "Extra Extra Extra Large"
+                }
+            ]
+        },
+        "color": {
+            "palette": [
+                {
+                    "slug": "primary",
+                    "color": "var(--color-primary)",
+                    "name": "Primary"
+                },
+                {
+                    "slug": "accent",
+                    "color": "var(--color-accent)",
+                    "name": "Accent"
+                },
+                {
+                    "slug": "black",
+                    "color": "var(--color-black)",
+                    "name": "Black"
+                },
+                {
+                    "slug": "white",
+                    "color": "var(--color-white)",
+                    "name": "White"
+                },
+                {
+                    "slug": "warning",
+                    "color": "var(--color-warning)",
+                    "name": "Warning"
+                },
+                {
+                    "slug": "success",
+                    "color": "var(--color-success)",
+                    "name": "Success"
+                },
+                {
+                    "slug": "error",
+                    "color": "var(--color-error)",
+                    "name": "Error"
+                },
+                {
+                    "slug": "info",
+                    "color": "var(--color-info)",
+                    "name": "Info"
+                },
+                {
+                    "slug": "bg",
+                    "color": "var(--color-bg)",
+                    "name": "Background"
+                },
+                {
+                    "slug": "contrast-lower",
+                    "color": "var(--color-contrast-lower)",
+                    "name": "Contrast Lower"
+                },
+                {
+                    "slug": "contrast-low",
+                    "color": "var(--color-contrast-low)",
+                    "name": "Contrast Low"
+                },
+                {
+                    "slug": "contrast-medium",
+                    "color": "var(--color-contrast-medium)",
+                    "name": "Contrast Medium"
+                },
+                {
+                    "slug": "contrast-high",
+                    "color": "var(--color-contrast-high)",
+                    "name": "Contrast High"
+                },
+                {
+                    "slug": "contrast-higher",
+                    "color": "var(--color-contrast-higher)",
+                    "name": "Contrast Higher"
+                }
+            ],
+            "gradients": [],
+            "duotone": []
+        },
+        "spacing": {
+            "customPadding": true,
+            "customMargin": true,
+            "units": [ "px", "em", "rem", "vh", "vw" ]
+        },
+        "border": {
+            "customColor": true,
+            "customRadius": true,
+            "customStyle": true,
+            "customWidth": true
+        }
+    },
+    "styles": {
+        "color": {
+            "text": "var(--color-contrast-high)"
+        },
+        "typography": {
+            "fontFamily": "var(--font-primary)",
+            "fontSize": "var(--text-base-size)"
+        },
+        "elements": {
+            "h1": {
+                "typography": {
+                    "fontSize": "var(--text-xxl)"
+                }
+            },
+            "h2": {
+                "typography": {
+                    "fontSize": "var(--text-xl)"
+                }
+            },
+            "h3": {
+                "typography": {
+                    "fontSize": "var(--text-lg)"
+                }
+            },
+            "h4": {
+                "typography": {
+                    "fontSize": "var(--text-md)"
+                }
+            }
         }
     }
 }
