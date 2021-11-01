@@ -18,6 +18,22 @@ $aspect-ratios: (
 	'1-2': 200%,
 );
 
+// old style embed
+.embed-youtube {
+	--aspect-ratio: calc(16 / 9);
+	position: relative;
+	height: 0;
+	padding-bottom: calc(100% / (var(--aspect-ratio)));
+
+	> iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+
 .wp-block-embed {
 	margin-top: var(--component-padding);
 	margin-bottom: var(--component-padding);
@@ -59,6 +75,13 @@ $aspect-ratios: (
 				padding-top: $padding;
 			}
 		}
+
+		// reset old style embed when nested in Gutenberg embed block
+		> .embed-youtube {
+			padding: revert;
+			height: revert;
+			position: revert;
+		}
 	}
 
 	// Image embeds.
@@ -77,21 +100,5 @@ $aspect-ratios: (
 	figcaption {
 		@include caption;
 		position: static;
-	}
-}
-
-// old style embed
-.embed-youtube {
-    --aspect-ratio: calc(16/9);
-    position: relative;
-    height: 0;
-    padding-bottom: calc(100% / (var(--aspect-ratio)));
-
-	> iframe {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
 	}
 }
