@@ -4,22 +4,33 @@
 
 ### New
 
-- Added theme.json for universal theme support.
+- Added `theme.json` for universal theme support.
 - Added global alignment styles.
 - Added legacy embed style.
+- Added plain style for quote block.
+- Added `.is-vertical` utility class.
 
 ### Changed
 
 - Updated to CodyFrame 3.0.2.
 - Adjusted block styles to match core.
 - Fixed site logo height.
+- Fixed gallery item margins in block editor.
 - Changed component spacing from `em` to `rem`.
 - Fixed post tag location in post archives.
+- Moved theme settings from functions to `theme.json`.
+- Updated default style for quote block.
+- Fixed Jetpack carousel SVG fill properties.
+- Fixed archive image placeholder.
 
 ### Removed
 
 - Removed archive listing options from Customizer.
 - Dequeued block library theme styles.
+- Removed bottom margin from gallery block inner element.
+- Removed alignment overrides for editor stylesheet.
+- Removed editor styles handled by `theme.json`.
+- Removed duplicate CSS custom properties.
 
 ## 1.5.1 - 10/11/2021
 
