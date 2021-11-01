@@ -31,7 +31,7 @@
 		"url": "https://github.com/peiche/garrick/issues"
 	},
 	"devDependencies": {
-		"@babel/compat-data": "^7.15.0",
+		"@babel/compat-data": "^7.16.0",
 		"@wordpress/eslint-plugin": "^9.1.2",
 		"@wordpress/stylelint-config": "^19.1.0",
 		"browser-sync": "^2.27.7",
