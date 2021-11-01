@@ -5,7 +5,7 @@
 	endif;
 ?>
 
-<header class="entry__header entry__header--single<?php echo $cover_image ? ' alignfull flex items-center margin-bottom-md' : ' alignwide margin-y-lg' ?>">
+<header class="entry__header entry__header--single<?php echo $cover_image ? ' alignfull flex items-center margin-bottom-md' : ' margin-y-lg' ?>">
 	<div class="<?php echo $cover_image ? 'container max-width-sm margin-top-xxxl margin-bottom-xl' : 'margin-bottom-md' ?>">
 		<?php Hybrid\Post\display_title( [ 'class' => 'entry__title text-xxl text-xxxl@md' ] ) ?>
 
@@ -39,7 +39,7 @@
 		<?php Hybrid\Carbon\Image::display( 'featured', [
 			'size' => 'full',
 			'class' => 'entry__image',
-			'before' => ( ! $cover_image ? '<div class="margin-y-md margin-x-auto">' : '' ) .
+			'before' => ( ! $cover_image ? '<div class="alignwide margin-y-md margin-x-auto">' : '' ) .
 					'<figure class="entry__featured ' . ( ! $cover_image ? $image_aspect_ratio : '' ) . ' bg-contrast-lower position-relative">',
 			'after' => '</figure>' . ( $cover_image ? '</div>' : '' ),
 		] ) ?>
