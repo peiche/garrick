@@ -11,14 +11,42 @@
 
 .wp-block-quote {
 	@include blockquote;
+	margin-top: var(--component-padding);
+	margin-bottom: var(--component-padding);
 
 	p {
 		margin-bottom: var(--space-sm);
+
+		&:last-child {
+			margin-bottom: 0;
+		}
 	}
 
 	cite,
 	.wp-block-quote__citation {
 		@include cite;
+		margin-top: 0;
+	}
+
+	&.is-style-default {
+		border-color: var(--color-primary);
+		padding-left: var(--space-md);
+		font-size: var(--text-md);
+		border-width: var(--space-xxxs);
+
+		@include breakpoint(md) {
+			margin-left: calc(-1 * var(--space-xl));
+		}
+
+		cite {
+			font-size: var(--text-base-size);
+		}
+	}
+
+	&.is-style-plain {
+		margin-left: 0;
+		padding-left: 0;
+		border: 0;
 	}
 
 	&.is-style-large {
@@ -27,8 +55,7 @@
 		font-size: var(--text-lg);
 
 		@include breakpoint(md) {
-			width: 120%;
-			transform: translateX(-8.33%);
+			margin-left: calc(-1 * var(--space-xxl));
 		}
 
 		p {
@@ -39,7 +66,7 @@
 		cite,
 		.wp-block-quote__citation {
 			margin-top: 0;
-			font-size: 0.7em;
+			font-size: var(--text-md);
 		}
 	}
 }
