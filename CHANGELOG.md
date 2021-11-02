@@ -1,6 +1,6 @@
 # Change Log
 
-## 1.5.2 - 10/26/2021
+## 1.5.3 - 11/02/2021
 
 ### New
 
@@ -13,7 +13,6 @@
 ### Changed
 
 - Moved theme settings from functions to `theme.json`.
-- Updated to CodyFrame 3.0.2.
 - Changed component spacing from `em` to `rem`.
 - Updated block styles to match core.
 - Updated cover block styles to match core.
@@ -32,6 +31,12 @@
 - Removed alignment overrides for editor stylesheet.
 - Removed editor styles handled by `theme.json`.
 - Removed duplicate CSS custom properties.
+
+## 1.5.2 - 10/13/2021
+
+### Changed
+
+- Updated to CodyFrame 3.0.2.
 
 ## 1.5.1 - 10/11/2021
 
