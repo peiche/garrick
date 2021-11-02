@@ -12,21 +12,22 @@
 
 ### Changed
 
+- Moved theme settings from functions to `theme.json`.
 - Updated to CodyFrame 3.0.2.
-- Adjusted block styles to match core.
+- Changed component spacing from `em` to `rem`.
+- Updated block styles to match core.
+- Updated cover block styles to match core.
+- Updated quote block default style.
 - Fixed site logo height.
 - Fixed gallery item margins in block editor.
-- Changed component spacing from `em` to `rem`.
 - Fixed post tag location in post archives.
-- Moved theme settings from functions to `theme.json`.
-- Updated default style for quote block.
 - Fixed Jetpack carousel SVG fill properties.
 - Fixed archive image placeholder.
 
 ### Removed
 
-- Removed archive listing options from Customizer.
 - Dequeued block library theme styles.
+- Removed archive listing options from Customizer.
 - Removed bottom margin from gallery block inner element.
 - Removed alignment overrides for editor stylesheet.
 - Removed editor styles handled by `theme.json`.
