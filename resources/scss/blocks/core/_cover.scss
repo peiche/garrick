@@ -44,7 +44,6 @@
 		@for $dim from 1 through 10 {
 
 			&.has-background-dim-#{ $dim * 10 } {
-	
 				opacity: $dim * 0.1;
 			}
 		}
@@ -59,7 +58,7 @@
 		align-items: flex-start;
 		justify-content: center;
 	}
-	
+
 	&.is-position-top-right {
 		align-items: flex-start;
 		justify-content: flex-end;
@@ -69,27 +68,27 @@
 		align-items: center;
 		justify-content: flex-start;
 	}
-	
+
 	&.is-position-center-center {
 		align-items: center;
 		justify-content: center;
 	}
-	
+
 	&.is-position-center-right {
 		align-items: center;
 		justify-content: flex-end;
 	}
-	
+
 	&.is-position-bottom-left {
 		align-items: flex-end;
 		justify-content: flex-start;
 	}
-	
+
 	&.is-position-bottom-center {
 		align-items: flex-end;
 		justify-content: center;
 	}
-	
+
 	&.is-position-bottom-right {
 		align-items: flex-end;
 		justify-content: flex-end;
