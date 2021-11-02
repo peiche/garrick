@@ -13,6 +13,7 @@
 	background-position: 50%;
 	min-height: 430px;
 	margin: 0 0 var(--component-padding);
+	padding: var(--component-padding);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -28,36 +29,76 @@
 		background-attachment: fixed;
 	}
 
-	// Background dim.
-	&.has-background-dim::before {
-		content: "";
+	&__gradient-background {
 		position: absolute;
 		top: 0;
 		left: 0;
 		bottom: 0;
 		right: 0;
+		opacity: 0.5;
+		z-index: 2;
 		background-color: var(--color-black);
-		z-index: 1;
-	}
 
-	// The background dim can be any number from 10-100. We're just running
-	// a simple loop to add a black background color over the element.
-	@for $dim from 1 through 10 {
+		// The background dim can be any number from 10-100. We're just running
+		// a simple loop to add a black background color over the element.
+		@for $dim from 1 through 10 {
 
-		&.has-background-dim-#{ $dim * 10 } {
-
-			.wp-block-cover__image-background {
+			&.has-background-dim-#{ $dim * 10 } {
+	
 				opacity: $dim * 0.1;
 			}
 		}
 	}
 
-	// Left/Right text content.
-	&.has-left-content {
+	// &.has-custom-content-position {
+
+	// 	&.is-position-center-left {}
+
+	// 	&.is-position-center-right {}
+	// }
+
+	&.is-position-top-left {
+		align-items: flex-start;
 		justify-content: flex-start;
 	}
 
-	&.has-right-content {
+	&.is-position-top-center {
+		align-items: flex-start;
+		justify-content: center;
+	}
+	
+	&.is-position-top-right {
+		align-items: flex-start;
+		justify-content: flex-end;
+	}
+
+	&.is-position-center-left {
+		align-items: center;
+		justify-content: flex-start;
+	}
+	
+	&.is-position-center-center {
+		align-items: center;
+		justify-content: center;
+	}
+	
+	&.is-position-center-right {
+		align-items: center;
+		justify-content: flex-end;
+	}
+	
+	&.is-position-bottom-left {
+		align-items: flex-end;
+		justify-content: flex-start;
+	}
+	
+	&.is-position-bottom-center {
+		align-items: flex-end;
+		justify-content: center;
+	}
+	
+	&.is-position-bottom-right {
+		align-items: flex-end;
 		justify-content: flex-end;
 	}
 
@@ -66,8 +107,9 @@
 		position: absolute;
 		width: 100%;
 		height: 100%;
+		top: 0;
+		left: 0;
 		object-fit: cover;
-		opacity: 0.5;
 		z-index: 1;
 	}
 
@@ -80,7 +122,7 @@
 .wp-block-cover__inner-container {
 	color: var(--color-white);
 	line-height: 1.25;
-	z-index: 1;
+	z-index: 2;
 	margin-bottom: 0;
 	width: calc(100% - 2 * var(--component-padding));
 	max-width: var(--max-width-sm);
