@@ -22,6 +22,7 @@
 - Fixed post tag location in post archives.
 - Fixed Jetpack carousel SVG fill properties.
 - Fixed archive image placeholder.
+- Fixed vertical alignment in post byline.
 
 ### Removed
 
