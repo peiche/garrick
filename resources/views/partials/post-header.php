@@ -17,7 +17,7 @@
 		<?php endif; ?>
 
 		<?php if ( is_single() ) : ?>
-			<div class="entry__byline">
+			<div class="entry__byline flex gap-xxxs items-center">
 				<?php Hybrid\View\display( 'partials', 'avatar', [ 'author' => get_post()->post_author, 'size' => 40 ] ) ?>
 
 				<?php Hybrid\Post\display_author() ?>
