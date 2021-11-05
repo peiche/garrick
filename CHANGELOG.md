@@ -23,6 +23,8 @@
 - Fixed Jetpack carousel SVG fill properties.
 - Fixed archive image placeholder.
 - Fixed vertical alignment in post byline.
+- Fixed calendar heading font size in the editor.
+- Fixed paragraph block default font size in the editor.
 
 ### Removed
 
