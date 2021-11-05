@@ -163,6 +163,13 @@
                     "fontSize": "var(--text-md)"
                 }
             }
+        },
+        "blocks": {
+            "core/paragraph": {
+                "typography": {
+                    "fontSize": "var(--text-base-size)"
+                }
+            }
         }
     }
 }
