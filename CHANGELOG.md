@@ -25,6 +25,8 @@
 - Fixed vertical alignment in post byline.
 - Fixed calendar heading font size in the editor.
 - Fixed paragraph block default font size in the editor.
+- Fixed post title bottom margin in the editor.
+- Fixed excerpt font size.
 
 ### Removed
 
