@@ -12,11 +12,13 @@
 
 ### Changed
 
+- Updated to CodyFrame 3.0.3.
 - Moved theme settings from functions to `theme.json`.
 - Changed component spacing from `em` to `rem`.
 - Updated block styles to match core.
 - Updated cover block styles to match core.
 - Updated quote block default style.
+- Updated embed block to use `aspect-ratio` property.
 - Fixed site logo height.
 - Fixed gallery item margins in block editor.
 - Fixed post tag location in post archives.
