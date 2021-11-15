@@ -11,6 +11,9 @@
 // The id and class increase specificity, allowing us
 // to override Jetpack's ridiculous high-specificity styles.
 #jp-relatedposts.jp-relatedposts {
+	margin-top: var(--component-padding);
+	margin-bottom: var(--component-padding);
+	padding: 0;
 
 	@include breakpoint(lg) {
 		margin-right: calc(-50vw + 50%);
@@ -21,6 +24,7 @@
 
 	h3.jp-relatedposts-headline {
 		font-size: var(--text-md);
+		margin-bottom: var(--space-sm);
 
 		em {
 			font-family: var(--font-heading);
