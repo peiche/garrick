@@ -29,6 +29,7 @@
 - Fixed paragraph block default font size in the editor.
 - Fixed post title bottom margin in the editor.
 - Fixed excerpt font size.
+- Fixed related posts top margin and padding.
 
 ### Removed
 
