@@ -2,8 +2,6 @@
 	return;
 } ?>
 
-<hr class="wp-block-separator is-style-dots">
-
 <section id="comments" class="comments">
 
 	<?php if ( have_comments() ) : ?>
