@@ -24,7 +24,10 @@
 
 	h3.jp-relatedposts-headline {
 		font-size: var(--text-md);
+		margin-top: var(--space-sm);
 		margin-bottom: var(--space-sm);
+		padding-top: var(--space-sm);
+		border-top: 3px solid var(--color-contrast-medium);
 
 		em {
 			font-family: var(--font-heading);
