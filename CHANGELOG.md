@@ -9,6 +9,7 @@
 - Added legacy embed style.
 - Added plain style for quote block.
 - Added `.is-vertical` utility class.
+- Added divider at the top of Jetpack related posts.
 
 ### Changed
 
@@ -39,6 +40,7 @@
 - Removed alignment overrides for editor stylesheet.
 - Removed editor styles handled by `theme.json`.
 - Removed duplicate CSS custom properties.
+- Removed separator between post/page content and comments.
 
 ## 1.5.2 - 10/13/2021
 
