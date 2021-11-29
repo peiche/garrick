@@ -9,21 +9,11 @@
 @use '~codyhouse-framework/main/assets/css/base/breakpoints' as *;
 
 .wp-block-group {
+	margin-top: var(--component-padding);
 	margin-bottom: var(--component-padding);
-	padding-left: var(--component-padding);
-	padding-right: var(--component-padding);
 
 	&:last-child {
 		margin-bottom: 0;
-	}
-
-	@include breakpoint(md) {
-		padding-left: 0;
-		padding-right: 0;
-	}
-
-	+ .wp-block-group {
-		margin-top: calc(var(--component-padding) * -1);
 	}
 
 	&.has-background {
@@ -33,7 +23,5 @@
 	&__inner-container {
 		margin-left: auto;
 		margin-right: auto;
-		max-width: var(--max-width-sm);
-		width: calc(100% - var(--component-padding));
 	}
 }

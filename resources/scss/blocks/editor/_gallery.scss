@@ -6,6 +6,8 @@
 /// @link   https://boldoak.design/work/garrick
 ////
 
+@use '~codyhouse-framework/main/assets/css/base/breakpoints' as *;
+
 .wp-block-gallery {
 
 	.components-form-file-upload {
@@ -33,4 +35,17 @@
 
 .blocks-gallery-item {
 	margin-bottom: 0; // override margin-based gap
+}
+
+@include breakpoint(sm) {
+
+	@for $i from 2 through 8 {
+
+		.columns-#{ $i } {
+
+			.blocks-gallery-item {
+				margin-right: 0;
+			}
+		}
+	}
 }

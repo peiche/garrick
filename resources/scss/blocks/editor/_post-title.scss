@@ -6,10 +6,6 @@
 /// @link   https://boldoak.design/work/garrick
 ////
 
-.editor-post-title__block {
-
-	.editor-post-title__input {
-		font-family: var(--font-heading);
-		color: var(--color-contrast-higher);
-	}
+.wp-block-post-title {
+	margin-bottom: var(--space-md);
 }

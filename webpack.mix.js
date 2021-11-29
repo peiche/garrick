@@ -123,7 +123,7 @@ mix.sass( `${devPath}/scss/screen.scss`, 'css', sassConfig );
 
 // Compile editor and Customizer styles.
 mix.sass( `${devPath}/scss/editor.scss`,    'css', sassConfig )
-	 .sass( `${devPath}/scss/customize.scss`, 'css', sassConfig );
+   .sass( `${devPath}/scss/customize.scss`, 'css', sassConfig );
 
 /*
  * Add custom Webpack configuration.
@@ -220,7 +220,8 @@ if ( process.env.sync ) {
 			'dist/**/*',
 			`${devPath}/views/**/*.php`,
 			'app/**/*.php',
-			'functions.php'
+			'functions.php',
+			'theme.json'
 		]
 	} );
 }

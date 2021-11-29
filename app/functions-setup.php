@@ -56,7 +56,7 @@ add_action( 'after_setup_theme', function() {
 	// Wide and full alignment. The styles for alignment is housed in the
 	// `resources/scss/utilities/_alignment.scss` file.
 	// @link https://developer.wordpress.org/block-editor/developers/themes/theme-support/#wide-alignment
-	add_theme_support( 'align-wide' );
+	// add_theme_support( 'align-wide' );
 
 	// Outputs HTML5 markup for core features.
 	add_theme_support( 'html5', [
@@ -76,107 +76,6 @@ add_action( 'after_setup_theme', function() {
 		'flex-width'  => null,
 		'flex-height' => false,
 		'header-text' => ''
-	] );
-
-	// Editor color palette. These colors are also defined in the
-	// `resources/scss/tools/_functions.scss` file.
-	add_theme_support( 'editor-color-palette', [
-
-		[
-			'name'  => __( 'Primary', 'garrick' ),
-			'slug'  => 'primary',
-			'color' => get_theme_mod('primary_color_light', '#2a6df4'),
-		],
-		[
-			'name'  => __( 'Accent', 'garrick' ),
-			'slug'  => 'accent',
-			'color' => 'var(--color-accent)',
-		],
-		[
-			'name'  => __( 'Success', 'garrick' ),
-			'slug'  => 'success',
-			'color' => 'var(--color-success)',
-		],
-		[
-			'name'  => __( 'Error', 'garrick' ),
-			'slug'  => 'error',
-			'color' => 'var(--color-error)',
-		],
-		[
-			'name'  => __( 'Warning', 'garrick' ),
-			'slug'  => 'warning',
-			'color' => 'var(--color-warning)',
-		],
-		[
-			'name'  => __( 'Higher Contrast', 'garrick' ),
-			'slug'  => 'higher-contrast',
-			'color' => 'var(--color-contrast-higher)',
-		],
-		[
-			'name'  => __( 'High Contrast', 'garrick' ),
-			'slug'  => 'high-contrast',
-			'color' => 'var(--color-contrast-high)',
-		],
-		[
-			'name'  => __( 'Medium Contrast', 'garrick' ),
-			'slug'  => 'medium-contrast',
-			'color' => 'var(--color-contrast-medium)',
-		],
-		[
-			'name'  => __( 'Low Contrast', 'garrick' ),
-			'slug'  => 'low-contrast',
-			'color' => 'var(--color-contrast-low)',
-		],
-		[
-			'name'  => __( 'Lower Contrast', 'garrick' ),
-			'slug'  => 'lower-contrast',
-			'color' => 'var(--color-contrast-lower)',
-		],
-		[
-			'name'  => __( 'Background', 'garrick' ),
-			'slug'  => 'background',
-			'color' => 'var(--color-bg)',
-		],
-		[
-			'name'  => __( 'Black', 'garrick' ),
-			'slug'  => 'black',
-			'color' => '#000',
-		],
-		[
-			'name'  => __( 'White', 'garrick' ),
-			'slug'  => 'white',
-			'color' => '#fff',
-		],
-
-	] );
-
-	// Editor block font sizes. These font sizes are also defined in the
-	// `resources/scss/tools/_functions.scss` file.
-	add_theme_support( 'editor-font-sizes', [
-		[
-			'name'      => __( 'Small', 'garrick' ),
-			'shortName' => __( 'S', 'garrick' ),
-			'size'      => 16,
-			'slug'      => 'small'
-		],
-		[
-			'name'      => __( 'Regular', 'garrick' ),
-			'shortName' => __( 'M', 'garrick' ),
-			'size'      => 20,
-			'slug'      => 'regular'
-		],
-		[
-			'name'      => __( 'Large', 'garrick' ),
-			'shortName' => __( 'L', 'garrick' ),
-			'size'      => 25,
-			'slug'      => 'large'
-		],
-		[
-			'name'      => __( 'Larger', 'garrick' ),
-			'shortName' => __( 'XL', 'garrick' ),
-			'size'      => 31,
-			'slug'      => 'larger'
-		]
 	] );
 
 	add_theme_support( 'post-formats', array(
@@ -203,7 +102,7 @@ add_action( 'after_setup_theme', function() {
 	));
 
 	// Remove support for block templates.
-	// @link https://wptavern.com/gutenberg-10-5-embeds-pdfs-adds-verse-block-color-options-and-introduces-new-patterns
+	// @link https://gist.github.com/justintadlock/74fa7c61c692423cc1fcefd9a0ab8e5f
 	remove_theme_support('block-templates');
 
 }, 5 );
@@ -222,7 +121,7 @@ add_action( 'after_setup_theme', function() {
 add_action( 'after_setup_theme', function() {
 
 	add_theme_support( 'custom-header', [
-		'header-text'            => true,
+		'header-text' => true,
 	] );
 
 }, 15 );

@@ -30,7 +30,8 @@ let files = [
 	'nucleo-license.md',
 	'README.md',
 	'readme.txt',        // Required for WordPress.org theme review.
-	'screenshot.jpg'
+	'screenshot.jpg',
+	'theme.json'
 ];
 
 // Folders to include.

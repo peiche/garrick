@@ -11,13 +11,13 @@
 
 		<?php $post_content_excerpt = preg_split( '/<!--more(.*?)?-->/', get_post()->post_content ); ?>
 		<?php if ( has_excerpt() && strcasecmp( trim( get_the_excerpt() ), trim( $post_content_excerpt[0] ) ) != 0 ) : ?>
-			<div class="entry__excerpt margin-bottom-sm text-md<?php echo $cover_image ? '' : ' color-contrast-medium' ?>">
-				<?php the_excerpt() ?>
+			<div class="entry__excerpt margin-bottom-sm <?php echo $cover_image ? '' : ' color-contrast-medium' ?>">
+				<p class="text-md"><?php echo esc_html( get_the_excerpt() ) ?></p>
 			</div>
 		<?php endif; ?>
 
 		<?php if ( is_single() ) : ?>
-			<div class="entry__byline">
+			<div class="entry__byline flex gap-xxxs items-center">
 				<?php Hybrid\View\display( 'partials', 'avatar', [ 'author' => get_post()->post_author, 'size' => 40 ] ) ?>
 
 				<?php Hybrid\Post\display_author() ?>
@@ -35,7 +35,7 @@
 	?>
 
 	<?php if ( $show_image ) : ?>
-		<?php $image_aspect_ratio = get_theme_mod( 'featured_image_aspect_ratio', '' ); ?>
+		<?php $image_aspect_ratio = 'media-wrapper media-wrapper--4:3'; ?>
 		<?php Hybrid\Carbon\Image::display( 'featured', [
 			'size' => 'full',
 			'class' => 'entry__image',

@@ -30,6 +30,7 @@ add_action( 'wp_enqueue_scripts', function() {
 
 	// Disable core block styles.
 	wp_dequeue_style( 'wp-block-library' );
+	wp_dequeue_style( 'wp-block-library-theme' );
 
 	// Load WordPress' comment-reply script where appropriate.
 	if ( is_singular() && get_option( 'thread_comments' ) && comments_open() ) {

@@ -1,5 +1,47 @@
 # Change Log
 
+## 1.5.3 - 11/02/2021
+
+### New
+
+- Added `theme.json` for universal theme support.
+- Added global alignment styles.
+- Added legacy embed style.
+- Added plain style for quote block.
+- Added `.is-vertical` utility class.
+- Added divider at the top of Jetpack related posts.
+
+### Changed
+
+- Updated to CodyFrame 3.0.3.
+- Moved theme settings from functions to `theme.json`.
+- Changed component spacing from `em` to `rem`.
+- Updated block styles to match core.
+- Updated cover block styles to match core.
+- Updated quote block default style.
+- Updated embed block to use `aspect-ratio` property.
+- Fixed site logo height.
+- Fixed gallery item margins in block editor.
+- Fixed post tag location in post archives.
+- Fixed Jetpack carousel SVG fill properties.
+- Fixed archive image placeholder.
+- Fixed vertical alignment in post byline.
+- Fixed calendar heading font size in the editor.
+- Fixed paragraph block default font size in the editor.
+- Fixed post title bottom margin in the editor.
+- Fixed excerpt font size.
+- Fixed related posts top margin and padding.
+
+### Removed
+
+- Dequeued block library theme styles.
+- Removed archive listing options from Customizer.
+- Removed bottom margin from gallery block inner element.
+- Removed alignment overrides for editor stylesheet.
+- Removed editor styles handled by `theme.json`.
+- Removed duplicate CSS custom properties.
+- Removed separator between post/page content and comments.
+
 ## 1.5.2 - 10/13/2021
 
 ### Changed
@@ -143,6 +185,6 @@ Note that the unused `wp_deregister_style` lines are left commented out for ease
 
 ## 1.0.0 - 04/07/2020
 
-### Added
+### New
 
 - Initial release.

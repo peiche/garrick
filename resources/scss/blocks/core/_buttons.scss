@@ -12,6 +12,8 @@
 	display: flex;
 	flex-wrap: wrap;
 	gap: var(--space-sm);
+	margin-top: var(--component-padding);
+	margin-bottom: var(--component-padding);
 
 	&.is-content-justification-left {
 		justify-content: flex-start;

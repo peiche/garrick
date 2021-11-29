@@ -8,56 +8,53 @@
 
 @use 'tools/mixins' as *;
 
-$aspect-ratios: (
-	'21-9': 42.85%,
-	'18-9': 50%,
-	'16-9': 56.25%,
-	'4-3': 75%,
-	'1-1': 100%,
-	'9-6': 66.66%,
-	'1-2': 200%,
-);
+// old style embed
+.embed-youtube {
+
+	> iframe {
+		width: 100%;
+		height: auto;
+		aspect-ratio: 16 / 9; // default aspect ratio
+	}
+}
 
 .wp-block-embed {
 	margin-top: var(--component-padding);
 	margin-bottom: var(--component-padding);
 
 	&.wp-has-aspect-ratio {
-		padding-bottom: 0;
-		height: auto;
-		position: relative;
-	}
+		--aspect-ratio: 16 / 9;
 
-	// Directly target iframes.
-	iframe {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-	}
-
-	&__wrapper {
-		position: relative;
-
-		.wp-has-aspect-ratio & iframe {
-			position: absolute;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
+		iframe {
+			aspect-ratio: var(--aspect-ratio);
 		}
 
-		.wp-has-aspect-ratio &::before {
-			content: '';
-			display: block;
-			padding-top: 50%;
+		&.wp-embed-aspect-21-9 {
+			--aspect-ratio: 21 / 9;
 		}
 
-		@each $aspect-ratio, $padding in $aspect-ratios {
-			.wp-embed-aspect-#{ $aspect-ratio } &::before {
-				padding-top: $padding;
-			}
+		&.wp-embed-aspect-18-9 {
+			--aspect-ratio: 18 / 9;
+		}
+
+		&.wp-embed-aspect-16-9 {
+			--aspect-ratio: 16 / 9;
+		}
+
+		&.wp-embed-aspect-4-3 {
+			--aspect-ratio: 4 / 3;
+		}
+
+		&.wp-embed-aspect-1-1 {
+			--aspect-ratio: 1 / 1;
+		}
+
+		&.wp-embed-aspect-9-6 {
+			--aspect-ratio: 9 / 6;
+		}
+
+		&.wp-embed-aspect-1-2 {
+			--aspect-ratio: 1 / 2;
 		}
 	}
 
@@ -72,6 +69,17 @@ $aspect-ratios: (
 
 	// Video embeds.
 	&.is-type-video {}
+
+	&__wrapper {}
+
+	// Directly target iframes.
+	iframe {
+		display: block;
+		width: 100%;
+		height: auto;
+		margin-left: auto;
+		margin-right: auto;
+	}
 
 	// Caption below embedded content.
 	figcaption {

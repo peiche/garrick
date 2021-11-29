@@ -15,7 +15,6 @@
 	--text-scale-ratio: 1.2; // multiplier used to generate the type scale values 👇
 
 	// type scale
-	--text-scale-ratio: 1.2;
 	--text-xs: calc((var(--text-unit) / var(--text-scale-ratio)) / var(--text-scale-ratio));
 	--text-sm: calc(var(--text-xs) * var(--text-scale-ratio));
 	--text-md: calc(var(--text-sm) * var(--text-scale-ratio) * var(--text-scale-ratio));
