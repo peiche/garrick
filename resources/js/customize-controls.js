@@ -22,7 +22,7 @@
 // import radioImage       from 'hybrid-customize/js/controls/radio-image.js';
 // import selectGroup      from 'hybrid-customize/js/controls/select-group.js';
 // import selectMultiple   from 'hybrid-customize/js/controls/select-multiple.js';
-import Choices          from 'choices.js/src/scripts/choices.js';
+import Choices          from 'choices.js/public/assets/scripts/choices.js';
 
 wp.customize.bind( 'ready', () => {
 	let choicesOptions = {
