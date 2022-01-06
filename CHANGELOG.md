@@ -1,5 +1,11 @@
 # Change Log
 
+## 1.5.4 - 01/06/2022
+
+### Changed
+
+- Added fallback aspect ratio support for embeds.
+
 ## 1.5.3 - 11/02/2021
 
 ### New
