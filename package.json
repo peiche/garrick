@@ -41,7 +41,7 @@
 		"copy-webpack-plugin": "^9.1.0",
 		"cross-env": "^7.0.3",
 		"eslint": "^8.6.0",
-		"eslint-plugin-jsdoc": "^37.5.1",
+		"eslint-plugin-jsdoc": "^37.6.1",
 		"imagemin-mozjpeg": "^9.0.0",
 		"imagemin-webpack-plugin": "^2.4.2",
 		"laravel-mix": "^6.0.39",
