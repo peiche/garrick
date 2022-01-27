@@ -61,7 +61,6 @@
 	}
 
 	@include breakpoint(md) {
-
 		$widths: 25, 50, 75;
 		@each $width in $widths {
 

@@ -88,13 +88,6 @@
 					padding-right: 0;
 				}
 			}
-
-			@include breakpoint(md) {
-
-				&:not(:first-child) {
-					//margin-left: var(--space-sm);
-				}
-			}
 		}
 
 		.menu__link {
