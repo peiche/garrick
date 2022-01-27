@@ -2,18 +2,31 @@
 	"plugins": [
 		"stylelint-scss"
 	],
-	"extends": "@wordpress/stylelint-config/scss",
+	"extends": [
+		"stylelint-config-standard-scss",
+		"@wordpress/stylelint-config/scss"
+	],
 	"rules": {
+		"alpha-value-notation": null,
 		"at-rule-empty-line-before": null,
 		"block-no-empty": null,
+		"color-function-notation": null,
 		"color-named": null,
+		"declaration-block-no-redundant-longhand-properties": null,
 		"declaration-colon-space-after": null,
 		"declaration-colon-space-before": null,
+		"declaration-empty-line-before": null,
 		"function-parentheses-space-inside": null,
 		"no-descending-specificity": null,
 		"no-empty-source": null,
+		"property-no-vendor-prefix": null,
 		"rule-empty-line-before": null,
 		"string-quotes": null,
-		"selector-class-pattern": null
+		"scss/dollar-variable-empty-line-before": null,
+		"scss/double-slash-comment-empty-line-before": null,
+		"scss/no-global-function-names": null,
+		"scss/operator-no-unspaced": null,
+		"selector-class-pattern": null,
+		"value-keyword-case": null
 	}
 }
