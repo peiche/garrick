@@ -33,7 +33,7 @@
 	"devDependencies": {
 		"@babel/compat-data": "^7.16.8",
 		"@wordpress/eslint-plugin": "^9.3.0",
-		"@wordpress/stylelint-config": "^19.1.0",
+		"@wordpress/stylelint-config": "^20.0.0",
 		"browser-sync": "^2.27.7",
 		"browser-sync-webpack-plugin": "2.3.0",
 		"choices.js": "^10.0.0",
@@ -51,7 +51,7 @@
 		"rimraf": "^3.0.2",
 		"sass": "^1.49.0",
 		"sass-loader": "^12.4.0",
-		"stylelint": "^13.13.1",
+		"stylelint": "^14.3.0",
 		"stylelint-scss": "^3.21.0",
 		"svg-spritemap-webpack-plugin": "^4.4.0",
 		"theme-claim": "^0.2.0",
