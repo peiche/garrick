@@ -50,7 +50,7 @@
 		"postcss-css-variables": "git+https://git@github.com/codyhouse/postcss-css-variables.git",
 		"rimraf": "^3.0.2",
 		"sass": "^1.49.7",
-		"sass-loader": "^12.4.0",
+		"sass-loader": "^12.6.0",
 		"stylelint": "^14.5.0",
 		"stylelint-config-standard-scss": "^3.0.0",
 		"stylelint-scss": "^4.1.0",
