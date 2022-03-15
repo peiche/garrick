@@ -33,7 +33,7 @@
 	"devDependencies": {
 		"@babel/compat-data": "^7.17.7",
 		"@wordpress/eslint-plugin": "^11.0.1",
-		"@wordpress/stylelint-config": "^20.0.1",
+		"@wordpress/stylelint-config": "^20.0.2",
 		"browser-sync": "^2.27.8",
 		"browser-sync-webpack-plugin": "2.3.0",
 		"choices.js": "^10.1.0",
