@@ -34,7 +34,7 @@
 		"@babel/compat-data": "^7.17.10",
 		"@wordpress/eslint-plugin": "^12.2.0",
 		"@wordpress/stylelint-config": "^20.0.2",
-		"browser-sync": "^2.27.9",
+		"browser-sync": "^2.27.10",
 		"browser-sync-webpack-plugin": "2.3.0",
 		"choices.js": "^10.1.0",
 		"codyhouse-framework": "^3.0.5",
