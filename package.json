@@ -40,7 +40,7 @@
 		"codyhouse-framework": "^3.0.5",
 		"copy-webpack-plugin": "^11.0.0",
 		"cross-env": "^7.0.3",
-		"eslint": "^8.15.0",
+		"eslint": "^8.16.0",
 		"eslint-plugin-jsdoc": "^39.3.0",
 		"imagemin-mozjpeg": "^9.0.0",
 		"imagemin-webpack-plugin": "^2.4.2",
