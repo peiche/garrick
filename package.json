@@ -51,7 +51,7 @@
 		"rimraf": "^3.0.2",
 		"sass": "^1.52.1",
 		"sass-loader": "^13.0.0",
-		"stylelint": "^14.8.3",
+		"stylelint": "^14.8.4",
 		"stylelint-config-standard-scss": "^3.0.0",
 		"stylelint-scss": "^4.2.0",
 		"svg-spritemap-webpack-plugin": "^4.4.0",
